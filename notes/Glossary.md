@@ -41,10 +41,10 @@ Key accounting terms for Chapters 8, 10, 11 and 12 and the financial statements.
 |---|---|---|---|
 | Trade receivables | 应收账款 | Credit customers who owe the business money | 8 |
 | Trade payables | 应付账款 | Credit suppliers the business owes money to | 8 |
-| Irrecoverable debt | 坏账 | A debt that will never be collected | 8 |
+| Irrecoverable debt | 烂账 | A debt that will never be collected | 8 |
 | Write off | 冲销 / 注销 | Remove a debt from the customer's account as an expense | 8 |
-| Irrecoverable debts recovered | 坏账收回 | A debt written off earlier that is later paid | 8 |
-| Allowance for irrecoverable debts | 坏账准备 | Estimate of debts that might not be paid | 8 |
+| Irrecoverable debts recovered | 烂账收回 | A debt written off earlier that is later paid | 8 |
+| Allowance for irrecoverable debts | 烂账准备 | Estimate of debts that might not be paid | 8 |
 | Bankrupt | 破产 | Unable to pay debts | 8 |
 
 ## Chapter 10: Non-current assets and depreciation
