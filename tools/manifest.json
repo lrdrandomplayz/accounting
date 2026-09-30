@@ -591,6 +591,8 @@
     "mode": "q",
     "qid": "8.8",
     "level": 1,
+    "section": "structured",
+    "label": "Level 1: Easy",
     "blocks": [
      {
       "k": "title",
@@ -750,6 +752,8 @@
     "mode": "a",
     "qid": "8.8",
     "level": 1,
+    "section": "structured",
+    "label": "Level 1: Easy",
     "blocks": [
      {
       "k": "title",
@@ -909,6 +913,8 @@
     "mode": "q",
     "qid": "8.9",
     "level": 2,
+    "section": "structured",
+    "label": "Level 2: Easy to medium",
     "blocks": [
      {
       "k": "title",
@@ -1080,6 +1086,8 @@
     "mode": "a",
     "qid": "8.9",
     "level": 2,
+    "section": "structured",
+    "label": "Level 2: Easy to medium",
     "blocks": [
      {
       "k": "title",
@@ -1251,6 +1259,8 @@
     "mode": "q",
     "qid": "8.10",
     "level": 3,
+    "section": "structured",
+    "label": "Level 3: Medium",
     "blocks": [
      {
       "k": "title",
@@ -1565,6 +1575,8 @@
     "mode": "a",
     "qid": "8.10",
     "level": 3,
+    "section": "structured",
+    "label": "Level 3: Medium",
     "blocks": [
      {
       "k": "title",
@@ -1879,6 +1891,8 @@
     "mode": "q",
     "qid": "8.11",
     "level": 4,
+    "section": "structured",
+    "label": "Level 4: Hard",
     "blocks": [
      {
       "k": "title",
@@ -2209,6 +2223,8 @@
     "mode": "a",
     "qid": "8.11",
     "level": 4,
+    "section": "structured",
+    "label": "Level 4: Hard",
     "blocks": [
      {
       "k": "title",
@@ -2539,6 +2555,8 @@
     "mode": "q",
     "qid": "8.12",
     "level": 5,
+    "section": "structured",
+    "label": "Level 5: Challenge",
     "blocks": [
      {
       "k": "title",
@@ -2844,6 +2862,8 @@
     "mode": "a",
     "qid": "8.12",
     "level": 5,
+    "section": "structured",
+    "label": "Level 5: Challenge",
     "blocks": [
      {
       "k": "title",
@@ -3141,6 +3161,1332 @@
      {
       "k": "written",
       "text": "For: a bigger allowance is more cautious, so assets and profit are less likely to be overstated.\nAgainst: the allowance must be a reasonable estimate based on past experience. 20% is far above Hamid's real losses, so profit and trade receivables would be understated and the statements would not be reliable. A sudden change also breaks the consistency concept.\nConclusion: keep a realistic rate (about 5%) and change it only when experience of bad debts changes. Prudence means do not overstate; it does not mean understate on purpose."
+     }
+    ]
+   },
+   {
+    "sheet": "QJ8.1",
+    "mode": "q",
+    "qid": "J8.1",
+    "level": 2,
+    "section": "journals",
+    "label": "Journal practice, Level 2: Easy to medium",
+    "blocks": [
+     {
+      "k": "title",
+      "text": "Question J8.1 (Journal practice, Level 2: Easy to medium)"
+     },
+     {
+      "k": "text",
+      "text": "Mei Ling's year ends on 31 December 2025. Prepare journal entries for the following. Narratives are required.",
+      "style": "p"
+     },
+     {
+      "k": "text",
+      "text": "30 April 2025: Ahmad, who owes RM480, is declared bankrupt. The debt is written off.",
+      "style": "bullet"
+     },
+     {
+      "k": "text",
+      "text": "15 July 2025: a cheque for RM350 is received from Faridah. Her debt was written off in 2024.",
+      "style": "bullet"
+     },
+     {
+      "k": "text",
+      "text": "31 December 2025: the allowance for irrecoverable debts is to be 5% of trade receivables of RM23,000. The allowance brought forward is RM900.",
+      "style": "bullet"
+     },
+     {
+      "k": "data",
+      "title": "Figures from the question",
+      "md": false,
+      "rows": [
+       [
+        "Ahmad's debt (RM)",
+        480,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Received from Faridah (RM)",
+        350,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Trade receivables at 31 December 2025 (RM)",
+        23000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Allowance rate",
+        0.05,
+        "0.0%"
+       ],
+       [
+        "Allowance brought forward (RM)",
+        900,
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "a) Calculate the change in the allowance for irrecoverable debts. (2)"
+     },
+     {
+      "k": "calc",
+      "rows": [
+       [
+        "Allowance required at 31 December 2025 (RM)",
+        "X18",
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Increase in the allowance (RM)",
+        "X19",
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "b) Prepare the journal entries. (8)"
+     },
+     {
+      "k": "journal",
+      "rows": [
+       [
+        "y",
+        "2025",
+        true
+       ],
+       [
+        "d",
+        "Apr 30",
+        "Irrecoverable debts",
+        "U24"
+       ],
+       [
+        "c",
+        "",
+        "Ahmad",
+        "AA25"
+       ],
+       [
+        "n",
+        "Being debt written off: customer declared bankrupt"
+       ],
+       [
+        "d",
+        "Jul 15",
+        "Faridah",
+        "U27"
+       ],
+       [
+        "c",
+        "",
+        "Irrecoverable debts recovered",
+        "AA28"
+       ],
+       [
+        "n",
+        "Being debt written off in 2024 reinstated"
+       ],
+       [
+        "d",
+        "Jul 15",
+        "Bank",
+        "U30"
+       ],
+       [
+        "c",
+        "",
+        "Faridah",
+        "AA31"
+       ],
+       [
+        "n",
+        "Being cheque received from Faridah"
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Income statement",
+        "U33"
+       ],
+       [
+        "c",
+        "",
+        "Allowance for irrecoverable debts",
+        "AA34"
+       ],
+       [
+        "n",
+        "Being increase in the allowance for irrecoverable debts"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sheet": "QJ8.1 Ans",
+    "mode": "a",
+    "qid": "J8.1",
+    "level": 2,
+    "section": "journals",
+    "label": "Journal practice, Level 2: Easy to medium",
+    "blocks": [
+     {
+      "k": "title",
+      "text": "Question J8.1 (Journal practice, Level 2: Easy to medium): Answers"
+     },
+     {
+      "k": "text",
+      "text": "Mei Ling's year ends on 31 December 2025. Prepare journal entries for the following. Narratives are required.",
+      "style": "p"
+     },
+     {
+      "k": "text",
+      "text": "30 April 2025: Ahmad, who owes RM480, is declared bankrupt. The debt is written off.",
+      "style": "bullet"
+     },
+     {
+      "k": "text",
+      "text": "15 July 2025: a cheque for RM350 is received from Faridah. Her debt was written off in 2024.",
+      "style": "bullet"
+     },
+     {
+      "k": "text",
+      "text": "31 December 2025: the allowance for irrecoverable debts is to be 5% of trade receivables of RM23,000. The allowance brought forward is RM900.",
+      "style": "bullet"
+     },
+     {
+      "k": "data",
+      "title": "Figures from the question",
+      "md": false,
+      "rows": [
+       [
+        "Ahmad's debt (RM)",
+        480,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Received from Faridah (RM)",
+        350,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Trade receivables at 31 December 2025 (RM)",
+        23000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Allowance rate",
+        0.05,
+        "0.0%"
+       ],
+       [
+        "Allowance brought forward (RM)",
+        900,
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "a) Calculate the change in the allowance for irrecoverable debts. (2)"
+     },
+     {
+      "k": "calc",
+      "rows": [
+       [
+        "Allowance required at 31 December 2025 (RM)",
+        "X18",
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Increase in the allowance (RM)",
+        "X19",
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "b) Prepare the journal entries. (8)"
+     },
+     {
+      "k": "journal",
+      "rows": [
+       [
+        "y",
+        "2025",
+        true
+       ],
+       [
+        "d",
+        "Apr 30",
+        "Irrecoverable debts",
+        "U24"
+       ],
+       [
+        "c",
+        "",
+        "Ahmad",
+        "AA25"
+       ],
+       [
+        "n",
+        "Being debt written off: customer declared bankrupt"
+       ],
+       [
+        "d",
+        "Jul 15",
+        "Faridah",
+        "U27"
+       ],
+       [
+        "c",
+        "",
+        "Irrecoverable debts recovered",
+        "AA28"
+       ],
+       [
+        "n",
+        "Being debt written off in 2024 reinstated"
+       ],
+       [
+        "d",
+        "Jul 15",
+        "Bank",
+        "U30"
+       ],
+       [
+        "c",
+        "",
+        "Faridah",
+        "AA31"
+       ],
+       [
+        "n",
+        "Being cheque received from Faridah"
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Income statement",
+        "U33"
+       ],
+       [
+        "c",
+        "",
+        "Allowance for irrecoverable debts",
+        "AA34"
+       ],
+       [
+        "n",
+        "Being increase in the allowance for irrecoverable debts"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sheet": "QJ8.2",
+    "mode": "q",
+    "qid": "J8.2",
+    "level": 3,
+    "section": "journals",
+    "label": "Journal practice, Level 3: Medium",
+    "blocks": [
+     {
+      "k": "title",
+      "text": "Question J8.2 (Journal practice, Level 3: Medium)"
+     },
+     {
+      "k": "text",
+      "text": "Chong's year ends on 30 June 2026. All entries are made on 30 June 2026.",
+      "style": "p"
+     },
+     {
+      "k": "text",
+      "text": "Trade receivables are RM32,000 before writing off a debt of RM1,500 owed by Chen, who has disappeared.",
+      "style": "bullet"
+     },
+     {
+      "k": "text",
+      "text": "The allowance for irrecoverable debts brought forward is RM2,000. It is to be 5% of the remaining trade receivables.",
+      "style": "bullet"
+     },
+     {
+      "k": "text",
+      "text": "Irrecoverable debts of RM600 were written off earlier in the year. Together with Chen's debt, they are transferred to the income statement.",
+      "style": "bullet"
+     },
+     {
+      "k": "text",
+      "text": "Irrecoverable debts recovered during the year total RM300. This is transferred to the income statement.",
+      "style": "bullet"
+     },
+     {
+      "k": "data",
+      "title": "Figures from the question",
+      "md": false,
+      "rows": [
+       [
+        "Trade receivables before writing off Chen (RM)",
+        32000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Chen's debt (RM)",
+        1500,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Allowance brought forward (RM)",
+        2000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Allowance rate",
+        0.05,
+        "0.0%"
+       ],
+       [
+        "Irrecoverable debts written off earlier (RM)",
+        600,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Debts recovered (RM)",
+        300,
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "a) Calculate the new allowance and the change in the allowance. (3)"
+     },
+     {
+      "k": "calc",
+      "rows": [
+       [
+        "Allowance required (RM)",
+        "X20",
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Decrease in the allowance (RM)",
+        "X21",
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "b) Prepare the journal entries. (8)"
+     },
+     {
+      "k": "journal",
+      "rows": [
+       [
+        "y",
+        "2026",
+        true
+       ],
+       [
+        "d",
+        "Jun 30",
+        "Irrecoverable debts",
+        "U26"
+       ],
+       [
+        "c",
+        "",
+        "Chen",
+        "AA27"
+       ],
+       [
+        "n",
+        "Being debt written off: customer cannot be found"
+       ],
+       [
+        "d",
+        "Jun 30",
+        "Allowance for irrecoverable debts",
+        "U29"
+       ],
+       [
+        "c",
+        "",
+        "Income statement",
+        "AA30"
+       ],
+       [
+        "n",
+        "Being decrease in the allowance for irrecoverable debts"
+       ],
+       [
+        "d",
+        "Jun 30",
+        "Income statement",
+        "U32"
+       ],
+       [
+        "c",
+        "",
+        "Irrecoverable debts",
+        "AA33"
+       ],
+       [
+        "n",
+        "Being irrecoverable debts for the year transferred"
+       ],
+       [
+        "d",
+        "Jun 30",
+        "Irrecoverable debts recovered",
+        "U35"
+       ],
+       [
+        "c",
+        "",
+        "Income statement",
+        "AA36"
+       ],
+       [
+        "n",
+        "Being debts recovered transferred"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sheet": "QJ8.2 Ans",
+    "mode": "a",
+    "qid": "J8.2",
+    "level": 3,
+    "section": "journals",
+    "label": "Journal practice, Level 3: Medium",
+    "blocks": [
+     {
+      "k": "title",
+      "text": "Question J8.2 (Journal practice, Level 3: Medium): Answers"
+     },
+     {
+      "k": "text",
+      "text": "Chong's year ends on 30 June 2026. All entries are made on 30 June 2026.",
+      "style": "p"
+     },
+     {
+      "k": "text",
+      "text": "Trade receivables are RM32,000 before writing off a debt of RM1,500 owed by Chen, who has disappeared.",
+      "style": "bullet"
+     },
+     {
+      "k": "text",
+      "text": "The allowance for irrecoverable debts brought forward is RM2,000. It is to be 5% of the remaining trade receivables.",
+      "style": "bullet"
+     },
+     {
+      "k": "text",
+      "text": "Irrecoverable debts of RM600 were written off earlier in the year. Together with Chen's debt, they are transferred to the income statement.",
+      "style": "bullet"
+     },
+     {
+      "k": "text",
+      "text": "Irrecoverable debts recovered during the year total RM300. This is transferred to the income statement.",
+      "style": "bullet"
+     },
+     {
+      "k": "data",
+      "title": "Figures from the question",
+      "md": false,
+      "rows": [
+       [
+        "Trade receivables before writing off Chen (RM)",
+        32000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Chen's debt (RM)",
+        1500,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Allowance brought forward (RM)",
+        2000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Allowance rate",
+        0.05,
+        "0.0%"
+       ],
+       [
+        "Irrecoverable debts written off earlier (RM)",
+        600,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Debts recovered (RM)",
+        300,
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "a) Calculate the new allowance and the change in the allowance. (3)"
+     },
+     {
+      "k": "calc",
+      "rows": [
+       [
+        "Allowance required (RM)",
+        "X20",
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Decrease in the allowance (RM)",
+        "X21",
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "b) Prepare the journal entries. (8)"
+     },
+     {
+      "k": "journal",
+      "rows": [
+       [
+        "y",
+        "2026",
+        true
+       ],
+       [
+        "d",
+        "Jun 30",
+        "Irrecoverable debts",
+        "U26"
+       ],
+       [
+        "c",
+        "",
+        "Chen",
+        "AA27"
+       ],
+       [
+        "n",
+        "Being debt written off: customer cannot be found"
+       ],
+       [
+        "d",
+        "Jun 30",
+        "Allowance for irrecoverable debts",
+        "U29"
+       ],
+       [
+        "c",
+        "",
+        "Income statement",
+        "AA30"
+       ],
+       [
+        "n",
+        "Being decrease in the allowance for irrecoverable debts"
+       ],
+       [
+        "d",
+        "Jun 30",
+        "Income statement",
+        "U32"
+       ],
+       [
+        "c",
+        "",
+        "Irrecoverable debts",
+        "AA33"
+       ],
+       [
+        "n",
+        "Being irrecoverable debts for the year transferred"
+       ],
+       [
+        "d",
+        "Jun 30",
+        "Irrecoverable debts recovered",
+        "U35"
+       ],
+       [
+        "c",
+        "",
+        "Income statement",
+        "AA36"
+       ],
+       [
+        "n",
+        "Being debts recovered transferred"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sheet": "P8.11",
+    "mode": "p",
+    "qid": "8.11",
+    "level": 0,
+    "section": "practice",
+    "label": "practice",
+    "blocks": [
+     {
+      "k": "title",
+      "text": "Practice with new numbers: Question 8.11"
+     },
+     {
+      "k": "data",
+      "title": "Figures from the question",
+      "md": true,
+      "rows": [
+       [
+        "#",
+        "2023",
+        null
+       ],
+       [
+        "Trade receivables before write-offs (RM)",
+        40000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Debts to be written off (RM)",
+        0,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "#",
+        "2024",
+        null
+       ],
+       [
+        "Trade receivables before write-offs (RM)",
+        50000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Debts to be written off (RM)",
+        0,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "#",
+        "2025",
+        null
+       ],
+       [
+        "Trade receivables before write-offs (RM)",
+        36000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Debts to be written off (RM)",
+        1000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "#",
+        "All years",
+        null
+       ],
+       [
+        "Allowance rate",
+        0.03,
+        "0.0%"
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "a) Calculate the allowance required at the end of each year. (3)"
+     },
+     {
+      "k": "calc",
+      "rows": [
+       [
+        "Allowance at 31 December 2023 (RM)",
+        "X21",
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Allowance at 31 December 2024 (RM)",
+        "X22",
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Allowance at 31 December 2025 (RM)",
+        "X23",
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "b) State the amount charged or credited to the Statement of Profit or Loss each year, and whether it is an expense or income. (3)"
+     },
+     {
+      "k": "calc",
+      "rows": [
+       [
+        "Amount to the SPL in 2023 (RM)",
+        "X26",
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Amount to the SPL in 2024 (RM)",
+        "X27",
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Amount to the SPL in 2025 (RM)",
+        "X28",
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "choice",
+      "rows": [
+       [
+        "2023: expense or income?",
+        "T29",
+        null
+       ],
+       [
+        "2024: expense or income?",
+        "T30",
+        null
+       ],
+       [
+        "2025: expense or income?",
+        "T31",
+        null
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "c) Prepare the Allowance for irrecoverable debts account for the three years. (6)"
+     },
+     {
+      "k": "ledger",
+      "name": "Allowance for Irrecoverable Debts Account",
+      "rows": [
+       {
+        "dr": [
+         "@Y",
+         "2023",
+         true
+        ],
+        "cr": [
+         "@Y",
+         "2023",
+         true
+        ]
+       },
+       {
+        "dr": [
+         "Dec 31",
+         "Balance c/d",
+         "",
+         "M37"
+        ],
+        "cr": [
+         "Dec 31",
+         "Income statement",
+         "GJ1",
+         "AC37"
+        ]
+       },
+       {
+        "total": true,
+        "dr": "M38",
+        "cr": "AC38"
+       },
+       {
+        "dr": [
+         "@Y",
+         "2024",
+         false
+        ],
+        "cr": [
+         "@Y",
+         "2024",
+         false
+        ]
+       },
+       {
+        "dr": [
+         "Dec 31",
+         "Balance c/d",
+         "",
+         "M40"
+        ],
+        "cr": [
+         "Jan 1",
+         "Balance b/d",
+         "",
+         "AC40"
+        ]
+       },
+       {
+        "dr": null,
+        "cr": [
+         "Dec 31",
+         "Income statement",
+         "GJ2",
+         "AC41"
+        ]
+       },
+       {
+        "total": true,
+        "dr": "M42",
+        "cr": "AC42"
+       },
+       {
+        "dr": [
+         "@Y",
+         "2025",
+         false
+        ],
+        "cr": [
+         "@Y",
+         "2025",
+         false
+        ]
+       },
+       {
+        "dr": [
+         "Dec 31",
+         "Income statement",
+         "GJ3",
+         "M44"
+        ],
+        "cr": [
+         "Jan 1",
+         "Balance b/d",
+         "",
+         "AC44"
+        ]
+       },
+       {
+        "dr": [
+         "Dec 31",
+         "Balance c/d",
+         "",
+         "M45"
+        ],
+        "cr": null
+       },
+       {
+        "total": true,
+        "dr": "M46",
+        "cr": "AC46"
+       },
+       {
+        "dr": null,
+        "cr": [
+         "@Y",
+         "2026",
+         false
+        ]
+       },
+       {
+        "dr": null,
+        "cr": [
+         "Jan 1",
+         "Balance b/d",
+         "",
+         "AC48"
+        ]
+       }
+      ]
+     },
+     {
+      "k": "part",
+      "text": "d) Show the Statement of Financial Position extract for trade receivables at 31 December 2025. (2)"
+     },
+     {
+      "k": "statement",
+      "kind": "sofp",
+      "heading": [
+       "Statement of Financial Position (extract) at 31 December 2025"
+      ],
+      "rows": [
+       [
+        "",
+        "Current assets",
+        {},
+        "h"
+       ],
+       [
+        "",
+        "Trade receivables",
+        {
+         "1": [
+          "R55",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "Less:",
+        "Allowance for irrecoverable debts",
+        {
+         "1": [
+          "R56",
+          "under"
+         ],
+         "2": [
+          "W56",
+          null
+         ]
+        },
+        ""
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sheet": "P8.11 Ans",
+    "mode": "pa",
+    "qid": "8.11",
+    "level": 0,
+    "section": "practice",
+    "label": "practice",
+    "blocks": [
+     {
+      "k": "title",
+      "text": "Practice with new numbers: Question 8.11: Answers"
+     },
+     {
+      "k": "data",
+      "title": "Figures from the question",
+      "md": true,
+      "rows": [
+       [
+        "#",
+        "2023",
+        null
+       ],
+       [
+        "Trade receivables before write-offs (RM)",
+        40000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Debts to be written off (RM)",
+        0,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "#",
+        "2024",
+        null
+       ],
+       [
+        "Trade receivables before write-offs (RM)",
+        50000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Debts to be written off (RM)",
+        0,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "#",
+        "2025",
+        null
+       ],
+       [
+        "Trade receivables before write-offs (RM)",
+        36000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Debts to be written off (RM)",
+        1000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "#",
+        "All years",
+        null
+       ],
+       [
+        "Allowance rate",
+        0.03,
+        "0.0%"
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "a) Calculate the allowance required at the end of each year. (3)"
+     },
+     {
+      "k": "calc",
+      "rows": [
+       [
+        "Allowance at 31 December 2023 (RM)",
+        "X21",
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Allowance at 31 December 2024 (RM)",
+        "X22",
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Allowance at 31 December 2025 (RM)",
+        "X23",
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "b) State the amount charged or credited to the Statement of Profit or Loss each year, and whether it is an expense or income. (3)"
+     },
+     {
+      "k": "calc",
+      "rows": [
+       [
+        "Amount to the SPL in 2023 (RM)",
+        "X26",
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Amount to the SPL in 2024 (RM)",
+        "X27",
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Amount to the SPL in 2025 (RM)",
+        "X28",
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "choice",
+      "rows": [
+       [
+        "2023: expense or income?",
+        "T29",
+        null
+       ],
+       [
+        "2024: expense or income?",
+        "T30",
+        null
+       ],
+       [
+        "2025: expense or income?",
+        "T31",
+        null
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "c) Prepare the Allowance for irrecoverable debts account for the three years. (6)"
+     },
+     {
+      "k": "ledger",
+      "name": "Allowance for Irrecoverable Debts Account",
+      "rows": [
+       {
+        "dr": [
+         "@Y",
+         "2023",
+         true
+        ],
+        "cr": [
+         "@Y",
+         "2023",
+         true
+        ]
+       },
+       {
+        "dr": [
+         "Dec 31",
+         "Balance c/d",
+         "",
+         "M37"
+        ],
+        "cr": [
+         "Dec 31",
+         "Income statement",
+         "GJ1",
+         "AC37"
+        ]
+       },
+       {
+        "total": true,
+        "dr": "M38",
+        "cr": "AC38"
+       },
+       {
+        "dr": [
+         "@Y",
+         "2024",
+         false
+        ],
+        "cr": [
+         "@Y",
+         "2024",
+         false
+        ]
+       },
+       {
+        "dr": [
+         "Dec 31",
+         "Balance c/d",
+         "",
+         "M40"
+        ],
+        "cr": [
+         "Jan 1",
+         "Balance b/d",
+         "",
+         "AC40"
+        ]
+       },
+       {
+        "dr": null,
+        "cr": [
+         "Dec 31",
+         "Income statement",
+         "GJ2",
+         "AC41"
+        ]
+       },
+       {
+        "total": true,
+        "dr": "M42",
+        "cr": "AC42"
+       },
+       {
+        "dr": [
+         "@Y",
+         "2025",
+         false
+        ],
+        "cr": [
+         "@Y",
+         "2025",
+         false
+        ]
+       },
+       {
+        "dr": [
+         "Dec 31",
+         "Income statement",
+         "GJ3",
+         "M44"
+        ],
+        "cr": [
+         "Jan 1",
+         "Balance b/d",
+         "",
+         "AC44"
+        ]
+       },
+       {
+        "dr": [
+         "Dec 31",
+         "Balance c/d",
+         "",
+         "M45"
+        ],
+        "cr": null
+       },
+       {
+        "total": true,
+        "dr": "M46",
+        "cr": "AC46"
+       },
+       {
+        "dr": null,
+        "cr": [
+         "@Y",
+         "2026",
+         false
+        ]
+       },
+       {
+        "dr": null,
+        "cr": [
+         "Jan 1",
+         "Balance b/d",
+         "",
+         "AC48"
+        ]
+       }
+      ]
+     },
+     {
+      "k": "part",
+      "text": "d) Show the Statement of Financial Position extract for trade receivables at 31 December 2025. (2)"
+     },
+     {
+      "k": "statement",
+      "kind": "sofp",
+      "heading": [
+       "Statement of Financial Position (extract) at 31 December 2025"
+      ],
+      "rows": [
+       [
+        "",
+        "Current assets",
+        {},
+        "h"
+       ],
+       [
+        "",
+        "Trade receivables",
+        {
+         "1": [
+          "R55",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "Less:",
+        "Allowance for irrecoverable debts",
+        {
+         "1": [
+          "R56",
+          "under"
+         ],
+         "2": [
+          "W56",
+          null
+         ]
+        },
+        ""
+       ]
+      ]
      }
     ]
    }
@@ -4046,6 +5392,8 @@
     "mode": "q",
     "qid": "10.9",
     "level": 1,
+    "section": "structured",
+    "label": "Level 1: Easy",
     "blocks": [
      {
       "k": "title",
@@ -4210,6 +5558,8 @@
     "mode": "a",
     "qid": "10.9",
     "level": 1,
+    "section": "structured",
+    "label": "Level 1: Easy",
     "blocks": [
      {
       "k": "title",
@@ -4374,6 +5724,8 @@
     "mode": "q",
     "qid": "10.10",
     "level": 2,
+    "section": "structured",
+    "label": "Level 2: Easy to medium",
     "blocks": [
      {
       "k": "title",
@@ -4490,6 +5842,8 @@
     "mode": "a",
     "qid": "10.10",
     "level": 2,
+    "section": "structured",
+    "label": "Level 2: Easy to medium",
     "blocks": [
      {
       "k": "title",
@@ -4606,6 +5960,8 @@
     "mode": "q",
     "qid": "10.11",
     "level": 3,
+    "section": "structured",
+    "label": "Level 3: Medium",
     "blocks": [
      {
       "k": "title",
@@ -4755,6 +6111,8 @@
     "mode": "a",
     "qid": "10.11",
     "level": 3,
+    "section": "structured",
+    "label": "Level 3: Medium",
     "blocks": [
      {
       "k": "title",
@@ -4904,6 +6262,8 @@
     "mode": "q",
     "qid": "10.12",
     "level": 4,
+    "section": "structured",
+    "label": "Level 4: Hard",
     "blocks": [
      {
       "k": "title",
@@ -5121,6 +6481,8 @@
     "mode": "a",
     "qid": "10.12",
     "level": 4,
+    "section": "structured",
+    "label": "Level 4: Hard",
     "blocks": [
      {
       "k": "title",
@@ -5338,6 +6700,8 @@
     "mode": "q",
     "qid": "10.13",
     "level": 5,
+    "section": "structured",
+    "label": "Level 5: Challenge",
     "blocks": [
      {
       "k": "title",
@@ -5679,6 +7043,8 @@
     "mode": "a",
     "qid": "10.13",
     "level": 5,
+    "section": "structured",
+    "label": "Level 5: Challenge",
     "blocks": [
      {
       "k": "title",
@@ -6012,6 +7378,1004 @@
      {
       "k": "written",
       "text": "The consistency concept says Kwame should use the same depreciation method every year.\nHe may change only if the new method gives a fairer view of how the vans lose value, and he must explain the change.\nChanging just to make profit look higher would mislead users and stop them comparing this year with earlier years. He should not change."
+     }
+    ]
+   },
+   {
+    "sheet": "QJ10.1",
+    "mode": "q",
+    "qid": "J10.1",
+    "level": 2,
+    "section": "journals",
+    "label": "Journal practice, Level 2: Easy to medium",
+    "blocks": [
+     {
+      "k": "title",
+      "text": "Question J10.1 (Journal practice, Level 2: Easy to medium)"
+     },
+     {
+      "k": "text",
+      "text": "Rahman's year ends on 31 December 2025.",
+      "style": "p"
+     },
+     {
+      "k": "text",
+      "text": "1 January 2025: bought a machine for RM36,000 by cheque. It will last 5 years with a residual value of RM6,000. Straight line method.",
+      "style": "bullet"
+     },
+     {
+      "k": "text",
+      "text": "Motor vans cost RM50,000. Accumulated depreciation at 1 January 2025 was RM18,000. Vans are depreciated at 20% per year, reducing balance.",
+      "style": "bullet"
+     },
+     {
+      "k": "data",
+      "title": "Figures from the question",
+      "md": false,
+      "rows": [
+       [
+        "Cost of machine (RM)",
+        36000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Residual value of machine (RM)",
+        6000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Useful life of machine (years)",
+        5,
+        "0"
+       ],
+       [
+        "Cost of motor vans (RM)",
+        50000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Accumulated depreciation on vans at 1 January 2025 (RM)",
+        18000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Reducing balance rate for vans",
+        0.2,
+        "0.0%"
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "a) Calculate the depreciation for 2025 on the machine and on the motor vans. (3)"
+     },
+     {
+      "k": "calc",
+      "rows": [
+       [
+        "Depreciation of machine (RM)",
+        "X18",
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Depreciation of motor vans (RM)",
+        "X19",
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "b) Prepare the journal entries for the purchase and for the depreciation. (6)"
+     },
+     {
+      "k": "journal",
+      "rows": [
+       [
+        "y",
+        "2025",
+        true
+       ],
+       [
+        "d",
+        "Jan 1",
+        "Machinery",
+        "U24"
+       ],
+       [
+        "c",
+        "",
+        "Bank",
+        "AA25"
+       ],
+       [
+        "n",
+        "Being purchase of a machine by cheque"
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Income statement",
+        "U27"
+       ],
+       [
+        "c",
+        "",
+        "Provision for depreciation of machinery",
+        "AA28"
+       ],
+       [
+        "n",
+        "Being depreciation of machinery for the year"
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Income statement",
+        "U30"
+       ],
+       [
+        "c",
+        "",
+        "Provision for depreciation of motor vans",
+        "AA31"
+       ],
+       [
+        "n",
+        "Being depreciation of motor vans for the year"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sheet": "QJ10.1 Ans",
+    "mode": "a",
+    "qid": "J10.1",
+    "level": 2,
+    "section": "journals",
+    "label": "Journal practice, Level 2: Easy to medium",
+    "blocks": [
+     {
+      "k": "title",
+      "text": "Question J10.1 (Journal practice, Level 2: Easy to medium): Answers"
+     },
+     {
+      "k": "text",
+      "text": "Rahman's year ends on 31 December 2025.",
+      "style": "p"
+     },
+     {
+      "k": "text",
+      "text": "1 January 2025: bought a machine for RM36,000 by cheque. It will last 5 years with a residual value of RM6,000. Straight line method.",
+      "style": "bullet"
+     },
+     {
+      "k": "text",
+      "text": "Motor vans cost RM50,000. Accumulated depreciation at 1 January 2025 was RM18,000. Vans are depreciated at 20% per year, reducing balance.",
+      "style": "bullet"
+     },
+     {
+      "k": "data",
+      "title": "Figures from the question",
+      "md": false,
+      "rows": [
+       [
+        "Cost of machine (RM)",
+        36000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Residual value of machine (RM)",
+        6000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Useful life of machine (years)",
+        5,
+        "0"
+       ],
+       [
+        "Cost of motor vans (RM)",
+        50000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Accumulated depreciation on vans at 1 January 2025 (RM)",
+        18000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Reducing balance rate for vans",
+        0.2,
+        "0.0%"
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "a) Calculate the depreciation for 2025 on the machine and on the motor vans. (3)"
+     },
+     {
+      "k": "calc",
+      "rows": [
+       [
+        "Depreciation of machine (RM)",
+        "X18",
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Depreciation of motor vans (RM)",
+        "X19",
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "b) Prepare the journal entries for the purchase and for the depreciation. (6)"
+     },
+     {
+      "k": "journal",
+      "rows": [
+       [
+        "y",
+        "2025",
+        true
+       ],
+       [
+        "d",
+        "Jan 1",
+        "Machinery",
+        "U24"
+       ],
+       [
+        "c",
+        "",
+        "Bank",
+        "AA25"
+       ],
+       [
+        "n",
+        "Being purchase of a machine by cheque"
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Income statement",
+        "U27"
+       ],
+       [
+        "c",
+        "",
+        "Provision for depreciation of machinery",
+        "AA28"
+       ],
+       [
+        "n",
+        "Being depreciation of machinery for the year"
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Income statement",
+        "U30"
+       ],
+       [
+        "c",
+        "",
+        "Provision for depreciation of motor vans",
+        "AA31"
+       ],
+       [
+        "n",
+        "Being depreciation of motor vans for the year"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sheet": "QJ10.2",
+    "mode": "q",
+    "qid": "J10.2",
+    "level": 3,
+    "section": "journals",
+    "label": "Journal practice, Level 3: Medium",
+    "blocks": [
+     {
+      "k": "title",
+      "text": "Question J10.2 (Journal practice, Level 3: Medium)"
+     },
+     {
+      "k": "text",
+      "text": "On 1 October 2025 Rahman sold equipment for RM7,500, paid into the bank. The equipment cost RM24,000. Accumulated depreciation to the date of sale was RM15,000. The year ends on 31 December 2025.",
+      "style": "p"
+     },
+     {
+      "k": "data",
+      "title": "Figures from the question",
+      "md": false,
+      "rows": [
+       [
+        "Cost of equipment (RM)",
+        24000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Accumulated depreciation to date of sale (RM)",
+        15000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Sale proceeds (RM)",
+        7500,
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "a) Calculate the carrying amount and the loss on disposal. (2)"
+     },
+     {
+      "k": "calc",
+      "rows": [
+       [
+        "Carrying amount at the date of sale (RM)",
+        "X13",
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Loss on disposal (RM)",
+        "X14",
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "b) Prepare the journal entries to record the disposal. (8)"
+     },
+     {
+      "k": "journal",
+      "rows": [
+       [
+        "y",
+        "2025",
+        true
+       ],
+       [
+        "d",
+        "Oct 1",
+        "Disposal",
+        "U19"
+       ],
+       [
+        "c",
+        "",
+        "Equipment",
+        "AA20"
+       ],
+       [
+        "n",
+        "Being cost of equipment sold transferred"
+       ],
+       [
+        "d",
+        "Oct 1",
+        "Provision for depreciation of equipment",
+        "U22"
+       ],
+       [
+        "c",
+        "",
+        "Disposal",
+        "AA23"
+       ],
+       [
+        "n",
+        "Being accumulated depreciation on equipment sold transferred"
+       ],
+       [
+        "d",
+        "Oct 1",
+        "Bank",
+        "U25"
+       ],
+       [
+        "c",
+        "",
+        "Disposal",
+        "AA26"
+       ],
+       [
+        "n",
+        "Being proceeds from the sale of equipment"
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Income statement",
+        "U28"
+       ],
+       [
+        "c",
+        "",
+        "Disposal",
+        "AA29"
+       ],
+       [
+        "n",
+        "Being loss on disposal transferred"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sheet": "QJ10.2 Ans",
+    "mode": "a",
+    "qid": "J10.2",
+    "level": 3,
+    "section": "journals",
+    "label": "Journal practice, Level 3: Medium",
+    "blocks": [
+     {
+      "k": "title",
+      "text": "Question J10.2 (Journal practice, Level 3: Medium): Answers"
+     },
+     {
+      "k": "text",
+      "text": "On 1 October 2025 Rahman sold equipment for RM7,500, paid into the bank. The equipment cost RM24,000. Accumulated depreciation to the date of sale was RM15,000. The year ends on 31 December 2025.",
+      "style": "p"
+     },
+     {
+      "k": "data",
+      "title": "Figures from the question",
+      "md": false,
+      "rows": [
+       [
+        "Cost of equipment (RM)",
+        24000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Accumulated depreciation to date of sale (RM)",
+        15000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Sale proceeds (RM)",
+        7500,
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "a) Calculate the carrying amount and the loss on disposal. (2)"
+     },
+     {
+      "k": "calc",
+      "rows": [
+       [
+        "Carrying amount at the date of sale (RM)",
+        "X13",
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Loss on disposal (RM)",
+        "X14",
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "b) Prepare the journal entries to record the disposal. (8)"
+     },
+     {
+      "k": "journal",
+      "rows": [
+       [
+        "y",
+        "2025",
+        true
+       ],
+       [
+        "d",
+        "Oct 1",
+        "Disposal",
+        "U19"
+       ],
+       [
+        "c",
+        "",
+        "Equipment",
+        "AA20"
+       ],
+       [
+        "n",
+        "Being cost of equipment sold transferred"
+       ],
+       [
+        "d",
+        "Oct 1",
+        "Provision for depreciation of equipment",
+        "U22"
+       ],
+       [
+        "c",
+        "",
+        "Disposal",
+        "AA23"
+       ],
+       [
+        "n",
+        "Being accumulated depreciation on equipment sold transferred"
+       ],
+       [
+        "d",
+        "Oct 1",
+        "Bank",
+        "U25"
+       ],
+       [
+        "c",
+        "",
+        "Disposal",
+        "AA26"
+       ],
+       [
+        "n",
+        "Being proceeds from the sale of equipment"
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Income statement",
+        "U28"
+       ],
+       [
+        "c",
+        "",
+        "Disposal",
+        "AA29"
+       ],
+       [
+        "n",
+        "Being loss on disposal transferred"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sheet": "P10.12",
+    "mode": "p",
+    "qid": "10.12",
+    "level": 0,
+    "section": "practice",
+    "label": "practice",
+    "blocks": [
+     {
+      "k": "title",
+      "text": "Practice with new numbers: Question 10.12"
+     },
+     {
+      "k": "data",
+      "title": "Figures from the question",
+      "md": false,
+      "rows": [
+       [
+        "Cost of machine (RM)",
+        40000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Reducing balance rate",
+        0.25,
+        "0.0%"
+       ],
+       [
+        "Sale proceeds on 1 January 2026 (RM)",
+        15000,
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "a) Calculate the depreciation for 2023, 2024 and 2025. (3)"
+     },
+     {
+      "k": "table",
+      "headers": [
+       "Year",
+       "Carrying amount at start (RM)",
+       "Depreciation (RM)",
+       "Accumulated depreciation (RM)",
+       "Carrying amount at end (RM)"
+      ],
+      "rows": [
+       [
+        "2023",
+        [
+         [
+          "v",
+          "E14",
+          "#,##0;(#,##0);\"-\""
+         ],
+         [
+          "v",
+          "L14",
+          "#,##0;(#,##0);\"-\""
+         ],
+         [
+          "v",
+          "S14",
+          "#,##0;(#,##0);\"-\""
+         ],
+         [
+          "v",
+          "Z14",
+          "#,##0;(#,##0);\"-\""
+         ]
+        ]
+       ],
+       [
+        "2024",
+        [
+         [
+          "v",
+          "E15",
+          "#,##0;(#,##0);\"-\""
+         ],
+         [
+          "v",
+          "L15",
+          "#,##0;(#,##0);\"-\""
+         ],
+         [
+          "v",
+          "S15",
+          "#,##0;(#,##0);\"-\""
+         ],
+         [
+          "v",
+          "Z15",
+          "#,##0;(#,##0);\"-\""
+         ]
+        ]
+       ],
+       [
+        "2025",
+        [
+         [
+          "v",
+          "E16",
+          "#,##0;(#,##0);\"-\""
+         ],
+         [
+          "v",
+          "L16",
+          "#,##0;(#,##0);\"-\""
+         ],
+         [
+          "v",
+          "S16",
+          "#,##0;(#,##0);\"-\""
+         ],
+         [
+          "v",
+          "Z16",
+          "#,##0;(#,##0);\"-\""
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "b) Show the carrying amount of the machine at 31 December 2025. (1)"
+     },
+     {
+      "k": "calc",
+      "rows": [
+       [
+        "Carrying amount at 31 December 2025 (RM)",
+        "X19",
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "c) Prepare the Machinery disposal account. (5)"
+     },
+     {
+      "k": "ledger",
+      "name": "Machinery Disposal Account",
+      "rows": [
+       {
+        "dr": [
+         "@Y",
+         "2026",
+         true
+        ],
+        "cr": [
+         "@Y",
+         "2026",
+         true
+        ]
+       },
+       {
+        "dr": [
+         "Jan 1",
+         "Machinery",
+         "GJ1",
+         "M25"
+        ],
+        "cr": [
+         "Jan 1",
+         "Provision for depreciation",
+         "GJ1",
+         "AC25"
+        ]
+       },
+       {
+        "dr": null,
+        "cr": [
+         "Jan 1",
+         "Bank",
+         "CB1",
+         "AC26"
+        ]
+       },
+       {
+        "dr": null,
+        "cr": [
+         "Dec 31",
+         "Income statement (loss on disposal)",
+         "GJ2",
+         "AC27"
+        ]
+       },
+       {
+        "total": true,
+        "dr": "M28",
+        "cr": "AC28"
+       }
+      ]
+     },
+     {
+      "k": "part",
+      "text": "d) State where the result of the disposal appears in the financial statements. (1)"
+     },
+     {
+      "k": "choice",
+      "rows": [
+       [
+        "The loss on disposal is shown as",
+        "T31",
+        null
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sheet": "P10.12 Ans",
+    "mode": "pa",
+    "qid": "10.12",
+    "level": 0,
+    "section": "practice",
+    "label": "practice",
+    "blocks": [
+     {
+      "k": "title",
+      "text": "Practice with new numbers: Question 10.12: Answers"
+     },
+     {
+      "k": "data",
+      "title": "Figures from the question",
+      "md": false,
+      "rows": [
+       [
+        "Cost of machine (RM)",
+        40000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Reducing balance rate",
+        0.25,
+        "0.0%"
+       ],
+       [
+        "Sale proceeds on 1 January 2026 (RM)",
+        15000,
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "a) Calculate the depreciation for 2023, 2024 and 2025. (3)"
+     },
+     {
+      "k": "table",
+      "headers": [
+       "Year",
+       "Carrying amount at start (RM)",
+       "Depreciation (RM)",
+       "Accumulated depreciation (RM)",
+       "Carrying amount at end (RM)"
+      ],
+      "rows": [
+       [
+        "2023",
+        [
+         [
+          "v",
+          "E14",
+          "#,##0;(#,##0);\"-\""
+         ],
+         [
+          "v",
+          "L14",
+          "#,##0;(#,##0);\"-\""
+         ],
+         [
+          "v",
+          "S14",
+          "#,##0;(#,##0);\"-\""
+         ],
+         [
+          "v",
+          "Z14",
+          "#,##0;(#,##0);\"-\""
+         ]
+        ]
+       ],
+       [
+        "2024",
+        [
+         [
+          "v",
+          "E15",
+          "#,##0;(#,##0);\"-\""
+         ],
+         [
+          "v",
+          "L15",
+          "#,##0;(#,##0);\"-\""
+         ],
+         [
+          "v",
+          "S15",
+          "#,##0;(#,##0);\"-\""
+         ],
+         [
+          "v",
+          "Z15",
+          "#,##0;(#,##0);\"-\""
+         ]
+        ]
+       ],
+       [
+        "2025",
+        [
+         [
+          "v",
+          "E16",
+          "#,##0;(#,##0);\"-\""
+         ],
+         [
+          "v",
+          "L16",
+          "#,##0;(#,##0);\"-\""
+         ],
+         [
+          "v",
+          "S16",
+          "#,##0;(#,##0);\"-\""
+         ],
+         [
+          "v",
+          "Z16",
+          "#,##0;(#,##0);\"-\""
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "b) Show the carrying amount of the machine at 31 December 2025. (1)"
+     },
+     {
+      "k": "calc",
+      "rows": [
+       [
+        "Carrying amount at 31 December 2025 (RM)",
+        "X19",
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "c) Prepare the Machinery disposal account. (5)"
+     },
+     {
+      "k": "ledger",
+      "name": "Machinery Disposal Account",
+      "rows": [
+       {
+        "dr": [
+         "@Y",
+         "2026",
+         true
+        ],
+        "cr": [
+         "@Y",
+         "2026",
+         true
+        ]
+       },
+       {
+        "dr": [
+         "Jan 1",
+         "Machinery",
+         "GJ1",
+         "M25"
+        ],
+        "cr": [
+         "Jan 1",
+         "Provision for depreciation",
+         "GJ1",
+         "AC25"
+        ]
+       },
+       {
+        "dr": null,
+        "cr": [
+         "Jan 1",
+         "Bank",
+         "CB1",
+         "AC26"
+        ]
+       },
+       {
+        "dr": null,
+        "cr": [
+         "Dec 31",
+         "Income statement (loss on disposal)",
+         "GJ2",
+         "AC27"
+        ]
+       },
+       {
+        "total": true,
+        "dr": "M28",
+        "cr": "AC28"
+       }
+      ]
+     },
+     {
+      "k": "part",
+      "text": "d) State where the result of the disposal appears in the financial statements. (1)"
+     },
+     {
+      "k": "choice",
+      "rows": [
+       [
+        "The loss on disposal is shown as",
+        "T31",
+        null
+       ]
+      ]
      }
     ]
    }
@@ -6742,6 +9106,8 @@
     "mode": "q",
     "qid": "11.8",
     "level": 1,
+    "section": "structured",
+    "label": "Level 1: Easy",
     "blocks": [
      {
       "k": "title",
@@ -6862,6 +9228,8 @@
     "mode": "a",
     "qid": "11.8",
     "level": 1,
+    "section": "structured",
+    "label": "Level 1: Easy",
     "blocks": [
      {
       "k": "title",
@@ -6982,6 +9350,8 @@
     "mode": "q",
     "qid": "11.9",
     "level": 2,
+    "section": "structured",
+    "label": "Level 2: Easy to medium",
     "blocks": [
      {
       "k": "title",
@@ -7245,6 +9615,8 @@
     "mode": "a",
     "qid": "11.9",
     "level": 2,
+    "section": "structured",
+    "label": "Level 2: Easy to medium",
     "blocks": [
      {
       "k": "title",
@@ -7508,6 +9880,8 @@
     "mode": "q",
     "qid": "11.10",
     "level": 3,
+    "section": "structured",
+    "label": "Level 3: Medium",
     "blocks": [
      {
       "k": "title",
@@ -7723,6 +10097,8 @@
     "mode": "a",
     "qid": "11.10",
     "level": 3,
+    "section": "structured",
+    "label": "Level 3: Medium",
     "blocks": [
      {
       "k": "title",
@@ -7938,6 +10314,8 @@
     "mode": "q",
     "qid": "11.11",
     "level": 4,
+    "section": "structured",
+    "label": "Level 4: Hard",
     "blocks": [
      {
       "k": "title",
@@ -8136,6 +10514,8 @@
     "mode": "a",
     "qid": "11.11",
     "level": 4,
+    "section": "structured",
+    "label": "Level 4: Hard",
     "blocks": [
      {
       "k": "title",
@@ -8334,6 +10714,8 @@
     "mode": "q",
     "qid": "11.12",
     "level": 5,
+    "section": "structured",
+    "label": "Level 5: Challenge",
     "blocks": [
      {
       "k": "title",
@@ -8663,6 +11045,8 @@
     "mode": "a",
     "qid": "11.12",
     "level": 5,
+    "section": "structured",
+    "label": "Level 5: Challenge",
     "blocks": [
      {
       "k": "title",
@@ -8986,6 +11370,964 @@
       ]
      }
     ]
+   },
+   {
+    "sheet": "QJ11.1",
+    "mode": "q",
+    "qid": "J11.1",
+    "level": 2,
+    "section": "journals",
+    "label": "Journal practice, Level 2: Easy to medium",
+    "blocks": [
+     {
+      "k": "title",
+      "text": "Question J11.1 (Journal practice, Level 2: Easy to medium)"
+     },
+     {
+      "k": "text",
+      "text": "Siva's year ends on 31 December 2025. Prepare the year-end adjustment journals.",
+      "style": "p"
+     },
+     {
+      "k": "text",
+      "text": "Electricity of RM420 for December is owing.",
+      "style": "bullet"
+     },
+     {
+      "k": "text",
+      "text": "On 1 October 2025 insurance of RM2,400 was paid for 12 months.",
+      "style": "bullet"
+     },
+     {
+      "k": "text",
+      "text": "Wages of RM650 are owing.",
+      "style": "bullet"
+     },
+     {
+      "k": "data",
+      "title": "Figures from the question",
+      "md": false,
+      "rows": [
+       [
+        "Electricity owing (RM)",
+        420,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Insurance paid on 1 October 2025 (RM)",
+        2400,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Months of insurance used in 2025",
+        3,
+        "0"
+       ],
+       [
+        "Wages owing (RM)",
+        650,
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "a) Calculate the insurance expense for 2025 and the amount prepaid. (2)"
+     },
+     {
+      "k": "calc",
+      "rows": [
+       [
+        "Insurance expense for 2025 (RM)",
+        "X17",
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Insurance prepaid at 31 December 2025 (RM)",
+        "X18",
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "b) Prepare the journal entries. (6)"
+     },
+     {
+      "k": "journal",
+      "rows": [
+       [
+        "y",
+        "2025",
+        true
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Electricity",
+        "U23"
+       ],
+       [
+        "c",
+        "",
+        "Accrued expenses (other payables)",
+        "AA24"
+       ],
+       [
+        "n",
+        "Being electricity owing at the year end"
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Prepaid expenses (other receivables)",
+        "U26"
+       ],
+       [
+        "c",
+        "",
+        "Insurance",
+        "AA27"
+       ],
+       [
+        "n",
+        "Being insurance paid in advance for 2026"
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Wages",
+        "U29"
+       ],
+       [
+        "c",
+        "",
+        "Accrued expenses (other payables)",
+        "AA30"
+       ],
+       [
+        "n",
+        "Being wages owing at the year end"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sheet": "QJ11.1 Ans",
+    "mode": "a",
+    "qid": "J11.1",
+    "level": 2,
+    "section": "journals",
+    "label": "Journal practice, Level 2: Easy to medium",
+    "blocks": [
+     {
+      "k": "title",
+      "text": "Question J11.1 (Journal practice, Level 2: Easy to medium): Answers"
+     },
+     {
+      "k": "text",
+      "text": "Siva's year ends on 31 December 2025. Prepare the year-end adjustment journals.",
+      "style": "p"
+     },
+     {
+      "k": "text",
+      "text": "Electricity of RM420 for December is owing.",
+      "style": "bullet"
+     },
+     {
+      "k": "text",
+      "text": "On 1 October 2025 insurance of RM2,400 was paid for 12 months.",
+      "style": "bullet"
+     },
+     {
+      "k": "text",
+      "text": "Wages of RM650 are owing.",
+      "style": "bullet"
+     },
+     {
+      "k": "data",
+      "title": "Figures from the question",
+      "md": false,
+      "rows": [
+       [
+        "Electricity owing (RM)",
+        420,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Insurance paid on 1 October 2025 (RM)",
+        2400,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Months of insurance used in 2025",
+        3,
+        "0"
+       ],
+       [
+        "Wages owing (RM)",
+        650,
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "a) Calculate the insurance expense for 2025 and the amount prepaid. (2)"
+     },
+     {
+      "k": "calc",
+      "rows": [
+       [
+        "Insurance expense for 2025 (RM)",
+        "X17",
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Insurance prepaid at 31 December 2025 (RM)",
+        "X18",
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "b) Prepare the journal entries. (6)"
+     },
+     {
+      "k": "journal",
+      "rows": [
+       [
+        "y",
+        "2025",
+        true
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Electricity",
+        "U23"
+       ],
+       [
+        "c",
+        "",
+        "Accrued expenses (other payables)",
+        "AA24"
+       ],
+       [
+        "n",
+        "Being electricity owing at the year end"
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Prepaid expenses (other receivables)",
+        "U26"
+       ],
+       [
+        "c",
+        "",
+        "Insurance",
+        "AA27"
+       ],
+       [
+        "n",
+        "Being insurance paid in advance for 2026"
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Wages",
+        "U29"
+       ],
+       [
+        "c",
+        "",
+        "Accrued expenses (other payables)",
+        "AA30"
+       ],
+       [
+        "n",
+        "Being wages owing at the year end"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sheet": "QJ11.2",
+    "mode": "q",
+    "qid": "J11.2",
+    "level": 3,
+    "section": "journals",
+    "label": "Journal practice, Level 3: Medium",
+    "blocks": [
+     {
+      "k": "title",
+      "text": "Question J11.2 (Journal practice, Level 3: Medium)"
+     },
+     {
+      "k": "text",
+      "text": "Siva's year ends on 31 December 2025. Prepare the year-end adjustment journals.",
+      "style": "p"
+     },
+     {
+      "k": "text",
+      "text": "Siva lets a room for RM500 per month. Rent received in 2025 was RM6,500, which includes January 2026.",
+      "style": "bullet"
+     },
+     {
+      "k": "text",
+      "text": "Commission receivable of RM380 for 2025 has not been received.",
+      "style": "bullet"
+     },
+     {
+      "k": "text",
+      "text": "Unused stationery at 31 December 2025 cost RM150.",
+      "style": "bullet"
+     },
+     {
+      "k": "data",
+      "title": "Figures from the question",
+      "md": false,
+      "rows": [
+       [
+        "Rent per month (RM)",
+        500,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Rent received in 2025 (RM)",
+        6500,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Commission receivable due (RM)",
+        380,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Unused stationery (RM)",
+        150,
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "a) Calculate the rent income for 2025 and the rent received in advance. (2)"
+     },
+     {
+      "k": "calc",
+      "rows": [
+       [
+        "Rent income for 2025 (RM)",
+        "X17",
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Rent received in advance (RM)",
+        "X18",
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "b) Prepare the journal entries. (6)"
+     },
+     {
+      "k": "journal",
+      "rows": [
+       [
+        "y",
+        "2025",
+        true
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Rent receivable",
+        "U23"
+       ],
+       [
+        "c",
+        "",
+        "Income received in advance (other payables)",
+        "AA24"
+       ],
+       [
+        "n",
+        "Being rent received in advance for January 2026"
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Accrued income (other receivables)",
+        "U26"
+       ],
+       [
+        "c",
+        "",
+        "Commission receivable",
+        "AA27"
+       ],
+       [
+        "n",
+        "Being commission earned but not yet received"
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Inventory of stationery (other receivables)",
+        "U29"
+       ],
+       [
+        "c",
+        "",
+        "Stationery",
+        "AA30"
+       ],
+       [
+        "n",
+        "Being unused stationery carried forward"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sheet": "QJ11.2 Ans",
+    "mode": "a",
+    "qid": "J11.2",
+    "level": 3,
+    "section": "journals",
+    "label": "Journal practice, Level 3: Medium",
+    "blocks": [
+     {
+      "k": "title",
+      "text": "Question J11.2 (Journal practice, Level 3: Medium): Answers"
+     },
+     {
+      "k": "text",
+      "text": "Siva's year ends on 31 December 2025. Prepare the year-end adjustment journals.",
+      "style": "p"
+     },
+     {
+      "k": "text",
+      "text": "Siva lets a room for RM500 per month. Rent received in 2025 was RM6,500, which includes January 2026.",
+      "style": "bullet"
+     },
+     {
+      "k": "text",
+      "text": "Commission receivable of RM380 for 2025 has not been received.",
+      "style": "bullet"
+     },
+     {
+      "k": "text",
+      "text": "Unused stationery at 31 December 2025 cost RM150.",
+      "style": "bullet"
+     },
+     {
+      "k": "data",
+      "title": "Figures from the question",
+      "md": false,
+      "rows": [
+       [
+        "Rent per month (RM)",
+        500,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Rent received in 2025 (RM)",
+        6500,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Commission receivable due (RM)",
+        380,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Unused stationery (RM)",
+        150,
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "a) Calculate the rent income for 2025 and the rent received in advance. (2)"
+     },
+     {
+      "k": "calc",
+      "rows": [
+       [
+        "Rent income for 2025 (RM)",
+        "X17",
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Rent received in advance (RM)",
+        "X18",
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "b) Prepare the journal entries. (6)"
+     },
+     {
+      "k": "journal",
+      "rows": [
+       [
+        "y",
+        "2025",
+        true
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Rent receivable",
+        "U23"
+       ],
+       [
+        "c",
+        "",
+        "Income received in advance (other payables)",
+        "AA24"
+       ],
+       [
+        "n",
+        "Being rent received in advance for January 2026"
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Accrued income (other receivables)",
+        "U26"
+       ],
+       [
+        "c",
+        "",
+        "Commission receivable",
+        "AA27"
+       ],
+       [
+        "n",
+        "Being commission earned but not yet received"
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Inventory of stationery (other receivables)",
+        "U29"
+       ],
+       [
+        "c",
+        "",
+        "Stationery",
+        "AA30"
+       ],
+       [
+        "n",
+        "Being unused stationery carried forward"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sheet": "P11.11",
+    "mode": "p",
+    "qid": "11.11",
+    "level": 0,
+    "section": "practice",
+    "label": "practice",
+    "blocks": [
+     {
+      "k": "title",
+      "text": "Practice with new numbers: Question 11.11"
+     },
+     {
+      "k": "data",
+      "title": "Figures from the question",
+      "md": true,
+      "rows": [
+       [
+        "#",
+        "Wages",
+        null
+       ],
+       [
+        "Owing at 1 April 2025 (RM)",
+        300,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Paid during the year (RM)",
+        18000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Owing at 31 March 2026 (RM)",
+        450,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "#",
+        "Rates",
+        null
+       ],
+       [
+        "Prepaid at 1 April 2025 (RM)",
+        200,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Paid during the year (RM)",
+        1600,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Prepaid at 31 March 2026 (RM)",
+        250,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "#",
+        "Commission receivable",
+        null
+       ],
+       [
+        "Received during the year (RM)",
+        3000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Still due at 31 March 2026 (RM)",
+        250,
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "a) Calculate the amount for the Statement of Profit or Loss for wages, rates and commission receivable. (3)"
+     },
+     {
+      "k": "calc",
+      "rows": [
+       [
+        "Wages expense (RM)",
+        "X21",
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Rates expense (RM)",
+        "X22",
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Commission receivable income (RM)",
+        "X23",
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "b) Prepare the Wages account for the year, showing the balance carried down. (5)"
+     },
+     {
+      "k": "ledger",
+      "name": "Wages Account",
+      "rows": [
+       {
+        "dr": [
+         "@Y",
+         "2025",
+         true
+        ],
+        "cr": [
+         "@Y",
+         "2025",
+         true
+        ]
+       },
+       {
+        "dr": [
+         "",
+         "Bank (paid during the year)",
+         "CB1",
+         "M29"
+        ],
+        "cr": [
+         "Apr 1",
+         "Balance b/d",
+         "",
+         "AC29"
+        ]
+       },
+       {
+        "dr": [
+         "@Y",
+         "2026",
+         false
+        ],
+        "cr": [
+         "@Y",
+         "2026",
+         false
+        ]
+       },
+       {
+        "dr": [
+         "Mar 31",
+         "Balance c/d",
+         "",
+         "M31"
+        ],
+        "cr": [
+         "Mar 31",
+         "Income statement",
+         "GJ1",
+         "AC31"
+        ]
+       },
+       {
+        "total": true,
+        "dr": "M32",
+        "cr": "AC32"
+       },
+       {
+        "dr": null,
+        "cr": [
+         "Apr 1",
+         "Balance b/d",
+         "",
+         "AC33"
+        ]
+       }
+      ]
+     },
+     {
+      "k": "part",
+      "text": "c) Calculate the total of other receivables and other payables in the Statement of Financial Position at 31 March 2026. (2)"
+     },
+     {
+      "k": "calc",
+      "rows": [
+       [
+        "Other receivables: rates prepaid + commission due (RM)",
+        "X36",
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Other payables: wages owing (RM)",
+        "X37",
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sheet": "P11.11 Ans",
+    "mode": "pa",
+    "qid": "11.11",
+    "level": 0,
+    "section": "practice",
+    "label": "practice",
+    "blocks": [
+     {
+      "k": "title",
+      "text": "Practice with new numbers: Question 11.11: Answers"
+     },
+     {
+      "k": "data",
+      "title": "Figures from the question",
+      "md": true,
+      "rows": [
+       [
+        "#",
+        "Wages",
+        null
+       ],
+       [
+        "Owing at 1 April 2025 (RM)",
+        300,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Paid during the year (RM)",
+        18000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Owing at 31 March 2026 (RM)",
+        450,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "#",
+        "Rates",
+        null
+       ],
+       [
+        "Prepaid at 1 April 2025 (RM)",
+        200,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Paid during the year (RM)",
+        1600,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Prepaid at 31 March 2026 (RM)",
+        250,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "#",
+        "Commission receivable",
+        null
+       ],
+       [
+        "Received during the year (RM)",
+        3000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Still due at 31 March 2026 (RM)",
+        250,
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "a) Calculate the amount for the Statement of Profit or Loss for wages, rates and commission receivable. (3)"
+     },
+     {
+      "k": "calc",
+      "rows": [
+       [
+        "Wages expense (RM)",
+        "X21",
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Rates expense (RM)",
+        "X22",
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Commission receivable income (RM)",
+        "X23",
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "b) Prepare the Wages account for the year, showing the balance carried down. (5)"
+     },
+     {
+      "k": "ledger",
+      "name": "Wages Account",
+      "rows": [
+       {
+        "dr": [
+         "@Y",
+         "2025",
+         true
+        ],
+        "cr": [
+         "@Y",
+         "2025",
+         true
+        ]
+       },
+       {
+        "dr": [
+         "",
+         "Bank (paid during the year)",
+         "CB1",
+         "M29"
+        ],
+        "cr": [
+         "Apr 1",
+         "Balance b/d",
+         "",
+         "AC29"
+        ]
+       },
+       {
+        "dr": [
+         "@Y",
+         "2026",
+         false
+        ],
+        "cr": [
+         "@Y",
+         "2026",
+         false
+        ]
+       },
+       {
+        "dr": [
+         "Mar 31",
+         "Balance c/d",
+         "",
+         "M31"
+        ],
+        "cr": [
+         "Mar 31",
+         "Income statement",
+         "GJ1",
+         "AC31"
+        ]
+       },
+       {
+        "total": true,
+        "dr": "M32",
+        "cr": "AC32"
+       },
+       {
+        "dr": null,
+        "cr": [
+         "Apr 1",
+         "Balance b/d",
+         "",
+         "AC33"
+        ]
+       }
+      ]
+     },
+     {
+      "k": "part",
+      "text": "c) Calculate the total of other receivables and other payables in the Statement of Financial Position at 31 March 2026. (2)"
+     },
+     {
+      "k": "calc",
+      "rows": [
+       [
+        "Other receivables: rates prepaid + commission due (RM)",
+        "X36",
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Other payables: wages owing (RM)",
+        "X37",
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     }
+    ]
    }
   ]
  },
@@ -9189,10 +12531,210 @@
     ]
    },
    {
+    "sheet": "Quiz",
+    "mode": "q",
+    "qid": "quiz",
+    "level": 0,
+    "section": "quiz",
+    "label": "Quiz: which concept applies?",
+    "blocks": [
+     {
+      "k": "title",
+      "text": "Quiz: which concept applies?"
+     },
+     {
+      "k": "text",
+      "text": "Section A of the Chapter 12 model questions, plus five extra situations. Pick the concept for each.",
+      "style": "p"
+     },
+     {
+      "k": "choice",
+      "rows": [
+       [
+        "12.1 The owner's private car is not in the business accounts.",
+        "T6",
+        null
+       ],
+       [
+        "12.2 Land is recorded at the price paid, not its current value.",
+        "T7",
+        null
+       ],
+       [
+        "12.3 The same depreciation method is used every year.",
+        "T8",
+        null
+       ],
+       [
+        "12.4 A RM5 calculator is recorded as an expense.",
+        "T9",
+        null
+       ],
+       [
+        "12.5 Revenue is recorded when goods are delivered.",
+        "T10",
+        null
+       ],
+       [
+        "12.6 Staff skill is not recorded in the accounts.",
+        "T11",
+        null
+       ],
+       [
+        "12.7 Every transaction has a debit and a credit.",
+        "T12",
+        null
+       ],
+       [
+        "12.8 Assets are shown at cost less depreciation, not closing-down prices.",
+        "T13",
+        null
+       ],
+       [
+        "12.9 December electricity paid in January is December's expense.",
+        "T14",
+        null
+       ],
+       [
+        "12.10 An allowance for irrecoverable debts is created.",
+        "T15",
+        null
+       ],
+       [
+        "Extra: Inventory is valued at the lower of cost and net realisable value.",
+        "T16",
+        null
+       ],
+       [
+        "Extra: Goods taken by the owner are recorded as drawings.",
+        "T17",
+        null
+       ],
+       [
+        "Extra: A credit sale on 30 December, paid on 10 January, is this year's revenue.",
+        "T18",
+        null
+       ],
+       [
+        "Extra: Insurance prepaid is deducted from this year's expense.",
+        "T19",
+        null
+       ],
+       [
+        "Extra: Buying equipment by cheque increases equipment and decreases bank.",
+        "T20",
+        null
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sheet": "Quiz Ans",
+    "mode": "a",
+    "qid": "quiz",
+    "level": 0,
+    "section": "quiz",
+    "label": "Quiz: which concept applies?",
+    "blocks": [
+     {
+      "k": "title",
+      "text": "Quiz: which concept applies?: Answers"
+     },
+     {
+      "k": "text",
+      "text": "Section A of the Chapter 12 model questions, plus five extra situations. Pick the concept for each.",
+      "style": "p"
+     },
+     {
+      "k": "choice",
+      "rows": [
+       [
+        "12.1 The owner's private car is not in the business accounts.",
+        "T6",
+        null
+       ],
+       [
+        "12.2 Land is recorded at the price paid, not its current value.",
+        "T7",
+        null
+       ],
+       [
+        "12.3 The same depreciation method is used every year.",
+        "T8",
+        null
+       ],
+       [
+        "12.4 A RM5 calculator is recorded as an expense.",
+        "T9",
+        null
+       ],
+       [
+        "12.5 Revenue is recorded when goods are delivered.",
+        "T10",
+        null
+       ],
+       [
+        "12.6 Staff skill is not recorded in the accounts.",
+        "T11",
+        null
+       ],
+       [
+        "12.7 Every transaction has a debit and a credit.",
+        "T12",
+        null
+       ],
+       [
+        "12.8 Assets are shown at cost less depreciation, not closing-down prices.",
+        "T13",
+        null
+       ],
+       [
+        "12.9 December electricity paid in January is December's expense.",
+        "T14",
+        null
+       ],
+       [
+        "12.10 An allowance for irrecoverable debts is created.",
+        "T15",
+        null
+       ],
+       [
+        "Extra: Inventory is valued at the lower of cost and net realisable value.",
+        "T16",
+        null
+       ],
+       [
+        "Extra: Goods taken by the owner are recorded as drawings.",
+        "T17",
+        null
+       ],
+       [
+        "Extra: A credit sale on 30 December, paid on 10 January, is this year's revenue.",
+        "T18",
+        null
+       ],
+       [
+        "Extra: Insurance prepaid is deducted from this year's expense.",
+        "T19",
+        null
+       ],
+       [
+        "Extra: Buying equipment by cheque increases equipment and decreases bank.",
+        "T20",
+        null
+       ]
+      ]
+     }
+    ]
+   },
+   {
     "sheet": "Q12.15",
     "mode": "q",
     "qid": "12.15",
     "level": 1,
+    "section": "structured",
+    "label": "Level 1: Easy",
     "blocks": [
      {
       "k": "title",
@@ -9263,6 +12805,8 @@
     "mode": "a",
     "qid": "12.15",
     "level": 1,
+    "section": "structured",
+    "label": "Level 1: Easy",
     "blocks": [
      {
       "k": "title",
@@ -9333,6 +12877,8 @@
     "mode": "q",
     "qid": "12.16",
     "level": 2,
+    "section": "structured",
+    "label": "Level 2: Easy to medium",
     "blocks": [
      {
       "k": "title",
@@ -9422,6 +12968,8 @@
     "mode": "a",
     "qid": "12.16",
     "level": 2,
+    "section": "structured",
+    "label": "Level 2: Easy to medium",
     "blocks": [
      {
       "k": "title",
@@ -9511,6 +13059,8 @@
     "mode": "q",
     "qid": "12.17",
     "level": 3,
+    "section": "structured",
+    "label": "Level 3: Medium",
     "blocks": [
      {
       "k": "title",
@@ -9736,6 +13286,8 @@
     "mode": "a",
     "qid": "12.17",
     "level": 3,
+    "section": "structured",
+    "label": "Level 3: Medium",
     "blocks": [
      {
       "k": "title",
@@ -9961,6 +13513,8 @@
     "mode": "q",
     "qid": "12.18",
     "level": 4,
+    "section": "structured",
+    "label": "Level 4: Hard",
     "blocks": [
      {
       "k": "title",
@@ -10072,6 +13626,8 @@
     "mode": "a",
     "qid": "12.18",
     "level": 4,
+    "section": "structured",
+    "label": "Level 4: Hard",
     "blocks": [
      {
       "k": "title",
@@ -10183,6 +13739,8 @@
     "mode": "q",
     "qid": "12.19",
     "level": 5,
+    "section": "structured",
+    "label": "Level 5: Challenge",
     "blocks": [
      {
       "k": "title",
@@ -10425,6 +13983,8 @@
     "mode": "a",
     "qid": "12.19",
     "level": 5,
+    "section": "structured",
+    "label": "Level 5: Challenge",
     "blocks": [
      {
       "k": "title",
@@ -10663,196 +14223,446 @@
     ]
    },
    {
-    "sheet": "Quiz",
-    "mode": "q",
-    "qid": "quiz",
+    "sheet": "P12.17",
+    "mode": "p",
+    "qid": "12.17",
     "level": 0,
+    "section": "practice",
+    "label": "practice",
     "blocks": [
      {
       "k": "title",
-      "text": "Quiz: which concept applies?"
+      "text": "Practice with new numbers: Question 12.17"
      },
      {
-      "k": "text",
-      "text": "Section A of the Chapter 12 model questions, plus five extra situations. Pick the concept for each.",
-      "style": "p"
+      "k": "table",
+      "headers": [
+       "Item",
+       "Cost (RM)",
+       "Expected selling price (RM)",
+       "Costs to sell or repair (RM)"
+      ],
+      "rows": [
+       [
+        "A",
+        [
+         [
+          "d",
+          1200,
+          "#,##0;(#,##0);\"-\""
+         ],
+         [
+          "d",
+          1800,
+          "#,##0;(#,##0);\"-\""
+         ],
+         [
+          "d",
+          100,
+          "#,##0;(#,##0);\"-\""
+         ]
+        ]
+       ],
+       [
+        "B",
+        [
+         [
+          "d",
+          900,
+          "#,##0;(#,##0);\"-\""
+         ],
+         [
+          "d",
+          950,
+          "#,##0;(#,##0);\"-\""
+         ],
+         [
+          "d",
+          200,
+          "#,##0;(#,##0);\"-\""
+         ]
+        ]
+       ],
+       [
+        "C",
+        [
+         [
+          "d",
+          2000,
+          "#,##0;(#,##0);\"-\""
+         ],
+         [
+          "d",
+          2500,
+          "#,##0;(#,##0);\"-\""
+         ],
+         [
+          "d",
+          300,
+          "#,##0;(#,##0);\"-\""
+         ]
+        ]
+       ],
+       [
+        "D (damaged)",
+        [
+         [
+          "d",
+          600,
+          "#,##0;(#,##0);\"-\""
+         ],
+         [
+          "d",
+          250,
+          "#,##0;(#,##0);\"-\""
+         ],
+         [
+          "d",
+          0,
+          "#,##0;(#,##0);\"-\""
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "a) Calculate the value of each item and the total value of closing inventory. (4)"
+     },
+     {
+      "k": "table",
+      "headers": [
+       "Item",
+       "Net realisable value (RM)",
+       "Value used for inventory (RM)"
+      ],
+      "rows": [
+       [
+        "A",
+        [
+         [
+          "v",
+          "I14",
+          "#,##0;(#,##0);\"-\""
+         ],
+         [
+          "v",
+          "U14",
+          "#,##0;(#,##0);\"-\""
+         ]
+        ]
+       ],
+       [
+        "B",
+        [
+         [
+          "v",
+          "I15",
+          "#,##0;(#,##0);\"-\""
+         ],
+         [
+          "v",
+          "U15",
+          "#,##0;(#,##0);\"-\""
+         ]
+        ]
+       ],
+       [
+        "C",
+        [
+         [
+          "v",
+          "I16",
+          "#,##0;(#,##0);\"-\""
+         ],
+         [
+          "v",
+          "U16",
+          "#,##0;(#,##0);\"-\""
+         ]
+        ]
+       ],
+       [
+        "D (damaged)",
+        [
+         [
+          "v",
+          "I17",
+          "#,##0;(#,##0);\"-\""
+         ],
+         [
+          "v",
+          "U17",
+          "#,##0;(#,##0);\"-\""
+         ]
+        ]
+       ],
+       [
+        "Total closing inventory",
+        [
+         null,
+         [
+          "v",
+          "U18",
+          "#,##0;(#,##0);\"-\""
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "b) The trader had valued all inventory at cost. State the effect of your correct valuation on gross profit. (2)"
+     },
+     {
+      "k": "calc",
+      "rows": [
+       [
+        "Gross profit falls by (RM)",
+        "X21",
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "c) Name the concept used and explain why it applies. (2)"
      },
      {
       "k": "choice",
       "rows": [
        [
-        "12.1 The owner's private car is not in the business accounts.",
-        "T6",
-        null
-       ],
-       [
-        "12.2 Land is recorded at the price paid, not its current value.",
-        "T7",
-        null
-       ],
-       [
-        "12.3 The same depreciation method is used every year.",
-        "T8",
-        null
-       ],
-       [
-        "12.4 A RM5 calculator is recorded as an expense.",
-        "T9",
-        null
-       ],
-       [
-        "12.5 Revenue is recorded when goods are delivered.",
-        "T10",
-        null
-       ],
-       [
-        "12.6 Staff skill is not recorded in the accounts.",
-        "T11",
-        null
-       ],
-       [
-        "12.7 Every transaction has a debit and a credit.",
-        "T12",
-        null
-       ],
-       [
-        "12.8 Assets are shown at cost less depreciation, not closing-down prices.",
-        "T13",
-        null
-       ],
-       [
-        "12.9 December electricity paid in January is December's expense.",
-        "T14",
-        null
-       ],
-       [
-        "12.10 An allowance for irrecoverable debts is created.",
-        "T15",
-        null
-       ],
-       [
-        "Extra: Inventory is valued at the lower of cost and net realisable value.",
-        "T16",
-        null
-       ],
-       [
-        "Extra: Goods taken by the owner are recorded as drawings.",
-        "T17",
-        null
-       ],
-       [
-        "Extra: A credit sale on 30 December, paid on 10 January, is this year's revenue.",
-        "T18",
-        null
-       ],
-       [
-        "Extra: Insurance prepaid is deducted from this year's expense.",
-        "T19",
-        null
-       ],
-       [
-        "Extra: Buying equipment by cheque increases equipment and decreases bank.",
-        "T20",
+        "Concept",
+        "T24",
         null
        ]
       ]
+     },
+     {
+      "k": "written",
+      "text": "Prudence: inventory is valued at the lower of cost and net realisable value. The expected losses on items B and D are recorded now, so assets and profit are not overstated."
      }
     ]
    },
    {
-    "sheet": "Quiz Ans",
-    "mode": "a",
-    "qid": "quiz",
+    "sheet": "P12.17 Ans",
+    "mode": "pa",
+    "qid": "12.17",
     "level": 0,
+    "section": "practice",
+    "label": "practice",
     "blocks": [
      {
       "k": "title",
-      "text": "Quiz: which concept applies?: Answers"
+      "text": "Practice with new numbers: Question 12.17: Answers"
      },
      {
-      "k": "text",
-      "text": "Section A of the Chapter 12 model questions, plus five extra situations. Pick the concept for each.",
-      "style": "p"
+      "k": "table",
+      "headers": [
+       "Item",
+       "Cost (RM)",
+       "Expected selling price (RM)",
+       "Costs to sell or repair (RM)"
+      ],
+      "rows": [
+       [
+        "A",
+        [
+         [
+          "d",
+          1200,
+          "#,##0;(#,##0);\"-\""
+         ],
+         [
+          "d",
+          1800,
+          "#,##0;(#,##0);\"-\""
+         ],
+         [
+          "d",
+          100,
+          "#,##0;(#,##0);\"-\""
+         ]
+        ]
+       ],
+       [
+        "B",
+        [
+         [
+          "d",
+          900,
+          "#,##0;(#,##0);\"-\""
+         ],
+         [
+          "d",
+          950,
+          "#,##0;(#,##0);\"-\""
+         ],
+         [
+          "d",
+          200,
+          "#,##0;(#,##0);\"-\""
+         ]
+        ]
+       ],
+       [
+        "C",
+        [
+         [
+          "d",
+          2000,
+          "#,##0;(#,##0);\"-\""
+         ],
+         [
+          "d",
+          2500,
+          "#,##0;(#,##0);\"-\""
+         ],
+         [
+          "d",
+          300,
+          "#,##0;(#,##0);\"-\""
+         ]
+        ]
+       ],
+       [
+        "D (damaged)",
+        [
+         [
+          "d",
+          600,
+          "#,##0;(#,##0);\"-\""
+         ],
+         [
+          "d",
+          250,
+          "#,##0;(#,##0);\"-\""
+         ],
+         [
+          "d",
+          0,
+          "#,##0;(#,##0);\"-\""
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "a) Calculate the value of each item and the total value of closing inventory. (4)"
+     },
+     {
+      "k": "table",
+      "headers": [
+       "Item",
+       "Net realisable value (RM)",
+       "Value used for inventory (RM)"
+      ],
+      "rows": [
+       [
+        "A",
+        [
+         [
+          "v",
+          "I14",
+          "#,##0;(#,##0);\"-\""
+         ],
+         [
+          "v",
+          "U14",
+          "#,##0;(#,##0);\"-\""
+         ]
+        ]
+       ],
+       [
+        "B",
+        [
+         [
+          "v",
+          "I15",
+          "#,##0;(#,##0);\"-\""
+         ],
+         [
+          "v",
+          "U15",
+          "#,##0;(#,##0);\"-\""
+         ]
+        ]
+       ],
+       [
+        "C",
+        [
+         [
+          "v",
+          "I16",
+          "#,##0;(#,##0);\"-\""
+         ],
+         [
+          "v",
+          "U16",
+          "#,##0;(#,##0);\"-\""
+         ]
+        ]
+       ],
+       [
+        "D (damaged)",
+        [
+         [
+          "v",
+          "I17",
+          "#,##0;(#,##0);\"-\""
+         ],
+         [
+          "v",
+          "U17",
+          "#,##0;(#,##0);\"-\""
+         ]
+        ]
+       ],
+       [
+        "Total closing inventory",
+        [
+         null,
+         [
+          "v",
+          "U18",
+          "#,##0;(#,##0);\"-\""
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "b) The trader had valued all inventory at cost. State the effect of your correct valuation on gross profit. (2)"
+     },
+     {
+      "k": "calc",
+      "rows": [
+       [
+        "Gross profit falls by (RM)",
+        "X21",
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "c) Name the concept used and explain why it applies. (2)"
      },
      {
       "k": "choice",
       "rows": [
        [
-        "12.1 The owner's private car is not in the business accounts.",
-        "T6",
-        null
-       ],
-       [
-        "12.2 Land is recorded at the price paid, not its current value.",
-        "T7",
-        null
-       ],
-       [
-        "12.3 The same depreciation method is used every year.",
-        "T8",
-        null
-       ],
-       [
-        "12.4 A RM5 calculator is recorded as an expense.",
-        "T9",
-        null
-       ],
-       [
-        "12.5 Revenue is recorded when goods are delivered.",
-        "T10",
-        null
-       ],
-       [
-        "12.6 Staff skill is not recorded in the accounts.",
-        "T11",
-        null
-       ],
-       [
-        "12.7 Every transaction has a debit and a credit.",
-        "T12",
-        null
-       ],
-       [
-        "12.8 Assets are shown at cost less depreciation, not closing-down prices.",
-        "T13",
-        null
-       ],
-       [
-        "12.9 December electricity paid in January is December's expense.",
-        "T14",
-        null
-       ],
-       [
-        "12.10 An allowance for irrecoverable debts is created.",
-        "T15",
-        null
-       ],
-       [
-        "Extra: Inventory is valued at the lower of cost and net realisable value.",
-        "T16",
-        null
-       ],
-       [
-        "Extra: Goods taken by the owner are recorded as drawings.",
-        "T17",
-        null
-       ],
-       [
-        "Extra: A credit sale on 30 December, paid on 10 January, is this year's revenue.",
-        "T18",
-        null
-       ],
-       [
-        "Extra: Insurance prepaid is deducted from this year's expense.",
-        "T19",
-        null
-       ],
-       [
-        "Extra: Buying equipment by cheque increases equipment and decreases bank.",
-        "T20",
+        "Concept",
+        "T24",
         null
        ]
       ]
+     },
+     {
+      "k": "written",
+      "text": "Prudence: inventory is valued at the lower of cost and net realisable value. The expected losses on items B and D are recorded now, so assets and profit are not overstated."
      }
     ]
    }
@@ -11673,6 +15483,8 @@
     "mode": "q",
     "qid": "FS.6",
     "level": 1,
+    "section": "structured",
+    "label": "Level 1: Easy",
     "blocks": [
      {
       "k": "title",
@@ -11878,6 +15690,8 @@
     "mode": "a",
     "qid": "FS.6",
     "level": 1,
+    "section": "structured",
+    "label": "Level 1: Easy",
     "blocks": [
      {
       "k": "title",
@@ -12083,6 +15897,8 @@
     "mode": "q",
     "qid": "FS.7",
     "level": 2,
+    "section": "structured",
+    "label": "Level 2: Easy to medium",
     "blocks": [
      {
       "k": "title",
@@ -12466,6 +16282,8 @@
     "mode": "a",
     "qid": "FS.7",
     "level": 2,
+    "section": "structured",
+    "label": "Level 2: Easy to medium",
     "blocks": [
      {
       "k": "title",
@@ -12849,6 +16667,8 @@
     "mode": "q",
     "qid": "FS.8",
     "level": 3,
+    "section": "structured",
+    "label": "Level 3: Medium",
     "blocks": [
      {
       "k": "title",
@@ -13361,6 +17181,8 @@
     "mode": "a",
     "qid": "FS.8",
     "level": 3,
+    "section": "structured",
+    "label": "Level 3: Medium",
     "blocks": [
      {
       "k": "title",
@@ -13873,6 +17695,8 @@
     "mode": "q",
     "qid": "FS.9",
     "level": 4,
+    "section": "structured",
+    "label": "Level 4: Hard",
     "blocks": [
      {
       "k": "title",
@@ -14606,6 +18430,8 @@
     "mode": "a",
     "qid": "FS.9",
     "level": 4,
+    "section": "structured",
+    "label": "Level 4: Hard",
     "blocks": [
      {
       "k": "title",
@@ -15339,6 +19165,8 @@
     "mode": "q",
     "qid": "FS.10",
     "level": 5,
+    "section": "structured",
+    "label": "Level 5: Challenge",
     "blocks": [
      {
       "k": "title",
@@ -16248,6 +20076,8 @@
     "mode": "a",
     "qid": "FS.10",
     "level": 5,
+    "section": "structured",
+    "label": "Level 5: Challenge",
     "blocks": [
      {
       "k": "title",
@@ -17143,6 +20973,5109 @@
         {
          "3": [
           "AB123",
+          "total"
+         ]
+        },
+        "b"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sheet": "QJFS.1",
+    "mode": "q",
+    "qid": "JFS.1",
+    "level": 2,
+    "section": "journals",
+    "label": "Journal practice, Level 2: Easy to medium",
+    "blocks": [
+     {
+      "k": "title",
+      "text": "Question JFS.1 (Journal practice, Level 2: Easy to medium)"
+     },
+     {
+      "k": "text",
+      "text": "Amina Stores (see the worked example). Prepare the journal entries for the year-end adjustments at 31 December 2025.",
+      "style": "p"
+     },
+     {
+      "k": "data",
+      "title": "Figures from the question",
+      "md": true,
+      "rows": [
+       [
+        "1. Closing inventory (RM)",
+        9500,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "2. Rent owing (RM)",
+        500,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "3. Insurance prepaid (RM)",
+        300,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "4. Trade receivables (RM)",
+        12000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "4. Allowance brought forward (RM)",
+        400,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "4. New allowance: % of trade receivables",
+        0.05,
+        "0.0%"
+       ],
+       [
+        "5. Equipment at cost (RM)",
+        20000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "5. Depreciation: % of cost per year",
+        0.1,
+        "0.0%"
+       ],
+       [
+        "6. Loan (RM)",
+        10000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "6. Loan interest per year, unpaid",
+        0.05,
+        "0.0%"
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "a) Prepare the six journal entries. (12)"
+     },
+     {
+      "k": "journal",
+      "rows": [
+       [
+        "y",
+        "2025",
+        true
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Inventory",
+        "U22"
+       ],
+       [
+        "c",
+        "",
+        "Income statement",
+        "AA23"
+       ],
+       [
+        "n",
+        "Being closing inventory recorded"
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Rent",
+        "U25"
+       ],
+       [
+        "c",
+        "",
+        "Accrued expenses (other payables)",
+        "AA26"
+       ],
+       [
+        "n",
+        "Being rent owing"
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Prepaid expenses (other receivables)",
+        "U28"
+       ],
+       [
+        "c",
+        "",
+        "Insurance",
+        "AA29"
+       ],
+       [
+        "n",
+        "Being insurance paid in advance"
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Income statement",
+        "U31"
+       ],
+       [
+        "c",
+        "",
+        "Allowance for irrecoverable debts",
+        "AA32"
+       ],
+       [
+        "n",
+        "Being increase in the allowance to 5% of trade receivables"
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Income statement",
+        "U34"
+       ],
+       [
+        "c",
+        "",
+        "Provision for depreciation of equipment",
+        "AA35"
+       ],
+       [
+        "n",
+        "Being depreciation of equipment for the year"
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Loan interest",
+        "U37"
+       ],
+       [
+        "c",
+        "",
+        "Accrued expenses (other payables)",
+        "AA38"
+       ],
+       [
+        "n",
+        "Being loan interest owing"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sheet": "QJFS.1 Ans",
+    "mode": "a",
+    "qid": "JFS.1",
+    "level": 2,
+    "section": "journals",
+    "label": "Journal practice, Level 2: Easy to medium",
+    "blocks": [
+     {
+      "k": "title",
+      "text": "Question JFS.1 (Journal practice, Level 2: Easy to medium): Answers"
+     },
+     {
+      "k": "text",
+      "text": "Amina Stores (see the worked example). Prepare the journal entries for the year-end adjustments at 31 December 2025.",
+      "style": "p"
+     },
+     {
+      "k": "data",
+      "title": "Figures from the question",
+      "md": true,
+      "rows": [
+       [
+        "1. Closing inventory (RM)",
+        9500,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "2. Rent owing (RM)",
+        500,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "3. Insurance prepaid (RM)",
+        300,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "4. Trade receivables (RM)",
+        12000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "4. Allowance brought forward (RM)",
+        400,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "4. New allowance: % of trade receivables",
+        0.05,
+        "0.0%"
+       ],
+       [
+        "5. Equipment at cost (RM)",
+        20000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "5. Depreciation: % of cost per year",
+        0.1,
+        "0.0%"
+       ],
+       [
+        "6. Loan (RM)",
+        10000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "6. Loan interest per year, unpaid",
+        0.05,
+        "0.0%"
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "a) Prepare the six journal entries. (12)"
+     },
+     {
+      "k": "journal",
+      "rows": [
+       [
+        "y",
+        "2025",
+        true
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Inventory",
+        "U22"
+       ],
+       [
+        "c",
+        "",
+        "Income statement",
+        "AA23"
+       ],
+       [
+        "n",
+        "Being closing inventory recorded"
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Rent",
+        "U25"
+       ],
+       [
+        "c",
+        "",
+        "Accrued expenses (other payables)",
+        "AA26"
+       ],
+       [
+        "n",
+        "Being rent owing"
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Prepaid expenses (other receivables)",
+        "U28"
+       ],
+       [
+        "c",
+        "",
+        "Insurance",
+        "AA29"
+       ],
+       [
+        "n",
+        "Being insurance paid in advance"
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Income statement",
+        "U31"
+       ],
+       [
+        "c",
+        "",
+        "Allowance for irrecoverable debts",
+        "AA32"
+       ],
+       [
+        "n",
+        "Being increase in the allowance to 5% of trade receivables"
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Income statement",
+        "U34"
+       ],
+       [
+        "c",
+        "",
+        "Provision for depreciation of equipment",
+        "AA35"
+       ],
+       [
+        "n",
+        "Being depreciation of equipment for the year"
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Loan interest",
+        "U37"
+       ],
+       [
+        "c",
+        "",
+        "Accrued expenses (other payables)",
+        "AA38"
+       ],
+       [
+        "n",
+        "Being loan interest owing"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sheet": "QJFS.2",
+    "mode": "q",
+    "qid": "JFS.2",
+    "level": 3,
+    "section": "journals",
+    "label": "Journal practice, Level 3: Medium",
+    "blocks": [
+     {
+      "k": "title",
+      "text": "Question JFS.2 (Journal practice, Level 3: Medium)"
+     },
+     {
+      "k": "text",
+      "text": "Nadia's Crafts. After all year-end adjustments at 31 December 2025, the balances below remain. Prepare the closing journal entries that transfer them to the income statement, then transfer the profit and drawings to capital.",
+      "style": "p"
+     },
+     {
+      "k": "data",
+      "title": "Figures from the question",
+      "md": true,
+      "rows": [
+       [
+        "Revenue (RM)",
+        52000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Inventory at 1 January 2025 (RM)",
+        3000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Purchases (RM)",
+        30000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Inventory at 31 December 2025 (RM)",
+        3500,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Wages (RM)",
+        8000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Rent (RM)",
+        4800,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Insurance (RM)",
+        1000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "General expenses (RM)",
+        900,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Depreciation: fixtures (RM)",
+        1000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Drawings (RM)",
+        6000,
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "a) Calculate the profit for the year. (2)"
+     },
+     {
+      "k": "calc",
+      "rows": [
+       [
+        "Profit for the year (RM)",
+        "X20",
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "b) Prepare the closing journal entries. (10)"
+     },
+     {
+      "k": "journal",
+      "rows": [
+       [
+        "y",
+        "2025",
+        true
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Revenue",
+        "U25"
+       ],
+       [
+        "c",
+        "",
+        "Income statement",
+        "AA26"
+       ],
+       [
+        "n",
+        "Being revenue transferred"
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Income statement",
+        "U28"
+       ],
+       [
+        "c",
+        "",
+        "Inventory (opening)",
+        "AA29"
+       ],
+       [
+        "c",
+        "",
+        "Purchases",
+        "AA30"
+       ],
+       [
+        "n",
+        "Being opening inventory and purchases transferred"
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Inventory (closing)",
+        "U32"
+       ],
+       [
+        "c",
+        "",
+        "Income statement",
+        "AA33"
+       ],
+       [
+        "n",
+        "Being closing inventory recorded"
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Income statement",
+        "U35"
+       ],
+       [
+        "c",
+        "",
+        "Wages",
+        "AA36"
+       ],
+       [
+        "c",
+        "",
+        "Rent",
+        "AA37"
+       ],
+       [
+        "c",
+        "",
+        "Insurance",
+        "AA38"
+       ],
+       [
+        "c",
+        "",
+        "General expenses",
+        "AA39"
+       ],
+       [
+        "c",
+        "",
+        "Depreciation: fixtures",
+        "AA40"
+       ],
+       [
+        "n",
+        "Being expenses transferred"
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Income statement",
+        "U42"
+       ],
+       [
+        "c",
+        "",
+        "Capital",
+        "AA43"
+       ],
+       [
+        "n",
+        "Being profit for the year transferred to capital"
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Capital",
+        "U45"
+       ],
+       [
+        "c",
+        "",
+        "Drawings",
+        "AA46"
+       ],
+       [
+        "n",
+        "Being drawings transferred to capital"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sheet": "QJFS.2 Ans",
+    "mode": "a",
+    "qid": "JFS.2",
+    "level": 3,
+    "section": "journals",
+    "label": "Journal practice, Level 3: Medium",
+    "blocks": [
+     {
+      "k": "title",
+      "text": "Question JFS.2 (Journal practice, Level 3: Medium): Answers"
+     },
+     {
+      "k": "text",
+      "text": "Nadia's Crafts. After all year-end adjustments at 31 December 2025, the balances below remain. Prepare the closing journal entries that transfer them to the income statement, then transfer the profit and drawings to capital.",
+      "style": "p"
+     },
+     {
+      "k": "data",
+      "title": "Figures from the question",
+      "md": true,
+      "rows": [
+       [
+        "Revenue (RM)",
+        52000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Inventory at 1 January 2025 (RM)",
+        3000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Purchases (RM)",
+        30000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Inventory at 31 December 2025 (RM)",
+        3500,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Wages (RM)",
+        8000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Rent (RM)",
+        4800,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Insurance (RM)",
+        1000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "General expenses (RM)",
+        900,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Depreciation: fixtures (RM)",
+        1000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Drawings (RM)",
+        6000,
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "a) Calculate the profit for the year. (2)"
+     },
+     {
+      "k": "calc",
+      "rows": [
+       [
+        "Profit for the year (RM)",
+        "X20",
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "b) Prepare the closing journal entries. (10)"
+     },
+     {
+      "k": "journal",
+      "rows": [
+       [
+        "y",
+        "2025",
+        true
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Revenue",
+        "U25"
+       ],
+       [
+        "c",
+        "",
+        "Income statement",
+        "AA26"
+       ],
+       [
+        "n",
+        "Being revenue transferred"
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Income statement",
+        "U28"
+       ],
+       [
+        "c",
+        "",
+        "Inventory (opening)",
+        "AA29"
+       ],
+       [
+        "c",
+        "",
+        "Purchases",
+        "AA30"
+       ],
+       [
+        "n",
+        "Being opening inventory and purchases transferred"
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Inventory (closing)",
+        "U32"
+       ],
+       [
+        "c",
+        "",
+        "Income statement",
+        "AA33"
+       ],
+       [
+        "n",
+        "Being closing inventory recorded"
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Income statement",
+        "U35"
+       ],
+       [
+        "c",
+        "",
+        "Wages",
+        "AA36"
+       ],
+       [
+        "c",
+        "",
+        "Rent",
+        "AA37"
+       ],
+       [
+        "c",
+        "",
+        "Insurance",
+        "AA38"
+       ],
+       [
+        "c",
+        "",
+        "General expenses",
+        "AA39"
+       ],
+       [
+        "c",
+        "",
+        "Depreciation: fixtures",
+        "AA40"
+       ],
+       [
+        "n",
+        "Being expenses transferred"
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Income statement",
+        "U42"
+       ],
+       [
+        "c",
+        "",
+        "Capital",
+        "AA43"
+       ],
+       [
+        "n",
+        "Being profit for the year transferred to capital"
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Capital",
+        "U45"
+       ],
+       [
+        "c",
+        "",
+        "Drawings",
+        "AA46"
+       ],
+       [
+        "n",
+        "Being drawings transferred to capital"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sheet": "PFS.8",
+    "mode": "p",
+    "qid": "FS.8",
+    "level": 0,
+    "section": "practice",
+    "label": "practice",
+    "blocks": [
+     {
+      "k": "title",
+      "text": "Practice with new numbers: Question FS.8"
+     },
+     {
+      "k": "tb",
+      "title": "Nadia's Crafts: Trial Balance at 31 December 2025",
+      "rows": [
+       [
+        "Revenue",
+        null,
+        52000
+       ],
+       [
+        "Purchases",
+        30000,
+        null
+       ],
+       [
+        "Inventory at 1 January 2025",
+        3000,
+        null
+       ],
+       [
+        "Wages",
+        8000,
+        null
+       ],
+       [
+        "Rent",
+        4400,
+        null
+       ],
+       [
+        "Insurance",
+        1200,
+        null
+       ],
+       [
+        "General expenses",
+        900,
+        null
+       ],
+       [
+        "Fixtures at cost",
+        10000,
+        null
+       ],
+       [
+        "Provision for depreciation: fixtures",
+        null,
+        2000
+       ],
+       [
+        "Trade receivables",
+        5000,
+        null
+       ],
+       [
+        "Trade payables",
+        null,
+        3100
+       ],
+       [
+        "Bank",
+        2600,
+        null
+       ],
+       [
+        "Capital",
+        null,
+        14000
+       ],
+       [
+        "Drawings",
+        6000,
+        null
+       ]
+      ],
+      "totals": [
+       71100,
+       71100
+      ]
+     },
+     {
+      "k": "data",
+      "title": "Additional information at 31 December 2025",
+      "md": true,
+      "rows": [
+       [
+        "1. Closing inventory (RM)",
+        3500,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "2. Rent owing (RM)",
+        400,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "3. Insurance prepaid (RM)",
+        200,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "4. Fixtures depreciation: % of cost per year",
+        0.1,
+        "0.0%"
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "a) Prepare the Statement of Profit or Loss for the year ended 31 December 2025. (10)"
+     },
+     {
+      "k": "statement",
+      "kind": "spl",
+      "heading": [
+       "Nadia's Crafts",
+       "Statement of Profit or Loss for the year ended 31 December 2025"
+      ],
+      "rows": [
+       [
+        "",
+        "Revenue",
+        {
+         "3": [
+          "AB35",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "Less:",
+        "Cost of sales",
+        {},
+        "h"
+       ],
+       [
+        "",
+        "Opening inventory",
+        {
+         "2": [
+          "W37",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "Add:",
+        "Purchases",
+        {
+         "2": [
+          "W38",
+          "under"
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Cost of goods available for sale",
+        {
+         "2": [
+          "W39",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "Less:",
+        "Closing inventory",
+        {
+         "2": [
+          "W40",
+          "under"
+         ],
+         "3": [
+          "AB40",
+          "under"
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Gross profit",
+        {
+         "3": [
+          "AB41",
+          null
+         ]
+        },
+        "b"
+       ],
+       [
+        "Less:",
+        "Expenses",
+        {},
+        "h"
+       ],
+       [
+        "",
+        "Wages",
+        {
+         "2": [
+          "W43",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Rent",
+        {
+         "2": [
+          "W44",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Insurance",
+        {
+         "2": [
+          "W45",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "General expenses",
+        {
+         "2": [
+          "W46",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Depreciation: fixtures",
+        {
+         "2": [
+          "W47",
+          "under"
+         ],
+         "3": [
+          "AB47",
+          "under"
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Profit for the year",
+        {
+         "3": [
+          "AB48",
+          "total"
+         ]
+        },
+        "b"
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "b) Prepare the Statement of Financial Position at 31 December 2025. (10)"
+     },
+     {
+      "k": "statement",
+      "kind": "sofp",
+      "heading": [
+       "Nadia's Crafts",
+       "Statement of Financial Position at 31 December 2025"
+      ],
+      "rows": [
+       [
+        "",
+        "Non-current assets",
+        {},
+        "h"
+       ],
+       [
+        "",
+        "Fixtures",
+        {
+         "1": [
+          "R56",
+          null
+         ],
+         "2": [
+          "W56",
+          null
+         ],
+         "3": [
+          "AB56",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Current assets",
+        {},
+        "h"
+       ],
+       [
+        "",
+        "Inventory",
+        {
+         "2": [
+          "W58",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Trade receivables",
+        {
+         "2": [
+          "W59",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Other receivables (insurance prepaid)",
+        {
+         "2": [
+          "W60",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Bank",
+        {
+         "2": [
+          "W61",
+          "under"
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Total current assets",
+        {
+         "2": [
+          "W62",
+          null
+         ]
+        },
+        "b"
+       ],
+       [
+        "Less:",
+        "Current liabilities",
+        {},
+        "h"
+       ],
+       [
+        "",
+        "Trade payables",
+        {
+         "2": [
+          "W64",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Other payables (rent owing)",
+        {
+         "2": [
+          "W65",
+          "under"
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Total current liabilities",
+        {
+         "2": [
+          "W66",
+          "under"
+         ]
+        },
+        "b"
+       ],
+       [
+        "",
+        "Net current assets (working capital)",
+        {
+         "3": [
+          "AB67",
+          "under"
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Net assets",
+        {
+         "3": [
+          "AB68",
+          "total"
+         ]
+        },
+        "b"
+       ],
+       [
+        "",
+        "Financed by:",
+        {},
+        "h"
+       ],
+       [
+        "",
+        "Capital at start of year",
+        {
+         "3": [
+          "AB70",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "Add:",
+        "Profit for the year",
+        {
+         "3": [
+          "AB71",
+          "under"
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "",
+        {
+         "3": [
+          "AB72",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "Less:",
+        "Drawings",
+        {
+         "3": [
+          "AB73",
+          "under"
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Capital at end of year",
+        {
+         "3": [
+          "AB74",
+          "total"
+         ]
+        },
+        "b"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sheet": "PFS.8 Ans",
+    "mode": "pa",
+    "qid": "FS.8",
+    "level": 0,
+    "section": "practice",
+    "label": "practice",
+    "blocks": [
+     {
+      "k": "title",
+      "text": "Practice with new numbers: Question FS.8: Answers"
+     },
+     {
+      "k": "tb",
+      "title": "Nadia's Crafts: Trial Balance at 31 December 2025",
+      "rows": [
+       [
+        "Revenue",
+        null,
+        52000
+       ],
+       [
+        "Purchases",
+        30000,
+        null
+       ],
+       [
+        "Inventory at 1 January 2025",
+        3000,
+        null
+       ],
+       [
+        "Wages",
+        8000,
+        null
+       ],
+       [
+        "Rent",
+        4400,
+        null
+       ],
+       [
+        "Insurance",
+        1200,
+        null
+       ],
+       [
+        "General expenses",
+        900,
+        null
+       ],
+       [
+        "Fixtures at cost",
+        10000,
+        null
+       ],
+       [
+        "Provision for depreciation: fixtures",
+        null,
+        2000
+       ],
+       [
+        "Trade receivables",
+        5000,
+        null
+       ],
+       [
+        "Trade payables",
+        null,
+        3100
+       ],
+       [
+        "Bank",
+        2600,
+        null
+       ],
+       [
+        "Capital",
+        null,
+        14000
+       ],
+       [
+        "Drawings",
+        6000,
+        null
+       ]
+      ],
+      "totals": [
+       71100,
+       71100
+      ]
+     },
+     {
+      "k": "data",
+      "title": "Additional information at 31 December 2025",
+      "md": true,
+      "rows": [
+       [
+        "1. Closing inventory (RM)",
+        3500,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "2. Rent owing (RM)",
+        400,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "3. Insurance prepaid (RM)",
+        200,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "4. Fixtures depreciation: % of cost per year",
+        0.1,
+        "0.0%"
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "a) Prepare the Statement of Profit or Loss for the year ended 31 December 2025. (10)"
+     },
+     {
+      "k": "statement",
+      "kind": "spl",
+      "heading": [
+       "Nadia's Crafts",
+       "Statement of Profit or Loss for the year ended 31 December 2025"
+      ],
+      "rows": [
+       [
+        "",
+        "Revenue",
+        {
+         "3": [
+          "AB35",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "Less:",
+        "Cost of sales",
+        {},
+        "h"
+       ],
+       [
+        "",
+        "Opening inventory",
+        {
+         "2": [
+          "W37",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "Add:",
+        "Purchases",
+        {
+         "2": [
+          "W38",
+          "under"
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Cost of goods available for sale",
+        {
+         "2": [
+          "W39",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "Less:",
+        "Closing inventory",
+        {
+         "2": [
+          "W40",
+          "under"
+         ],
+         "3": [
+          "AB40",
+          "under"
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Gross profit",
+        {
+         "3": [
+          "AB41",
+          null
+         ]
+        },
+        "b"
+       ],
+       [
+        "Less:",
+        "Expenses",
+        {},
+        "h"
+       ],
+       [
+        "",
+        "Wages",
+        {
+         "2": [
+          "W43",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Rent",
+        {
+         "2": [
+          "W44",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Insurance",
+        {
+         "2": [
+          "W45",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "General expenses",
+        {
+         "2": [
+          "W46",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Depreciation: fixtures",
+        {
+         "2": [
+          "W47",
+          "under"
+         ],
+         "3": [
+          "AB47",
+          "under"
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Profit for the year",
+        {
+         "3": [
+          "AB48",
+          "total"
+         ]
+        },
+        "b"
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "b) Prepare the Statement of Financial Position at 31 December 2025. (10)"
+     },
+     {
+      "k": "statement",
+      "kind": "sofp",
+      "heading": [
+       "Nadia's Crafts",
+       "Statement of Financial Position at 31 December 2025"
+      ],
+      "rows": [
+       [
+        "",
+        "Non-current assets",
+        {},
+        "h"
+       ],
+       [
+        "",
+        "Fixtures",
+        {
+         "1": [
+          "R56",
+          null
+         ],
+         "2": [
+          "W56",
+          null
+         ],
+         "3": [
+          "AB56",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Current assets",
+        {},
+        "h"
+       ],
+       [
+        "",
+        "Inventory",
+        {
+         "2": [
+          "W58",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Trade receivables",
+        {
+         "2": [
+          "W59",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Other receivables (insurance prepaid)",
+        {
+         "2": [
+          "W60",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Bank",
+        {
+         "2": [
+          "W61",
+          "under"
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Total current assets",
+        {
+         "2": [
+          "W62",
+          null
+         ]
+        },
+        "b"
+       ],
+       [
+        "Less:",
+        "Current liabilities",
+        {},
+        "h"
+       ],
+       [
+        "",
+        "Trade payables",
+        {
+         "2": [
+          "W64",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Other payables (rent owing)",
+        {
+         "2": [
+          "W65",
+          "under"
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Total current liabilities",
+        {
+         "2": [
+          "W66",
+          "under"
+         ]
+        },
+        "b"
+       ],
+       [
+        "",
+        "Net current assets (working capital)",
+        {
+         "3": [
+          "AB67",
+          "under"
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Net assets",
+        {
+         "3": [
+          "AB68",
+          "total"
+         ]
+        },
+        "b"
+       ],
+       [
+        "",
+        "Financed by:",
+        {},
+        "h"
+       ],
+       [
+        "",
+        "Capital at start of year",
+        {
+         "3": [
+          "AB70",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "Add:",
+        "Profit for the year",
+        {
+         "3": [
+          "AB71",
+          "under"
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "",
+        {
+         "3": [
+          "AB72",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "Less:",
+        "Drawings",
+        {
+         "3": [
+          "AB73",
+          "under"
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Capital at end of year",
+        {
+         "3": [
+          "AB74",
+          "total"
+         ]
+        },
+        "b"
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "Mock_Test.xlsx": {
+  "chapter": "mock",
+  "sheets": [
+   {
+    "sheet": "Mock A",
+    "mode": "q",
+    "qid": "A",
+    "level": 0,
+    "section": "A",
+    "label": "Section A: multiple choice, 10 marks",
+    "blocks": [
+     {
+      "k": "title",
+      "text": "Section A: multiple choice, 10 marks"
+     },
+     {
+      "k": "text",
+      "text": "Section A: multiple choice. 1 mark each. Choose A, B, C or D.",
+      "style": "p"
+     },
+     {
+      "k": "mcq",
+      "rows": [
+       [
+        "Which double entry writes off an irrecoverable debt?",
+        [
+         "Debit irrecoverable debts, credit trade receivable",
+         "Debit trade receivable, credit irrecoverable debts",
+         "Debit bank, credit irrecoverable debts",
+         "Debit allowance for irrecoverable debts, credit bank"
+        ],
+        "T11"
+       ],
+       [
+        "Trade receivables are RM40,000. The allowance is to be 5%. The allowance brought forward is RM2,500. What is the effect on the Statement of Profit or Loss?",
+        [
+         "Expense of RM2,000",
+         "Income of RM500",
+         "Expense of RM500",
+         "Income of RM2,000"
+        ],
+        "T18"
+       ],
+       [
+        "A machine costs RM30,000, has a residual value of RM3,000 and a useful life of 6 years. What is the annual straight line depreciation?",
+        [
+         "RM5,000",
+         "RM3,000",
+         "RM4,500",
+         "RM5,500"
+        ],
+        "T25"
+       ],
+       [
+        "Equipment costs RM25,000 and is depreciated at 20% per year, reducing balance. What is the depreciation charge in Year 2?",
+        [
+         "RM5,000",
+         "RM3,200",
+         "RM20,000",
+         "RM4,000"
+        ],
+        "T32"
+       ],
+       [
+        "A vehicle cost RM20,000. Accumulated depreciation is RM12,000. It is sold for RM9,500. What is the result?",
+        [
+         "Profit of RM1,500",
+         "Loss of RM1,500",
+         "Profit of RM9,500",
+         "Loss of RM8,000"
+        ],
+        "T39"
+       ],
+       [
+        "Rent paid during the year was RM7,200. At the year end RM600 was owing. What is the rent expense?",
+        [
+         "RM6,600",
+         "RM7,200",
+         "RM7,800",
+         "RM8,400"
+        ],
+        "T46"
+       ],
+       [
+        "How is income received in advance shown in the Statement of Financial Position?",
+        [
+         "Current asset",
+         "Current liability",
+         "Other income",
+         "Non-current liability"
+        ],
+        "T53"
+       ],
+       [
+        "A RM10 stapler is recorded as an expense, not a non-current asset. Which concept applies?",
+        [
+         "Prudence",
+         "Consistency",
+         "Going concern",
+         "Materiality"
+        ],
+        "T60"
+       ],
+       [
+        "Where is carriage inwards shown?",
+        [
+         "Expenses in the Statement of Profit or Loss",
+         "Cost of sales",
+         "Current liabilities",
+         "Other income"
+        ],
+        "T67"
+       ],
+       [
+        "Current assets are RM25,000, current liabilities RM9,000 and a long-term loan RM10,000. What is the working capital?",
+        [
+         "RM6,000",
+         "RM34,000",
+         "RM16,000",
+         "RM26,000"
+        ],
+        "T74"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sheet": "Mock A Ans",
+    "mode": "a",
+    "qid": "A",
+    "level": 0,
+    "section": "A",
+    "label": "Section A: multiple choice, 10 marks",
+    "blocks": [
+     {
+      "k": "title",
+      "text": "Section A: multiple choice, 10 marks: Answers"
+     },
+     {
+      "k": "text",
+      "text": "Section A: multiple choice. 1 mark each. Choose A, B, C or D.",
+      "style": "p"
+     },
+     {
+      "k": "mcq",
+      "rows": [
+       [
+        "Which double entry writes off an irrecoverable debt?",
+        [
+         "Debit irrecoverable debts, credit trade receivable",
+         "Debit trade receivable, credit irrecoverable debts",
+         "Debit bank, credit irrecoverable debts",
+         "Debit allowance for irrecoverable debts, credit bank"
+        ],
+        "T11"
+       ],
+       [
+        "Trade receivables are RM40,000. The allowance is to be 5%. The allowance brought forward is RM2,500. What is the effect on the Statement of Profit or Loss?",
+        [
+         "Expense of RM2,000",
+         "Income of RM500",
+         "Expense of RM500",
+         "Income of RM2,000"
+        ],
+        "T18"
+       ],
+       [
+        "A machine costs RM30,000, has a residual value of RM3,000 and a useful life of 6 years. What is the annual straight line depreciation?",
+        [
+         "RM5,000",
+         "RM3,000",
+         "RM4,500",
+         "RM5,500"
+        ],
+        "T25"
+       ],
+       [
+        "Equipment costs RM25,000 and is depreciated at 20% per year, reducing balance. What is the depreciation charge in Year 2?",
+        [
+         "RM5,000",
+         "RM3,200",
+         "RM20,000",
+         "RM4,000"
+        ],
+        "T32"
+       ],
+       [
+        "A vehicle cost RM20,000. Accumulated depreciation is RM12,000. It is sold for RM9,500. What is the result?",
+        [
+         "Profit of RM1,500",
+         "Loss of RM1,500",
+         "Profit of RM9,500",
+         "Loss of RM8,000"
+        ],
+        "T39"
+       ],
+       [
+        "Rent paid during the year was RM7,200. At the year end RM600 was owing. What is the rent expense?",
+        [
+         "RM6,600",
+         "RM7,200",
+         "RM7,800",
+         "RM8,400"
+        ],
+        "T46"
+       ],
+       [
+        "How is income received in advance shown in the Statement of Financial Position?",
+        [
+         "Current asset",
+         "Current liability",
+         "Other income",
+         "Non-current liability"
+        ],
+        "T53"
+       ],
+       [
+        "A RM10 stapler is recorded as an expense, not a non-current asset. Which concept applies?",
+        [
+         "Prudence",
+         "Consistency",
+         "Going concern",
+         "Materiality"
+        ],
+        "T60"
+       ],
+       [
+        "Where is carriage inwards shown?",
+        [
+         "Expenses in the Statement of Profit or Loss",
+         "Cost of sales",
+         "Current liabilities",
+         "Other income"
+        ],
+        "T67"
+       ],
+       [
+        "Current assets are RM25,000, current liabilities RM9,000 and a long-term loan RM10,000. What is the working capital?",
+        [
+         "RM6,000",
+         "RM34,000",
+         "RM16,000",
+         "RM26,000"
+        ],
+        "T74"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sheet": "Mock B1",
+    "mode": "q",
+    "qid": "B1",
+    "level": 0,
+    "section": "B",
+    "label": "Section B, Chapter 8: 10 marks",
+    "blocks": [
+     {
+      "k": "title",
+      "text": "Section B, Chapter 8: 10 marks"
+     },
+     {
+      "k": "text",
+      "text": "Lim's year ends on 31 December 2025. Trade receivables are RM45,600 before writing off a debt of RM1,600 owed by Tan, who is bankrupt. The allowance for irrecoverable debts brought forward is RM1,500. It is to be 4% of the remaining trade receivables.",
+      "style": "p"
+     },
+     {
+      "k": "data",
+      "title": "Figures from the question",
+      "md": false,
+      "rows": [
+       [
+        "Trade receivables before writing off Tan (RM)",
+        45600,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Tan's debt (RM)",
+        1600,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Allowance brought forward (RM)",
+        1500,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Allowance rate",
+        0.04,
+        "0.0%"
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "a) Calculate trade receivables after the write-off, the new allowance and the change in the allowance. (3)"
+     },
+     {
+      "k": "calc",
+      "rows": [
+       [
+        "Trade receivables after the write-off (RM)",
+        "X14",
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "New allowance (RM)",
+        "X15",
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Increase in the allowance (RM)",
+        "X16",
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "b) Prepare the journal entries to write off Tan's debt and to record the change in the allowance. (4)"
+     },
+     {
+      "k": "journal",
+      "rows": [
+       [
+        "y",
+        "2025",
+        true
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Irrecoverable debts",
+        "U21"
+       ],
+       [
+        "c",
+        "",
+        "Tan",
+        "AA22"
+       ],
+       [
+        "n",
+        "Being debt written off: customer bankrupt"
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Income statement",
+        "U24"
+       ],
+       [
+        "c",
+        "",
+        "Allowance for irrecoverable debts",
+        "AA25"
+       ],
+       [
+        "n",
+        "Being increase in the allowance"
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "c) Show the Statement of Financial Position extract for trade receivables. (3)"
+     },
+     {
+      "k": "statement",
+      "kind": "sofp",
+      "heading": [
+       "Statement of Financial Position (extract) at 31 December 2025"
+      ],
+      "rows": [
+       [
+        "",
+        "Current assets",
+        {},
+        "h"
+       ],
+       [
+        "",
+        "Trade receivables",
+        {
+         "1": [
+          "R33",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "Less:",
+        "Allowance for irrecoverable debts",
+        {
+         "1": [
+          "R34",
+          "under"
+         ],
+         "2": [
+          "W34",
+          null
+         ]
+        },
+        ""
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sheet": "Mock B1 Ans",
+    "mode": "a",
+    "qid": "B1",
+    "level": 0,
+    "section": "B",
+    "label": "Section B, Chapter 8: 10 marks",
+    "blocks": [
+     {
+      "k": "title",
+      "text": "Section B, Chapter 8: 10 marks: Answers"
+     },
+     {
+      "k": "text",
+      "text": "Lim's year ends on 31 December 2025. Trade receivables are RM45,600 before writing off a debt of RM1,600 owed by Tan, who is bankrupt. The allowance for irrecoverable debts brought forward is RM1,500. It is to be 4% of the remaining trade receivables.",
+      "style": "p"
+     },
+     {
+      "k": "data",
+      "title": "Figures from the question",
+      "md": false,
+      "rows": [
+       [
+        "Trade receivables before writing off Tan (RM)",
+        45600,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Tan's debt (RM)",
+        1600,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Allowance brought forward (RM)",
+        1500,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Allowance rate",
+        0.04,
+        "0.0%"
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "a) Calculate trade receivables after the write-off, the new allowance and the change in the allowance. (3)"
+     },
+     {
+      "k": "calc",
+      "rows": [
+       [
+        "Trade receivables after the write-off (RM)",
+        "X14",
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "New allowance (RM)",
+        "X15",
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Increase in the allowance (RM)",
+        "X16",
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "b) Prepare the journal entries to write off Tan's debt and to record the change in the allowance. (4)"
+     },
+     {
+      "k": "journal",
+      "rows": [
+       [
+        "y",
+        "2025",
+        true
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Irrecoverable debts",
+        "U21"
+       ],
+       [
+        "c",
+        "",
+        "Tan",
+        "AA22"
+       ],
+       [
+        "n",
+        "Being debt written off: customer bankrupt"
+       ],
+       [
+        "d",
+        "Dec 31",
+        "Income statement",
+        "U24"
+       ],
+       [
+        "c",
+        "",
+        "Allowance for irrecoverable debts",
+        "AA25"
+       ],
+       [
+        "n",
+        "Being increase in the allowance"
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "c) Show the Statement of Financial Position extract for trade receivables. (3)"
+     },
+     {
+      "k": "statement",
+      "kind": "sofp",
+      "heading": [
+       "Statement of Financial Position (extract) at 31 December 2025"
+      ],
+      "rows": [
+       [
+        "",
+        "Current assets",
+        {},
+        "h"
+       ],
+       [
+        "",
+        "Trade receivables",
+        {
+         "1": [
+          "R33",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "Less:",
+        "Allowance for irrecoverable debts",
+        {
+         "1": [
+          "R34",
+          "under"
+         ],
+         "2": [
+          "W34",
+          null
+         ]
+        },
+        ""
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sheet": "Mock B2",
+    "mode": "q",
+    "qid": "B2",
+    "level": 0,
+    "section": "B",
+    "label": "Section B, Chapter 10: 10 marks",
+    "blocks": [
+     {
+      "k": "title",
+      "text": "Section B, Chapter 10: 10 marks"
+     },
+     {
+      "k": "text",
+      "text": "On 1 January 2024 a business bought a van for RM48,000. It is depreciated at 25% per year, reducing balance. The year ends on 31 December. On 1 January 2026 the van was sold for RM25,000 by cheque.",
+      "style": "p"
+     },
+     {
+      "k": "data",
+      "title": "Figures from the question",
+      "md": false,
+      "rows": [
+       [
+        "Cost of van (RM)",
+        48000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Reducing balance rate",
+        0.25,
+        "0.0%"
+       ],
+       [
+        "Sale proceeds (RM)",
+        25000,
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "a) Calculate the depreciation for 2024 and 2025 and the carrying amount at 31 December 2025. (3)"
+     },
+     {
+      "k": "calc",
+      "rows": [
+       [
+        "Depreciation for 2024 (RM)",
+        "X13",
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Depreciation for 2025 (RM)",
+        "X14",
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Carrying amount at 31 December 2025 (RM)",
+        "X15",
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "b) Prepare the Disposal of van account. (5)"
+     },
+     {
+      "k": "ledger",
+      "name": "Disposal of Van Account",
+      "rows": [
+       {
+        "dr": [
+         "@Y",
+         "2026",
+         true
+        ],
+        "cr": [
+         "@Y",
+         "2026",
+         true
+        ]
+       },
+       {
+        "dr": [
+         "Jan 1",
+         "Van",
+         "GJ1",
+         "M21"
+        ],
+        "cr": [
+         "Jan 1",
+         "Provision for depreciation",
+         "GJ1",
+         "AC21"
+        ]
+       },
+       {
+        "dr": null,
+        "cr": [
+         "Jan 1",
+         "Bank",
+         "CB1",
+         "AC22"
+        ]
+       },
+       {
+        "dr": null,
+        "cr": [
+         "Dec 31",
+         "Income statement (loss on disposal)",
+         "GJ2",
+         "AC23"
+        ]
+       },
+       {
+        "total": true,
+        "dr": "M24",
+        "cr": "AC24"
+       }
+      ]
+     },
+     {
+      "k": "part",
+      "text": "c) State where the loss appears, and name the concept that requires depreciation. (2)"
+     },
+     {
+      "k": "choice",
+      "rows": [
+       [
+        "The loss on disposal is shown as",
+        "T27",
+        null
+       ],
+       [
+        "Concept that requires depreciation",
+        "T28",
+        [
+         "accruals",
+         "prudence"
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sheet": "Mock B2 Ans",
+    "mode": "a",
+    "qid": "B2",
+    "level": 0,
+    "section": "B",
+    "label": "Section B, Chapter 10: 10 marks",
+    "blocks": [
+     {
+      "k": "title",
+      "text": "Section B, Chapter 10: 10 marks: Answers"
+     },
+     {
+      "k": "text",
+      "text": "On 1 January 2024 a business bought a van for RM48,000. It is depreciated at 25% per year, reducing balance. The year ends on 31 December. On 1 January 2026 the van was sold for RM25,000 by cheque.",
+      "style": "p"
+     },
+     {
+      "k": "data",
+      "title": "Figures from the question",
+      "md": false,
+      "rows": [
+       [
+        "Cost of van (RM)",
+        48000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Reducing balance rate",
+        0.25,
+        "0.0%"
+       ],
+       [
+        "Sale proceeds (RM)",
+        25000,
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "a) Calculate the depreciation for 2024 and 2025 and the carrying amount at 31 December 2025. (3)"
+     },
+     {
+      "k": "calc",
+      "rows": [
+       [
+        "Depreciation for 2024 (RM)",
+        "X13",
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Depreciation for 2025 (RM)",
+        "X14",
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Carrying amount at 31 December 2025 (RM)",
+        "X15",
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "b) Prepare the Disposal of van account. (5)"
+     },
+     {
+      "k": "ledger",
+      "name": "Disposal of Van Account",
+      "rows": [
+       {
+        "dr": [
+         "@Y",
+         "2026",
+         true
+        ],
+        "cr": [
+         "@Y",
+         "2026",
+         true
+        ]
+       },
+       {
+        "dr": [
+         "Jan 1",
+         "Van",
+         "GJ1",
+         "M21"
+        ],
+        "cr": [
+         "Jan 1",
+         "Provision for depreciation",
+         "GJ1",
+         "AC21"
+        ]
+       },
+       {
+        "dr": null,
+        "cr": [
+         "Jan 1",
+         "Bank",
+         "CB1",
+         "AC22"
+        ]
+       },
+       {
+        "dr": null,
+        "cr": [
+         "Dec 31",
+         "Income statement (loss on disposal)",
+         "GJ2",
+         "AC23"
+        ]
+       },
+       {
+        "total": true,
+        "dr": "M24",
+        "cr": "AC24"
+       }
+      ]
+     },
+     {
+      "k": "part",
+      "text": "c) State where the loss appears, and name the concept that requires depreciation. (2)"
+     },
+     {
+      "k": "choice",
+      "rows": [
+       [
+        "The loss on disposal is shown as",
+        "T27",
+        null
+       ],
+       [
+        "Concept that requires depreciation",
+        "T28",
+        [
+         "accruals",
+         "prudence"
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sheet": "Mock B3",
+    "mode": "q",
+    "qid": "B3",
+    "level": 0,
+    "section": "B",
+    "label": "Section B, Chapter 11: 10 marks",
+    "blocks": [
+     {
+      "k": "title",
+      "text": "Section B, Chapter 11: 10 marks"
+     },
+     {
+      "k": "text",
+      "text": "Wong's year ends on 31 December 2025.",
+      "style": "p"
+     },
+     {
+      "k": "text",
+      "text": "Rent is RM900 per month. RM9,900 was paid during the year.",
+      "style": "bullet"
+     },
+     {
+      "k": "text",
+      "text": "Insurance of RM400 was prepaid at 1 January 2025. On 1 April 2025 RM3,000 was paid for 12 months.",
+      "style": "bullet"
+     },
+     {
+      "k": "data",
+      "title": "Figures from the question",
+      "md": false,
+      "rows": [
+       [
+        "Rent per month (RM)",
+        900,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Rent paid in 2025 (RM)",
+        9900,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Insurance prepaid at 1 January 2025 (RM)",
+        400,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Insurance paid on 1 April 2025 (RM)",
+        3000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Months of that policy used in 2025",
+        9,
+        "0"
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "a) Calculate the rent expense, the rent owing, the insurance expense and the insurance prepaid. (4)"
+     },
+     {
+      "k": "calc",
+      "rows": [
+       [
+        "Rent expense (RM)",
+        "X17",
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Rent owing (RM)",
+        "X18",
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Insurance expense (RM)",
+        "X19",
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Insurance prepaid (RM)",
+        "X20",
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "b) Prepare the Insurance account for the year. (4)"
+     },
+     {
+      "k": "ledger",
+      "name": "Insurance Account",
+      "rows": [
+       {
+        "dr": [
+         "@Y",
+         "2025",
+         true
+        ],
+        "cr": [
+         "@Y",
+         "2025",
+         true
+        ]
+       },
+       {
+        "dr": [
+         "Jan 1",
+         "Balance b/d",
+         "",
+         "M26"
+        ],
+        "cr": [
+         "Dec 31",
+         "Income statement",
+         "GJ1",
+         "AC26"
+        ]
+       },
+       {
+        "dr": [
+         "Apr 1",
+         "Bank",
+         "CB1",
+         "M27"
+        ],
+        "cr": [
+         "Dec 31",
+         "Balance c/d",
+         "",
+         "AC27"
+        ]
+       },
+       {
+        "total": true,
+        "dr": "M28",
+        "cr": "AC28"
+       },
+       {
+        "dr": [
+         "@Y",
+         "2026",
+         false
+        ],
+        "cr": null
+       },
+       {
+        "dr": [
+         "Jan 1",
+         "Balance b/d",
+         "",
+         "M30"
+        ],
+        "cr": null
+       }
+      ]
+     },
+     {
+      "k": "part",
+      "text": "c) Show where the rent owing and the insurance prepaid appear. (2)"
+     },
+     {
+      "k": "statement",
+      "kind": "sofp",
+      "heading": [
+       "Statement of Financial Position (extract) at 31 December 2025"
+      ],
+      "rows": [
+       [
+        "",
+        "Current assets",
+        {},
+        "h"
+       ],
+       [
+        "",
+        "Other receivables (insurance prepaid)",
+        {
+         "2": [
+          "W37",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "Less:",
+        "Current liabilities",
+        {},
+        "h"
+       ],
+       [
+        "",
+        "Other payables (rent owing)",
+        {
+         "2": [
+          "W39",
+          null
+         ]
+        },
+        ""
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sheet": "Mock B3 Ans",
+    "mode": "a",
+    "qid": "B3",
+    "level": 0,
+    "section": "B",
+    "label": "Section B, Chapter 11: 10 marks",
+    "blocks": [
+     {
+      "k": "title",
+      "text": "Section B, Chapter 11: 10 marks: Answers"
+     },
+     {
+      "k": "text",
+      "text": "Wong's year ends on 31 December 2025.",
+      "style": "p"
+     },
+     {
+      "k": "text",
+      "text": "Rent is RM900 per month. RM9,900 was paid during the year.",
+      "style": "bullet"
+     },
+     {
+      "k": "text",
+      "text": "Insurance of RM400 was prepaid at 1 January 2025. On 1 April 2025 RM3,000 was paid for 12 months.",
+      "style": "bullet"
+     },
+     {
+      "k": "data",
+      "title": "Figures from the question",
+      "md": false,
+      "rows": [
+       [
+        "Rent per month (RM)",
+        900,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Rent paid in 2025 (RM)",
+        9900,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Insurance prepaid at 1 January 2025 (RM)",
+        400,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Insurance paid on 1 April 2025 (RM)",
+        3000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Months of that policy used in 2025",
+        9,
+        "0"
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "a) Calculate the rent expense, the rent owing, the insurance expense and the insurance prepaid. (4)"
+     },
+     {
+      "k": "calc",
+      "rows": [
+       [
+        "Rent expense (RM)",
+        "X17",
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Rent owing (RM)",
+        "X18",
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Insurance expense (RM)",
+        "X19",
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Insurance prepaid (RM)",
+        "X20",
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "b) Prepare the Insurance account for the year. (4)"
+     },
+     {
+      "k": "ledger",
+      "name": "Insurance Account",
+      "rows": [
+       {
+        "dr": [
+         "@Y",
+         "2025",
+         true
+        ],
+        "cr": [
+         "@Y",
+         "2025",
+         true
+        ]
+       },
+       {
+        "dr": [
+         "Jan 1",
+         "Balance b/d",
+         "",
+         "M26"
+        ],
+        "cr": [
+         "Dec 31",
+         "Income statement",
+         "GJ1",
+         "AC26"
+        ]
+       },
+       {
+        "dr": [
+         "Apr 1",
+         "Bank",
+         "CB1",
+         "M27"
+        ],
+        "cr": [
+         "Dec 31",
+         "Balance c/d",
+         "",
+         "AC27"
+        ]
+       },
+       {
+        "total": true,
+        "dr": "M28",
+        "cr": "AC28"
+       },
+       {
+        "dr": [
+         "@Y",
+         "2026",
+         false
+        ],
+        "cr": null
+       },
+       {
+        "dr": [
+         "Jan 1",
+         "Balance b/d",
+         "",
+         "M30"
+        ],
+        "cr": null
+       }
+      ]
+     },
+     {
+      "k": "part",
+      "text": "c) Show where the rent owing and the insurance prepaid appear. (2)"
+     },
+     {
+      "k": "statement",
+      "kind": "sofp",
+      "heading": [
+       "Statement of Financial Position (extract) at 31 December 2025"
+      ],
+      "rows": [
+       [
+        "",
+        "Current assets",
+        {},
+        "h"
+       ],
+       [
+        "",
+        "Other receivables (insurance prepaid)",
+        {
+         "2": [
+          "W37",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "Less:",
+        "Current liabilities",
+        {},
+        "h"
+       ],
+       [
+        "",
+        "Other payables (rent owing)",
+        {
+         "2": [
+          "W39",
+          null
+         ]
+        },
+        ""
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sheet": "Mock B4",
+    "mode": "q",
+    "qid": "B4",
+    "level": 0,
+    "section": "B",
+    "label": "Section B, Chapter 12: 10 marks",
+    "blocks": [
+     {
+      "k": "title",
+      "text": "Section B, Chapter 12: 10 marks"
+     },
+     {
+      "k": "part",
+      "text": "a) Name the concept that applies to each situation. (4)"
+     },
+     {
+      "k": "choice",
+      "rows": [
+       [
+        "Goods taken by the owner are recorded as drawings.",
+        "T7",
+        null
+       ],
+       [
+        "A credit sale on 30 December is revenue of that year.",
+        "T8",
+        null
+       ],
+       [
+        "The same inventory valuation method is used every year.",
+        "T9",
+        null
+       ],
+       [
+        "Staff loyalty is not recorded in the accounts.",
+        "T10",
+        null
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "b) Goods cost RM3,000. They can be sold for RM2,600 after repairs of RM400. Calculate the net realisable value and the value for inventory, and name the concept. (3)"
+     },
+     {
+      "k": "data",
+      "title": "Figures from the question",
+      "md": false,
+      "rows": [
+       [
+        "Cost (RM)",
+        3000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Selling price (RM)",
+        2600,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Repairs needed (RM)",
+        400,
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "calc",
+      "rows": [
+       [
+        "Net realisable value (RM)",
+        "X18",
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Value for inventory (RM)",
+        "X19",
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "choice",
+      "rows": [
+       [
+        "Concept",
+        "T20",
+        null
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "c) Explain the going concern concept and how asset values would change if a business were closing. (3)"
+     },
+     {
+      "k": "written",
+      "text": "Going concern assumes the business will continue trading for the foreseeable future, so assets are shown at cost less depreciation. If the business were closing, assets would be shown at what they would raise if sold now, which is often much lower."
+     }
+    ]
+   },
+   {
+    "sheet": "Mock B4 Ans",
+    "mode": "a",
+    "qid": "B4",
+    "level": 0,
+    "section": "B",
+    "label": "Section B, Chapter 12: 10 marks",
+    "blocks": [
+     {
+      "k": "title",
+      "text": "Section B, Chapter 12: 10 marks: Answers"
+     },
+     {
+      "k": "part",
+      "text": "a) Name the concept that applies to each situation. (4)"
+     },
+     {
+      "k": "choice",
+      "rows": [
+       [
+        "Goods taken by the owner are recorded as drawings.",
+        "T7",
+        null
+       ],
+       [
+        "A credit sale on 30 December is revenue of that year.",
+        "T8",
+        null
+       ],
+       [
+        "The same inventory valuation method is used every year.",
+        "T9",
+        null
+       ],
+       [
+        "Staff loyalty is not recorded in the accounts.",
+        "T10",
+        null
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "b) Goods cost RM3,000. They can be sold for RM2,600 after repairs of RM400. Calculate the net realisable value and the value for inventory, and name the concept. (3)"
+     },
+     {
+      "k": "data",
+      "title": "Figures from the question",
+      "md": false,
+      "rows": [
+       [
+        "Cost (RM)",
+        3000,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Selling price (RM)",
+        2600,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Repairs needed (RM)",
+        400,
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "calc",
+      "rows": [
+       [
+        "Net realisable value (RM)",
+        "X18",
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "Value for inventory (RM)",
+        "X19",
+        "#,##0;(#,##0);\"-\""
+       ]
+      ]
+     },
+     {
+      "k": "choice",
+      "rows": [
+       [
+        "Concept",
+        "T20",
+        null
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "c) Explain the going concern concept and how asset values would change if a business were closing. (3)"
+     },
+     {
+      "k": "written",
+      "text": "Going concern assumes the business will continue trading for the foreseeable future, so assets are shown at cost less depreciation. If the business were closing, assets would be shown at what they would raise if sold now, which is often much lower."
+     }
+    ]
+   },
+   {
+    "sheet": "Mock C",
+    "mode": "q",
+    "qid": "C",
+    "level": 0,
+    "section": "C",
+    "label": "Section C, financial statements: 50 marks",
+    "blocks": [
+     {
+      "k": "title",
+      "text": "Section C, financial statements: 50 marks"
+     },
+     {
+      "k": "text",
+      "text": "Siti Enterprise. Trial balance at 31 December 2025 and additional information.",
+      "style": "p"
+     },
+     {
+      "k": "tb",
+      "title": "Siti Enterprise: Trial Balance at 31 December 2025",
+      "rows": [
+       [
+        "Revenue",
+        null,
+        125000
+       ],
+       [
+        "Purchases",
+        68000,
+        null
+       ],
+       [
+        "Sales returns",
+        2000,
+        null
+       ],
+       [
+        "Purchases returns",
+        null,
+        1500
+       ],
+       [
+        "Carriage inwards",
+        1200,
+        null
+       ],
+       [
+        "Carriage outwards",
+        800,
+        null
+       ],
+       [
+        "Inventory at 1 January 2025",
+        9000,
+        null
+       ],
+       [
+        "Wages",
+        18000,
+        null
+       ],
+       [
+        "Rent",
+        7700,
+        null
+       ],
+       [
+        "Insurance",
+        2400,
+        null
+       ],
+       [
+        "Electricity",
+        1900,
+        null
+       ],
+       [
+        "Discount allowed",
+        500,
+        null
+       ],
+       [
+        "Discount received",
+        null,
+        700
+       ],
+       [
+        "Rent received",
+        null,
+        3000
+       ],
+       [
+        "Irrecoverable debts",
+        600,
+        null
+       ],
+       [
+        "Premises at cost",
+        80000,
+        null
+       ],
+       [
+        "Fixtures at cost",
+        15000,
+        null
+       ],
+       [
+        "Provision for depreciation: fixtures",
+        null,
+        3000
+       ],
+       [
+        "Motor vehicle at cost",
+        32000,
+        null
+       ],
+       [
+        "Provision for depreciation: motor vehicle",
+        null,
+        12000
+       ],
+       [
+        "Trade receivables",
+        16200,
+        null
+       ],
+       [
+        "Allowance for irrecoverable debts",
+        null,
+        700
+       ],
+       [
+        "Trade payables",
+        null,
+        9800
+       ],
+       [
+        "Bank overdraft",
+        null,
+        2100
+       ],
+       [
+        "Cash",
+        300,
+        null
+       ],
+       [
+        "Loan (repayable 2030)",
+        null,
+        20000
+       ],
+       [
+        "Capital",
+        null,
+        89800
+       ],
+       [
+        "Drawings",
+        12000,
+        null
+       ]
+      ],
+      "totals": [
+       267600,
+       267600
+      ]
+     },
+     {
+      "k": "data",
+      "title": "Additional information at 31 December 2025",
+      "md": true,
+      "rows": [
+       [
+        "1. Closing inventory (RM)",
+        10500,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "2. Rent owing (RM)",
+        700,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "3. Insurance prepaid (RM)",
+        600,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "4. Rent received in advance (RM)",
+        250,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "5. Further irrecoverable debt to write off (RM)",
+        200,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "6. Allowance: % of remaining trade receivables",
+        0.05,
+        "0.0%"
+       ],
+       [
+        "7. Fixtures: % of cost per year (straight line)",
+        0.1,
+        "0.0%"
+       ],
+       [
+        "7. Motor vehicle: reducing balance rate",
+        0.25,
+        "0.0%"
+       ],
+       [
+        "8. Loan interest per year (unpaid)",
+        0.06,
+        "0.0%"
+       ]
+      ]
+     },
+     {
+      "k": "text",
+      "text": "Premises are not depreciated.",
+      "style": "p"
+     },
+     {
+      "k": "part",
+      "text": "a) Prepare the Statement of Profit or Loss for the year ended 31 December 2025. (25)"
+     },
+     {
+      "k": "statement",
+      "kind": "spl",
+      "heading": [
+       "Siti Enterprise",
+       "Statement of Profit or Loss for the year ended 31 December 2025"
+      ],
+      "rows": [
+       [
+        "",
+        "Revenue",
+        {
+         "3": [
+          "AB55",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "Less:",
+        "Sales returns",
+        {
+         "3": [
+          "AB56",
+          "under"
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Net revenue",
+        {
+         "3": [
+          "AB57",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "Less:",
+        "Cost of sales",
+        {},
+        "h"
+       ],
+       [
+        "",
+        "Opening inventory",
+        {
+         "2": [
+          "W59",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "Add:",
+        "Purchases",
+        {
+         "1": [
+          "R60",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "Less:",
+        "Purchases returns",
+        {
+         "1": [
+          "R61",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "Add:",
+        "Carriage inwards",
+        {
+         "1": [
+          "R62",
+          "under"
+         ],
+         "2": [
+          "W62",
+          "under"
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Cost of goods available for sale",
+        {
+         "2": [
+          "W63",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "Less:",
+        "Closing inventory",
+        {
+         "2": [
+          "W64",
+          "under"
+         ],
+         "3": [
+          "AB64",
+          "under"
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Gross profit",
+        {
+         "3": [
+          "AB65",
+          null
+         ]
+        },
+        "b"
+       ],
+       [
+        "Add:",
+        "Other income",
+        {},
+        "h"
+       ],
+       [
+        "",
+        "Discount received",
+        {
+         "2": [
+          "W67",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Rent received",
+        {
+         "2": [
+          "W68",
+          "under"
+         ],
+         "3": [
+          "AB68",
+          "under"
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "",
+        {
+         "3": [
+          "AB69",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "Less:",
+        "Expenses",
+        {},
+        "h"
+       ],
+       [
+        "",
+        "Wages",
+        {
+         "2": [
+          "W71",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Rent",
+        {
+         "2": [
+          "W72",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Insurance",
+        {
+         "2": [
+          "W73",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Electricity",
+        {
+         "2": [
+          "W74",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Carriage outwards",
+        {
+         "2": [
+          "W75",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Discount allowed",
+        {
+         "2": [
+          "W76",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Irrecoverable debts",
+        {
+         "2": [
+          "W77",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Increase in allowance for irrecoverable debts",
+        {
+         "2": [
+          "W78",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Depreciation: fixtures",
+        {
+         "2": [
+          "W79",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Depreciation: motor vehicle",
+        {
+         "2": [
+          "W80",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Loan interest",
+        {
+         "2": [
+          "W81",
+          "under"
+         ],
+         "3": [
+          "AB81",
+          "under"
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Profit for the year",
+        {
+         "3": [
+          "AB82",
+          "total"
+         ]
+        },
+        "b"
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "b) Prepare the Statement of Financial Position at 31 December 2025. (25)"
+     },
+     {
+      "k": "statement",
+      "kind": "sofp",
+      "heading": [
+       "Siti Enterprise",
+       "Statement of Financial Position at 31 December 2025"
+      ],
+      "rows": [
+       [
+        "",
+        "Non-current assets",
+        {},
+        "h"
+       ],
+       [
+        "",
+        "Premises",
+        {
+         "1": [
+          "R90",
+          null
+         ],
+         "2": [
+          "W90",
+          null
+         ],
+         "3": [
+          "AB90",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Fixtures",
+        {
+         "1": [
+          "R91",
+          null
+         ],
+         "2": [
+          "W91",
+          null
+         ],
+         "3": [
+          "AB91",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Motor vehicle",
+        {
+         "1": [
+          "R92",
+          "under"
+         ],
+         "2": [
+          "W92",
+          "under"
+         ],
+         "3": [
+          "AB92",
+          "under"
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Total non-current assets",
+        {
+         "1": [
+          "R93",
+          null
+         ],
+         "2": [
+          "W93",
+          null
+         ],
+         "3": [
+          "AB93",
+          null
+         ]
+        },
+        "b"
+       ],
+       [
+        "",
+        "Current assets",
+        {},
+        "h"
+       ],
+       [
+        "",
+        "Inventory",
+        {
+         "2": [
+          "W95",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Trade receivables",
+        {
+         "1": [
+          "R96",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "Less:",
+        "Allowance for irrecoverable debts",
+        {
+         "1": [
+          "R97",
+          "under"
+         ],
+         "2": [
+          "W97",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Other receivables (insurance prepaid)",
+        {
+         "2": [
+          "W98",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Cash",
+        {
+         "2": [
+          "W99",
+          "under"
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Total current assets",
+        {
+         "2": [
+          "W100",
+          null
+         ]
+        },
+        "b"
+       ],
+       [
+        "Less:",
+        "Current liabilities",
+        {},
+        "h"
+       ],
+       [
+        "",
+        "Trade payables",
+        {
+         "2": [
+          "W102",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Other payables (rent + rent received in advance + interest)",
+        {
+         "2": [
+          "W103",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Bank overdraft",
+        {
+         "2": [
+          "W104",
+          "under"
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Total current liabilities",
+        {
+         "2": [
+          "W105",
+          "under"
+         ]
+        },
+        "b"
+       ],
+       [
+        "",
+        "Net current assets (working capital)",
+        {
+         "3": [
+          "AB106",
+          "under"
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "",
+        {
+         "3": [
+          "AB107",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "Less:",
+        "Non-current liabilities",
+        {},
+        "h"
+       ],
+       [
+        "",
+        "Loan (repayable 2030)",
+        {
+         "3": [
+          "AB109",
+          "under"
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Net assets",
+        {
+         "3": [
+          "AB110",
+          "total"
+         ]
+        },
+        "b"
+       ],
+       [
+        "",
+        "Financed by:",
+        {},
+        "h"
+       ],
+       [
+        "",
+        "Capital at start of year",
+        {
+         "3": [
+          "AB112",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "Add:",
+        "Profit for the year",
+        {
+         "3": [
+          "AB113",
+          "under"
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "",
+        {
+         "3": [
+          "AB114",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "Less:",
+        "Drawings",
+        {
+         "3": [
+          "AB115",
+          "under"
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Capital at end of year",
+        {
+         "3": [
+          "AB116",
+          "total"
+         ]
+        },
+        "b"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sheet": "Mock C Ans",
+    "mode": "a",
+    "qid": "C",
+    "level": 0,
+    "section": "C",
+    "label": "Section C, financial statements: 50 marks",
+    "blocks": [
+     {
+      "k": "title",
+      "text": "Section C, financial statements: 50 marks: Answers"
+     },
+     {
+      "k": "text",
+      "text": "Siti Enterprise. Trial balance at 31 December 2025 and additional information.",
+      "style": "p"
+     },
+     {
+      "k": "tb",
+      "title": "Siti Enterprise: Trial Balance at 31 December 2025",
+      "rows": [
+       [
+        "Revenue",
+        null,
+        125000
+       ],
+       [
+        "Purchases",
+        68000,
+        null
+       ],
+       [
+        "Sales returns",
+        2000,
+        null
+       ],
+       [
+        "Purchases returns",
+        null,
+        1500
+       ],
+       [
+        "Carriage inwards",
+        1200,
+        null
+       ],
+       [
+        "Carriage outwards",
+        800,
+        null
+       ],
+       [
+        "Inventory at 1 January 2025",
+        9000,
+        null
+       ],
+       [
+        "Wages",
+        18000,
+        null
+       ],
+       [
+        "Rent",
+        7700,
+        null
+       ],
+       [
+        "Insurance",
+        2400,
+        null
+       ],
+       [
+        "Electricity",
+        1900,
+        null
+       ],
+       [
+        "Discount allowed",
+        500,
+        null
+       ],
+       [
+        "Discount received",
+        null,
+        700
+       ],
+       [
+        "Rent received",
+        null,
+        3000
+       ],
+       [
+        "Irrecoverable debts",
+        600,
+        null
+       ],
+       [
+        "Premises at cost",
+        80000,
+        null
+       ],
+       [
+        "Fixtures at cost",
+        15000,
+        null
+       ],
+       [
+        "Provision for depreciation: fixtures",
+        null,
+        3000
+       ],
+       [
+        "Motor vehicle at cost",
+        32000,
+        null
+       ],
+       [
+        "Provision for depreciation: motor vehicle",
+        null,
+        12000
+       ],
+       [
+        "Trade receivables",
+        16200,
+        null
+       ],
+       [
+        "Allowance for irrecoverable debts",
+        null,
+        700
+       ],
+       [
+        "Trade payables",
+        null,
+        9800
+       ],
+       [
+        "Bank overdraft",
+        null,
+        2100
+       ],
+       [
+        "Cash",
+        300,
+        null
+       ],
+       [
+        "Loan (repayable 2030)",
+        null,
+        20000
+       ],
+       [
+        "Capital",
+        null,
+        89800
+       ],
+       [
+        "Drawings",
+        12000,
+        null
+       ]
+      ],
+      "totals": [
+       267600,
+       267600
+      ]
+     },
+     {
+      "k": "data",
+      "title": "Additional information at 31 December 2025",
+      "md": true,
+      "rows": [
+       [
+        "1. Closing inventory (RM)",
+        10500,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "2. Rent owing (RM)",
+        700,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "3. Insurance prepaid (RM)",
+        600,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "4. Rent received in advance (RM)",
+        250,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "5. Further irrecoverable debt to write off (RM)",
+        200,
+        "#,##0;(#,##0);\"-\""
+       ],
+       [
+        "6. Allowance: % of remaining trade receivables",
+        0.05,
+        "0.0%"
+       ],
+       [
+        "7. Fixtures: % of cost per year (straight line)",
+        0.1,
+        "0.0%"
+       ],
+       [
+        "7. Motor vehicle: reducing balance rate",
+        0.25,
+        "0.0%"
+       ],
+       [
+        "8. Loan interest per year (unpaid)",
+        0.06,
+        "0.0%"
+       ]
+      ]
+     },
+     {
+      "k": "text",
+      "text": "Premises are not depreciated.",
+      "style": "p"
+     },
+     {
+      "k": "part",
+      "text": "a) Prepare the Statement of Profit or Loss for the year ended 31 December 2025. (25)"
+     },
+     {
+      "k": "statement",
+      "kind": "spl",
+      "heading": [
+       "Siti Enterprise",
+       "Statement of Profit or Loss for the year ended 31 December 2025"
+      ],
+      "rows": [
+       [
+        "",
+        "Revenue",
+        {
+         "3": [
+          "AB55",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "Less:",
+        "Sales returns",
+        {
+         "3": [
+          "AB56",
+          "under"
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Net revenue",
+        {
+         "3": [
+          "AB57",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "Less:",
+        "Cost of sales",
+        {},
+        "h"
+       ],
+       [
+        "",
+        "Opening inventory",
+        {
+         "2": [
+          "W59",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "Add:",
+        "Purchases",
+        {
+         "1": [
+          "R60",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "Less:",
+        "Purchases returns",
+        {
+         "1": [
+          "R61",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "Add:",
+        "Carriage inwards",
+        {
+         "1": [
+          "R62",
+          "under"
+         ],
+         "2": [
+          "W62",
+          "under"
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Cost of goods available for sale",
+        {
+         "2": [
+          "W63",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "Less:",
+        "Closing inventory",
+        {
+         "2": [
+          "W64",
+          "under"
+         ],
+         "3": [
+          "AB64",
+          "under"
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Gross profit",
+        {
+         "3": [
+          "AB65",
+          null
+         ]
+        },
+        "b"
+       ],
+       [
+        "Add:",
+        "Other income",
+        {},
+        "h"
+       ],
+       [
+        "",
+        "Discount received",
+        {
+         "2": [
+          "W67",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Rent received",
+        {
+         "2": [
+          "W68",
+          "under"
+         ],
+         "3": [
+          "AB68",
+          "under"
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "",
+        {
+         "3": [
+          "AB69",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "Less:",
+        "Expenses",
+        {},
+        "h"
+       ],
+       [
+        "",
+        "Wages",
+        {
+         "2": [
+          "W71",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Rent",
+        {
+         "2": [
+          "W72",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Insurance",
+        {
+         "2": [
+          "W73",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Electricity",
+        {
+         "2": [
+          "W74",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Carriage outwards",
+        {
+         "2": [
+          "W75",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Discount allowed",
+        {
+         "2": [
+          "W76",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Irrecoverable debts",
+        {
+         "2": [
+          "W77",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Increase in allowance for irrecoverable debts",
+        {
+         "2": [
+          "W78",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Depreciation: fixtures",
+        {
+         "2": [
+          "W79",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Depreciation: motor vehicle",
+        {
+         "2": [
+          "W80",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Loan interest",
+        {
+         "2": [
+          "W81",
+          "under"
+         ],
+         "3": [
+          "AB81",
+          "under"
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Profit for the year",
+        {
+         "3": [
+          "AB82",
+          "total"
+         ]
+        },
+        "b"
+       ]
+      ]
+     },
+     {
+      "k": "part",
+      "text": "b) Prepare the Statement of Financial Position at 31 December 2025. (25)"
+     },
+     {
+      "k": "statement",
+      "kind": "sofp",
+      "heading": [
+       "Siti Enterprise",
+       "Statement of Financial Position at 31 December 2025"
+      ],
+      "rows": [
+       [
+        "",
+        "Non-current assets",
+        {},
+        "h"
+       ],
+       [
+        "",
+        "Premises",
+        {
+         "1": [
+          "R90",
+          null
+         ],
+         "2": [
+          "W90",
+          null
+         ],
+         "3": [
+          "AB90",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Fixtures",
+        {
+         "1": [
+          "R91",
+          null
+         ],
+         "2": [
+          "W91",
+          null
+         ],
+         "3": [
+          "AB91",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Motor vehicle",
+        {
+         "1": [
+          "R92",
+          "under"
+         ],
+         "2": [
+          "W92",
+          "under"
+         ],
+         "3": [
+          "AB92",
+          "under"
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Total non-current assets",
+        {
+         "1": [
+          "R93",
+          null
+         ],
+         "2": [
+          "W93",
+          null
+         ],
+         "3": [
+          "AB93",
+          null
+         ]
+        },
+        "b"
+       ],
+       [
+        "",
+        "Current assets",
+        {},
+        "h"
+       ],
+       [
+        "",
+        "Inventory",
+        {
+         "2": [
+          "W95",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Trade receivables",
+        {
+         "1": [
+          "R96",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "Less:",
+        "Allowance for irrecoverable debts",
+        {
+         "1": [
+          "R97",
+          "under"
+         ],
+         "2": [
+          "W97",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Other receivables (insurance prepaid)",
+        {
+         "2": [
+          "W98",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Cash",
+        {
+         "2": [
+          "W99",
+          "under"
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Total current assets",
+        {
+         "2": [
+          "W100",
+          null
+         ]
+        },
+        "b"
+       ],
+       [
+        "Less:",
+        "Current liabilities",
+        {},
+        "h"
+       ],
+       [
+        "",
+        "Trade payables",
+        {
+         "2": [
+          "W102",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Other payables (rent + rent received in advance + interest)",
+        {
+         "2": [
+          "W103",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Bank overdraft",
+        {
+         "2": [
+          "W104",
+          "under"
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Total current liabilities",
+        {
+         "2": [
+          "W105",
+          "under"
+         ]
+        },
+        "b"
+       ],
+       [
+        "",
+        "Net current assets (working capital)",
+        {
+         "3": [
+          "AB106",
+          "under"
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "",
+        {
+         "3": [
+          "AB107",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "Less:",
+        "Non-current liabilities",
+        {},
+        "h"
+       ],
+       [
+        "",
+        "Loan (repayable 2030)",
+        {
+         "3": [
+          "AB109",
+          "under"
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Net assets",
+        {
+         "3": [
+          "AB110",
+          "total"
+         ]
+        },
+        "b"
+       ],
+       [
+        "",
+        "Financed by:",
+        {},
+        "h"
+       ],
+       [
+        "",
+        "Capital at start of year",
+        {
+         "3": [
+          "AB112",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "Add:",
+        "Profit for the year",
+        {
+         "3": [
+          "AB113",
+          "under"
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "",
+        {
+         "3": [
+          "AB114",
+          null
+         ]
+        },
+        ""
+       ],
+       [
+        "Less:",
+        "Drawings",
+        {
+         "3": [
+          "AB115",
+          "under"
+         ]
+        },
+        ""
+       ],
+       [
+        "",
+        "Capital at end of year",
+        {
+         "3": [
+          "AB116",
           "total"
          ]
         },

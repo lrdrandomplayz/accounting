@@ -152,6 +152,39 @@ e) Show the Statement of Financial Position extract for trade receivables. (2)
 f) Hamid says: "I will make the allowance 20% next year, just to be safe." Evaluate this idea. (3)
 <!-- END GENERATED: questions ch08 -->
 
+### Section D: Year-end journals
+
+Prepare journal entries in the format Date | Particulars | Debit | Credit, with narratives.
+
+> Self-marking Excel version: `excel/Ch08_Irrecoverable_Debts.xlsx`, sheets QJ8.1 and QJ8.2.
+
+<!-- BEGIN GENERATED: questions ch08 journals -->
+**J8.1 (Journal practice, Level 2: Easy to medium)**
+
+Mei Ling's year ends on 31 December 2025. Prepare journal entries for the following. Narratives are required.
+
+* 30 April 2025: Ahmad, who owes RM480, is declared bankrupt. The debt is written off.
+* 15 July 2025: a cheque for RM350 is received from Faridah. Her debt was written off in 2024.
+* 31 December 2025: the allowance for irrecoverable debts is to be 5% of trade receivables of RM23,000. The allowance brought forward is RM900.
+
+a) Calculate the change in the allowance for irrecoverable debts. (2)
+
+b) Prepare the journal entries. (8)
+
+**J8.2 (Journal practice, Level 3: Medium)**
+
+Chong's year ends on 30 June 2026. All entries are made on 30 June 2026.
+
+* Trade receivables are RM32,000 before writing off a debt of RM1,500 owed by Chen, who has disappeared.
+* The allowance for irrecoverable debts brought forward is RM2,000. It is to be 5% of the remaining trade receivables.
+* Irrecoverable debts of RM600 were written off earlier in the year. Together with Chen's debt, they are transferred to the income statement.
+* Irrecoverable debts recovered during the year total RM300. This is transferred to the income statement.
+
+a) Calculate the new allowance and the change in the allowance. (3)
+
+b) Prepare the journal entries. (8)
+<!-- END GENERATED: questions ch08 journals -->
+
 ---
 
 ## Chapter 10: Tangible Non-current Assets and Depreciation
@@ -283,6 +316,33 @@ d) Show the Statement of Financial Position extract for vans at 31 December 2025
 
 e) Kwame wants to change to the reducing balance method in 2026 so his profit looks higher. Advise him, naming the concept involved. (3)
 <!-- END GENERATED: questions ch10 -->
+
+### Section D: Year-end journals
+
+Prepare journal entries in the format Date | Particulars | Debit | Credit, with narratives.
+
+> Self-marking Excel version: `excel/Ch10_Depreciation.xlsx`, sheets QJ10.1 and QJ10.2.
+
+<!-- BEGIN GENERATED: questions ch10 journals -->
+**J10.1 (Journal practice, Level 2: Easy to medium)**
+
+Rahman's year ends on 31 December 2025.
+
+* 1 January 2025: bought a machine for RM36,000 by cheque. It will last 5 years with a residual value of RM6,000. Straight line method.
+* Motor vans cost RM50,000. Accumulated depreciation at 1 January 2025 was RM18,000. Vans are depreciated at 20% per year, reducing balance.
+
+a) Calculate the depreciation for 2025 on the machine and on the motor vans. (3)
+
+b) Prepare the journal entries for the purchase and for the depreciation. (6)
+
+**J10.2 (Journal practice, Level 3: Medium)**
+
+On 1 October 2025 Rahman sold equipment for RM7,500, paid into the bank. The equipment cost RM24,000. Accumulated depreciation to the date of sale was RM15,000. The year ends on 31 December 2025.
+
+a) Calculate the carrying amount and the loss on disposal. (2)
+
+b) Prepare the journal entries to record the disposal. (8)
+<!-- END GENERATED: questions ch10 journals -->
 
 ---
 
@@ -423,6 +483,38 @@ c) Calculate other receivables and other payables for the Statement of Financial
 
 d) Prepare the Insurance account for the year. (4)
 <!-- END GENERATED: questions ch11 -->
+
+### Section D: Year-end journals
+
+Prepare journal entries in the format Date | Particulars | Debit | Credit, with narratives.
+
+> Self-marking Excel version: `excel/Ch11_Accruals_Prepayments.xlsx`, sheets QJ11.1 and QJ11.2.
+
+<!-- BEGIN GENERATED: questions ch11 journals -->
+**J11.1 (Journal practice, Level 2: Easy to medium)**
+
+Siva's year ends on 31 December 2025. Prepare the year-end adjustment journals.
+
+* Electricity of RM420 for December is owing.
+* On 1 October 2025 insurance of RM2,400 was paid for 12 months.
+* Wages of RM650 are owing.
+
+a) Calculate the insurance expense for 2025 and the amount prepaid. (2)
+
+b) Prepare the journal entries. (6)
+
+**J11.2 (Journal practice, Level 3: Medium)**
+
+Siva's year ends on 31 December 2025. Prepare the year-end adjustment journals.
+
+* Siva lets a room for RM500 per month. Rent received in 2025 was RM6,500, which includes January 2026.
+* Commission receivable of RM380 for 2025 has not been received.
+* Unused stationery at 31 December 2025 cost RM150.
+
+a) Calculate the rent income for 2025 and the rent received in advance. (2)
+
+b) Prepare the journal entries. (6)
+<!-- END GENERATED: questions ch11 journals -->
 
 ---
 
@@ -786,3 +878,51 @@ b) Prepare the Statement of Profit or Loss for the year ended 31 March 2026. (18
 
 c) Prepare the Statement of Financial Position at 31 March 2026. (16)
 <!-- END GENERATED: questions fs -->
+
+### Section C: Year-end journals
+
+Prepare journal entries in the format Date | Particulars | Debit | Credit, with narratives.
+
+> Self-marking Excel version: `excel/Financial_Statements.xlsx`, sheets QJFS.1 and QJFS.2.
+
+<!-- BEGIN GENERATED: questions fs journals -->
+**JFS.1 (Journal practice, Level 2: Easy to medium)**
+
+Amina Stores (see the worked example). Prepare the journal entries for the year-end adjustments at 31 December 2025.
+
+| Item | Figure |
+|---|---|
+| 1. Closing inventory (RM) | 9,500 |
+| 2. Rent owing (RM) | 500 |
+| 3. Insurance prepaid (RM) | 300 |
+| 4. Trade receivables (RM) | 12,000 |
+| 4. Allowance brought forward (RM) | 400 |
+| 4. New allowance: % of trade receivables | 5% |
+| 5. Equipment at cost (RM) | 20,000 |
+| 5. Depreciation: % of cost per year | 10% |
+| 6. Loan (RM) | 10,000 |
+| 6. Loan interest per year, unpaid | 5% |
+
+a) Prepare the six journal entries. (12)
+
+**JFS.2 (Journal practice, Level 3: Medium)**
+
+Nadia's Crafts. After all year-end adjustments at 31 December 2025, the balances below remain. Prepare the closing journal entries that transfer them to the income statement, then transfer the profit and drawings to capital.
+
+| Item | Figure |
+|---|---|
+| Revenue (RM) | 52,000 |
+| Inventory at 1 January 2025 (RM) | 3,000 |
+| Purchases (RM) | 30,000 |
+| Inventory at 31 December 2025 (RM) | 3,500 |
+| Wages (RM) | 8,000 |
+| Rent (RM) | 4,800 |
+| Insurance (RM) | 1,000 |
+| General expenses (RM) | 900 |
+| Depreciation: fixtures (RM) | 1,000 |
+| Drawings (RM) | 6,000 |
+
+a) Calculate the profit for the year. (2)
+
+b) Prepare the closing journal entries. (10)
+<!-- END GENERATED: questions fs journals -->

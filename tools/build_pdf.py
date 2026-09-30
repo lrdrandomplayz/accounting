@@ -17,11 +17,13 @@ OUT = ROOT / "pdf"
 SOURCES = sorted((ROOT / "notes").glob("*.md")) + [
     ROOT / "model-questions" / "Model_Questions.md",
     ROOT / "model-questions" / "Answer_Key.md",
+    ROOT / "model-questions" / "Mock_Test.md",
+    ROOT / "model-questions" / "Mock_Test_Answers.md",
 ]
 
 CSS = """
 @page { size: A4; margin: 16mm 14mm; }
-body { font-family: Arial, Helvetica, sans-serif; font-size: 10.5pt; line-height: 1.45; color: #1a1a1a; }
+body { font-family: Arial, Helvetica, 'WenQuanYi Zen Hei', 'Noto Sans CJK SC', sans-serif; font-size: 10.5pt; line-height: 1.45; color: #1a1a1a; }
 h1 { font-size: 20pt; color: #1f3864; border-bottom: 3px solid #1f3864; padding-bottom: 4px; }
 h2 { font-size: 14pt; color: #1f3864; margin-top: 18px; border-bottom: 1px solid #c9d3e6; padding-bottom: 2px; }
 h3 { font-size: 12pt; color: #2f5496; margin-top: 14px; }
