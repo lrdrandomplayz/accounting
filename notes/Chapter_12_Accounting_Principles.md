@@ -1,6 +1,8 @@
 # Chapter 12: Fundamental Accounting Principles and Concepts
 
-> Excel file for this chapter: `excel/Ch12_Accounting_Concepts.xlsx` (includes a self-marking quiz)
+> Excel file for this chapter: `excel/Ch12_Accounting_Concepts.xlsx` (a self-marking quiz plus questions 12.15 to 12.19).
+>
+> All amounts are in Malaysian Ringgit (RM).
 
 ## 1. Learning goals
 
@@ -28,7 +30,7 @@ The business is **separate** from its owner. Only business transactions are reco
 
 Every transaction has **two effects**: one debit and one credit of equal value.
 
-* Example: buying equipment for $5,000 by cheque. Equipment rises (debit), bank falls (credit).
+* Example: buying equipment for RM5,000 by cheque. Equipment rises (debit), bank falls (credit).
 * This is why Assets = Capital + Liabilities always balances.
 
 ### 3.3 Money measurement
@@ -41,7 +43,7 @@ Only items which can be measured **in money** are recorded.
 
 Assets are recorded at their **original cost**, not their current market value.
 
-* Example: land bought for $50,000 ten years ago is still recorded at $50,000, even if it is now worth $90,000.
+* Example: land bought for RM50,000 ten years ago is still recorded at RM50,000, even if it is now worth RM90,000.
 * Cost is a fact supported by an invoice, so it is **objective**.
 
 ### 3.5 Going concern
@@ -81,7 +83,7 @@ Do not **overstate** assets or profit. Do not **understate** liabilities or loss
 
 Small (immaterial) items do not need strict treatment if the result would not affect a user's decision.
 
-* Example: a $5 stapler will last several years, but it is recorded as an expense rather than a non-current asset. It is not worth depreciating.
+* Example: a RM5 stapler will last several years, but it is recorded as an expense rather than a non-current asset. It is not worth depreciating.
 * What is material depends on the size of the business.
 
 ## 4. Summary table
@@ -117,7 +119,7 @@ Inventory is valued at the **lower** of:
 * **Cost:** what the business paid, plus carriage inwards.
 * **Net realisable value (NRV):** expected selling price minus any costs to sell it (repairs, selling costs).
 
-Example: goods cost $800. They are damaged. They can be sold for $700 after $50 of repairs. NRV = 700 - 50 = 650. Value the goods at **$650**.
+Example: goods cost RM800. They are damaged. They can be sold for RM700 after RM50 of repairs. NRV = 700 - 50 = 650. Value the goods at **RM650**.
 
 ## 7. Applying concepts: how to answer questions
 
@@ -129,7 +131,7 @@ When asked "Which concept applies?":
 
 ### Worked example 12.1
 
-"The owner took $400 of goods from the shop for her family."
+"The owner took RM400 of goods from the shop for her family."
 
 * Concept: **Business entity.**
 * Explanation: the business and the owner are separate, so the goods are recorded as drawings, not as a business expense.
@@ -151,6 +153,6 @@ When asked "Which concept applies?":
 
 1. Which concept means the owner's personal car is not in the business accounts?
 2. Which concept explains why depreciation methods should not change each year?
-3. Goods cost $1,200, selling price $1,500, selling costs $100. Value for inventory?
+3. Goods cost RM1,200, selling price RM1,500, selling costs RM100. Value for inventory?
 
 Answers: see `model-questions/Answer_Key.md`, Chapter 12 section.

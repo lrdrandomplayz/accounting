@@ -1,6 +1,8 @@
 # Chapter 10: Tangible Non-current Assets and Depreciation
 
-> Excel file for this chapter: `excel/Ch10_Depreciation.xlsx`
+> Excel file for this chapter: `excel/Ch10_Depreciation.xlsx`. The worked examples below come from its orange tabs; questions 10.9 to 10.13 are self-marking on the blue tabs.
+>
+> All amounts are in Malaysian Ringgit (RM).
 
 ## 1. Learning goals
 
@@ -22,7 +24,7 @@
 | Residual value | The amount you expect to sell the asset for at the end of its useful life. Also called scrap value. |
 | Useful life | The number of years the business expects to use the asset. |
 | Provision for depreciation | Also called accumulated depreciation. The **total** depreciation charged on an asset since it was bought. |
-| Net book value (NBV) | Cost minus accumulated depreciation. Also called carrying value. |
+| Carrying amount | Cost minus accumulated depreciation. Also called net book value (NBV). |
 | Disposal | Selling or scrapping a non-current asset. |
 
 ## 3. Capital and revenue expenditure
@@ -67,37 +69,41 @@ Or a fixed percentage of **cost** each year.
 
 ### Worked example 10.1
 
-A machine costs $20,000. Expected residual value is $2,000 after 4 years.
+A machine costs RM20,000. Expected residual value is RM2,000 after 4 years.
 
-Annual depreciation = (20,000 - 2,000) / 4 = **$4,500 per year**
+Annual depreciation = (20,000 - 2,000) / 4 = **RM4,500 per year**
 
-| Year | Cost | Depreciation for year | Accumulated depreciation | NBV at end |
-|---|---|---|---|---|
-| 1 | 20,000 | 4,500 | 4,500 | 15,500 |
-| 2 | 20,000 | 4,500 | 9,000 | 11,000 |
-| 3 | 20,000 | 4,500 | 13,500 | 6,500 |
-| 4 | 20,000 | 4,500 | 18,000 | 2,000 |
+<!-- BEGIN GENERATED: ch10.ex1.table -->
+| Year | Depreciation for year (RM) | Accumulated depreciation (RM) | Carrying amount at end (RM) |
+|---|---:|---:|---:|
+| 1 | 4,500 | 4,500 | 15,500 |
+| 2 | 4,500 | 9,000 | 11,000 |
+| 3 | 4,500 | 13,500 | 6,500 |
+| 4 | 4,500 | 18,000 | 2,000 |
+<!-- END GENERATED: ch10.ex1.table -->
 
 **Best for:** assets which give the same benefit each year, for example premises or furniture.
 
 ## 7. Method 2: Reducing balance
 
-A fixed percentage of the **net book value** (not cost) is charged each year. The charge is high in early years and falls each year.
+A fixed percentage of the **carrying amount** (not cost) is charged each year. The charge is high in early years and falls each year.
 
 **Formula:**
 
-> Depreciation = NBV at start of year x percentage
+> Depreciation = Carrying amount at start of year x percentage
 
 ### Worked example 10.2
 
-Equipment costs $10,000. Depreciation is 20% per year, reducing balance.
+Equipment costs RM10,000. Depreciation is 20% per year, reducing balance.
 
-| Year | NBV at start | Depreciation (20%) | Accumulated depreciation | NBV at end |
-|---|---|---|---|---|
+<!-- BEGIN GENERATED: ch10.ex2.table -->
+| Year | Carrying amount at start (RM) | Depreciation (RM) | Accumulated depreciation (RM) | Carrying amount at end (RM) |
+|---|---:|---:|---:|---:|
 | 1 | 10,000 | 2,000 | 2,000 | 8,000 |
 | 2 | 8,000 | 1,600 | 3,600 | 6,400 |
 | 3 | 6,400 | 1,280 | 4,880 | 5,120 |
 | 4 | 5,120 | 1,024 | 5,904 | 4,096 |
+<!-- END GENERATED: ch10.ex2.table -->
 
 **Best for:** assets which lose more value in the early years and need more repairs later, for example motor vehicles. High depreciation early plus low repairs balances with low depreciation later plus high repairs.
 
@@ -111,13 +117,13 @@ Used for many small, low cost items such as loose tools. It is too slow to depre
 
 ### Worked example 10.3
 
-| | $ |
-|---|---|
-| Loose tools at start of year | 1,200 |
-| Add: Tools bought during year | 500 |
-| | 1,700 |
-| Less: Loose tools valued at end of year | 1,100 |
-| **Depreciation for the year** | **600** |
+| | Particulars | RM | RM | RM |
+|---|---|---:|---:|---:|
+| | Loose tools at start of year | | | 1,200 |
+| Add: | Tools bought during the year | | | 500 |
+| | | | | 1,700 |
+| Less: | Loose tools valued at end of year | | | (1,100) |
+| | **Depreciation for the year** | | | **600** |
 
 ## 9. Buying part way through the year
 
@@ -126,9 +132,9 @@ Businesses choose a policy and use it consistently:
 * **Full year** charge in the year of purchase and none in the year of sale, **or**
 * **Monthly (time) basis:** charge only for the months owned.
 
-Example: a machine costing $12,000 is bought on 1 April. Depreciation is 10% per year on cost. Year end is 31 December.
+Example: a machine costing RM12,000 is bought on 1 April. Depreciation is 10% per year on cost. Year end is 31 December.
 
-Full year charge = 12,000 x 10% = $1,200. Monthly basis for 9 months = 1,200 x 9/12 = **$900**.
+Full year charge = 12,000 x 10% = RM1,200. Monthly basis for 9 months = 1,200 x 9/12 = **RM900**.
 
 Always read the question to see which policy to use.
 
@@ -142,27 +148,38 @@ The asset stays at **cost** in its own account. Depreciation builds up in a sepa
 
 ### Worked example 10.4 (using example 10.1)
 
-**Machinery account**
+<!-- BEGIN GENERATED: ch10.ex4.machinery -->
+**Dr** &emsp;&emsp; **Machinery Account** &emsp;&emsp; **Cr**
 
-| Dr | | $ | Cr | | $ |
-|---|---|---|---|---|---|
-| Year 1 Jan 1 | Bank | 20,000 | Year 1 Dec 31 | Balance c/d | 20,000 |
+| Date | Particulars | Folio | Amount (RM) | Date | Particulars | Folio | Amount (RM) |
+|---|---|---|---:|---|---|---|---:|
+| Year 1 Jan 1 | Bank | CB1 | 20,000 | Year 1 Dec 31 | Balance c/d |  | 20,000 |
+| | | | **20,000** | | | | **20,000** |
+| Year 2 Jan 1 | Balance b/d |  | 20,000 |  | | |  |
+<!-- END GENERATED: ch10.ex4.machinery -->
 
-**Provision for depreciation of machinery account**
+<!-- BEGIN GENERATED: ch10.ex4.provision -->
+**Dr** &emsp;&emsp; **Provision for Depreciation of Machinery Account** &emsp;&emsp; **Cr**
 
-| Dr | | $ | Cr | | $ |
-|---|---|---|---|---|---|
-| Year 1 Dec 31 | Balance c/d | 4,500 | Year 1 Dec 31 | Income statement | 4,500 |
-| Year 2 Dec 31 | Balance c/d | 9,000 | Year 2 Jan 1 | Balance b/d | 4,500 |
-| | | | Year 2 Dec 31 | Income statement | 4,500 |
-| | | **9,000** | | | **9,000** |
-| | | | Year 3 Jan 1 | Balance b/d | 9,000 |
+| Date | Particulars | Folio | Amount (RM) | Date | Particulars | Folio | Amount (RM) |
+|---|---|---|---:|---|---|---|---:|
+| Year 1 Dec 31 | Balance c/d |  | 4,500 | Year 1 Dec 31 | Income statement | GJ1 | 4,500 |
+| | | | **4,500** | | | | **4,500** |
+| Year 2 Dec 31 | Balance c/d |  | 9,000 | Year 2 Jan 1 | Balance b/d |  | 4,500 |
+|  | | |  | Year 2 Dec 31 | Income statement | GJ2 | 4,500 |
+| | | | **9,000** | | | | **9,000** |
+|  | | |  | Year 3 Jan 1 | Balance b/d |  | 9,000 |
+<!-- END GENERATED: ch10.ex4.provision -->
 
-**Statement of Financial Position (extract) at end of Year 2**
+<!-- BEGIN GENERATED: ch10.ex4.sofp -->
+**Statement of Financial Position (extract) at the end of Year 2**
 
-| Non-current assets | Cost $ | Accumulated depreciation $ | NBV $ |
-|---|---|---|---|
-| Machinery | 20,000 | 9,000 | 11,000 |
+| | Particulars | RM | RM | RM |
+|---|---|---:|---:|---:|
+| | | **Cost** | **Accumulated Depreciation** | **Carrying Amount** |
+|  | **Non-current assets** |  |  |  |
+|  | Machinery | 20,000 | 9,000 | 11,000 |
+<!-- END GENERATED: ch10.ex4.sofp -->
 
 ## 11. Disposal of a non-current asset
 
@@ -178,38 +195,40 @@ When an asset is sold, open a **Disposal account**. It works out the profit or l
 * If the **credit** side is bigger, the difference is a **profit** on disposal (income).
 * If the **debit** side is bigger, the difference is a **loss** on disposal (expense).
 
-**Quick check:** Profit or loss = Sale proceeds - NBV at date of sale.
+**Quick check:** Profit or loss = Sale proceeds - carrying amount at date of sale.
 
 ### Worked example 10.5
 
-A van cost $30,000. Accumulated depreciation to the date of sale is $18,000. It is sold for $10,000 cash paid into the bank.
+A van cost RM30,000. Accumulated depreciation to the date of sale is RM18,000. It is sold for RM10,000 cash paid into the bank.
 
-NBV = 30,000 - 18,000 = 12,000. Proceeds 10,000. **Loss = 2,000.**
+Carrying amount = 30,000 - 18,000 = 12,000. Proceeds 10,000. **Loss = 2,000.**
 
-**Disposal of van account**
+<!-- BEGIN GENERATED: ch10.ex5.ledger -->
+**Dr** &emsp;&emsp; **Disposal of Van Account** &emsp;&emsp; **Cr**
 
-| Dr | | $ | Cr | | $ |
-|---|---|---|---|---|---|
-| | Van (cost) | 30,000 | | Provision for depreciation | 18,000 |
-| | | | | Bank | 10,000 |
-| | | | | Income statement (loss on disposal) | 2,000 |
-| | | **30,000** | | | **30,000** |
+| Date | Particulars | Folio | Amount (RM) | Date | Particulars | Folio | Amount (RM) |
+|---|---|---|---:|---|---|---|---:|
+| Date of sale | Van (cost) | GJ1 | 30,000 | Date of sale | Provision for depreciation | GJ1 | 18,000 |
+|  | | |  | Date of sale | Bank | CB1 | 10,000 |
+|  | | |  | Year end | Income statement (loss on disposal) | GJ2 | 2,000 |
+| | | | **30,000** | | | | **30,000** |
+<!-- END GENERATED: ch10.ex5.ledger -->
 
-If the van had been sold for $13,000, the profit would be $1,000 and it would appear on the **debit** side as "Income statement (profit on disposal)".
+If the van had been sold for RM13,000, the profit would be RM1,000 and it would appear on the **debit** side as "Income statement (profit on disposal)".
 
 ## 12. Where does it all go?
 
 | Item | Statement of Profit or Loss | Statement of Financial Position |
 |---|---|---|
 | Depreciation for the year | Expense | |
-| Accumulated depreciation | | Deducted from cost under non-current assets |
+| Accumulated depreciation | | Deducted from cost under non-current assets to give the carrying amount |
 | Profit on disposal | Other income (added to gross profit) | |
 | Loss on disposal | Expense | |
 | Cost of asset | | Non-current assets |
 
 ## 13. Common mistakes
 
-* Using **cost** instead of **NBV** for reducing balance.
+* Using **cost** instead of the **carrying amount** for reducing balance.
 * Forgetting to deduct residual value in straight line.
 * Recording depreciation in the asset account instead of the provision account.
 * Treating repairs as capital expenditure. Repairs keep an asset working; they do not improve it.
@@ -219,13 +238,13 @@ If the van had been sold for $13,000, the profit would be $1,000 and it would ap
 
 * Non-current assets are used, not sold, and last more than a year.
 * Depreciation spreads cost over useful life (accruals) and avoids overstating assets (prudence).
-* Straight line: same amount yearly. Reducing balance: percentage of NBV. Revaluation: opening + purchases - closing.
-* Disposal: proceeds minus NBV equals profit or loss.
+* Straight line: same amount yearly. Reducing balance: percentage of the carrying amount. Revaluation: opening + purchases - closing.
+* Disposal: proceeds minus carrying amount equals profit or loss.
 
 ## 15. Check yourself
 
-1. A computer costs $3,000 plus $200 installation. It will last 4 years with no residual value. Find the straight line depreciation.
-2. A car costs $16,000. Depreciation is 25% reducing balance. Find the NBV after 2 years.
-3. A machine with NBV $4,000 is sold for $4,600. Profit or loss?
+1. A computer costs RM3,000 plus RM200 installation. It will last 4 years with no residual value. Find the straight line depreciation.
+2. A car costs RM16,000. Depreciation is 25% reducing balance. Find the carrying amount after 2 years.
+3. A machine with a carrying amount of RM4,000 is sold for RM4,600. Profit or loss?
 
 Answers: see `model-questions/Answer_Key.md`, Chapter 10 section.

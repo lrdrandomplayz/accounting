@@ -1,6 +1,8 @@
 # Chapter 11: Accruals and Prepayments
 
-> Excel file for this chapter: `excel/Ch11_Accruals_Prepayments.xlsx`
+> Excel file for this chapter: `excel/Ch11_Accruals_Prepayments.xlsx`. The worked examples below come from its orange tabs; questions 11.8 to 11.12 are self-marking on the blue tabs.
+>
+> All amounts are in Malaysian Ringgit (RM). In the ledger accounts below, a line with no amount in this example is left out.
 
 ## 1. Learning goals
 
@@ -45,39 +47,43 @@ Most questions have only one or two of these figures. Put 0 for the rest.
 
 ### Worked example 11.1
 
-Rent is $1,000 per month. The year ends 31 December 2025. During the year the business paid $11,000. December rent is still owing.
+Rent is RM1,000 per month. The year ends 31 December 2025. During the year the business paid RM11,000. December rent is still owing.
 
-Expense for year = 12 x 1,000 = **$12,000**. Accrual = 12,000 - 11,000 = **$1,000**.
+Expense for year = 12 x 1,000 = **RM12,000**. Accrual = 12,000 - 11,000 = **RM1,000**.
 
-**Rent account**
+<!-- BEGIN GENERATED: ch11.ex1.ledger -->
+**Dr** &emsp;&emsp; **Rent Account** &emsp;&emsp; **Cr**
 
-| Dr | | $ | Cr | | $ |
-|---|---|---|---|---|---|
-| 2025 | Bank (paid during year) | 11,000 | 2025 Dec 31 | Income statement | 12,000 |
-| Dec 31 | Balance c/d (accrued) | 1,000 | | | |
-| | | **12,000** | | | **12,000** |
-| | | | 2026 Jan 1 | Balance b/d | 1,000 |
+| Date | Particulars | Folio | Amount (RM) | Date | Particulars | Folio | Amount (RM) |
+|---|---|---|---:|---|---|---|---:|
+| 2025 | Bank | CB1 | 11,000 | 2025 Dec 31 | Income statement | GJ1 | 12,000 |
+| Dec 31 | Balance c/d (owing) |  | 1,000 |  | | |  |
+| | | | **12,000** | | | | **12,000** |
+|  | | |  | 2026 Jan 1 | Balance b/d (owing) |  | 1,000 |
+<!-- END GENERATED: ch11.ex1.ledger -->
 
-The **credit** balance brought down is a **liability**: the business owes $1,000 rent.
+The **credit** balance brought down is a **liability**: the business owes RM1,000 rent.
 
 ## 6. Prepaid expense
 
 ### Worked example 11.2
 
-On 1 April 2025 the business paid $3,600 insurance for 12 months. The year ends 31 December 2025.
+On 1 April 2025 the business paid RM3,600 insurance for 12 months. The year ends 31 December 2025.
 
 * Monthly cost = 3,600 / 12 = 300.
-* Months used this year (April to December) = 9. Expense = 9 x 300 = **$2,700**.
-* Months for next year (January to March) = 3. Prepaid = 3 x 300 = **$900**.
+* Months used this year (April to December) = 9. Expense = 9 x 300 = **RM2,700**.
+* Months for next year (January to March) = 3. Prepaid = 3 x 300 = **RM900**.
 
-**Insurance account**
+<!-- BEGIN GENERATED: ch11.ex2.ledger -->
+**Dr** &emsp;&emsp; **Insurance Account** &emsp;&emsp; **Cr**
 
-| Dr | | $ | Cr | | $ |
-|---|---|---|---|---|---|
-| 2025 Apr 1 | Bank | 3,600 | 2025 Dec 31 | Income statement | 2,700 |
-| | | | Dec 31 | Balance c/d (prepaid) | 900 |
-| | | **3,600** | | | **3,600** |
-| 2026 Jan 1 | Balance b/d | 900 | | | |
+| Date | Particulars | Folio | Amount (RM) | Date | Particulars | Folio | Amount (RM) |
+|---|---|---|---:|---|---|---|---:|
+| 2025 | Bank | CB1 | 3,600 | 2025 Dec 31 | Income statement | GJ1 | 2,700 |
+|  | | |  | Dec 31 | Balance c/d (prepaid) |  | 900 |
+| | | | **3,600** | | | | **3,600** |
+| 2026 Jan 1 | Balance b/d (prepaid) |  | 900 |  | | |  |
+<!-- END GENERATED: ch11.ex2.ledger -->
 
 The **debit** balance brought down is an **asset**: the business has already paid for 3 months of cover.
 
@@ -87,65 +93,71 @@ The **debit** balance brought down is an **asset**: the business has already pai
 
 ### Worked example 11.3
 
-Electricity: owing at the start of the year $200. Paid during the year $2,500. Owing at the end of the year $300.
+Electricity: owing at the start of the year RM200. Paid during the year RM2,500. Owing at the end of the year RM300.
 
-Expense = 2,500 - 200 + 300 = **$2,600**
+Expense = 2,500 - 200 + 300 = **RM2,600**
 
-**Electricity account**
+<!-- BEGIN GENERATED: ch11.ex3.ledger -->
+**Dr** &emsp;&emsp; **Electricity Account** &emsp;&emsp; **Cr**
 
-| Dr | | $ | Cr | | $ |
-|---|---|---|---|---|---|
-| | Bank | 2,500 | Jan 1 | Balance b/d (owing) | 200 |
-| Dec 31 | Balance c/d (owing) | 300 | Dec 31 | Income statement | 2,600 |
-| | | **2,800** | | | **2,800** |
-| | | | Jan 1 | Balance b/d | 300 |
+| Date | Particulars | Folio | Amount (RM) | Date | Particulars | Folio | Amount (RM) |
+|---|---|---|---:|---|---|---|---:|
+| 2025 | Bank | CB1 | 2,500 | 2025 Jan 1 | Balance b/d (owing) |  | 200 |
+| Dec 31 | Balance c/d (owing) |  | 300 | Dec 31 | Income statement | GJ1 | 2,600 |
+| | | | **2,800** | | | | **2,800** |
+|  | | |  | 2026 Jan 1 | Balance b/d (owing) |  | 300 |
+<!-- END GENERATED: ch11.ex3.ledger -->
 
-Why subtract the opening accrual? The $200 belonged to **last** year's expense but was paid **this** year.
+Why subtract the opening accrual? The RM200 belonged to **last** year's expense but was paid **this** year.
 
 ## 8. Income adjustments
 
 ### Worked example 11.4: income received in advance
 
-A business rents out a room for $500 per month. During 2025 it received $6,500, which includes January 2026 rent.
+A business rents out a room for RM500 per month. During 2025 it received RM6,500, which includes January 2026 rent.
 
-Income for 2025 = 12 x 500 = **$6,000**. Received in advance = **$500** (current liability).
+Income for 2025 = 12 x 500 = **RM6,000**. Received in advance = **RM500** (current liability).
 
-**Rent received account**
+<!-- BEGIN GENERATED: ch11.ex4.ledger -->
+**Dr** &emsp;&emsp; **Rent Received Account** &emsp;&emsp; **Cr**
 
-| Dr | | $ | Cr | | $ |
-|---|---|---|---|---|---|
-| Dec 31 | Income statement | 6,000 | | Bank | 6,500 |
-| Dec 31 | Balance c/d (in advance) | 500 | | | |
-| | | **6,500** | | | **6,500** |
-| | | | Jan 1 | Balance b/d | 500 |
+| Date | Particulars | Folio | Amount (RM) | Date | Particulars | Folio | Amount (RM) |
+|---|---|---|---:|---|---|---|---:|
+| 2025 Dec 31 | Income statement | GJ1 | 6,000 | 2025 | Bank | CB1 | 6,500 |
+| Dec 31 | Balance c/d (in advance) |  | 500 |  | | |  |
+| | | | **6,500** | | | | **6,500** |
+|  | | |  | 2026 Jan 1 | Balance b/d (in advance) |  | 500 |
+<!-- END GENERATED: ch11.ex4.ledger -->
 
 ### Worked example 11.5: accrued income
 
-Commission received during the year was $1,800. A further $200 is still due at the year end.
+Commission received during the year was RM1,800. A further RM200 is still due at the year end.
 
-Income = 1,800 + 200 = **$2,000**. The $200 is a current asset (other receivables).
+Income = 1,800 + 200 = **RM2,000**. The RM200 is a current asset (other receivables).
 
 ## 9. In the financial statements
 
-**Statement of Profit or Loss (extract)**
+**Statement of Profit or Loss (extract) for the year ended 31 December 2025**
 
-| | $ |
-|---|---|
-| Add other income: Rent received (6,500 - 500) | 6,000 |
-| Commission received (1,800 + 200) | 2,000 |
-| Less expenses: Rent (11,000 + 1,000) | 12,000 |
-| Insurance (3,600 - 900) | 2,700 |
-| Electricity (2,500 - 200 + 300) | 2,600 |
+| | Particulars | RM | RM | RM |
+|---|---|---:|---:|---:|
+| Add: | **Other income** | | | |
+| | Rent received (6,500 - 500) | | 6,000 | |
+| | Commission received (1,800 + 200) | | 2,000 | 8,000 |
+| Less: | **Expenses** | | | |
+| | Rent (11,000 + 1,000) | | 12,000 | |
+| | Insurance (3,600 - 900) | | 2,700 | |
+| | Electricity (2,500 - 200 + 300) | | 2,600 | (17,300) |
 
-**Statement of Financial Position (extract)**
+**Statement of Financial Position (extract) at 31 December 2025**
 
-| Current assets | $ |
-|---|---|
-| Other receivables (900 insurance prepaid + 200 commission due) | 1,100 |
-
-| Current liabilities | $ |
-|---|---|
-| Other payables (1,000 rent + 300 electricity + 500 rent received in advance) | 1,800 |
+| | Particulars | RM | RM | RM |
+|---|---|---:|---:|---:|
+| | | **Cost** | **Accumulated Depreciation** | **Carrying Amount** |
+| | **Current assets** | | | |
+| | Other receivables (900 insurance prepaid + 200 commission due) | | 1,100 | |
+| Less: | **Current liabilities** | | | |
+| | Other payables (1,000 rent + 300 electricity + 500 rent received in advance) | | 1,800 | |
 
 ## 10. Effect on profit if you forget
 
@@ -161,7 +173,7 @@ Income = 1,800 + 200 = **$2,000**. The $200 is a current asset (other receivable
 * Putting an accrued expense under current assets. It is a **liability**.
 * Counting months wrongly. Write out the months if unsure.
 * Using the cash paid figure in the SPL without adjusting.
-* Placing the balance c/d on the wrong side. Accrual: debit side c/d, credit side b/d. Prepayment: credit side c/d, debit side b/d.
+* Placing the balance c/d on the wrong side. Accrued expense: c/d on the debit side, b/d on the credit side. Prepaid expense: c/d on the credit side, b/d on the debit side.
 
 ## 12. Quick summary
 
@@ -173,8 +185,8 @@ Income = 1,800 + 200 = **$2,000**. The $200 is a current asset (other receivable
 
 ## 13. Check yourself
 
-1. Wages paid $24,000. Wages owing at the year end $800. What is the wages expense?
-2. Rates paid $1,500 cover 15 months. Year end is after 12 months of the period. What is the prepayment?
+1. Wages paid RM24,000. Wages owing at the year end RM800. What is the wages expense?
+2. Rates paid RM1,500 cover 15 months. Year end is after 12 months of the period. What is the prepayment?
 3. Where does rent received in advance appear in the Statement of Financial Position?
 
 Answers: see `model-questions/Answer_Key.md`, Chapter 11 section.

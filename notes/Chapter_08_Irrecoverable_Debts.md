@@ -1,6 +1,8 @@
 # Chapter 8: Irrecoverable Debts and Allowance for Receivables
 
-> Excel file for this chapter: `excel/Ch08_Irrecoverable_Debts.xlsx`
+> Excel file for this chapter: `excel/Ch08_Irrecoverable_Debts.xlsx`. The worked examples below come from its orange Worked tabs; questions 8.8 to 8.12 are self-marking on the blue tabs.
+>
+> All amounts are in Malaysian Ringgit (RM).
 
 ## 1. Learning goals
 
@@ -45,29 +47,37 @@ When you are **certain** a debt will not be paid:
 
 ### Worked example 8.1
 
-Kofi owes the business $600. On 30 June 2025 Kofi is declared bankrupt. Nothing will be paid.
+Kofi owes the business RM600. On 30 June 2025 Kofi is declared bankrupt. Nothing will be paid.
 
 **Journal**
 
-| Date | Details | Dr $ | Cr $ |
-|---|---|---|---|
-| 30 June 2025 | Irrecoverable debts | 600 | |
-| | Kofi | | 600 |
-| | *Debt written off, customer bankrupt* | | |
+<!-- BEGIN GENERATED: ch08.ex1.journal -->
+| Date | Particulars | Debit (RM) | Credit (RM) |
+|---|---|---:|---:|
+| 2025 Jun 30 | Irrecoverable debts | 600 | |
+|  | &emsp;&emsp;Kofi | | 600 |
+| | *(Being debt written off: customer declared bankrupt)* | | |
+<!-- END GENERATED: ch08.ex1.journal -->
 
-**Kofi account**
+**Ledger accounts**
 
-| Dr | | $ | Cr | | $ |
-|---|---|---|---|---|---|
-| 1 Jun | Balance b/d | 600 | 30 Jun | Irrecoverable debts | 600 |
+<!-- BEGIN GENERATED: ch08.ex1.kofi -->
+**Dr** &emsp;&emsp; **Kofi Account** &emsp;&emsp; **Cr**
 
-**Irrecoverable debts account**
+| Date | Particulars | Folio | Amount (RM) | Date | Particulars | Folio | Amount (RM) |
+|---|---|---|---:|---|---|---|---:|
+| 2025 Jun 1 | Balance b/d |  | 600 | 2025 Jun 30 | Irrecoverable debts | GJ1 | 600 |
+<!-- END GENERATED: ch08.ex1.kofi -->
 
-| Dr | | $ | Cr | | $ |
-|---|---|---|---|---|---|
-| 30 Jun | Kofi | 600 | 31 Dec | Income statement (SPL) | 600 |
+<!-- BEGIN GENERATED: ch08.ex1.id -->
+**Dr** &emsp;&emsp; **Irrecoverable Debts Account** &emsp;&emsp; **Cr**
 
-**Effect:** profit falls by $600. Trade receivables fall by $600.
+| Date | Particulars | Folio | Amount (RM) | Date | Particulars | Folio | Amount (RM) |
+|---|---|---|---:|---|---|---|---:|
+| 2025 Jun 30 | Kofi | GJ1 | 600 | 2025 Dec 31 | Income statement | GJ2 | 600 |
+<!-- END GENERATED: ch08.ex1.id -->
+
+**Effect:** profit falls by RM600. Trade receivables fall by RM600.
 
 ## 5. A debt written off is later recovered
 
@@ -82,16 +92,20 @@ At the year end, **irrecoverable debts recovered** is shown as **other income** 
 
 ### Worked example 8.2
 
-Last year the business wrote off $300 owed by Lina. This year Lina pays the $300 by cheque.
+Last year the business wrote off RM300 owed by Lina. This year Lina pays the RM300 by cheque.
 
-| Details | Dr $ | Cr $ |
-|---|---|---|
-| Lina | 300 | |
-| Irrecoverable debts recovered | | 300 |
-| Bank | 300 | |
-| Lina | | 300 |
+<!-- BEGIN GENERATED: ch08.ex2.journal -->
+| Date | Particulars | Debit (RM) | Credit (RM) |
+|---|---|---:|---:|
+|  | Lina | 300 | |
+|  | &emsp;&emsp;Irrecoverable debts recovered | | 300 |
+| | *(Being debt written off last year reinstated)* | | |
+|  | Bank | 300 | |
+|  | &emsp;&emsp;Lina | | 300 |
+| | *(Being cheque received from Lina)* | | |
+<!-- END GENERATED: ch08.ex2.journal -->
 
-**Effect:** profit rises by $300. Bank rises by $300.
+**Effect:** profit rises by RM300. Bank rises by RM300.
 
 ## 6. Allowance for irrecoverable debts
 
@@ -137,50 +151,66 @@ Only the **change** in the allowance goes to the Statement of Profit or Loss.
 
 A business keeps an allowance of **5%** of trade receivables. Year end is 31 December.
 
-| | 2023 | 2024 | 2025 |
-|---|---|---|---|
-| Trade receivables (after write-offs) | 20,000 | 26,000 | 18,000 |
-| Required allowance (5%) | 1,000 | 1,300 | 900 |
-| Allowance brought forward | 0 | 1,000 | 1,300 |
-| Change | +1,000 | +300 | (400) |
-| SPL treatment | Expense 1,000 | Expense 300 | Income 400 |
-| Net trade receivables in SFP | 19,000 | 24,700 | 17,100 |
+<!-- BEGIN GENERATED: ch08.ex3.table -->
+| Item | 2023 | 2024 | 2025 |
+|---|---:|---:|---:|
+| Trade receivables before write-offs | 20,500 | 26,800 | 18,600 |
+| Less: irrecoverable debts written off | 500 | 800 | 600 |
+| Trade receivables after write-offs | 20,000 | 26,000 | 18,000 |
+| Allowance rate | 5% | 5% | 5% |
+| Step 1: allowance required at year end | 1,000 | 1,300 | 900 |
+| Less: allowance brought forward | 0 | 1,000 | 1,300 |
+| Step 2: change (+ increase, - decrease) | 1,000 | 300 | (400) |
+| Step 3: treatment in the SPL | Expense 1,000 | Expense 300 | Income 400 |
+| Net trade receivables in the SOFP | 19,000 | 24,700 | 17,100 |
+<!-- END GENERATED: ch08.ex3.table -->
 
-**Allowance for irrecoverable debts account**
+<!-- BEGIN GENERATED: ch08.ex3.ledger -->
+**Dr** &emsp;&emsp; **Allowance for Irrecoverable Debts Account** &emsp;&emsp; **Cr**
 
-| Dr | | $ | Cr | | $ |
-|---|---|---|---|---|---|
-| 2023 Dec 31 | Balance c/d | 1,000 | 2023 Dec 31 | Income statement | 1,000 |
-| 2024 Dec 31 | Balance c/d | 1,300 | 2024 Jan 1 | Balance b/d | 1,000 |
-| | | | 2024 Dec 31 | Income statement | 300 |
-| | | **1,300** | | | **1,300** |
-| 2025 Dec 31 | Income statement | 400 | 2025 Jan 1 | Balance b/d | 1,300 |
-| 2025 Dec 31 | Balance c/d | 900 | | | |
-| | | **1,300** | | | **1,300** |
-| | | | 2026 Jan 1 | Balance b/d | 900 |
+| Date | Particulars | Folio | Amount (RM) | Date | Particulars | Folio | Amount (RM) |
+|---|---|---|---:|---|---|---|---:|
+| 2023 Dec 31 | Balance c/d |  | 1,000 | 2023 Dec 31 | Income statement (increase) | GJ1 | 1,000 |
+| | | | **1,000** | | | | **1,000** |
+| 2024 Dec 31 | Balance c/d |  | 1,300 | 2024 Jan 1 | Balance b/d |  | 1,000 |
+|  | | |  | Dec 31 | Income statement (increase) | GJ1 | 300 |
+| | | | **1,300** | | | | **1,300** |
+| 2025 Dec 31 | Income statement (decrease) | GJ1 | 400 | 2025 Jan 1 | Balance b/d |  | 1,300 |
+| Dec 31 | Balance c/d |  | 900 |  | | |  |
+| | | | **1,300** | | | | **1,300** |
+|  | | |  | 2026 Jan 1 | Balance b/d |  | 900 |
+<!-- END GENERATED: ch08.ex3.ledger -->
 
 Note: the allowance has a **credit** balance. It reduces an asset.
 
 ## 8. Showing it in the financial statements
 
-**Statement of Profit or Loss (extract), year ended 31 December 2025**
+**Statement of Profit or Loss (extract) for the year ended 31 December 2025**
 
-| | $ | $ |
-|---|---|---|
-| Gross profit | | 40,000 |
-| Add: Decrease in allowance for irrecoverable debts | | 400 |
-| Add: Irrecoverable debts recovered | | 300 |
-| | | 40,700 |
-| Less expenses: Irrecoverable debts | 600 | |
+This extract uses example 8.3 (decrease of RM400), example 8.2 (RM300 recovered) and an irrecoverable debt of RM600 written off in the year. The gross profit figure is for illustration.
 
-(If the allowance had **increased**, the increase would be listed under **expenses** instead.)
+| | Particulars | RM | RM | RM |
+|---|---|---:|---:|---:|
+| | **Gross profit** | | | 40,000 |
+| Add: | **Other income** | | | |
+| | Decrease in allowance for irrecoverable debts | | 400 | |
+| | Irrecoverable debts recovered | | 300 | 700 |
+| | | | | 40,700 |
+| Less: | **Expenses** | | | |
+| | Irrecoverable debts | | 600 | |
 
+If the allowance had **increased**, the increase would be listed under **expenses** instead.
+
+<!-- BEGIN GENERATED: ch08.ex3.sofp -->
 **Statement of Financial Position (extract) at 31 December 2025**
 
-| Current assets | $ | $ |
-|---|---|---|
-| Trade receivables | 18,000 | |
-| Less: Allowance for irrecoverable debts | 900 | 17,100 |
+| | Particulars | RM | RM | RM |
+|---|---|---:|---:|---:|
+| | | **Cost** | **Accumulated Depreciation** | **Carrying Amount** |
+|  | **Current assets** |  |  |  |
+|  | Trade receivables | 18,000 |  |  |
+| Less: | Allowance for irrecoverable debts | (900) | 17,100 |  |
+<!-- END GENERATED: ch08.ex3.sofp -->
 
 ## 9. Common mistakes
 
@@ -198,8 +228,8 @@ Note: the allowance has a **credit** balance. It reduces an asset.
 
 ## 11. Check yourself
 
-1. A customer owing $450 is bankrupt. Give the double entry.
-2. Trade receivables are $32,000 and the allowance is to be 2.5%. The allowance brought forward is $900. What goes to the SPL?
+1. A customer owing RM450 is bankrupt. Give the double entry.
+2. Trade receivables are RM32,000 and the allowance is to be 2.5%. The allowance brought forward is RM900. What goes to the SPL?
 3. Name two accounting concepts which support the allowance.
 
 Answers: see `model-questions/Answer_Key.md`, Chapter 8 section.

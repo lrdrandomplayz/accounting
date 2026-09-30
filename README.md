@@ -1,6 +1,6 @@
 # Senior 1 Accounting Notes
 
-Free study notes, Excel workbooks and model questions for Senior 1 (high school) accounting. Free to use, print and share. Not for sale.
+Free study notes, Excel workbooks and model questions for Senior 1 (high school) accounting. Free to use, print and share. Not for sale. All amounts are in Malaysian Ringgit (RM).
 
 ## Topics
 
@@ -21,25 +21,39 @@ Answer key with full workings: [Answer_Key.md](model-questions/Answer_Key.md) ([
 ## How to study each topic
 
 1. Read the notes. Each chapter has learning goals, key words, worked examples, common mistakes and a short summary.
-2. Open the Excel workbook. Change the blue numbers in the worked example sheets and watch the answers update.
-3. Try the **Practice** sheet in the workbook. Type answers in the yellow cells. The Check column marks each one "Correct" or "Try again".
-4. Answer the matching section of the model questions on paper.
-5. Mark your work with the answer key.
+2. Open the Excel workbook. On the orange **Worked** tabs, change any blue figure and watch every answer update.
+3. Try the blue **Q** tabs in order, Level 1 to Level 5. Type answers in the yellow cells. The column beside each one shows ✓ (correct) or ✗ (try again), and your score is at the top.
+4. Check written answers and full solutions on the green **Ans** tabs.
+5. Answer the same questions on paper from the model questions, then mark them with the answer key.
+
+## Formats used
+
+| Item | Columns |
+|---|---|
+| Journal | Date, Particulars, Debit (RM), Credit (RM) |
+| Ledger account | Dr side and Cr side, each with Date, Particulars, Folio, Amount (RM). Folio: GJ = general journal, CB = cash book |
+| Statement of Profit or Loss | Add/Less marker, Particulars, RM, RM, RM |
+| Statement of Financial Position | Add/Less marker, Particulars, RM, RM, RM, with Cost, Accumulated Depreciation and Carrying Amount under the RM headings |
 
 ## What is in each Excel workbook
 
-| Workbook | Sheets |
-|---|---|
-| Ch08_Irrecoverable_Debts | Allowance Calculator, Allowance Ledger (T-account), Practice |
-| Ch10_Depreciation | Straight Line, Reducing Balance, Compare Methods, Revaluation, Part Year, Disposal, Practice |
-| Ch11_Accruals_Prepayments | Expense Calculator, Income Calculator, Time Apportion, Ledger Account, Practice |
-| Ch12_Accounting_Concepts | Concepts table, NRV Calculator, Quiz with drop-down lists |
-| Financial_Statements | Trial Balance, Adjustments, SPL, SFP (Amina Stores) and a Practice question (Ben's Bikes) |
+| Workbook | Worked tabs (orange) | Question tabs (blue), with answer tabs (green) |
+|---|---|---|
+| Ch08_Irrecoverable_Debts | Worked 8.1-8.2, Worked 8.3 | Q8.8 to Q8.12 |
+| Ch10_Depreciation | Straight Line, Reducing Balance, Other Methods, Disposal | Q10.9 to Q10.13 |
+| Ch11_Accruals_Prepayments | Expense Examples, Income Examples | Q11.8 to Q11.12 |
+| Ch12_Accounting_Concepts | Concepts | Quiz, Q12.15 to Q12.19 |
+| Financial_Statements | Worked Example (Amina Stores) | QFS.6 to QFS.10 |
 
-Colour key in every workbook: blue text is an input you can change, black text is a formula, yellow cells are for your answers. The Answers sheet is hidden; right-click a sheet tab and choose Unhide to see it.
+Colour key in every workbook: blue figures are data you can change, black figures are formulas, yellow cells are for your answers, green cells show the correct answers.
 
 ## For teachers and maintainers
 
-* Rebuild the workbooks: `python3 tools/build_excel.py` (needs `openpyxl`). Open and save each file once in Excel or LibreOffice so the formulas calculate.
-* Rebuild the PDFs: `python3 tools/build_pdf.py` (needs the `markdown` package and Chromium).
-* Terms follow the Cambridge IGCSE / O Level style: revenue, trade receivables, irrecoverable debts, non-current assets, Statement of Profit or Loss, Statement of Financial Position. "Income statement" is used for the ledger entry name.
+Each structured question is written once in `tools/build_excel.py`. The same definition produces the question tab, the answer tab, and the Markdown in the model questions, answer key and notes, so the figures always agree.
+
+1. `python3 tools/build_excel.py` writes the workbooks and `tools/manifest.json` (needs `openpyxl`).
+2. Open and save each workbook once in Excel or LibreOffice so the formulas calculate.
+3. `python3 tools/build_docs.py` fills the generated sections of the Markdown files (between `BEGIN GENERATED` and `END GENERATED` markers). It uses LibreOffice to recalculate if step 2 was skipped.
+4. `python3 tools/build_pdf.py` rebuilds the PDFs (needs the `markdown` package and Chromium).
+
+Terms follow the Cambridge IGCSE / O Level style: revenue, trade receivables, irrecoverable debts, non-current assets, carrying amount, Statement of Profit or Loss, Statement of Financial Position. "Income statement" is used for the ledger entry name.
