@@ -54,12 +54,14 @@ Expense for year = 12 x 1,000 = **RM12,000**. Accrual = 12,000 - 11,000 = **RM1,
 <!-- BEGIN GENERATED: ch11.ex1.ledger -->
 **Dr** &emsp;&emsp; **Rent Account** &emsp;&emsp; **Cr**
 
-| Date | Particulars | Folio | Amount (RM) | Date | Particulars | Folio | Amount (RM) |
+| Date | Particulars | Folio | Amount | Date | Particulars | Folio | Amount |
 |---|---|---|---:|---|---|---|---:|
-| 2025 | Bank | CB1 | 11,000 | 2025 Dec 31 | Income statement | GJ1 | 12,000 |
+| **2025** | | | **RM** | **2025** | | | **RM** |
+|  | Bank (paid during the year) | CB1 | 11,000 | Dec 31 | Income statement | GJ1 | 12,000 |
 | Dec 31 | Balance c/d (owing) |  | 1,000 |  | | |  |
 | | | | **12,000** | | | | **12,000** |
-|  | | |  | 2026 Jan 1 | Balance b/d (owing) |  | 1,000 |
+|  | | |  | **2026** | | |  |
+|  | | |  | Jan 1 | Balance b/d (owing) |  | 1,000 |
 <!-- END GENERATED: ch11.ex1.ledger -->
 
 The **credit** balance brought down is a **liability**: the business owes RM1,000 rent.
@@ -77,12 +79,14 @@ On 1 April 2025 the business paid RM3,600 insurance for 12 months. The year ends
 <!-- BEGIN GENERATED: ch11.ex2.ledger -->
 **Dr** &emsp;&emsp; **Insurance Account** &emsp;&emsp; **Cr**
 
-| Date | Particulars | Folio | Amount (RM) | Date | Particulars | Folio | Amount (RM) |
+| Date | Particulars | Folio | Amount | Date | Particulars | Folio | Amount |
 |---|---|---|---:|---|---|---|---:|
-| 2025 | Bank | CB1 | 3,600 | 2025 Dec 31 | Income statement | GJ1 | 2,700 |
+| **2025** | | | **RM** | **2025** | | | **RM** |
+|  | Bank (paid during the year) | CB1 | 3,600 | Dec 31 | Income statement | GJ1 | 2,700 |
 |  | | |  | Dec 31 | Balance c/d (prepaid) |  | 900 |
 | | | | **3,600** | | | | **3,600** |
-| 2026 Jan 1 | Balance b/d (prepaid) |  | 900 |  | | |  |
+| **2026** | | |  |  | | |  |
+| Jan 1 | Balance b/d (prepaid) |  | 900 |  | | |  |
 <!-- END GENERATED: ch11.ex2.ledger -->
 
 The **debit** balance brought down is an **asset**: the business has already paid for 3 months of cover.
@@ -100,12 +104,14 @@ Expense = 2,500 - 200 + 300 = **RM2,600**
 <!-- BEGIN GENERATED: ch11.ex3.ledger -->
 **Dr** &emsp;&emsp; **Electricity Account** &emsp;&emsp; **Cr**
 
-| Date | Particulars | Folio | Amount (RM) | Date | Particulars | Folio | Amount (RM) |
+| Date | Particulars | Folio | Amount | Date | Particulars | Folio | Amount |
 |---|---|---|---:|---|---|---|---:|
-| 2025 | Bank | CB1 | 2,500 | 2025 Jan 1 | Balance b/d (owing) |  | 200 |
+| **2025** | | | **RM** | **2025** | | | **RM** |
+|  | Bank (paid during the year) | CB1 | 2,500 | Jan 1 | Balance b/d (owing) |  | 200 |
 | Dec 31 | Balance c/d (owing) |  | 300 | Dec 31 | Income statement | GJ1 | 2,600 |
 | | | | **2,800** | | | | **2,800** |
-|  | | |  | 2026 Jan 1 | Balance b/d (owing) |  | 300 |
+|  | | |  | **2026** | | |  |
+|  | | |  | Jan 1 | Balance b/d (owing) |  | 300 |
 <!-- END GENERATED: ch11.ex3.ledger -->
 
 Why subtract the opening accrual? The RM200 belonged to **last** year's expense but was paid **this** year.
@@ -121,12 +127,14 @@ Income for 2025 = 12 x 500 = **RM6,000**. Received in advance = **RM500** (curre
 <!-- BEGIN GENERATED: ch11.ex4.ledger -->
 **Dr** &emsp;&emsp; **Rent Received Account** &emsp;&emsp; **Cr**
 
-| Date | Particulars | Folio | Amount (RM) | Date | Particulars | Folio | Amount (RM) |
+| Date | Particulars | Folio | Amount | Date | Particulars | Folio | Amount |
 |---|---|---|---:|---|---|---|---:|
-| 2025 Dec 31 | Income statement | GJ1 | 6,000 | 2025 | Bank | CB1 | 6,500 |
+| **2025** | | | **RM** | **2025** | | | **RM** |
+| Dec 31 | Income statement | GJ1 | 6,000 |  | Bank (received during the year) | CB1 | 6,500 |
 | Dec 31 | Balance c/d (in advance) |  | 500 |  | | |  |
 | | | | **6,500** | | | | **6,500** |
-|  | | |  | 2026 Jan 1 | Balance b/d (in advance) |  | 500 |
+|  | | |  | **2026** | | |  |
+|  | | |  | Jan 1 | Balance b/d (in advance) |  | 500 |
 <!-- END GENERATED: ch11.ex4.ledger -->
 
 ### Worked example 11.5: accrued income

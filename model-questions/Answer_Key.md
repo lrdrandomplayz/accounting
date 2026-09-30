@@ -27,9 +27,10 @@ The structured question answers (Level 1 to Level 5) are generated from the Exce
 
 ### 8.7 (3 marks)
 
-| Date | Particulars | Debit (RM) | Credit (RM) |
+| Date | Particulars | Debit | Credit |
 |---|---|---:|---:|
-| 2025 Mar 1 | Irrecoverable debts | 750 | |
+| **2025** | | **RM** | **RM** |
+| Mar 1 | Irrecoverable debts | 750 | |
 | | &emsp;&emsp;Tomas | | 750 |
 | | *(Being debt written off: Tomas declared bankrupt)* | | |
 
@@ -38,9 +39,10 @@ The structured question answers (Level 1 to Level 5) are generated from the Exce
 
 **a) Prepare the journal entries to write off both debts. (4)**
 
-| Date | Particulars | Debit (RM) | Credit (RM) |
+| Date | Particulars | Debit | Credit |
 |---|---|---:|---:|
-| 2025 Mar 31 | Irrecoverable debts | 350 | |
+| **2025** | | **RM** | **RM** |
+| Mar 31 | Irrecoverable debts | 350 | |
 |  | &emsp;&emsp;Peter | | 350 |
 | | *(Being debt written off: customer declared bankrupt)* | | |
 | Sep 30 | Irrecoverable debts | 200 | |
@@ -51,9 +53,10 @@ The structured question answers (Level 1 to Level 5) are generated from the Exce
 
 **Dr** &emsp;&emsp; **Irrecoverable Debts Account** &emsp;&emsp; **Cr**
 
-| Date | Particulars | Folio | Amount (RM) | Date | Particulars | Folio | Amount (RM) |
+| Date | Particulars | Folio | Amount | Date | Particulars | Folio | Amount |
 |---|---|---|---:|---|---|---|---:|
-| 2025 Mar 31 | Peter | GJ1 | 350 | 2025 Dec 31 | Income statement | GJ2 | 550 |
+| **2025** | | | **RM** | **2025** | | | **RM** |
+| Mar 31 | Peter | GJ1 | 350 | Dec 31 | Income statement | GJ2 | 550 |
 | Sep 30 | Jane | GJ1 | 200 |  | | |  |
 | | | | **550** | | | | **550** |
 
@@ -109,8 +112,9 @@ The structured question answers (Level 1 to Level 5) are generated from the Exce
 
 **a) Prepare the journal entries to record the money received from Lucy. (4)**
 
-| Date | Particulars | Debit (RM) | Credit (RM) |
+| Date | Particulars | Debit | Credit |
 |---|---|---:|---:|
+| **** | | **RM** | **RM** |
 |  | Lucy | 250 | |
 |  | &emsp;&emsp;Irrecoverable debts recovered | | 250 |
 | | *(Being debt written off in 2024 reinstated)* | | |
@@ -129,12 +133,14 @@ The structured question answers (Level 1 to Level 5) are generated from the Exce
 
 **Dr** &emsp;&emsp; **Allowance for Irrecoverable Debts Account** &emsp;&emsp; **Cr**
 
-| Date | Particulars | Folio | Amount (RM) | Date | Particulars | Folio | Amount (RM) |
+| Date | Particulars | Folio | Amount | Date | Particulars | Folio | Amount |
 |---|---|---|---:|---|---|---|---:|
-| 2026 Jun 30 | Balance c/d |  | 1,040 | 2025 Jul 1 | Balance b/d |  | 900 |
-|  | | |  | 2026 Jun 30 | Income statement | GJ1 | 140 |
+| **2026** | | | **RM** | **2025** | | | **RM** |
+| Jun 30 | Balance c/d |  | 1,040 | Jul 1 | Balance b/d |  | 900 |
+|  | | |  | **2026** | | |  |
+|  | | |  | Jun 30 | Income statement | GJ1 | 140 |
 | | | | **1,040** | | | | **1,040** |
-|  | | |  | 2026 Jul 1 | Balance b/d |  | 1,040 |
+|  | | |  | Jul 1 | Balance b/d |  | 1,040 |
 
 **d) Show the Statement of Profit or Loss extract for the three items above. (3)**
 
@@ -188,17 +194,21 @@ The structured question answers (Level 1 to Level 5) are generated from the Exce
 
 **Dr** &emsp;&emsp; **Allowance for Irrecoverable Debts Account** &emsp;&emsp; **Cr**
 
-| Date | Particulars | Folio | Amount (RM) | Date | Particulars | Folio | Amount (RM) |
+| Date | Particulars | Folio | Amount | Date | Particulars | Folio | Amount |
 |---|---|---|---:|---|---|---|---:|
-| 2023 Dec 31 | Balance c/d |  | 1,200 | 2023 Dec 31 | Income statement | GJ1 | 1,200 |
+| **2023** | | | **RM** | **2023** | | | **RM** |
+| Dec 31 | Balance c/d |  | 1,200 | Dec 31 | Income statement | GJ1 | 1,200 |
 | | | | **1,200** | | | | **1,200** |
-| 2024 Dec 31 | Balance c/d |  | 1,500 | 2024 Jan 1 | Balance b/d |  | 1,200 |
-|  | | |  | 2024 Dec 31 | Income statement | GJ2 | 300 |
+| **2024** | | |  | **2024** | | |  |
+| Dec 31 | Balance c/d |  | 1,500 | Jan 1 | Balance b/d |  | 1,200 |
+|  | | |  | Dec 31 | Income statement | GJ2 | 300 |
 | | | | **1,500** | | | | **1,500** |
-| 2025 Dec 31 | Income statement | GJ3 | 450 | 2025 Jan 1 | Balance b/d |  | 1,500 |
-| 2025 Dec 31 | Balance c/d |  | 1,050 |  | | |  |
+| **2025** | | |  | **2025** | | |  |
+| Dec 31 | Income statement | GJ3 | 450 | Jan 1 | Balance b/d |  | 1,500 |
+| Dec 31 | Balance c/d |  | 1,050 |  | | |  |
 | | | | **1,500** | | | | **1,500** |
-|  | | |  | 2026 Jan 1 | Balance b/d |  | 1,050 |
+|  | | |  | **2026** | | |  |
+|  | | |  | Jan 1 | Balance b/d |  | 1,050 |
 
 **d) Show the Statement of Financial Position extract for trade receivables at 31 December 2025. (2)**
 
@@ -246,12 +256,14 @@ The structured question answers (Level 1 to Level 5) are generated from the Exce
 
 **Dr** &emsp;&emsp; **Allowance for Irrecoverable Debts Account** &emsp;&emsp; **Cr**
 
-| Date | Particulars | Folio | Amount (RM) | Date | Particulars | Folio | Amount (RM) |
+| Date | Particulars | Folio | Amount | Date | Particulars | Folio | Amount |
 |---|---|---|---:|---|---|---|---:|
-| 2025 Dec 31 | Income statement | GJ1 | 485 | 2025 Jan 1 | Balance b/d |  | 2,500 |
+| **2025** | | | **RM** | **2025** | | | **RM** |
+| Dec 31 | Income statement | GJ1 | 485 | Jan 1 | Balance b/d |  | 2,500 |
 | Dec 31 | Balance c/d |  | 2,015 |  | | |  |
 | | | | **2,500** | | | | **2,500** |
-|  | | |  | 2026 Jan 1 | Balance b/d |  | 2,015 |
+|  | | |  | **2026** | | |  |
+|  | | |  | Jan 1 | Balance b/d |  | 2,015 |
 
 **e) Show the Statement of Financial Position extract for trade receivables. (2)**
 
@@ -380,9 +392,10 @@ Reducing balance. A vehicle loses most value in its early years. Repairs are low
 
 **c) Prepare the journal entry to record the machine depreciation for 2025. (2)**
 
-| Date | Particulars | Debit (RM) | Credit (RM) |
+| Date | Particulars | Debit | Credit |
 |---|---|---:|---:|
-| 2025 Dec 31 | Income statement (depreciation) | 900 | |
+| **2025** | | **RM** | **RM** |
+| Dec 31 | Income statement (depreciation) | 900 | |
 |  | &emsp;&emsp;Provision for depreciation of machinery | | 900 |
 | | *(Being depreciation for 9 months at 10% per year on cost)* | | |
 
@@ -416,9 +429,10 @@ Loose tools are many small, low-cost items. Keeping a record and a depreciation 
 
 **Dr** &emsp;&emsp; **Machinery Disposal Account** &emsp;&emsp; **Cr**
 
-| Date | Particulars | Folio | Amount (RM) | Date | Particulars | Folio | Amount (RM) |
+| Date | Particulars | Folio | Amount | Date | Particulars | Folio | Amount |
 |---|---|---|---:|---|---|---|---:|
-| 2026 Jan 1 | Machinery | GJ1 | 40,000 | 2026 Jan 1 | Provision for depreciation | GJ1 | 23,125 |
+| **2026** | | | **RM** | **2026** | | | **RM** |
+| Jan 1 | Machinery | GJ1 | 40,000 | Jan 1 | Provision for depreciation | GJ1 | 23,125 |
 |  | | |  | Jan 1 | Bank | CB1 | 15,000 |
 |  | | |  | Dec 31 | Income statement (loss on disposal) | GJ2 | 1,875 |
 | | | | **40,000** | | | | **40,000** |
@@ -443,25 +457,30 @@ Loose tools are many small, low-cost items. Keeping a record and a depreciation 
 
 **Dr** &emsp;&emsp; **Provision for Depreciation of Vans Account** &emsp;&emsp; **Cr**
 
-| Date | Particulars | Folio | Amount (RM) | Date | Particulars | Folio | Amount (RM) |
+| Date | Particulars | Folio | Amount | Date | Particulars | Folio | Amount |
 |---|---|---|---:|---|---|---|---:|
-| 2023 Dec 31 | Balance c/d |  | 5,000 | 2023 Dec 31 | Income statement | GJ1 | 5,000 |
+| **2023** | | | **RM** | **2023** | | | **RM** |
+| Dec 31 | Balance c/d |  | 5,000 | Dec 31 | Income statement | GJ1 | 5,000 |
 | | | | **5,000** | | | | **5,000** |
-| 2024 Dec 31 | Balance c/d |  | 16,000 | 2024 Jan 1 | Balance b/d |  | 5,000 |
-|  | | |  | 2024 Dec 31 | Income statement | GJ2 | 11,000 |
+| **2024** | | |  | **2024** | | |  |
+| Dec 31 | Balance c/d |  | 16,000 | Jan 1 | Balance b/d |  | 5,000 |
+|  | | |  | Dec 31 | Income statement | GJ2 | 11,000 |
 | | | | **16,000** | | | | **16,000** |
-| 2025 Oct 1 | Disposal (Van A) | GJ3 | 10,000 | 2025 Jan 1 | Balance b/d |  | 16,000 |
-| Dec 31 | Balance c/d |  | 12,000 | 2025 Dec 31 | Income statement | GJ4 | 6,000 |
+| **2025** | | |  | **2025** | | |  |
+| Oct 1 | Disposal (Van A) | GJ3 | 10,000 | Jan 1 | Balance b/d |  | 16,000 |
+| Dec 31 | Balance c/d |  | 12,000 | Dec 31 | Income statement | GJ4 | 6,000 |
 | | | | **22,000** | | | | **22,000** |
-|  | | |  | 2026 Jan 1 | Balance b/d |  | 12,000 |
+|  | | |  | **2026** | | |  |
+|  | | |  | Jan 1 | Balance b/d |  | 12,000 |
 
 **c) Prepare the Disposal of van account. (4)**
 
 **Dr** &emsp;&emsp; **Disposal of Van Account** &emsp;&emsp; **Cr**
 
-| Date | Particulars | Folio | Amount (RM) | Date | Particulars | Folio | Amount (RM) |
+| Date | Particulars | Folio | Amount | Date | Particulars | Folio | Amount |
 |---|---|---|---:|---|---|---|---:|
-| 2025 Oct 1 | Vans (Van A) | GJ3 | 25,000 | 2025 Oct 1 | Provision for depreciation | GJ3 | 10,000 |
+| **2025** | | | **RM** | **2025** | | | **RM** |
+| Oct 1 | Vans (Van A) | GJ3 | 25,000 | Oct 1 | Provision for depreciation | GJ3 | 10,000 |
 |  | | |  | Oct 1 | Bank | CB1 | 12,000 |
 |  | | |  | Dec 31 | Income statement (loss on disposal) | GJ4 | 3,000 |
 | | | | **25,000** | | | | **25,000** |
@@ -555,25 +574,29 @@ Monthly cost = 4,800 / 12 = 400. October to December = 3 months.
 
 **Dr** &emsp;&emsp; **Electricity Account** &emsp;&emsp; **Cr**
 
-| Date | Particulars | Folio | Amount (RM) | Date | Particulars | Folio | Amount (RM) |
+| Date | Particulars | Folio | Amount | Date | Particulars | Folio | Amount |
 |---|---|---|---:|---|---|---|---:|
-| 2025 Mar | Bank | CB1 | 600 | 2025 Dec 31 | Income statement | GJ1 | 2,230 |
+| **2025** | | | **RM** | **2025** | | | **RM** |
+| Mar | Bank | CB1 | 600 | Dec 31 | Income statement | GJ1 | 2,230 |
 | Jun | Bank | CB1 | 550 |  | | |  |
 | Sep | Bank | CB1 | 500 |  | | |  |
 | Dec 31 | Balance c/d |  | 580 |  | | |  |
 | | | | **2,230** | | | | **2,230** |
-|  | | |  | 2026 Jan 1 | Balance b/d |  | 580 |
+|  | | |  | **2026** | | |  |
+|  | | |  | Jan 1 | Balance b/d |  | 580 |
 
 **b) Prepare the Insurance account for the year. Show the balance carried down and brought down. (4)**
 
 **Dr** &emsp;&emsp; **Insurance Account** &emsp;&emsp; **Cr**
 
-| Date | Particulars | Folio | Amount (RM) | Date | Particulars | Folio | Amount (RM) |
+| Date | Particulars | Folio | Amount | Date | Particulars | Folio | Amount |
 |---|---|---|---:|---|---|---|---:|
-| 2025 Jul 1 | Bank | CB1 | 2,400 | 2025 Dec 31 | Income statement | GJ1 | 1,200 |
+| **2025** | | | **RM** | **2025** | | | **RM** |
+| Jul 1 | Bank | CB1 | 2,400 | Dec 31 | Income statement | GJ1 | 1,200 |
 |  | | |  | Dec 31 | Balance c/d |  | 1,200 |
 | | | | **2,400** | | | | **2,400** |
-| 2026 Jan 1 | Balance b/d |  | 1,200 |  | | |  |
+| **2026** | | |  |  | | |  |
+| Jan 1 | Balance b/d |  | 1,200 |  | | |  |
 
 **c) Show the amounts in the Statement of Financial Position at 31 December 2025. (2)**
 
@@ -600,12 +623,14 @@ Monthly cost = 4,800 / 12 = 400. October to December = 3 months.
 
 **Dr** &emsp;&emsp; **Rent Receivable Account** &emsp;&emsp; **Cr**
 
-| Date | Particulars | Folio | Amount (RM) | Date | Particulars | Folio | Amount (RM) |
+| Date | Particulars | Folio | Amount | Date | Particulars | Folio | Amount |
 |---|---|---|---:|---|---|---|---:|
-| 2025 Dec 31 | Income statement | GJ1 | 7,200 | 2025 | Bank | CB1 | 7,800 |
+| **2025** | | | **RM** | **2025** | | | **RM** |
+| Dec 31 | Income statement | GJ1 | 7,200 |  | Bank (received during the year) | CB1 | 7,800 |
 | Dec 31 | Balance c/d |  | 600 |  | | |  |
 | | | | **7,800** | | | | **7,800** |
-|  | | |  | 2026 Jan 1 | Balance b/d |  | 600 |
+|  | | |  | **2026** | | |  |
+|  | | |  | Jan 1 | Balance b/d |  | 600 |
 
 **c) Calculate the commission income for 2025. (1)**
 
@@ -645,12 +670,14 @@ Monthly cost = 4,800 / 12 = 400. October to December = 3 months.
 
 **Dr** &emsp;&emsp; **Wages Account** &emsp;&emsp; **Cr**
 
-| Date | Particulars | Folio | Amount (RM) | Date | Particulars | Folio | Amount (RM) |
+| Date | Particulars | Folio | Amount | Date | Particulars | Folio | Amount |
 |---|---|---|---:|---|---|---|---:|
-| 2025-26 | Bank | CB1 | 18,000 | 2025 Apr 1 | Balance b/d |  | 300 |
-| 2026 Mar 31 | Balance c/d |  | 450 | 2026 Mar 31 | Income statement | GJ1 | 18,150 |
+| **2025** | | | **RM** | **2025** | | | **RM** |
+|  | Bank (paid during the year) | CB1 | 18,000 | Apr 1 | Balance b/d |  | 300 |
+| **2026** | | |  | **2026** | | |  |
+| Mar 31 | Balance c/d |  | 450 | Mar 31 | Income statement | GJ1 | 18,150 |
 | | | | **18,450** | | | | **18,450** |
-|  | | |  | 2026 Apr 1 | Balance b/d |  | 450 |
+|  | | |  | Apr 1 | Balance b/d |  | 450 |
 
 **c) Calculate the total of other receivables and other payables in the Statement of Financial Position at 31 March 2026. (2)**
 
@@ -695,12 +722,14 @@ Monthly cost = 4,800 / 12 = 400. October to December = 3 months.
 
 **Dr** &emsp;&emsp; **Insurance Account** &emsp;&emsp; **Cr**
 
-| Date | Particulars | Folio | Amount (RM) | Date | Particulars | Folio | Amount (RM) |
+| Date | Particulars | Folio | Amount | Date | Particulars | Folio | Amount |
 |---|---|---|---:|---|---|---|---:|
-| 2025 Jan 1 | Balance b/d |  | 750 | 2025 Dec 31 | Income statement | GJ1 | 3,450 |
+| **2025** | | | **RM** | **2025** | | | **RM** |
+| Jan 1 | Balance b/d |  | 750 | Dec 31 | Income statement | GJ1 | 3,450 |
 | Apr 1 | Bank | CB1 | 3,600 | Dec 31 | Balance c/d |  | 900 |
 | | | | **4,350** | | | | **4,350** |
-| 2026 Jan 1 | Balance b/d |  | 900 |  | | |  |
+| **2026** | | |  |  | | |  |
+| Jan 1 | Balance b/d |  | 900 |  | | |  |
 <!-- END GENERATED: answers ch11 -->
 
 ### Check yourself (Chapter 11 notes)
@@ -1138,9 +1167,10 @@ A current liability must be paid within 12 months, for example trade payables. A
 
 **Dr** &emsp;&emsp; **Disposal Account** &emsp;&emsp; **Cr**
 
-| Date | Particulars | Folio | Amount (RM) | Date | Particulars | Folio | Amount (RM) |
+| Date | Particulars | Folio | Amount | Date | Particulars | Folio | Amount |
 |---|---|---|---:|---|---|---|---:|
-| 2026 Mar 31 | Equipment | GJ1 | 5,000 | 2026 Mar 31 | Bank | CB1 | 1,500 |
+| **2026** | | | **RM** | **2026** | | | **RM** |
+| Mar 31 | Equipment | GJ1 | 5,000 | Mar 31 | Bank | CB1 | 1,500 |
 |  | | |  | Mar 31 | Provision for depreciation | GJ1 | 3,000 |
 |  | | |  | Mar 31 | Income statement (loss on disposal) | GJ2 | 500 |
 | | | | **5,000** | | | | **5,000** |

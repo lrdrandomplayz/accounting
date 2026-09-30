@@ -52,9 +52,10 @@ Kofi owes the business RM600. On 30 June 2025 Kofi is declared bankrupt. Nothing
 **Journal**
 
 <!-- BEGIN GENERATED: ch08.ex1.journal -->
-| Date | Particulars | Debit (RM) | Credit (RM) |
+| Date | Particulars | Debit | Credit |
 |---|---|---:|---:|
-| 2025 Jun 30 | Irrecoverable debts | 600 | |
+| **2025** | | **RM** | **RM** |
+| Jun 30 | Irrecoverable debts | 600 | |
 |  | &emsp;&emsp;Kofi | | 600 |
 | | *(Being debt written off: customer declared bankrupt)* | | |
 <!-- END GENERATED: ch08.ex1.journal -->
@@ -64,17 +65,19 @@ Kofi owes the business RM600. On 30 June 2025 Kofi is declared bankrupt. Nothing
 <!-- BEGIN GENERATED: ch08.ex1.kofi -->
 **Dr** &emsp;&emsp; **Kofi Account** &emsp;&emsp; **Cr**
 
-| Date | Particulars | Folio | Amount (RM) | Date | Particulars | Folio | Amount (RM) |
+| Date | Particulars | Folio | Amount | Date | Particulars | Folio | Amount |
 |---|---|---|---:|---|---|---|---:|
-| 2025 Jun 1 | Balance b/d |  | 600 | 2025 Jun 30 | Irrecoverable debts | GJ1 | 600 |
+| **2025** | | | **RM** | **2025** | | | **RM** |
+| Jun 1 | Balance b/d |  | 600 | Jun 30 | Irrecoverable debts | GJ1 | 600 |
 <!-- END GENERATED: ch08.ex1.kofi -->
 
 <!-- BEGIN GENERATED: ch08.ex1.id -->
 **Dr** &emsp;&emsp; **Irrecoverable Debts Account** &emsp;&emsp; **Cr**
 
-| Date | Particulars | Folio | Amount (RM) | Date | Particulars | Folio | Amount (RM) |
+| Date | Particulars | Folio | Amount | Date | Particulars | Folio | Amount |
 |---|---|---|---:|---|---|---|---:|
-| 2025 Jun 30 | Kofi | GJ1 | 600 | 2025 Dec 31 | Income statement | GJ2 | 600 |
+| **2025** | | | **RM** | **2025** | | | **RM** |
+| Jun 30 | Kofi | GJ1 | 600 | Dec 31 | Income statement | GJ2 | 600 |
 <!-- END GENERATED: ch08.ex1.id -->
 
 **Effect:** profit falls by RM600. Trade receivables fall by RM600.
@@ -95,8 +98,9 @@ At the year end, **irrecoverable debts recovered** is shown as **other income** 
 Last year the business wrote off RM300 owed by Lina. This year Lina pays the RM300 by cheque.
 
 <!-- BEGIN GENERATED: ch08.ex2.journal -->
-| Date | Particulars | Debit (RM) | Credit (RM) |
+| Date | Particulars | Debit | Credit |
 |---|---|---:|---:|
+| **** | | **RM** | **RM** |
 |  | Lina | 300 | |
 |  | &emsp;&emsp;Irrecoverable debts recovered | | 300 |
 | | *(Being debt written off last year reinstated)* | | |
@@ -168,17 +172,21 @@ A business keeps an allowance of **5%** of trade receivables. Year end is 31 Dec
 <!-- BEGIN GENERATED: ch08.ex3.ledger -->
 **Dr** &emsp;&emsp; **Allowance for Irrecoverable Debts Account** &emsp;&emsp; **Cr**
 
-| Date | Particulars | Folio | Amount (RM) | Date | Particulars | Folio | Amount (RM) |
+| Date | Particulars | Folio | Amount | Date | Particulars | Folio | Amount |
 |---|---|---|---:|---|---|---|---:|
-| 2023 Dec 31 | Balance c/d |  | 1,000 | 2023 Dec 31 | Income statement (increase) | GJ1 | 1,000 |
+| **2023** | | | **RM** | **2023** | | | **RM** |
+| Dec 31 | Balance c/d |  | 1,000 | Dec 31 | Income statement (increase) | GJ1 | 1,000 |
 | | | | **1,000** | | | | **1,000** |
-| 2024 Dec 31 | Balance c/d |  | 1,300 | 2024 Jan 1 | Balance b/d |  | 1,000 |
+| **2024** | | |  | **2024** | | |  |
+| Dec 31 | Balance c/d |  | 1,300 | Jan 1 | Balance b/d |  | 1,000 |
 |  | | |  | Dec 31 | Income statement (increase) | GJ1 | 300 |
 | | | | **1,300** | | | | **1,300** |
-| 2025 Dec 31 | Income statement (decrease) | GJ1 | 400 | 2025 Jan 1 | Balance b/d |  | 1,300 |
+| **2025** | | |  | **2025** | | |  |
+| Dec 31 | Income statement (decrease) | GJ1 | 400 | Jan 1 | Balance b/d |  | 1,300 |
 | Dec 31 | Balance c/d |  | 900 |  | | |  |
 | | | | **1,300** | | | | **1,300** |
-|  | | |  | 2026 Jan 1 | Balance b/d |  | 900 |
+|  | | |  | **2026** | | |  |
+|  | | |  | Jan 1 | Balance b/d |  | 900 |
 <!-- END GENERATED: ch08.ex3.ledger -->
 
 Note: the allowance has a **credit** balance. It reduces an asset.

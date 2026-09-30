@@ -24,6 +24,7 @@ ROOT = Path(__file__).resolve().parent.parent
 LEVELS = {1: "Level 1: Easy", 2: "Level 2: Easy to medium", 3: "Level 3: Medium", 4: "Level 4: Hard",
           5: "Level 5: Challenge"}
 PCT, INT, NUM2 = "0.0%", "0", '#,##0.00;(#,##0.00);"-"'
+YEAR = "@Y"
 
 
 def load_values(fname):
@@ -135,9 +136,12 @@ def r_table(b, get):
 
 
 def r_journal(b, get):
-    out = ["| Date | Particulars | Debit (RM) | Credit (RM) |", "|---|---|---:|---:|"]
+    out = ["| Date | Particulars | Debit | Credit |", "|---|---|---:|---:|"]
     for row in b["rows"]:
-        if row[0] == "n":
+        if row[0] == "y":
+            rm = "**RM**" if row[2] else ""
+            out.append(f"| **{row[1]}** | | {rm} | {rm} |")
+        elif row[0] == "n":
             out.append(f"| | *({esc(row[1])})* | | |")
         elif row[0] == "d":
             out.append(f"| {row[1]} | {esc(row[2])} | {cell(get, row[3])} | |")
@@ -147,22 +151,43 @@ def r_journal(b, get):
 
 
 def r_ledger(b, get):
+    """Ledger in Date | Particulars | Folio | Amount format, with the year (and RM) on its own row.
+
+    Lines whose amount is nil in a worked example are left out, and year rows left empty are dropped.
+    """
     out = [f"**Dr** &emsp;&emsp; **{b['name']}** &emsp;&emsp; **Cr**", "",
-           "| Date | Particulars | Folio | Amount (RM) | Date | Particulars | Folio | Amount (RM) |",
+           "| Date | Particulars | Folio | Amount | Date | Particulars | Folio | Amount |",
            "|---|---|---|---:|---|---|---|---:|"]
     sides = {"dr": [], "cr": []}
+    rm_done = {"dr": False, "cr": False}
+
+    def show(e, side):
+        if e is None:
+            return " | | | "
+        if e[0] == YEAR:
+            rm = ""
+            if not rm_done[side]:
+                rm, rm_done[side] = "**RM**", True
+            return f"**{e[1]}** | | | {rm}"
+        return f"{e[0]} | {esc(e[1])} | {e[2]} | {money(get(e[3]))}"
+
+    def tidy(items):
+        kept = []
+        for i, e in enumerate(items):
+            if e[0] == YEAR and (i + 1 == len(items) or items[i + 1][0] == YEAR):
+                continue
+            kept.append(e)
+        return kept
 
     def flush(total=None):
-        for d, c in zip_longest(sides["dr"], sides["cr"]):
-            left = f"{d[0]} | {esc(d[1])} | {d[2]} | {money(get(d[3]))}" if d else " | | | "
-            right = f"{c[0]} | {esc(c[1])} | {c[2]} | {money(get(c[3]))}" if c else " | | | "
+        for d, c in zip_longest(tidy(sides["dr"]), tidy(sides["cr"])):
+            left, right = show(d, "dr"), show(c, "cr")
             out.append(f"| {left} | {right} |")
         if total:
             out.append(f"| | | | **{money(get(total['dr']))}** | | | | **{money(get(total['cr']))}** |")
         sides["dr"].clear()
         sides["cr"].clear()
 
-    year = {"dr": "", "cr": ""}
     for row in b["rows"]:
         if row.get("total"):
             flush(row)
@@ -171,15 +196,8 @@ def r_ledger(b, get):
             e = row.get(side)
             if not e:
                 continue
-            m = re.match(r"^(\d{4})\b", e[0])
-            if get(e[3]) in (None, "", 0, 0.0):
-                if m:
-                    year[side] = m.group(1)   # keep the year of a dropped line for the next line shown
-                continue
-            if not m and not sides[side] and year[side] and e[0]:
-                e = [f"{year[side]} {e[0]}"] + list(e[1:])
-            year[side] = ""
-            sides[side].append(e)
+            if e[0] == YEAR or get(e[3]) not in (None, "", 0, 0.0):
+                sides[side].append(e)
     flush()
     return "\n".join(out)
 

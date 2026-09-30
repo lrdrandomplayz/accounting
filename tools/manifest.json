@@ -40,16 +40,21 @@
       "k": "journal",
       "rows": [
        [
+        "y",
+        "2025",
+        true
+       ],
+       [
         "d",
-        "2025 Jun 30",
+        "Jun 30",
         "Irrecoverable debts",
-        "U13"
+        "U14"
        ],
        [
         "c",
         "",
         "Kofi",
-        "AA14"
+        "AA15"
        ],
        [
         "n",
@@ -64,16 +69,28 @@
       "rows": [
        {
         "dr": [
-         "2025 Jun 1",
-         "Balance b/d",
-         "",
-         "M19"
+         "@Y",
+         "2025",
+         true
         ],
         "cr": [
-         "2025 Jun 30",
+         "@Y",
+         "2025",
+         true
+        ]
+       },
+       {
+        "dr": [
+         "Jun 1",
+         "Balance b/d",
+         "",
+         "M21"
+        ],
+        "cr": [
+         "Jun 30",
          "Irrecoverable debts",
          "GJ1",
-         "AC19"
+         "AC21"
         ]
        }
       ],
@@ -85,16 +102,28 @@
       "rows": [
        {
         "dr": [
-         "2025 Jun 30",
-         "Kofi",
-         "GJ1",
-         "M23"
+         "@Y",
+         "2025",
+         true
         ],
         "cr": [
-         "2025 Dec 31",
+         "@Y",
+         "2025",
+         true
+        ]
+       },
+       {
+        "dr": [
+         "Jun 30",
+         "Kofi",
+         "GJ1",
+         "M26"
+        ],
+        "cr": [
+         "Dec 31",
          "Income statement",
          "GJ2",
-         "AC23"
+         "AC26"
         ]
        }
       ],
@@ -108,16 +137,21 @@
       "k": "journal",
       "rows": [
        [
+        "y",
+        "",
+        true
+       ],
+       [
         "d",
         "",
         "Lina",
-        "U27"
+        "U31"
        ],
        [
         "c",
         "",
         "Irrecoverable debts recovered",
-        "AA28"
+        "AA32"
        ],
        [
         "n",
@@ -127,13 +161,13 @@
         "d",
         "",
         "Bank",
-        "U30"
+        "U34"
        ],
        [
         "c",
         "",
         "Lina",
-        "AA31"
+        "AA35"
        ],
        [
         "n",
@@ -355,49 +389,73 @@
       "rows": [
        {
         "dr": [
-         "2023 Dec 31",
-         "Income statement (decrease)",
-         "GJ1",
-         "M19"
+         "@Y",
+         "2023",
+         true
         ],
         "cr": [
-         "2023 Jan 1",
-         "Balance b/d",
-         "",
-         "AC19"
+         "@Y",
+         "2023",
+         true
         ]
        },
        {
         "dr": [
          "Dec 31",
-         "Balance c/d",
-         "",
+         "Income statement (decrease)",
+         "GJ1",
          "M20"
         ],
         "cr": [
-         "Dec 31",
-         "Income statement (increase)",
-         "GJ1",
+         "Jan 1",
+         "Balance b/d",
+         "",
          "AC20"
         ]
        },
        {
+        "dr": [
+         "Dec 31",
+         "Balance c/d",
+         "",
+         "M21"
+        ],
+        "cr": [
+         "Dec 31",
+         "Income statement (increase)",
+         "GJ1",
+         "AC21"
+        ]
+       },
+       {
         "total": true,
-        "dr": "M21",
-        "cr": "AC21"
+        "dr": "M22",
+        "cr": "AC22"
        },
        {
         "dr": [
-         "2024 Dec 31",
-         "Income statement (decrease)",
-         "GJ1",
-         "M22"
+         "@Y",
+         "2024",
+         false
         ],
         "cr": [
-         "2024 Jan 1",
+         "@Y",
+         "2024",
+         false
+        ]
+       },
+       {
+        "dr": [
+         "Dec 31",
+         "Income statement (decrease)",
+         "GJ1",
+         "M24"
+        ],
+        "cr": [
+         "Jan 1",
          "Balance b/d",
          "",
-         "AC22"
+         "AC24"
         ]
        },
        {
@@ -405,60 +463,80 @@
          "Dec 31",
          "Balance c/d",
          "",
-         "M23"
+         "M25"
         ],
         "cr": [
          "Dec 31",
          "Income statement (increase)",
          "GJ1",
-         "AC23"
-        ]
-       },
-       {
-        "total": true,
-        "dr": "M24",
-        "cr": "AC24"
-       },
-       {
-        "dr": [
-         "2025 Dec 31",
-         "Income statement (decrease)",
-         "GJ1",
-         "M25"
-        ],
-        "cr": [
-         "2025 Jan 1",
-         "Balance b/d",
-         "",
          "AC25"
         ]
        },
        {
+        "total": true,
+        "dr": "M26",
+        "cr": "AC26"
+       },
+       {
+        "dr": [
+         "@Y",
+         "2025",
+         false
+        ],
+        "cr": [
+         "@Y",
+         "2025",
+         false
+        ]
+       },
+       {
+        "dr": [
+         "Dec 31",
+         "Income statement (decrease)",
+         "GJ1",
+         "M28"
+        ],
+        "cr": [
+         "Jan 1",
+         "Balance b/d",
+         "",
+         "AC28"
+        ]
+       },
+       {
         "dr": [
          "Dec 31",
          "Balance c/d",
          "",
-         "M26"
+         "M29"
         ],
         "cr": [
          "Dec 31",
          "Income statement (increase)",
          "GJ1",
-         "AC26"
+         "AC29"
         ]
        },
        {
         "total": true,
-        "dr": "M27",
-        "cr": "AC27"
+        "dr": "M30",
+        "cr": "AC30"
        },
        {
         "dr": null,
         "cr": [
-         "2026 Jan 1",
+         "@Y",
+         "2026",
+         false
+        ]
+       },
+       {
+        "dr": null,
+        "cr": [
+         "Jan 1",
          "Balance b/d",
          "",
-         "AC28"
+         "AC32"
         ]
        }
       ],
@@ -482,7 +560,7 @@
         "Trade receivables",
         {
          "1": [
-          "R35",
+          "R39",
           null
          ]
         },
@@ -493,11 +571,11 @@
         "Allowance for irrecoverable debts",
         {
          "1": [
-          "R36",
+          "R40",
           "under"
          ],
          "2": [
-          "W36",
+          "W40",
           null
          ]
         },
@@ -558,16 +636,21 @@
       "k": "journal",
       "rows": [
        [
+        "y",
+        "2025",
+        true
+       ],
+       [
         "d",
-        "2025 Mar 31",
+        "Mar 31",
         "Irrecoverable debts",
-        "U15"
+        "U16"
        ],
        [
         "c",
         "",
         "Peter",
-        "AA16"
+        "AA17"
        ],
        [
         "n",
@@ -577,13 +660,13 @@
         "d",
         "Sep 30",
         "Irrecoverable debts",
-        "U18"
+        "U19"
        ],
        [
         "c",
         "",
         "Jane",
-        "AA19"
+        "AA20"
        ],
        [
         "n",
@@ -601,16 +684,28 @@
       "rows": [
        {
         "dr": [
-         "2025 Mar 31",
-         "Peter",
-         "GJ1",
-         "M25"
+         "@Y",
+         "2025",
+         true
         ],
         "cr": [
-         "2025 Dec 31",
+         "@Y",
+         "2025",
+         true
+        ]
+       },
+       {
+        "dr": [
+         "Mar 31",
+         "Peter",
+         "GJ1",
+         "M27"
+        ],
+        "cr": [
+         "Dec 31",
          "Income statement",
          "GJ2",
-         "AC25"
+         "AC27"
         ]
        },
        {
@@ -618,14 +713,14 @@
          "Sep 30",
          "Jane",
          "GJ1",
-         "M26"
+         "M28"
         ],
         "cr": null
        },
        {
         "total": true,
-        "dr": "M27",
-        "cr": "AC27"
+        "dr": "M29",
+        "cr": "AC29"
        }
       ]
      },
@@ -638,12 +733,12 @@
       "rows": [
        [
         "Decrease in profit for the year (RM)",
-        "X30",
+        "X32",
         "#,##0;(#,##0);\"-\""
        ],
        [
         "Decrease in trade receivables (RM)",
-        "X31",
+        "X33",
         "#,##0;(#,##0);\"-\""
        ]
       ]
@@ -700,16 +795,21 @@
       "k": "journal",
       "rows": [
        [
+        "y",
+        "2025",
+        true
+       ],
+       [
         "d",
-        "2025 Mar 31",
+        "Mar 31",
         "Irrecoverable debts",
-        "U15"
+        "U16"
        ],
        [
         "c",
         "",
         "Peter",
-        "AA16"
+        "AA17"
        ],
        [
         "n",
@@ -719,13 +819,13 @@
         "d",
         "Sep 30",
         "Irrecoverable debts",
-        "U18"
+        "U19"
        ],
        [
         "c",
         "",
         "Jane",
-        "AA19"
+        "AA20"
        ],
        [
         "n",
@@ -743,16 +843,28 @@
       "rows": [
        {
         "dr": [
-         "2025 Mar 31",
-         "Peter",
-         "GJ1",
-         "M25"
+         "@Y",
+         "2025",
+         true
         ],
         "cr": [
-         "2025 Dec 31",
+         "@Y",
+         "2025",
+         true
+        ]
+       },
+       {
+        "dr": [
+         "Mar 31",
+         "Peter",
+         "GJ1",
+         "M27"
+        ],
+        "cr": [
+         "Dec 31",
          "Income statement",
          "GJ2",
-         "AC25"
+         "AC27"
         ]
        },
        {
@@ -760,14 +872,14 @@
          "Sep 30",
          "Jane",
          "GJ1",
-         "M26"
+         "M28"
         ],
         "cr": null
        },
        {
         "total": true,
-        "dr": "M27",
-        "cr": "AC27"
+        "dr": "M29",
+        "cr": "AC29"
        }
       ]
      },
@@ -780,12 +892,12 @@
       "rows": [
        [
         "Decrease in profit for the year (RM)",
-        "X30",
+        "X32",
         "#,##0;(#,##0);\"-\""
        ],
        [
         "Decrease in trade receivables (RM)",
-        "X31",
+        "X33",
         "#,##0;(#,##0);\"-\""
        ]
       ]
@@ -1204,16 +1316,21 @@
       "k": "journal",
       "rows": [
        [
+        "y",
+        "",
+        true
+       ],
+       [
         "d",
         "",
         "Lucy",
-        "U19"
+        "U20"
        ],
        [
         "c",
         "",
         "Irrecoverable debts recovered",
-        "AA20"
+        "AA21"
        ],
        [
         "n",
@@ -1223,13 +1340,13 @@
         "d",
         "",
         "Bank",
-        "U22"
+        "U23"
        ],
        [
         "c",
         "",
         "Lucy",
-        "AA23"
+        "AA24"
        ],
        [
         "n",
@@ -1246,12 +1363,12 @@
       "rows": [
        [
         "New allowance at 30 June 2026 (RM)",
-        "X27",
+        "X28",
         "#,##0;(#,##0);\"-\""
        ],
        [
         "Increase in the allowance (RM)",
-        "X28",
+        "X29",
         "#,##0;(#,##0);\"-\""
        ]
       ]
@@ -1266,39 +1383,59 @@
       "rows": [
        {
         "dr": [
-         "2026 Jun 30",
-         "Balance c/d",
-         "",
-         "M33"
+         "@Y",
+         "2026",
+         true
         ],
         "cr": [
-         "2025 Jul 1",
+         "@Y",
+         "2025",
+         true
+        ]
+       },
+       {
+        "dr": [
+         "Jun 30",
+         "Balance c/d",
+         "",
+         "M35"
+        ],
+        "cr": [
+         "Jul 1",
          "Balance b/d",
          "",
-         "AC33"
+         "AC35"
         ]
        },
        {
         "dr": null,
         "cr": [
-         "2026 Jun 30",
+         "@Y",
+         "2026",
+         false
+        ]
+       },
+       {
+        "dr": null,
+        "cr": [
+         "Jun 30",
          "Income statement",
          "GJ1",
-         "AC34"
+         "AC37"
         ]
        },
        {
         "total": true,
-        "dr": "M35",
-        "cr": "AC35"
+        "dr": "M38",
+        "cr": "AC38"
        },
        {
         "dr": null,
         "cr": [
-         "2026 Jul 1",
+         "Jul 1",
          "Balance b/d",
          "",
-         "AC36"
+         "AC39"
         ]
        }
       ]
@@ -1325,7 +1462,7 @@
         "Irrecoverable debts recovered",
         {
          "3": [
-          "AB42",
+          "AB45",
           null
          ]
         },
@@ -1342,7 +1479,7 @@
         "Irrecoverable debts",
         {
          "2": [
-          "W44",
+          "W47",
           null
          ]
         },
@@ -1353,11 +1490,11 @@
         "Increase in allowance for irrecoverable debts",
         {
          "2": [
-          "W45",
+          "W48",
           "under"
          ],
          "3": [
-          "AB45",
+          "AB48",
           "under"
          ]
         },
@@ -1368,7 +1505,7 @@
         "Net effect on profit",
         {
          "3": [
-          "AB46",
+          "AB49",
           "total"
          ]
         },
@@ -1398,7 +1535,7 @@
         "Trade receivables",
         {
          "1": [
-          "R53",
+          "R56",
           null
          ]
         },
@@ -1409,11 +1546,11 @@
         "Allowance for irrecoverable debts",
         {
          "1": [
-          "R54",
+          "R57",
           "under"
          ],
          "2": [
-          "W54",
+          "W57",
           null
          ]
         },
@@ -1493,16 +1630,21 @@
       "k": "journal",
       "rows": [
        [
+        "y",
+        "",
+        true
+       ],
+       [
         "d",
         "",
         "Lucy",
-        "U19"
+        "U20"
        ],
        [
         "c",
         "",
         "Irrecoverable debts recovered",
-        "AA20"
+        "AA21"
        ],
        [
         "n",
@@ -1512,13 +1654,13 @@
         "d",
         "",
         "Bank",
-        "U22"
+        "U23"
        ],
        [
         "c",
         "",
         "Lucy",
-        "AA23"
+        "AA24"
        ],
        [
         "n",
@@ -1535,12 +1677,12 @@
       "rows": [
        [
         "New allowance at 30 June 2026 (RM)",
-        "X27",
+        "X28",
         "#,##0;(#,##0);\"-\""
        ],
        [
         "Increase in the allowance (RM)",
-        "X28",
+        "X29",
         "#,##0;(#,##0);\"-\""
        ]
       ]
@@ -1555,39 +1697,59 @@
       "rows": [
        {
         "dr": [
-         "2026 Jun 30",
-         "Balance c/d",
-         "",
-         "M33"
+         "@Y",
+         "2026",
+         true
         ],
         "cr": [
-         "2025 Jul 1",
+         "@Y",
+         "2025",
+         true
+        ]
+       },
+       {
+        "dr": [
+         "Jun 30",
+         "Balance c/d",
+         "",
+         "M35"
+        ],
+        "cr": [
+         "Jul 1",
          "Balance b/d",
          "",
-         "AC33"
+         "AC35"
         ]
        },
        {
         "dr": null,
         "cr": [
-         "2026 Jun 30",
+         "@Y",
+         "2026",
+         false
+        ]
+       },
+       {
+        "dr": null,
+        "cr": [
+         "Jun 30",
          "Income statement",
          "GJ1",
-         "AC34"
+         "AC37"
         ]
        },
        {
         "total": true,
-        "dr": "M35",
-        "cr": "AC35"
+        "dr": "M38",
+        "cr": "AC38"
        },
        {
         "dr": null,
         "cr": [
-         "2026 Jul 1",
+         "Jul 1",
          "Balance b/d",
          "",
-         "AC36"
+         "AC39"
         ]
        }
       ]
@@ -1614,7 +1776,7 @@
         "Irrecoverable debts recovered",
         {
          "3": [
-          "AB42",
+          "AB45",
           null
          ]
         },
@@ -1631,7 +1793,7 @@
         "Irrecoverable debts",
         {
          "2": [
-          "W44",
+          "W47",
           null
          ]
         },
@@ -1642,11 +1804,11 @@
         "Increase in allowance for irrecoverable debts",
         {
          "2": [
-          "W45",
+          "W48",
           "under"
          ],
          "3": [
-          "AB45",
+          "AB48",
           "under"
          ]
         },
@@ -1657,7 +1819,7 @@
         "Net effect on profit",
         {
          "3": [
-          "AB46",
+          "AB49",
           "total"
          ]
         },
@@ -1687,7 +1849,7 @@
         "Trade receivables",
         {
          "1": [
-          "R53",
+          "R56",
           null
          ]
         },
@@ -1698,11 +1860,11 @@
         "Allowance for irrecoverable debts",
         {
          "1": [
-          "R54",
+          "R57",
           "under"
          ],
          "2": [
-          "W54",
+          "W57",
           null
          ]
         },
@@ -1867,86 +2029,130 @@
       "rows": [
        {
         "dr": [
-         "2023 Dec 31",
-         "Balance c/d",
-         "",
-         "M36"
+         "@Y",
+         "2023",
+         true
         ],
         "cr": [
-         "2023 Dec 31",
+         "@Y",
+         "2023",
+         true
+        ]
+       },
+       {
+        "dr": [
+         "Dec 31",
+         "Balance c/d",
+         "",
+         "M37"
+        ],
+        "cr": [
+         "Dec 31",
          "Income statement",
          "GJ1",
-         "AC36"
+         "AC37"
         ]
        },
        {
         "total": true,
-        "dr": "M37",
-        "cr": "AC37"
+        "dr": "M38",
+        "cr": "AC38"
+       },
+       {
+        "dr": [
+         "@Y",
+         "2024",
+         false
+        ],
+        "cr": [
+         "@Y",
+         "2024",
+         false
+        ]
+       },
+       {
+        "dr": [
+         "Dec 31",
+         "Balance c/d",
+         "",
+         "M40"
+        ],
+        "cr": [
+         "Jan 1",
+         "Balance b/d",
+         "",
+         "AC40"
+        ]
        },
        {
         "dr": null,
         "cr": [
-         "2024 Jan 1",
-         "Balance b/d",
-         "",
-         "AC38"
-        ]
-       },
-       {
-        "dr": [
-         "2024 Dec 31",
-         "Balance c/d",
-         "",
-         "M39"
-        ],
-        "cr": [
-         "2024 Dec 31",
+         "Dec 31",
          "Income statement",
          "GJ2",
-         "AC39"
-        ]
-       },
-       {
-        "total": true,
-        "dr": "M40",
-        "cr": "AC40"
-       },
-       {
-        "dr": [
-         "2025 Dec 31",
-         "Income statement",
-         "GJ3",
-         "M41"
-        ],
-        "cr": [
-         "2025 Jan 1",
-         "Balance b/d",
-         "",
          "AC41"
         ]
        },
        {
+        "total": true,
+        "dr": "M42",
+        "cr": "AC42"
+       },
+       {
         "dr": [
-         "2025 Dec 31",
+         "@Y",
+         "2025",
+         false
+        ],
+        "cr": [
+         "@Y",
+         "2025",
+         false
+        ]
+       },
+       {
+        "dr": [
+         "Dec 31",
+         "Income statement",
+         "GJ3",
+         "M44"
+        ],
+        "cr": [
+         "Jan 1",
+         "Balance b/d",
+         "",
+         "AC44"
+        ]
+       },
+       {
+        "dr": [
+         "Dec 31",
          "Balance c/d",
          "",
-         "M42"
+         "M45"
         ],
         "cr": null
        },
        {
         "total": true,
-        "dr": "M43",
-        "cr": "AC43"
+        "dr": "M46",
+        "cr": "AC46"
        },
        {
         "dr": null,
         "cr": [
-         "2026 Jan 1",
+         "@Y",
+         "2026",
+         false
+        ]
+       },
+       {
+        "dr": null,
+        "cr": [
+         "Jan 1",
          "Balance b/d",
          "",
-         "AC44"
+         "AC48"
         ]
        }
       ]
@@ -1973,7 +2179,7 @@
         "Trade receivables",
         {
          "1": [
-          "R51",
+          "R55",
           null
          ]
         },
@@ -1984,11 +2190,11 @@
         "Allowance for irrecoverable debts",
         {
          "1": [
-          "R52",
+          "R56",
           "under"
          ],
          "2": [
-          "W52",
+          "W56",
           null
          ]
         },
@@ -2153,86 +2359,130 @@
       "rows": [
        {
         "dr": [
-         "2023 Dec 31",
-         "Balance c/d",
-         "",
-         "M36"
+         "@Y",
+         "2023",
+         true
         ],
         "cr": [
-         "2023 Dec 31",
+         "@Y",
+         "2023",
+         true
+        ]
+       },
+       {
+        "dr": [
+         "Dec 31",
+         "Balance c/d",
+         "",
+         "M37"
+        ],
+        "cr": [
+         "Dec 31",
          "Income statement",
          "GJ1",
-         "AC36"
+         "AC37"
         ]
        },
        {
         "total": true,
-        "dr": "M37",
-        "cr": "AC37"
+        "dr": "M38",
+        "cr": "AC38"
+       },
+       {
+        "dr": [
+         "@Y",
+         "2024",
+         false
+        ],
+        "cr": [
+         "@Y",
+         "2024",
+         false
+        ]
+       },
+       {
+        "dr": [
+         "Dec 31",
+         "Balance c/d",
+         "",
+         "M40"
+        ],
+        "cr": [
+         "Jan 1",
+         "Balance b/d",
+         "",
+         "AC40"
+        ]
        },
        {
         "dr": null,
         "cr": [
-         "2024 Jan 1",
-         "Balance b/d",
-         "",
-         "AC38"
-        ]
-       },
-       {
-        "dr": [
-         "2024 Dec 31",
-         "Balance c/d",
-         "",
-         "M39"
-        ],
-        "cr": [
-         "2024 Dec 31",
+         "Dec 31",
          "Income statement",
          "GJ2",
-         "AC39"
-        ]
-       },
-       {
-        "total": true,
-        "dr": "M40",
-        "cr": "AC40"
-       },
-       {
-        "dr": [
-         "2025 Dec 31",
-         "Income statement",
-         "GJ3",
-         "M41"
-        ],
-        "cr": [
-         "2025 Jan 1",
-         "Balance b/d",
-         "",
          "AC41"
         ]
        },
        {
+        "total": true,
+        "dr": "M42",
+        "cr": "AC42"
+       },
+       {
         "dr": [
-         "2025 Dec 31",
+         "@Y",
+         "2025",
+         false
+        ],
+        "cr": [
+         "@Y",
+         "2025",
+         false
+        ]
+       },
+       {
+        "dr": [
+         "Dec 31",
+         "Income statement",
+         "GJ3",
+         "M44"
+        ],
+        "cr": [
+         "Jan 1",
+         "Balance b/d",
+         "",
+         "AC44"
+        ]
+       },
+       {
+        "dr": [
+         "Dec 31",
          "Balance c/d",
          "",
-         "M42"
+         "M45"
         ],
         "cr": null
        },
        {
         "total": true,
-        "dr": "M43",
-        "cr": "AC43"
+        "dr": "M46",
+        "cr": "AC46"
        },
        {
         "dr": null,
         "cr": [
-         "2026 Jan 1",
+         "@Y",
+         "2026",
+         false
+        ]
+       },
+       {
+        "dr": null,
+        "cr": [
+         "Jan 1",
          "Balance b/d",
          "",
-         "AC44"
+         "AC48"
         ]
        }
       ]
@@ -2259,7 +2509,7 @@
         "Trade receivables",
         {
          "1": [
-          "R51",
+          "R55",
           null
          ]
         },
@@ -2270,11 +2520,11 @@
         "Allowance for irrecoverable debts",
         {
          "1": [
-          "R52",
+          "R56",
           "under"
          ],
          "2": [
-          "W52",
+          "W56",
           null
          ]
         },
@@ -2477,16 +2727,28 @@
       "rows": [
        {
         "dr": [
-         "2025 Dec 31",
-         "Income statement",
-         "GJ1",
-         "M39"
+         "@Y",
+         "2025",
+         true
         ],
         "cr": [
-         "2025 Jan 1",
+         "@Y",
+         "2025",
+         true
+        ]
+       },
+       {
+        "dr": [
+         "Dec 31",
+         "Income statement",
+         "GJ1",
+         "M40"
+        ],
+        "cr": [
+         "Jan 1",
          "Balance b/d",
          "",
-         "AC39"
+         "AC40"
         ]
        },
        {
@@ -2494,22 +2756,30 @@
          "Dec 31",
          "Balance c/d",
          "",
-         "M40"
+         "M41"
         ],
         "cr": null
        },
        {
         "total": true,
-        "dr": "M41",
-        "cr": "AC41"
+        "dr": "M42",
+        "cr": "AC42"
        },
        {
         "dr": null,
         "cr": [
-         "2026 Jan 1",
+         "@Y",
+         "2026",
+         false
+        ]
+       },
+       {
+        "dr": null,
+        "cr": [
+         "Jan 1",
          "Balance b/d",
          "",
-         "AC42"
+         "AC44"
         ]
        }
       ]
@@ -2536,7 +2806,7 @@
         "Trade receivables",
         {
          "1": [
-          "R49",
+          "R51",
           null
          ]
         },
@@ -2547,11 +2817,11 @@
         "Allowance for irrecoverable debts",
         {
          "1": [
-          "R50",
+          "R52",
           "under"
          ],
          "2": [
-          "W50",
+          "W52",
           null
          ]
         },
@@ -2762,16 +3032,28 @@
       "rows": [
        {
         "dr": [
-         "2025 Dec 31",
-         "Income statement",
-         "GJ1",
-         "M39"
+         "@Y",
+         "2025",
+         true
         ],
         "cr": [
-         "2025 Jan 1",
+         "@Y",
+         "2025",
+         true
+        ]
+       },
+       {
+        "dr": [
+         "Dec 31",
+         "Income statement",
+         "GJ1",
+         "M40"
+        ],
+        "cr": [
+         "Jan 1",
          "Balance b/d",
          "",
-         "AC39"
+         "AC40"
         ]
        },
        {
@@ -2779,22 +3061,30 @@
          "Dec 31",
          "Balance c/d",
          "",
-         "M40"
+         "M41"
         ],
         "cr": null
        },
        {
         "total": true,
-        "dr": "M41",
-        "cr": "AC41"
+        "dr": "M42",
+        "cr": "AC42"
        },
        {
         "dr": null,
         "cr": [
-         "2026 Jan 1",
+         "@Y",
+         "2026",
+         false
+        ]
+       },
+       {
+        "dr": null,
+        "cr": [
+         "Jan 1",
          "Balance b/d",
          "",
-         "AC42"
+         "AC44"
         ]
        }
       ]
@@ -2821,7 +3111,7 @@
         "Trade receivables",
         {
          "1": [
-          "R49",
+          "R51",
           null
          ]
         },
@@ -2832,11 +3122,11 @@
         "Allowance for irrecoverable debts",
         {
          "1": [
-          "R50",
+          "R52",
           "under"
          ],
          "2": [
-          "W50",
+          "W52",
           null
          ]
         },
@@ -3086,29 +3376,49 @@
       "rows": [
        {
         "dr": [
-         "Year 1 Jan 1",
-         "Bank",
-         "CB1",
-         "M27"
+         "@Y",
+         "Year 1",
+         true
         ],
         "cr": [
-         "Year 1 Dec 31",
+         "@Y",
+         "Year 1",
+         true
+        ]
+       },
+       {
+        "dr": [
+         "Jan 1",
+         "Bank",
+         "CB1",
+         "M28"
+        ],
+        "cr": [
+         "Dec 31",
          "Balance c/d",
          "",
-         "AC27"
+         "AC28"
         ]
        },
        {
         "total": true,
-        "dr": "M28",
-        "cr": "AC28"
+        "dr": "M29",
+        "cr": "AC29"
        },
        {
         "dr": [
-         "Year 2 Jan 1",
+         "@Y",
+         "Year 2",
+         false
+        ],
+        "cr": null
+       },
+       {
+        "dr": [
+         "Jan 1",
          "Balance b/d",
          "",
-         "M29"
+         "M31"
         ],
         "cr": null
        }
@@ -3121,43 +3431,27 @@
       "rows": [
        {
         "dr": [
-         "Year 1 Dec 31",
-         "Balance c/d",
-         "",
-         "M33"
+         "@Y",
+         "Year 1",
+         true
         ],
         "cr": [
-         "Year 1 Dec 31",
-         "Income statement",
-         "GJ1",
-         "AC33"
+         "@Y",
+         "Year 1",
+         true
         ]
-       },
-       {
-        "total": true,
-        "dr": "M34",
-        "cr": "AC34"
        },
        {
         "dr": [
-         "Year 2 Dec 31",
+         "Dec 31",
          "Balance c/d",
          "",
-         "M35"
+         "M36"
         ],
         "cr": [
-         "Year 2 Jan 1",
-         "Balance b/d",
-         "",
-         "AC35"
-        ]
-       },
-       {
-        "dr": null,
-        "cr": [
-         "Year 2 Dec 31",
+         "Dec 31",
          "Income statement",
-         "GJ2",
+         "GJ1",
          "AC36"
         ]
        },
@@ -3167,12 +3461,60 @@
         "cr": "AC37"
        },
        {
-        "dr": null,
+        "dr": [
+         "@Y",
+         "Year 2",
+         false
+        ],
         "cr": [
-         "Year 3 Jan 1",
+         "@Y",
+         "Year 2",
+         false
+        ]
+       },
+       {
+        "dr": [
+         "Dec 31",
+         "Balance c/d",
+         "",
+         "M39"
+        ],
+        "cr": [
+         "Jan 1",
          "Balance b/d",
          "",
-         "AC38"
+         "AC39"
+        ]
+       },
+       {
+        "dr": null,
+        "cr": [
+         "Dec 31",
+         "Income statement",
+         "GJ2",
+         "AC40"
+        ]
+       },
+       {
+        "total": true,
+        "dr": "M41",
+        "cr": "AC41"
+       },
+       {
+        "dr": null,
+        "cr": [
+         "@Y",
+         "Year 3",
+         false
+        ]
+       },
+       {
+        "dr": null,
+        "cr": [
+         "Jan 1",
+         "Balance b/d",
+         "",
+         "AC43"
         ]
        }
       ],
@@ -3196,15 +3538,15 @@
         "Machinery",
         {
          "1": [
-          "R44",
+          "R49",
           null
          ],
          "2": [
-          "W44",
+          "W49",
           null
          ],
          "3": [
-          "AB44",
+          "AB49",
           null
          ]
         },
@@ -3642,16 +3984,28 @@
       "rows": [
        {
         "dr": [
+         "@Y",
+         "",
+         true
+        ],
+        "cr": [
+         "@Y",
+         "",
+         true
+        ]
+       },
+       {
+        "dr": [
          "Date of sale",
          "Van (cost)",
          "GJ1",
-         "M17"
+         "M18"
         ],
         "cr": [
          "Date of sale",
          "Provision for depreciation",
          "GJ1",
-         "AC17"
+         "AC18"
         ]
        },
        {
@@ -3659,13 +4013,13 @@
          "Year end",
          "Income statement (profit on disposal)",
          "GJ2",
-         "M18"
+         "M19"
         ],
         "cr": [
          "Date of sale",
          "Bank",
          "CB1",
-         "AC18"
+         "AC19"
         ]
        },
        {
@@ -3674,13 +4028,13 @@
          "Year end",
          "Income statement (loss on disposal)",
          "GJ2",
-         "AC19"
+         "AC20"
         ]
        },
        {
         "total": true,
-        "dr": "M20",
-        "cr": "AC20"
+        "dr": "M21",
+        "cr": "AC21"
        }
       ],
       "tag": "ch10.ex5.ledger"
@@ -4350,16 +4704,21 @@
       "k": "journal",
       "rows": [
        [
+        "y",
+        "2025",
+        true
+       ],
+       [
         "d",
-        "2025 Dec 31",
+        "Dec 31",
         "Income statement (depreciation)",
-        "U26"
+        "U27"
        ],
        [
         "c",
         "",
         "Provision for depreciation of machinery",
-        "AA27"
+        "AA28"
        ],
        [
         "n",
@@ -4376,7 +4735,7 @@
       "rows": [
        [
         "Depreciation of loose tools (RM)",
-        "X31",
+        "X32",
         "#,##0;(#,##0);\"-\""
        ]
       ]
@@ -4494,16 +4853,21 @@
       "k": "journal",
       "rows": [
        [
+        "y",
+        "2025",
+        true
+       ],
+       [
         "d",
-        "2025 Dec 31",
+        "Dec 31",
         "Income statement (depreciation)",
-        "U26"
+        "U27"
        ],
        [
         "c",
         "",
         "Provision for depreciation of machinery",
-        "AA27"
+        "AA28"
        ],
        [
         "n",
@@ -4520,7 +4884,7 @@
       "rows": [
        [
         "Depreciation of loose tools (RM)",
-        "X31",
+        "X32",
         "#,##0;(#,##0);\"-\""
        ]
       ]
@@ -4687,16 +5051,28 @@
       "rows": [
        {
         "dr": [
-         "2026 Jan 1",
-         "Machinery",
-         "GJ1",
-         "M24"
+         "@Y",
+         "2026",
+         true
         ],
         "cr": [
-         "2026 Jan 1",
+         "@Y",
+         "2026",
+         true
+        ]
+       },
+       {
+        "dr": [
+         "Jan 1",
+         "Machinery",
+         "GJ1",
+         "M25"
+        ],
+        "cr": [
+         "Jan 1",
          "Provision for depreciation",
          "GJ1",
-         "AC24"
+         "AC25"
         ]
        },
        {
@@ -4705,7 +5081,7 @@
          "Jan 1",
          "Bank",
          "CB1",
-         "AC25"
+         "AC26"
         ]
        },
        {
@@ -4714,13 +5090,13 @@
          "Dec 31",
          "Income statement (loss on disposal)",
          "GJ2",
-         "AC26"
+         "AC27"
         ]
        },
        {
         "total": true,
-        "dr": "M27",
-        "cr": "AC27"
+        "dr": "M28",
+        "cr": "AC28"
        }
       ]
      },
@@ -4733,7 +5109,7 @@
       "rows": [
        [
         "The loss on disposal is shown as",
-        "T30",
+        "T31",
         null
        ]
       ]
@@ -4892,16 +5268,28 @@
       "rows": [
        {
         "dr": [
-         "2026 Jan 1",
-         "Machinery",
-         "GJ1",
-         "M24"
+         "@Y",
+         "2026",
+         true
         ],
         "cr": [
-         "2026 Jan 1",
+         "@Y",
+         "2026",
+         true
+        ]
+       },
+       {
+        "dr": [
+         "Jan 1",
+         "Machinery",
+         "GJ1",
+         "M25"
+        ],
+        "cr": [
+         "Jan 1",
          "Provision for depreciation",
          "GJ1",
-         "AC24"
+         "AC25"
         ]
        },
        {
@@ -4910,7 +5298,7 @@
          "Jan 1",
          "Bank",
          "CB1",
-         "AC25"
+         "AC26"
         ]
        },
        {
@@ -4919,13 +5307,13 @@
          "Dec 31",
          "Income statement (loss on disposal)",
          "GJ2",
-         "AC26"
+         "AC27"
         ]
        },
        {
         "total": true,
-        "dr": "M27",
-        "cr": "AC27"
+        "dr": "M28",
+        "cr": "AC28"
        }
       ]
      },
@@ -4938,7 +5326,7 @@
       "rows": [
        [
         "The loss on disposal is shown as",
-        "T30",
+        "T31",
         null
        ]
       ]
@@ -5036,63 +5424,14 @@
       "rows": [
        {
         "dr": [
-         "2023 Dec 31",
-         "Balance c/d",
-         "",
-         "M24"
+         "@Y",
+         "2023",
+         true
         ],
         "cr": [
-         "2023 Dec 31",
-         "Income statement",
-         "GJ1",
-         "AC24"
-        ]
-       },
-       {
-        "total": true,
-        "dr": "M25",
-        "cr": "AC25"
-       },
-       {
-        "dr": null,
-        "cr": [
-         "2024 Jan 1",
-         "Balance b/d",
-         "",
-         "AC26"
-        ]
-       },
-       {
-        "dr": [
-         "2024 Dec 31",
-         "Balance c/d",
-         "",
-         "M27"
-        ],
-        "cr": [
-         "2024 Dec 31",
-         "Income statement",
-         "GJ2",
-         "AC27"
-        ]
-       },
-       {
-        "total": true,
-        "dr": "M28",
-        "cr": "AC28"
-       },
-       {
-        "dr": [
-         "2025 Oct 1",
-         "Disposal (Van A)",
-         "GJ3",
-         "M29"
-        ],
-        "cr": [
-         "2025 Jan 1",
-         "Balance b/d",
-         "",
-         "AC29"
+         "@Y",
+         "2023",
+         true
         ]
        },
        {
@@ -5100,27 +5439,120 @@
          "Dec 31",
          "Balance c/d",
          "",
-         "M30"
+         "M25"
         ],
         "cr": [
-         "2025 Dec 31",
+         "Dec 31",
          "Income statement",
-         "GJ4",
-         "AC30"
+         "GJ1",
+         "AC25"
         ]
        },
        {
         "total": true,
-        "dr": "M31",
-        "cr": "AC31"
+        "dr": "M26",
+        "cr": "AC26"
+       },
+       {
+        "dr": [
+         "@Y",
+         "2024",
+         false
+        ],
+        "cr": [
+         "@Y",
+         "2024",
+         false
+        ]
+       },
+       {
+        "dr": [
+         "Dec 31",
+         "Balance c/d",
+         "",
+         "M28"
+        ],
+        "cr": [
+         "Jan 1",
+         "Balance b/d",
+         "",
+         "AC28"
+        ]
        },
        {
         "dr": null,
         "cr": [
-         "2026 Jan 1",
+         "Dec 31",
+         "Income statement",
+         "GJ2",
+         "AC29"
+        ]
+       },
+       {
+        "total": true,
+        "dr": "M30",
+        "cr": "AC30"
+       },
+       {
+        "dr": [
+         "@Y",
+         "2025",
+         false
+        ],
+        "cr": [
+         "@Y",
+         "2025",
+         false
+        ]
+       },
+       {
+        "dr": [
+         "Oct 1",
+         "Disposal (Van A)",
+         "GJ3",
+         "M32"
+        ],
+        "cr": [
+         "Jan 1",
          "Balance b/d",
          "",
          "AC32"
+        ]
+       },
+       {
+        "dr": [
+         "Dec 31",
+         "Balance c/d",
+         "",
+         "M33"
+        ],
+        "cr": [
+         "Dec 31",
+         "Income statement",
+         "GJ4",
+         "AC33"
+        ]
+       },
+       {
+        "total": true,
+        "dr": "M34",
+        "cr": "AC34"
+       },
+       {
+        "dr": null,
+        "cr": [
+         "@Y",
+         "2026",
+         false
+        ]
+       },
+       {
+        "dr": null,
+        "cr": [
+         "Jan 1",
+         "Balance b/d",
+         "",
+         "AC36"
         ]
        }
       ]
@@ -5135,16 +5567,28 @@
       "rows": [
        {
         "dr": [
-         "2025 Oct 1",
-         "Vans (Van A)",
-         "GJ3",
-         "M37"
+         "@Y",
+         "2025",
+         true
         ],
         "cr": [
-         "2025 Oct 1",
+         "@Y",
+         "2025",
+         true
+        ]
+       },
+       {
+        "dr": [
+         "Oct 1",
+         "Vans (Van A)",
+         "GJ3",
+         "M42"
+        ],
+        "cr": [
+         "Oct 1",
          "Provision for depreciation",
          "GJ3",
-         "AC37"
+         "AC42"
         ]
        },
        {
@@ -5153,7 +5597,7 @@
          "Oct 1",
          "Bank",
          "CB1",
-         "AC38"
+         "AC43"
         ]
        },
        {
@@ -5162,13 +5606,13 @@
          "Dec 31",
          "Income statement (loss on disposal)",
          "GJ4",
-         "AC39"
+         "AC44"
         ]
        },
        {
         "total": true,
-        "dr": "M40",
-        "cr": "AC40"
+        "dr": "M45",
+        "cr": "AC45"
        }
       ]
      },
@@ -5194,15 +5638,15 @@
         "Vans (Van B)",
         {
          "1": [
-          "R47",
+          "R52",
           null
          ],
          "2": [
-          "W47",
+          "W52",
           null
          ],
          "3": [
-          "AB47",
+          "AB52",
           null
          ]
         },
@@ -5219,7 +5663,7 @@
       "rows": [
        [
         "Concept involved",
-        "T50",
+        "T55",
         null
        ]
       ]
@@ -5321,63 +5765,14 @@
       "rows": [
        {
         "dr": [
-         "2023 Dec 31",
-         "Balance c/d",
-         "",
-         "M24"
+         "@Y",
+         "2023",
+         true
         ],
         "cr": [
-         "2023 Dec 31",
-         "Income statement",
-         "GJ1",
-         "AC24"
-        ]
-       },
-       {
-        "total": true,
-        "dr": "M25",
-        "cr": "AC25"
-       },
-       {
-        "dr": null,
-        "cr": [
-         "2024 Jan 1",
-         "Balance b/d",
-         "",
-         "AC26"
-        ]
-       },
-       {
-        "dr": [
-         "2024 Dec 31",
-         "Balance c/d",
-         "",
-         "M27"
-        ],
-        "cr": [
-         "2024 Dec 31",
-         "Income statement",
-         "GJ2",
-         "AC27"
-        ]
-       },
-       {
-        "total": true,
-        "dr": "M28",
-        "cr": "AC28"
-       },
-       {
-        "dr": [
-         "2025 Oct 1",
-         "Disposal (Van A)",
-         "GJ3",
-         "M29"
-        ],
-        "cr": [
-         "2025 Jan 1",
-         "Balance b/d",
-         "",
-         "AC29"
+         "@Y",
+         "2023",
+         true
         ]
        },
        {
@@ -5385,27 +5780,120 @@
          "Dec 31",
          "Balance c/d",
          "",
-         "M30"
+         "M25"
         ],
         "cr": [
-         "2025 Dec 31",
+         "Dec 31",
          "Income statement",
-         "GJ4",
-         "AC30"
+         "GJ1",
+         "AC25"
         ]
        },
        {
         "total": true,
-        "dr": "M31",
-        "cr": "AC31"
+        "dr": "M26",
+        "cr": "AC26"
+       },
+       {
+        "dr": [
+         "@Y",
+         "2024",
+         false
+        ],
+        "cr": [
+         "@Y",
+         "2024",
+         false
+        ]
+       },
+       {
+        "dr": [
+         "Dec 31",
+         "Balance c/d",
+         "",
+         "M28"
+        ],
+        "cr": [
+         "Jan 1",
+         "Balance b/d",
+         "",
+         "AC28"
+        ]
        },
        {
         "dr": null,
         "cr": [
-         "2026 Jan 1",
+         "Dec 31",
+         "Income statement",
+         "GJ2",
+         "AC29"
+        ]
+       },
+       {
+        "total": true,
+        "dr": "M30",
+        "cr": "AC30"
+       },
+       {
+        "dr": [
+         "@Y",
+         "2025",
+         false
+        ],
+        "cr": [
+         "@Y",
+         "2025",
+         false
+        ]
+       },
+       {
+        "dr": [
+         "Oct 1",
+         "Disposal (Van A)",
+         "GJ3",
+         "M32"
+        ],
+        "cr": [
+         "Jan 1",
          "Balance b/d",
          "",
          "AC32"
+        ]
+       },
+       {
+        "dr": [
+         "Dec 31",
+         "Balance c/d",
+         "",
+         "M33"
+        ],
+        "cr": [
+         "Dec 31",
+         "Income statement",
+         "GJ4",
+         "AC33"
+        ]
+       },
+       {
+        "total": true,
+        "dr": "M34",
+        "cr": "AC34"
+       },
+       {
+        "dr": null,
+        "cr": [
+         "@Y",
+         "2026",
+         false
+        ]
+       },
+       {
+        "dr": null,
+        "cr": [
+         "Jan 1",
+         "Balance b/d",
+         "",
+         "AC36"
         ]
        }
       ]
@@ -5420,16 +5908,28 @@
       "rows": [
        {
         "dr": [
-         "2025 Oct 1",
-         "Vans (Van A)",
-         "GJ3",
-         "M37"
+         "@Y",
+         "2025",
+         true
         ],
         "cr": [
-         "2025 Oct 1",
+         "@Y",
+         "2025",
+         true
+        ]
+       },
+       {
+        "dr": [
+         "Oct 1",
+         "Vans (Van A)",
+         "GJ3",
+         "M42"
+        ],
+        "cr": [
+         "Oct 1",
          "Provision for depreciation",
          "GJ3",
-         "AC37"
+         "AC42"
         ]
        },
        {
@@ -5438,7 +5938,7 @@
          "Oct 1",
          "Bank",
          "CB1",
-         "AC38"
+         "AC43"
         ]
        },
        {
@@ -5447,13 +5947,13 @@
          "Dec 31",
          "Income statement (loss on disposal)",
          "GJ4",
-         "AC39"
+         "AC44"
         ]
        },
        {
         "total": true,
-        "dr": "M40",
-        "cr": "AC40"
+        "dr": "M45",
+        "cr": "AC45"
        }
       ]
      },
@@ -5479,15 +5979,15 @@
         "Vans (Van B)",
         {
          "1": [
-          "R47",
+          "R52",
           null
          ],
          "2": [
-          "W47",
+          "W52",
           null
          ],
          "3": [
-          "AB47",
+          "AB52",
           null
          ]
         },
@@ -5504,7 +6004,7 @@
       "rows": [
        [
         "Concept involved",
-        "T50",
+        "T55",
         null
        ]
       ]
@@ -5694,30 +6194,42 @@
       "rows": [
        {
         "dr": [
-         "2025 Jan 1",
-         "Balance b/d (prepaid)",
-         "",
-         "M15"
+         "@Y",
+         "2025",
+         true
         ],
         "cr": [
-         "2025 Jan 1",
-         "Balance b/d (owing)",
-         "",
-         "AC15"
+         "@Y",
+         "2025",
+         true
         ]
        },
        {
         "dr": [
-         "2025",
-         "Bank",
-         "CB1",
+         "Jan 1",
+         "Balance b/d (prepaid)",
+         "",
          "M16"
+        ],
+        "cr": [
+         "Jan 1",
+         "Balance b/d (owing)",
+         "",
+         "AC16"
+        ]
+       },
+       {
+        "dr": [
+         "",
+         "Bank (paid during the year)",
+         "CB1",
+         "M17"
         ],
         "cr": [
          "Dec 31",
          "Income statement",
          "GJ1",
-         "AC16"
+         "AC17"
         ]
        },
        {
@@ -5725,32 +6237,44 @@
          "Dec 31",
          "Balance c/d (owing)",
          "",
-         "M17"
+         "M18"
         ],
         "cr": [
          "Dec 31",
          "Balance c/d (prepaid)",
          "",
-         "AC17"
+         "AC18"
         ]
        },
        {
         "total": true,
-        "dr": "M18",
-        "cr": "AC18"
+        "dr": "M19",
+        "cr": "AC19"
        },
        {
         "dr": [
-         "2026 Jan 1",
-         "Balance b/d (prepaid)",
-         "",
-         "M19"
+         "@Y",
+         "2026",
+         false
         ],
         "cr": [
-         "2026 Jan 1",
+         "@Y",
+         "2026",
+         false
+        ]
+       },
+       {
+        "dr": [
+         "Jan 1",
+         "Balance b/d (prepaid)",
+         "",
+         "M21"
+        ],
+        "cr": [
+         "Jan 1",
          "Balance b/d (owing)",
          "",
-         "AC19"
+         "AC21"
         ]
        }
       ],
@@ -5766,30 +6290,42 @@
       "rows": [
        {
         "dr": [
-         "2025 Jan 1",
-         "Balance b/d (prepaid)",
-         "",
-         "M24"
+         "@Y",
+         "2025",
+         true
         ],
         "cr": [
-         "2025 Jan 1",
-         "Balance b/d (owing)",
-         "",
-         "AC24"
+         "@Y",
+         "2025",
+         true
         ]
        },
        {
         "dr": [
-         "2025",
-         "Bank",
+         "Jan 1",
+         "Balance b/d (prepaid)",
+         "",
+         "M27"
+        ],
+        "cr": [
+         "Jan 1",
+         "Balance b/d (owing)",
+         "",
+         "AC27"
+        ]
+       },
+       {
+        "dr": [
+         "",
+         "Bank (paid during the year)",
          "CB1",
-         "M25"
+         "M28"
         ],
         "cr": [
          "Dec 31",
          "Income statement",
          "GJ1",
-         "AC25"
+         "AC28"
         ]
        },
        {
@@ -5797,32 +6333,44 @@
          "Dec 31",
          "Balance c/d (owing)",
          "",
-         "M26"
+         "M29"
         ],
         "cr": [
          "Dec 31",
          "Balance c/d (prepaid)",
          "",
-         "AC26"
+         "AC29"
         ]
        },
        {
         "total": true,
-        "dr": "M27",
-        "cr": "AC27"
+        "dr": "M30",
+        "cr": "AC30"
        },
        {
         "dr": [
-         "2026 Jan 1",
-         "Balance b/d (prepaid)",
-         "",
-         "M28"
+         "@Y",
+         "2026",
+         false
         ],
         "cr": [
-         "2026 Jan 1",
+         "@Y",
+         "2026",
+         false
+        ]
+       },
+       {
+        "dr": [
+         "Jan 1",
+         "Balance b/d (prepaid)",
+         "",
+         "M32"
+        ],
+        "cr": [
+         "Jan 1",
          "Balance b/d (owing)",
          "",
-         "AC28"
+         "AC32"
         ]
        }
       ],
@@ -5838,30 +6386,42 @@
       "rows": [
        {
         "dr": [
-         "2025 Jan 1",
-         "Balance b/d (prepaid)",
-         "",
-         "M33"
+         "@Y",
+         "2025",
+         true
         ],
         "cr": [
-         "2025 Jan 1",
-         "Balance b/d (owing)",
-         "",
-         "AC33"
+         "@Y",
+         "2025",
+         true
         ]
        },
        {
         "dr": [
-         "2025",
-         "Bank",
+         "Jan 1",
+         "Balance b/d (prepaid)",
+         "",
+         "M38"
+        ],
+        "cr": [
+         "Jan 1",
+         "Balance b/d (owing)",
+         "",
+         "AC38"
+        ]
+       },
+       {
+        "dr": [
+         "",
+         "Bank (paid during the year)",
          "CB1",
-         "M34"
+         "M39"
         ],
         "cr": [
          "Dec 31",
          "Income statement",
          "GJ1",
-         "AC34"
+         "AC39"
         ]
        },
        {
@@ -5869,32 +6429,44 @@
          "Dec 31",
          "Balance c/d (owing)",
          "",
-         "M35"
+         "M40"
         ],
         "cr": [
          "Dec 31",
          "Balance c/d (prepaid)",
          "",
-         "AC35"
+         "AC40"
         ]
        },
        {
         "total": true,
-        "dr": "M36",
-        "cr": "AC36"
+        "dr": "M41",
+        "cr": "AC41"
        },
        {
         "dr": [
-         "2026 Jan 1",
-         "Balance b/d (prepaid)",
-         "",
-         "M37"
+         "@Y",
+         "2026",
+         false
         ],
         "cr": [
-         "2026 Jan 1",
+         "@Y",
+         "2026",
+         false
+        ]
+       },
+       {
+        "dr": [
+         "Jan 1",
+         "Balance b/d (prepaid)",
+         "",
+         "M43"
+        ],
+        "cr": [
+         "Jan 1",
          "Balance b/d (owing)",
          "",
-         "AC37"
+         "AC43"
         ]
        }
       ],
@@ -6031,16 +6603,28 @@
       "rows": [
        {
         "dr": [
-         "2025 Jan 1",
-         "Balance b/d (due)",
-         "",
-         "M14"
+         "@Y",
+         "2025",
+         true
         ],
         "cr": [
-         "2025 Jan 1",
+         "@Y",
+         "2025",
+         true
+        ]
+       },
+       {
+        "dr": [
+         "Jan 1",
+         "Balance b/d (due)",
+         "",
+         "M15"
+        ],
+        "cr": [
+         "Jan 1",
          "Balance b/d (in advance)",
          "",
-         "AC14"
+         "AC15"
         ]
        },
        {
@@ -6048,13 +6632,13 @@
          "Dec 31",
          "Income statement",
          "GJ1",
-         "M15"
+         "M16"
         ],
         "cr": [
-         "2025",
-         "Bank",
+         "",
+         "Bank (received during the year)",
          "CB1",
-         "AC15"
+         "AC16"
         ]
        },
        {
@@ -6062,32 +6646,44 @@
          "Dec 31",
          "Balance c/d (in advance)",
          "",
-         "M16"
+         "M17"
         ],
         "cr": [
          "Dec 31",
          "Balance c/d (due)",
          "",
-         "AC16"
+         "AC17"
         ]
        },
        {
         "total": true,
-        "dr": "M17",
-        "cr": "AC17"
+        "dr": "M18",
+        "cr": "AC18"
        },
        {
         "dr": [
-         "2026 Jan 1",
-         "Balance b/d (due)",
-         "",
-         "M18"
+         "@Y",
+         "2026",
+         false
         ],
         "cr": [
-         "2026 Jan 1",
+         "@Y",
+         "2026",
+         false
+        ]
+       },
+       {
+        "dr": [
+         "Jan 1",
+         "Balance b/d (due)",
+         "",
+         "M20"
+        ],
+        "cr": [
+         "Jan 1",
          "Balance b/d (in advance)",
          "",
-         "AC18"
+         "AC20"
         ]
        }
       ],
@@ -6124,17 +6720,17 @@
       "rows": [
        [
         "Cost per month (RM)",
-        "X26",
+        "X28",
         "#,##0.00;(#,##0.00);\"-\""
        ],
        [
         "Expense for this year (RM)",
-        "X27",
+        "X29",
         "#,##0.00;(#,##0.00);\"-\""
        ],
        [
         "Prepayment carried to next year (RM)",
-        "X28",
+        "X30",
         "#,##0.00;(#,##0.00);\"-\""
        ]
       ]
@@ -6453,30 +7049,33 @@
       "rows": [
        {
         "dr": [
-         "2025 Mar",
-         "Bank",
-         "CB1",
-         "M20"
+         "@Y",
+         "2025",
+         true
         ],
         "cr": [
-         "2025 Dec 31",
+         "@Y",
+         "2025",
+         true
+        ]
+       },
+       {
+        "dr": [
+         "Mar",
+         "Bank",
+         "CB1",
+         "M21"
+        ],
+        "cr": [
+         "Dec 31",
          "Income statement",
          "GJ1",
-         "AC20"
+         "AC21"
         ]
        },
        {
         "dr": [
          "Jun",
-         "Bank",
-         "CB1",
-         "M21"
-        ],
-        "cr": null
-       },
-       {
-        "dr": [
-         "Sep",
          "Bank",
          "CB1",
          "M22"
@@ -6485,25 +7084,42 @@
        },
        {
         "dr": [
-         "Dec 31",
-         "Balance c/d",
-         "",
+         "Sep",
+         "Bank",
+         "CB1",
          "M23"
         ],
         "cr": null
        },
        {
+        "dr": [
+         "Dec 31",
+         "Balance c/d",
+         "",
+         "M24"
+        ],
+        "cr": null
+       },
+       {
         "total": true,
-        "dr": "M24",
-        "cr": "AC24"
+        "dr": "M25",
+        "cr": "AC25"
        },
        {
         "dr": null,
         "cr": [
-         "2026 Jan 1",
+         "@Y",
+         "2026",
+         false
+        ]
+       },
+       {
+        "dr": null,
+        "cr": [
+         "Jan 1",
          "Balance b/d",
          "",
-         "AC25"
+         "AC27"
         ]
        }
       ]
@@ -6518,16 +7134,28 @@
       "rows": [
        {
         "dr": [
-         "2025 Jul 1",
-         "Bank",
-         "CB1",
-         "M30"
+         "@Y",
+         "2025",
+         true
         ],
         "cr": [
-         "2025 Dec 31",
+         "@Y",
+         "2025",
+         true
+        ]
+       },
+       {
+        "dr": [
+         "Jul 1",
+         "Bank",
+         "CB1",
+         "M33"
+        ],
+        "cr": [
+         "Dec 31",
          "Income statement",
          "GJ1",
-         "AC30"
+         "AC33"
         ]
        },
        {
@@ -6536,20 +7164,28 @@
          "Dec 31",
          "Balance c/d",
          "",
-         "AC31"
+         "AC34"
         ]
        },
        {
         "total": true,
-        "dr": "M32",
-        "cr": "AC32"
+        "dr": "M35",
+        "cr": "AC35"
        },
        {
         "dr": [
-         "2026 Jan 1",
+         "@Y",
+         "2026",
+         false
+        ],
+        "cr": null
+       },
+       {
+        "dr": [
+         "Jan 1",
          "Balance b/d",
          "",
-         "M33"
+         "M37"
         ],
         "cr": null
        }
@@ -6577,7 +7213,7 @@
         "Other receivables (insurance prepaid)",
         {
          "2": [
-          "W40",
+          "W44",
           null
          ]
         },
@@ -6594,7 +7230,7 @@
         "Other payables (electricity owing)",
         {
          "2": [
-          "W42",
+          "W46",
           null
          ]
         },
@@ -6676,30 +7312,33 @@
       "rows": [
        {
         "dr": [
-         "2025 Mar",
-         "Bank",
-         "CB1",
-         "M20"
+         "@Y",
+         "2025",
+         true
         ],
         "cr": [
-         "2025 Dec 31",
+         "@Y",
+         "2025",
+         true
+        ]
+       },
+       {
+        "dr": [
+         "Mar",
+         "Bank",
+         "CB1",
+         "M21"
+        ],
+        "cr": [
+         "Dec 31",
          "Income statement",
          "GJ1",
-         "AC20"
+         "AC21"
         ]
        },
        {
         "dr": [
          "Jun",
-         "Bank",
-         "CB1",
-         "M21"
-        ],
-        "cr": null
-       },
-       {
-        "dr": [
-         "Sep",
          "Bank",
          "CB1",
          "M22"
@@ -6708,25 +7347,42 @@
        },
        {
         "dr": [
-         "Dec 31",
-         "Balance c/d",
-         "",
+         "Sep",
+         "Bank",
+         "CB1",
          "M23"
         ],
         "cr": null
        },
        {
+        "dr": [
+         "Dec 31",
+         "Balance c/d",
+         "",
+         "M24"
+        ],
+        "cr": null
+       },
+       {
         "total": true,
-        "dr": "M24",
-        "cr": "AC24"
+        "dr": "M25",
+        "cr": "AC25"
        },
        {
         "dr": null,
         "cr": [
-         "2026 Jan 1",
+         "@Y",
+         "2026",
+         false
+        ]
+       },
+       {
+        "dr": null,
+        "cr": [
+         "Jan 1",
          "Balance b/d",
          "",
-         "AC25"
+         "AC27"
         ]
        }
       ]
@@ -6741,16 +7397,28 @@
       "rows": [
        {
         "dr": [
-         "2025 Jul 1",
-         "Bank",
-         "CB1",
-         "M30"
+         "@Y",
+         "2025",
+         true
         ],
         "cr": [
-         "2025 Dec 31",
+         "@Y",
+         "2025",
+         true
+        ]
+       },
+       {
+        "dr": [
+         "Jul 1",
+         "Bank",
+         "CB1",
+         "M33"
+        ],
+        "cr": [
+         "Dec 31",
          "Income statement",
          "GJ1",
-         "AC30"
+         "AC33"
         ]
        },
        {
@@ -6759,20 +7427,28 @@
          "Dec 31",
          "Balance c/d",
          "",
-         "AC31"
+         "AC34"
         ]
        },
        {
         "total": true,
-        "dr": "M32",
-        "cr": "AC32"
+        "dr": "M35",
+        "cr": "AC35"
        },
        {
         "dr": [
-         "2026 Jan 1",
+         "@Y",
+         "2026",
+         false
+        ],
+        "cr": null
+       },
+       {
+        "dr": [
+         "Jan 1",
          "Balance b/d",
          "",
-         "M33"
+         "M37"
         ],
         "cr": null
        }
@@ -6800,7 +7476,7 @@
         "Other receivables (insurance prepaid)",
         {
          "2": [
-          "W40",
+          "W44",
           null
          ]
         },
@@ -6817,7 +7493,7 @@
         "Other payables (electricity owing)",
         {
          "2": [
-          "W42",
+          "W46",
           null
          ]
         },
@@ -6908,16 +7584,28 @@
       "rows": [
        {
         "dr": [
-         "2025 Dec 31",
-         "Income statement",
-         "GJ1",
-         "M22"
+         "@Y",
+         "2025",
+         true
         ],
         "cr": [
+         "@Y",
          "2025",
-         "Bank",
+         true
+        ]
+       },
+       {
+        "dr": [
+         "Dec 31",
+         "Income statement",
+         "GJ1",
+         "M23"
+        ],
+        "cr": [
+         "",
+         "Bank (received during the year)",
          "CB1",
-         "AC22"
+         "AC23"
         ]
        },
        {
@@ -6925,22 +7613,30 @@
          "Dec 31",
          "Balance c/d",
          "",
-         "M23"
+         "M24"
         ],
         "cr": null
        },
        {
         "total": true,
-        "dr": "M24",
-        "cr": "AC24"
+        "dr": "M25",
+        "cr": "AC25"
        },
        {
         "dr": null,
         "cr": [
-         "2026 Jan 1",
+         "@Y",
+         "2026",
+         false
+        ]
+       },
+       {
+        "dr": null,
+        "cr": [
+         "Jan 1",
          "Balance b/d",
          "",
-         "AC25"
+         "AC27"
         ]
        }
       ]
@@ -6954,7 +7650,7 @@
       "rows": [
        [
         "Commission income for 2025 (RM)",
-        "X28",
+        "X30",
         "#,##0;(#,##0);\"-\""
        ]
       ]
@@ -6981,7 +7677,7 @@
         "Other receivables (commission due)",
         {
          "2": [
-          "W35",
+          "W37",
           null
          ]
         },
@@ -6998,7 +7694,7 @@
         "Other payables (rent received in advance)",
         {
          "2": [
-          "W37",
+          "W39",
           null
          ]
         },
@@ -7015,7 +7711,7 @@
       "rows": [
        [
         "Profit would be overstated by (RM)",
-        "X40",
+        "X42",
         "#,##0;(#,##0);\"-\""
        ]
       ]
@@ -7103,16 +7799,28 @@
       "rows": [
        {
         "dr": [
-         "2025 Dec 31",
-         "Income statement",
-         "GJ1",
-         "M22"
+         "@Y",
+         "2025",
+         true
         ],
         "cr": [
+         "@Y",
          "2025",
-         "Bank",
+         true
+        ]
+       },
+       {
+        "dr": [
+         "Dec 31",
+         "Income statement",
+         "GJ1",
+         "M23"
+        ],
+        "cr": [
+         "",
+         "Bank (received during the year)",
          "CB1",
-         "AC22"
+         "AC23"
         ]
        },
        {
@@ -7120,22 +7828,30 @@
          "Dec 31",
          "Balance c/d",
          "",
-         "M23"
+         "M24"
         ],
         "cr": null
        },
        {
         "total": true,
-        "dr": "M24",
-        "cr": "AC24"
+        "dr": "M25",
+        "cr": "AC25"
        },
        {
         "dr": null,
         "cr": [
-         "2026 Jan 1",
+         "@Y",
+         "2026",
+         false
+        ]
+       },
+       {
+        "dr": null,
+        "cr": [
+         "Jan 1",
          "Balance b/d",
          "",
-         "AC25"
+         "AC27"
         ]
        }
       ]
@@ -7149,7 +7865,7 @@
       "rows": [
        [
         "Commission income for 2025 (RM)",
-        "X28",
+        "X30",
         "#,##0;(#,##0);\"-\""
        ]
       ]
@@ -7176,7 +7892,7 @@
         "Other receivables (commission due)",
         {
          "2": [
-          "W35",
+          "W37",
           null
          ]
         },
@@ -7193,7 +7909,7 @@
         "Other payables (rent received in advance)",
         {
          "2": [
-          "W37",
+          "W39",
           null
          ]
         },
@@ -7210,7 +7926,7 @@
       "rows": [
        [
         "Profit would be overstated by (RM)",
-        "X40",
+        "X42",
         "#,##0;(#,##0);\"-\""
        ]
       ]
@@ -7328,44 +8044,68 @@
       "rows": [
        {
         "dr": [
-         "2025-26",
-         "Bank",
-         "CB1",
-         "M28"
+         "@Y",
+         "2025",
+         true
         ],
         "cr": [
-         "2025 Apr 1",
-         "Balance b/d",
-         "",
-         "AC28"
+         "@Y",
+         "2025",
+         true
         ]
        },
        {
         "dr": [
-         "2026 Mar 31",
-         "Balance c/d",
          "",
+         "Bank (paid during the year)",
+         "CB1",
          "M29"
         ],
         "cr": [
-         "2026 Mar 31",
-         "Income statement",
-         "GJ1",
+         "Apr 1",
+         "Balance b/d",
+         "",
          "AC29"
         ]
        },
        {
+        "dr": [
+         "@Y",
+         "2026",
+         false
+        ],
+        "cr": [
+         "@Y",
+         "2026",
+         false
+        ]
+       },
+       {
+        "dr": [
+         "Mar 31",
+         "Balance c/d",
+         "",
+         "M31"
+        ],
+        "cr": [
+         "Mar 31",
+         "Income statement",
+         "GJ1",
+         "AC31"
+        ]
+       },
+       {
         "total": true,
-        "dr": "M30",
-        "cr": "AC30"
+        "dr": "M32",
+        "cr": "AC32"
        },
        {
         "dr": null,
         "cr": [
-         "2026 Apr 1",
+         "Apr 1",
          "Balance b/d",
          "",
-         "AC31"
+         "AC33"
         ]
        }
       ]
@@ -7379,12 +8119,12 @@
       "rows": [
        [
         "Other receivables: rates prepaid + commission due (RM)",
-        "X34",
+        "X36",
         "#,##0;(#,##0);\"-\""
        ],
        [
         "Other payables: wages owing (RM)",
-        "X35",
+        "X37",
         "#,##0;(#,##0);\"-\""
        ]
       ]
@@ -7502,44 +8242,68 @@
       "rows": [
        {
         "dr": [
-         "2025-26",
-         "Bank",
-         "CB1",
-         "M28"
+         "@Y",
+         "2025",
+         true
         ],
         "cr": [
-         "2025 Apr 1",
-         "Balance b/d",
-         "",
-         "AC28"
+         "@Y",
+         "2025",
+         true
         ]
        },
        {
         "dr": [
-         "2026 Mar 31",
-         "Balance c/d",
          "",
+         "Bank (paid during the year)",
+         "CB1",
          "M29"
         ],
         "cr": [
-         "2026 Mar 31",
-         "Income statement",
-         "GJ1",
+         "Apr 1",
+         "Balance b/d",
+         "",
          "AC29"
         ]
        },
        {
+        "dr": [
+         "@Y",
+         "2026",
+         false
+        ],
+        "cr": [
+         "@Y",
+         "2026",
+         false
+        ]
+       },
+       {
+        "dr": [
+         "Mar 31",
+         "Balance c/d",
+         "",
+         "M31"
+        ],
+        "cr": [
+         "Mar 31",
+         "Income statement",
+         "GJ1",
+         "AC31"
+        ]
+       },
+       {
         "total": true,
-        "dr": "M30",
-        "cr": "AC30"
+        "dr": "M32",
+        "cr": "AC32"
        },
        {
         "dr": null,
         "cr": [
-         "2026 Apr 1",
+         "Apr 1",
          "Balance b/d",
          "",
-         "AC31"
+         "AC33"
         ]
        }
       ]
@@ -7553,12 +8317,12 @@
       "rows": [
        [
         "Other receivables: rates prepaid + commission due (RM)",
-        "X34",
+        "X36",
         "#,##0;(#,##0);\"-\""
        ],
        [
         "Other payables: wages owing (RM)",
-        "X35",
+        "X37",
         "#,##0;(#,##0);\"-\""
        ]
       ]
@@ -7830,16 +8594,28 @@
       "rows": [
        {
         "dr": [
-         "2025 Jan 1",
-         "Balance b/d",
-         "",
-         "M52"
+         "@Y",
+         "2025",
+         true
         ],
         "cr": [
-         "2025 Dec 31",
+         "@Y",
+         "2025",
+         true
+        ]
+       },
+       {
+        "dr": [
+         "Jan 1",
+         "Balance b/d",
+         "",
+         "M53"
+        ],
+        "cr": [
+         "Dec 31",
          "Income statement",
          "GJ1",
-         "AC52"
+         "AC53"
         ]
        },
        {
@@ -7847,26 +8623,34 @@
          "Apr 1",
          "Bank",
          "CB1",
-         "M53"
+         "M54"
         ],
         "cr": [
          "Dec 31",
          "Balance c/d",
          "",
-         "AC53"
+         "AC54"
         ]
        },
        {
         "total": true,
-        "dr": "M54",
-        "cr": "AC54"
+        "dr": "M55",
+        "cr": "AC55"
        },
        {
         "dr": [
-         "2026 Jan 1",
+         "@Y",
+         "2026",
+         false
+        ],
+        "cr": null
+       },
+       {
+        "dr": [
+         "Jan 1",
          "Balance b/d",
          "",
-         "M55"
+         "M57"
         ],
         "cr": null
        }
@@ -8139,16 +8923,28 @@
       "rows": [
        {
         "dr": [
-         "2025 Jan 1",
-         "Balance b/d",
-         "",
-         "M52"
+         "@Y",
+         "2025",
+         true
         ],
         "cr": [
-         "2025 Dec 31",
+         "@Y",
+         "2025",
+         true
+        ]
+       },
+       {
+        "dr": [
+         "Jan 1",
+         "Balance b/d",
+         "",
+         "M53"
+        ],
+        "cr": [
+         "Dec 31",
          "Income statement",
          "GJ1",
-         "AC52"
+         "AC53"
         ]
        },
        {
@@ -8156,26 +8952,34 @@
          "Apr 1",
          "Bank",
          "CB1",
-         "M53"
+         "M54"
         ],
         "cr": [
          "Dec 31",
          "Balance c/d",
          "",
-         "AC53"
+         "AC54"
         ]
        },
        {
         "total": true,
-        "dr": "M54",
-        "cr": "AC54"
+        "dr": "M55",
+        "cr": "AC55"
        },
        {
         "dr": [
-         "2026 Jan 1",
+         "@Y",
+         "2026",
+         false
+        ],
+        "cr": null
+       },
+       {
+        "dr": [
+         "Jan 1",
          "Balance b/d",
          "",
-         "M55"
+         "M57"
         ],
         "cr": null
        }
@@ -14762,16 +15566,28 @@
       "rows": [
        {
         "dr": [
-         "2026 Mar 31",
-         "Equipment",
-         "GJ1",
-         "M54"
+         "@Y",
+         "2026",
+         true
         ],
         "cr": [
-         "2026 Mar 31",
+         "@Y",
+         "2026",
+         true
+        ]
+       },
+       {
+        "dr": [
+         "Mar 31",
+         "Equipment",
+         "GJ1",
+         "M55"
+        ],
+        "cr": [
+         "Mar 31",
          "Bank",
          "CB1",
-         "AC54"
+         "AC55"
         ]
        },
        {
@@ -14780,7 +15596,7 @@
          "Mar 31",
          "Provision for depreciation",
          "GJ1",
-         "AC55"
+         "AC56"
         ]
        },
        {
@@ -14789,13 +15605,13 @@
          "Mar 31",
          "Income statement (loss on disposal)",
          "GJ2",
-         "AC56"
+         "AC57"
         ]
        },
        {
         "total": true,
-        "dr": "M57",
-        "cr": "AC57"
+        "dr": "M58",
+        "cr": "AC58"
        }
       ]
      },
@@ -14816,7 +15632,7 @@
         "Revenue",
         {
          "3": [
-          "AB63",
+          "AB64",
           null
          ]
         },
@@ -14827,7 +15643,7 @@
         "Sales returns",
         {
          "3": [
-          "AB64",
+          "AB65",
           "under"
          ]
         },
@@ -14838,7 +15654,7 @@
         "Net revenue",
         {
          "3": [
-          "AB65",
+          "AB66",
           null
          ]
         },
@@ -14855,7 +15671,7 @@
         "Opening inventory",
         {
          "2": [
-          "W67",
+          "W68",
           null
          ]
         },
@@ -14866,7 +15682,7 @@
         "Purchases",
         {
          "1": [
-          "R68",
+          "R69",
           null
          ]
         },
@@ -14877,7 +15693,7 @@
         "Purchases returns",
         {
          "1": [
-          "R69",
+          "R70",
           null
          ]
         },
@@ -14888,11 +15704,11 @@
         "Carriage inwards",
         {
          "1": [
-          "R70",
+          "R71",
           "under"
          ],
          "2": [
-          "W70",
+          "W71",
           "under"
          ]
         },
@@ -14903,7 +15719,7 @@
         "Cost of goods available for sale",
         {
          "2": [
-          "W71",
+          "W72",
           null
          ]
         },
@@ -14914,11 +15730,11 @@
         "Closing inventory",
         {
          "2": [
-          "W72",
+          "W73",
           "under"
          ],
          "3": [
-          "AB72",
+          "AB73",
           "under"
          ]
         },
@@ -14929,7 +15745,7 @@
         "Gross profit",
         {
          "3": [
-          "AB73",
+          "AB74",
           null
          ]
         },
@@ -14946,7 +15762,7 @@
         "Discount received",
         {
          "2": [
-          "W75",
+          "W76",
           null
          ]
         },
@@ -14957,11 +15773,11 @@
         "Commission received",
         {
          "2": [
-          "W76",
+          "W77",
           "under"
          ],
          "3": [
-          "AB76",
+          "AB77",
           "under"
          ]
         },
@@ -14972,7 +15788,7 @@
         "",
         {
          "3": [
-          "AB77",
+          "AB78",
           null
          ]
         },
@@ -14989,7 +15805,7 @@
         "Wages",
         {
          "2": [
-          "W79",
+          "W80",
           null
          ]
         },
@@ -15000,7 +15816,7 @@
         "Rent and rates",
         {
          "2": [
-          "W80",
+          "W81",
           null
          ]
         },
@@ -15011,7 +15827,7 @@
         "Electricity",
         {
          "2": [
-          "W81",
+          "W82",
           null
          ]
         },
@@ -15022,7 +15838,7 @@
         "Carriage outwards",
         {
          "2": [
-          "W82",
+          "W83",
           null
          ]
         },
@@ -15033,7 +15849,7 @@
         "Discount allowed",
         {
          "2": [
-          "W83",
+          "W84",
           null
          ]
         },
@@ -15044,7 +15860,7 @@
         "Irrecoverable debts",
         {
          "2": [
-          "W84",
+          "W85",
           null
          ]
         },
@@ -15055,7 +15871,7 @@
         "Increase in allowance for irrecoverable debts",
         {
          "2": [
-          "W85",
+          "W86",
           null
          ]
         },
@@ -15066,7 +15882,7 @@
         "Depreciation: equipment",
         {
          "2": [
-          "W86",
+          "W87",
           null
          ]
         },
@@ -15077,7 +15893,7 @@
         "Loss on disposal",
         {
          "2": [
-          "W87",
+          "W88",
           null
          ]
         },
@@ -15088,11 +15904,11 @@
         "Loan interest",
         {
          "2": [
-          "W88",
+          "W89",
           "under"
          ],
          "3": [
-          "AB88",
+          "AB89",
           "under"
          ]
         },
@@ -15103,7 +15919,7 @@
         "Profit for the year",
         {
          "3": [
-          "AB89",
+          "AB90",
           "total"
          ]
         },
@@ -15134,15 +15950,15 @@
         "Premises",
         {
          "1": [
-          "R97",
+          "R98",
           null
          ],
          "2": [
-          "W97",
+          "W98",
           null
          ],
          "3": [
-          "AB97",
+          "AB98",
           null
          ]
         },
@@ -15153,15 +15969,15 @@
         "Equipment",
         {
          "1": [
-          "R98",
+          "R99",
           "under"
          ],
          "2": [
-          "W98",
+          "W99",
           "under"
          ],
          "3": [
-          "AB98",
+          "AB99",
           "under"
          ]
         },
@@ -15172,15 +15988,15 @@
         "Total non-current assets",
         {
          "1": [
-          "R99",
+          "R100",
           null
          ],
          "2": [
-          "W99",
+          "W100",
           null
          ],
          "3": [
-          "AB99",
+          "AB100",
           null
          ]
         },
@@ -15197,7 +16013,7 @@
         "Inventory",
         {
          "2": [
-          "W101",
+          "W102",
           null
          ]
         },
@@ -15208,7 +16024,7 @@
         "Trade receivables",
         {
          "1": [
-          "R102",
+          "R103",
           null
          ]
         },
@@ -15219,11 +16035,11 @@
         "Allowance for irrecoverable debts",
         {
          "1": [
-          "R103",
+          "R104",
           "under"
          ],
          "2": [
-          "W103",
+          "W104",
           null
          ]
         },
@@ -15234,7 +16050,7 @@
         "Other receivables (prepaid + commission due)",
         {
          "2": [
-          "W104",
+          "W105",
           null
          ]
         },
@@ -15245,7 +16061,7 @@
         "Cash",
         {
          "2": [
-          "W105",
+          "W106",
           "under"
          ]
         },
@@ -15256,7 +16072,7 @@
         "Total current assets",
         {
          "2": [
-          "W106",
+          "W107",
           null
          ]
         },
@@ -15273,7 +16089,7 @@
         "Trade payables",
         {
          "2": [
-          "W108",
+          "W109",
           null
          ]
         },
@@ -15284,7 +16100,7 @@
         "Other payables (electricity + loan interest)",
         {
          "2": [
-          "W109",
+          "W110",
           null
          ]
         },
@@ -15295,7 +16111,7 @@
         "Bank overdraft",
         {
          "2": [
-          "W110",
+          "W111",
           "under"
          ]
         },
@@ -15306,7 +16122,7 @@
         "Total current liabilities",
         {
          "2": [
-          "W111",
+          "W112",
           "under"
          ]
         },
@@ -15317,7 +16133,7 @@
         "Net current assets (working capital)",
         {
          "3": [
-          "AB112",
+          "AB113",
           "under"
          ]
         },
@@ -15328,7 +16144,7 @@
         "",
         {
          "3": [
-          "AB113",
+          "AB114",
           null
          ]
         },
@@ -15345,7 +16161,7 @@
         "Loan (repayable 2029)",
         {
          "3": [
-          "AB115",
+          "AB116",
           "under"
          ]
         },
@@ -15356,7 +16172,7 @@
         "Net assets",
         {
          "3": [
-          "AB116",
+          "AB117",
           "total"
          ]
         },
@@ -15373,7 +16189,7 @@
         "Capital at start of year",
         {
          "3": [
-          "AB118",
+          "AB119",
           null
          ]
         },
@@ -15384,7 +16200,7 @@
         "Profit for the year",
         {
          "3": [
-          "AB119",
+          "AB120",
           "under"
          ]
         },
@@ -15395,7 +16211,7 @@
         "",
         {
          "3": [
-          "AB120",
+          "AB121",
           null
          ]
         },
@@ -15406,7 +16222,7 @@
         "Drawings",
         {
          "3": [
-          "AB121",
+          "AB122",
           "under"
          ]
         },
@@ -15417,7 +16233,7 @@
         "Capital at end of year",
         {
          "3": [
-          "AB122",
+          "AB123",
           "total"
          ]
         },
@@ -15659,16 +16475,28 @@
       "rows": [
        {
         "dr": [
-         "2026 Mar 31",
-         "Equipment",
-         "GJ1",
-         "M54"
+         "@Y",
+         "2026",
+         true
         ],
         "cr": [
-         "2026 Mar 31",
+         "@Y",
+         "2026",
+         true
+        ]
+       },
+       {
+        "dr": [
+         "Mar 31",
+         "Equipment",
+         "GJ1",
+         "M55"
+        ],
+        "cr": [
+         "Mar 31",
          "Bank",
          "CB1",
-         "AC54"
+         "AC55"
         ]
        },
        {
@@ -15677,7 +16505,7 @@
          "Mar 31",
          "Provision for depreciation",
          "GJ1",
-         "AC55"
+         "AC56"
         ]
        },
        {
@@ -15686,13 +16514,13 @@
          "Mar 31",
          "Income statement (loss on disposal)",
          "GJ2",
-         "AC56"
+         "AC57"
         ]
        },
        {
         "total": true,
-        "dr": "M57",
-        "cr": "AC57"
+        "dr": "M58",
+        "cr": "AC58"
        }
       ]
      },
@@ -15713,7 +16541,7 @@
         "Revenue",
         {
          "3": [
-          "AB63",
+          "AB64",
           null
          ]
         },
@@ -15724,7 +16552,7 @@
         "Sales returns",
         {
          "3": [
-          "AB64",
+          "AB65",
           "under"
          ]
         },
@@ -15735,7 +16563,7 @@
         "Net revenue",
         {
          "3": [
-          "AB65",
+          "AB66",
           null
          ]
         },
@@ -15752,7 +16580,7 @@
         "Opening inventory",
         {
          "2": [
-          "W67",
+          "W68",
           null
          ]
         },
@@ -15763,7 +16591,7 @@
         "Purchases",
         {
          "1": [
-          "R68",
+          "R69",
           null
          ]
         },
@@ -15774,7 +16602,7 @@
         "Purchases returns",
         {
          "1": [
-          "R69",
+          "R70",
           null
          ]
         },
@@ -15785,11 +16613,11 @@
         "Carriage inwards",
         {
          "1": [
-          "R70",
+          "R71",
           "under"
          ],
          "2": [
-          "W70",
+          "W71",
           "under"
          ]
         },
@@ -15800,7 +16628,7 @@
         "Cost of goods available for sale",
         {
          "2": [
-          "W71",
+          "W72",
           null
          ]
         },
@@ -15811,11 +16639,11 @@
         "Closing inventory",
         {
          "2": [
-          "W72",
+          "W73",
           "under"
          ],
          "3": [
-          "AB72",
+          "AB73",
           "under"
          ]
         },
@@ -15826,7 +16654,7 @@
         "Gross profit",
         {
          "3": [
-          "AB73",
+          "AB74",
           null
          ]
         },
@@ -15843,7 +16671,7 @@
         "Discount received",
         {
          "2": [
-          "W75",
+          "W76",
           null
          ]
         },
@@ -15854,11 +16682,11 @@
         "Commission received",
         {
          "2": [
-          "W76",
+          "W77",
           "under"
          ],
          "3": [
-          "AB76",
+          "AB77",
           "under"
          ]
         },
@@ -15869,7 +16697,7 @@
         "",
         {
          "3": [
-          "AB77",
+          "AB78",
           null
          ]
         },
@@ -15886,7 +16714,7 @@
         "Wages",
         {
          "2": [
-          "W79",
+          "W80",
           null
          ]
         },
@@ -15897,7 +16725,7 @@
         "Rent and rates",
         {
          "2": [
-          "W80",
+          "W81",
           null
          ]
         },
@@ -15908,7 +16736,7 @@
         "Electricity",
         {
          "2": [
-          "W81",
+          "W82",
           null
          ]
         },
@@ -15919,7 +16747,7 @@
         "Carriage outwards",
         {
          "2": [
-          "W82",
+          "W83",
           null
          ]
         },
@@ -15930,7 +16758,7 @@
         "Discount allowed",
         {
          "2": [
-          "W83",
+          "W84",
           null
          ]
         },
@@ -15941,7 +16769,7 @@
         "Irrecoverable debts",
         {
          "2": [
-          "W84",
+          "W85",
           null
          ]
         },
@@ -15952,7 +16780,7 @@
         "Increase in allowance for irrecoverable debts",
         {
          "2": [
-          "W85",
+          "W86",
           null
          ]
         },
@@ -15963,7 +16791,7 @@
         "Depreciation: equipment",
         {
          "2": [
-          "W86",
+          "W87",
           null
          ]
         },
@@ -15974,7 +16802,7 @@
         "Loss on disposal",
         {
          "2": [
-          "W87",
+          "W88",
           null
          ]
         },
@@ -15985,11 +16813,11 @@
         "Loan interest",
         {
          "2": [
-          "W88",
+          "W89",
           "under"
          ],
          "3": [
-          "AB88",
+          "AB89",
           "under"
          ]
         },
@@ -16000,7 +16828,7 @@
         "Profit for the year",
         {
          "3": [
-          "AB89",
+          "AB90",
           "total"
          ]
         },
@@ -16031,15 +16859,15 @@
         "Premises",
         {
          "1": [
-          "R97",
+          "R98",
           null
          ],
          "2": [
-          "W97",
+          "W98",
           null
          ],
          "3": [
-          "AB97",
+          "AB98",
           null
          ]
         },
@@ -16050,15 +16878,15 @@
         "Equipment",
         {
          "1": [
-          "R98",
+          "R99",
           "under"
          ],
          "2": [
-          "W98",
+          "W99",
           "under"
          ],
          "3": [
-          "AB98",
+          "AB99",
           "under"
          ]
         },
@@ -16069,15 +16897,15 @@
         "Total non-current assets",
         {
          "1": [
-          "R99",
+          "R100",
           null
          ],
          "2": [
-          "W99",
+          "W100",
           null
          ],
          "3": [
-          "AB99",
+          "AB100",
           null
          ]
         },
@@ -16094,7 +16922,7 @@
         "Inventory",
         {
          "2": [
-          "W101",
+          "W102",
           null
          ]
         },
@@ -16105,7 +16933,7 @@
         "Trade receivables",
         {
          "1": [
-          "R102",
+          "R103",
           null
          ]
         },
@@ -16116,11 +16944,11 @@
         "Allowance for irrecoverable debts",
         {
          "1": [
-          "R103",
+          "R104",
           "under"
          ],
          "2": [
-          "W103",
+          "W104",
           null
          ]
         },
@@ -16131,7 +16959,7 @@
         "Other receivables (prepaid + commission due)",
         {
          "2": [
-          "W104",
+          "W105",
           null
          ]
         },
@@ -16142,7 +16970,7 @@
         "Cash",
         {
          "2": [
-          "W105",
+          "W106",
           "under"
          ]
         },
@@ -16153,7 +16981,7 @@
         "Total current assets",
         {
          "2": [
-          "W106",
+          "W107",
           null
          ]
         },
@@ -16170,7 +16998,7 @@
         "Trade payables",
         {
          "2": [
-          "W108",
+          "W109",
           null
          ]
         },
@@ -16181,7 +17009,7 @@
         "Other payables (electricity + loan interest)",
         {
          "2": [
-          "W109",
+          "W110",
           null
          ]
         },
@@ -16192,7 +17020,7 @@
         "Bank overdraft",
         {
          "2": [
-          "W110",
+          "W111",
           "under"
          ]
         },
@@ -16203,7 +17031,7 @@
         "Total current liabilities",
         {
          "2": [
-          "W111",
+          "W112",
           "under"
          ]
         },
@@ -16214,7 +17042,7 @@
         "Net current assets (working capital)",
         {
          "3": [
-          "AB112",
+          "AB113",
           "under"
          ]
         },
@@ -16225,7 +17053,7 @@
         "",
         {
          "3": [
-          "AB113",
+          "AB114",
           null
          ]
         },
@@ -16242,7 +17070,7 @@
         "Loan (repayable 2029)",
         {
          "3": [
-          "AB115",
+          "AB116",
           "under"
          ]
         },
@@ -16253,7 +17081,7 @@
         "Net assets",
         {
          "3": [
-          "AB116",
+          "AB117",
           "total"
          ]
         },
@@ -16270,7 +17098,7 @@
         "Capital at start of year",
         {
          "3": [
-          "AB118",
+          "AB119",
           null
          ]
         },
@@ -16281,7 +17109,7 @@
         "Profit for the year",
         {
          "3": [
-          "AB119",
+          "AB120",
           "under"
          ]
         },
@@ -16292,7 +17120,7 @@
         "",
         {
          "3": [
-          "AB120",
+          "AB121",
           null
          ]
         },
@@ -16303,7 +17131,7 @@
         "Drawings",
         {
          "3": [
-          "AB121",
+          "AB122",
           "under"
          ]
         },
@@ -16314,7 +17142,7 @@
         "Capital at end of year",
         {
          "3": [
-          "AB122",
+          "AB123",
           "total"
          ]
         },

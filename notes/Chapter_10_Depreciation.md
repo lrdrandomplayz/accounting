@@ -151,24 +151,29 @@ The asset stays at **cost** in its own account. Depreciation builds up in a sepa
 <!-- BEGIN GENERATED: ch10.ex4.machinery -->
 **Dr** &emsp;&emsp; **Machinery Account** &emsp;&emsp; **Cr**
 
-| Date | Particulars | Folio | Amount (RM) | Date | Particulars | Folio | Amount (RM) |
+| Date | Particulars | Folio | Amount | Date | Particulars | Folio | Amount |
 |---|---|---|---:|---|---|---|---:|
-| Year 1 Jan 1 | Bank | CB1 | 20,000 | Year 1 Dec 31 | Balance c/d |  | 20,000 |
+| **Year 1** | | | **RM** | **Year 1** | | | **RM** |
+| Jan 1 | Bank | CB1 | 20,000 | Dec 31 | Balance c/d |  | 20,000 |
 | | | | **20,000** | | | | **20,000** |
-| Year 2 Jan 1 | Balance b/d |  | 20,000 |  | | |  |
+| **Year 2** | | |  |  | | |  |
+| Jan 1 | Balance b/d |  | 20,000 |  | | |  |
 <!-- END GENERATED: ch10.ex4.machinery -->
 
 <!-- BEGIN GENERATED: ch10.ex4.provision -->
 **Dr** &emsp;&emsp; **Provision for Depreciation of Machinery Account** &emsp;&emsp; **Cr**
 
-| Date | Particulars | Folio | Amount (RM) | Date | Particulars | Folio | Amount (RM) |
+| Date | Particulars | Folio | Amount | Date | Particulars | Folio | Amount |
 |---|---|---|---:|---|---|---|---:|
-| Year 1 Dec 31 | Balance c/d |  | 4,500 | Year 1 Dec 31 | Income statement | GJ1 | 4,500 |
+| **Year 1** | | | **RM** | **Year 1** | | | **RM** |
+| Dec 31 | Balance c/d |  | 4,500 | Dec 31 | Income statement | GJ1 | 4,500 |
 | | | | **4,500** | | | | **4,500** |
-| Year 2 Dec 31 | Balance c/d |  | 9,000 | Year 2 Jan 1 | Balance b/d |  | 4,500 |
-|  | | |  | Year 2 Dec 31 | Income statement | GJ2 | 4,500 |
+| **Year 2** | | |  | **Year 2** | | |  |
+| Dec 31 | Balance c/d |  | 9,000 | Jan 1 | Balance b/d |  | 4,500 |
+|  | | |  | Dec 31 | Income statement | GJ2 | 4,500 |
 | | | | **9,000** | | | | **9,000** |
-|  | | |  | Year 3 Jan 1 | Balance b/d |  | 9,000 |
+|  | | |  | **Year 3** | | |  |
+|  | | |  | Jan 1 | Balance b/d |  | 9,000 |
 <!-- END GENERATED: ch10.ex4.provision -->
 
 <!-- BEGIN GENERATED: ch10.ex4.sofp -->
@@ -206,8 +211,9 @@ Carrying amount = 30,000 - 18,000 = 12,000. Proceeds 10,000. **Loss = 2,000.**
 <!-- BEGIN GENERATED: ch10.ex5.ledger -->
 **Dr** &emsp;&emsp; **Disposal of Van Account** &emsp;&emsp; **Cr**
 
-| Date | Particulars | Folio | Amount (RM) | Date | Particulars | Folio | Amount (RM) |
+| Date | Particulars | Folio | Amount | Date | Particulars | Folio | Amount |
 |---|---|---|---:|---|---|---|---:|
+| **** | | | **RM** | **** | | | **RM** |
 | Date of sale | Van (cost) | GJ1 | 30,000 | Date of sale | Provision for depreciation | GJ1 | 18,000 |
 |  | | |  | Date of sale | Bank | CB1 | 10,000 |
 |  | | |  | Year end | Income statement (loss on disposal) | GJ2 | 2,000 |

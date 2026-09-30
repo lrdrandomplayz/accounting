@@ -67,6 +67,70 @@ def edge(line=None, boxed=False):
     return Border(left=side, right=side, top=top, bottom=bottom)
 
 
+YEAR = "@Y"
+
+
+def split_year(date):
+    """'2025 Mar 31' -> ('2025', 'Mar 31'); 'Sep 30' -> (None, 'Sep 30')."""
+    m = re.match(r"^(\d{4}(?:-\d{2})?|Year \d+)\b\s*(.*)$", date or "")
+    return (m.group(1), m.group(2)) if m else (None, date or "")
+
+
+def expand_journal(rows):
+    """Put the year on its own row (with RM on the first one) and keep only month and day on entries."""
+    out, cur, first = [], None, True
+    for row in rows:
+        if row[0] == "n":
+            out.append(row)
+            continue
+        kind, date, text, t = row
+        y, rest = split_year(date)
+        if first and y is None:
+            out.append(("y", "", True))
+            first = False
+        if y and y != cur:
+            out.append(("y", y, first))
+            first, cur = False, y
+        out.append((kind, rest, text, t))
+    return out
+
+
+def expand_ledger(rows):
+    """Same idea for a ledger: each side gets a year row (RM on the first) whenever the year changes."""
+    from itertools import zip_longest
+    sections, cur = [], {"dr": [], "cr": []}
+    for row in rows:
+        if row == "TOTAL":
+            sections.append((cur, True))
+            cur = {"dr": [], "cr": []}
+            continue
+        for side, e in zip(("dr", "cr"), row):
+            if e:
+                cur[side].append(e)
+    if cur["dr"] or cur["cr"]:
+        sections.append((cur, False))
+    state, first, out = {"dr": None, "cr": None}, {"dr": True, "cr": True}, []
+    for cur, total in sections:
+        lists = {}
+        for side in ("dr", "cr"):
+            items = []
+            for e in cur[side]:
+                y, rest = split_year(e[0])
+                if first[side] and y is None:
+                    items.append((YEAR, "", True))
+                    first[side] = False
+                if y and y != state[side]:
+                    items.append((YEAR, y, first[side]))
+                    first[side], state[side] = False, y
+                items.append((rest,) + tuple(e[1:]))
+            lists[side] = items
+        out += list(zip_longest(lists["dr"], lists["cr"]))
+        if total:
+            out.append("TOTAL")
+    return out
+
+
+
 class V:
     """An answer value: a formula template with optional underline style and key."""
 
@@ -423,15 +487,21 @@ class Page:
 
     def journal(self, rows):
         r = self.r
-        for u, span, h in ((0, 3, "Date"), (3, 16, "Particulars"), (19, 6, "Debit (RM)"), (25, 6, "Credit (RM)")):
+        for u, span, h in ((0, 3, "Date"), (3, 16, "Particulars"), (19, 6, "Debit"), (25, 6, "Credit")):
             self.box(r, u, span, h, bold=True, fill_=F_HEAD, align="left" if u < 19 else "center",
                      border=edge(None, True))
         self.r += 1
         rec = []
         g = edge(None, True)
-        for row in rows:
+        for row in expand_journal(rows):
             r = self.r
-            if row[0] == "n":
+            if row[0] == "y":
+                self.box(r, 0, 3, row[1], bold=True, border=g)
+                self.box(r, 3, 16, border=g)
+                for u in (19, 25):
+                    self.box(r, u, 6, "RM" if row[2] else None, bold=True, align="center", border=g)
+                rec.append(("y", row[1], row[2]))
+            elif row[0] == "n":
                 self.box(r, 0, 3, border=g)
                 self.box(r, 3, 16, "(" + row[1] + ")", italic=True, color=GREY, border=g, wrap=True)
                 self.height(r, max(17, 13.5 * lines_needed(row[1], 16) + 4))
@@ -448,8 +518,8 @@ class Page:
                 else:
                     self.box(r, 19, 6, border=g)
                     a = self.val(r, 25, 5, t, grid=True)
-                self.height(r, 17)
                 rec.append((kind, date, text, a))
+            self.height(r, 17)
             self.r += 1
         self._rec({"k": "journal", "rows": rec})
 
@@ -460,7 +530,7 @@ class Page:
         self.box(r, 28, 3, "Cr", bold=True, align="right", color=NAVY)
         self.r += 1
         r = self.r
-        heads = ((0, 3, "Date"), (3, 7, "Particulars"), (10, 1, "Folio"), (11, 4, "Amount (RM)"))
+        heads = ((0, 3, "Date"), (3, 7, "Particulars"), (10, 1, "Folio"), (11, 4, "Amount"))
         for o in (0, 16):
             for u, span, h in heads:
                 self.box(r, o + u, span, h, bold=True, fill_=F_HEAD, align="center" if u >= 10 else "left",
@@ -470,7 +540,7 @@ class Page:
         self.r += 1
         start = self.r
         rec = []
-        for row in rows:
+        for row in expand_ledger(rows):
             r = self.r
             if row == "TOTAL":
                 entry = {"total": True}
@@ -482,7 +552,12 @@ class Page:
             else:
                 entry = {}
                 for o, side, e in ((0, "dr", row[0]), (16, "cr", row[1])):
-                    if e:
+                    if e and e[0] == YEAR:
+                        self.box(r, o, 3, e[1], bold=True)
+                        if e[2]:
+                            self.box(r, o + 11, 3, "RM", bold=True, align="right")
+                        entry[side] = [YEAR, e[1], e[2]]
+                    elif e:
                         date, part, folio, t = e
                         self.box(r, o, 3, date)
                         self.box(r, o + 3, 7, part, wrap=True, valign="center")

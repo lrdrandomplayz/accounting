@@ -30,8 +30,8 @@ Answer key with full workings: [Answer_Key.md](model-questions/Answer_Key.md) ([
 
 | Item | Columns |
 |---|---|
-| Journal | Date, Particulars, Debit (RM), Credit (RM) |
-| Ledger account | Dr side and Cr side, each with Date, Particulars, Folio, Amount (RM). Folio: GJ = general journal, CB = cash book |
+| Journal | Date, Particulars, Debit, Credit. The first row shows the year, with RM under Debit and Credit |
+| Ledger account | Dr side and Cr side, each with Date, Particulars, Folio, Amount. The first row under the headings shows the year, with RM in the Amount column; entries then show only the month and day. A new year row starts when the year changes. Folio: GJ = general journal, CB = cash book |
 | Statement of Profit or Loss | Add/Less marker, Particulars, RM, RM, RM |
 | Statement of Financial Position | Add/Less marker, Particulars, RM, RM, RM, with Cost, Accumulated Depreciation and Carrying Amount under the RM headings |
 

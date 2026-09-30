@@ -553,7 +553,7 @@ def q11_10(p):
     p.calc([("ri", "Rent income for 2025 (RM)", "12*{rm}"), ("ra", "Rent received in advance (RM)", adv)])
     p.part("b) Prepare the Rent receivable account for the year. (4)")
     p.ledger("Rent Receivable Account", [
-        (("2025 Dec 31", "Income statement", "GJ1", "12*{rm}"), ("2025", "Bank", "CB1", "{rr}")),
+        (("2025 Dec 31", "Income statement", "GJ1", "12*{rm}"), ("2025", "Bank (received during the year)", "CB1", "{rr}")),
         (("Dec 31", "Balance c/d", "", adv), None),
         "TOTAL",
         (None, ("2026 Jan 1", "Balance b/d", "", adv))])
@@ -582,7 +582,7 @@ def q11_11(p):
             ("ce", "Commission receivable income (RM)", "{cr}+{cd}")])
     p.part("b) Prepare the Wages account for the year, showing the balance carried down. (5)")
     p.ledger("Wages Account", [
-        (("2025-26", "Bank", "CB1", "{wp}"), ("2025 Apr 1", "Balance b/d", "", "{wo}")),
+        (("2025", "Bank (paid during the year)", "CB1", "{wp}"), ("2025 Apr 1", "Balance b/d", "", "{wo}")),
         (("2026 Mar 31", "Balance c/d", "", "{wc}"), ("2026 Mar 31", "Income statement", "GJ1", "{wp}-{wo}+{wc}")),
         "TOTAL",
         (None, ("2026 Apr 1", "Balance b/d", "", "{wc}"))])
@@ -641,7 +641,7 @@ def q11_12(p):
 def expense_ledger(p, tag, name, k):
     p.tag(tag).ledger(name, [
         (("2025 Jan 1", "Balance b/d (prepaid)", "", f"{{{k}_op}}"), ("2025 Jan 1", "Balance b/d (owing)", "", f"{{{k}_oa}}")),
-        (("2025", "Bank", "CB1", f"{{{k}_paid}}"), ("Dec 31", "Income statement", "GJ1", f"{{{k}_exp}}")),
+        (("2025", "Bank (paid during the year)", "CB1", f"{{{k}_paid}}"), ("Dec 31", "Income statement", "GJ1", f"{{{k}_exp}}")),
         (("Dec 31", "Balance c/d (owing)", "", f"{{{k}_ca}}"), ("Dec 31", "Balance c/d (prepaid)", "", f"{{{k}_cp}}")),
         "TOTAL",
         (("2026 Jan 1", "Balance b/d (prepaid)", "", f"{{{k}_cp}}"), ("2026 Jan 1", "Balance b/d (owing)", "", f"{{{k}_ca}}"))])
@@ -689,7 +689,7 @@ def worked_11_inc(p):
     k = "rr"
     p.tag("ch11.ex4.ledger").ledger("Rent Received Account", [
         (("2025 Jan 1", "Balance b/d (due)", "", f"{{{k}_oa}}"), ("2025 Jan 1", "Balance b/d (in advance)", "", f"{{{k}_oi}}")),
-        (("Dec 31", "Income statement", "GJ1", f"{{{k}_inc}}"), ("2025", "Bank", "CB1", f"{{{k}_rec}}")),
+        (("Dec 31", "Income statement", "GJ1", f"{{{k}_inc}}"), ("2025", "Bank (received during the year)", "CB1", f"{{{k}_rec}}")),
         (("Dec 31", "Balance c/d (in advance)", "", f"{{{k}_ci}}"), ("Dec 31", "Balance c/d (due)", "", f"{{{k}_ca}}")),
         "TOTAL",
         (("2026 Jan 1", "Balance b/d (due)", "", f"{{{k}_ca}}"), ("2026 Jan 1", "Balance b/d (in advance)", "", f"{{{k}_ci}}"))])
@@ -1139,8 +1139,9 @@ def readme(wb, topic, worked, questions, extra):
     p.box(r + 3, 6, 25, "Green cell: the correct answer (Ans tabs).")
     p.r += 4
     p.part("Formats used")
-    for line in ["Journal: Date | Particulars | Debit (RM) | Credit (RM).",
-                 "Ledger account: Dr side and Cr side, each with Date | Particulars | Folio | Amount (RM). "
+    for line in ["Journal: Date | Particulars | Debit | Credit. The first row shows the year, with RM under Debit and Credit.",
+                 "Ledger account: Dr side and Cr side, each with Date | Particulars | Folio | Amount. The first row under the "
+                 "headings shows the year, with RM in the Amount column; entries then show the month and day. "
                  "Folio: GJ = general journal, CB = cash book.",
                  "Statement of Profit or Loss: marker (Add / Less) | Particulars | RM | RM | RM.",
                  "Statement of Financial Position: the same, with Cost | Accumulated Depreciation | Carrying Amount "
