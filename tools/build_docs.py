@@ -221,8 +221,27 @@ def r_statement(b, get):
     return "\n".join(out)
 
 
+def r_mcq_question(b):
+    out = []
+    for n, (stem, options, _a) in enumerate(b["rows"], 1):
+        opts = "\n".join(f"* {x}. {esc(o)}" for x, o in zip("ABCD", options))
+        out.append(f"**{n}.** {stem}\n\n{opts}")
+    return "\n\n".join(out)
+
+
+def r_mcq(b, get):
+    out = ["| Question | Answer |", "|---|---|"]
+    for n, (_stem, options, a) in enumerate(b["rows"], 1):
+        letter = get(a)
+        text = options["ABCD".index(letter)] if letter in ("A", "B", "C", "D") else ""
+        out.append(f"| {n} | **{letter}** ({esc(text)}) |")
+    return "\n".join(out)
+
+
 def render_answer_block(b, get):
     k = b["k"]
+    if k == "mcq":
+        return r_mcq(b, get)
     if k == "part":
         return f"**{b['text']}**"
     if k == "calc":
@@ -243,7 +262,7 @@ def render_answer_block(b, get):
 
 
 def render_question(sheet):
-    parts = [f"**{sheet['qid']} ({LEVELS[sheet['level']]})**"]
+    parts = [f"**{sheet['qid']} ({sheet['label']})**"]
     bullets = []
 
     def flush_bullets():
@@ -267,6 +286,8 @@ def render_question(sheet):
             parts.append(r_table(b, lambda a: None))
         elif k == "part":
             parts.append(b["text"])
+        elif k == "mcq":
+            parts.append(r_mcq_question(b))
         elif k == "choice":
             subs = [label for label, _a, _acc in b["rows"] if re.match(r"^[a-z]\) ", label)]
             if subs:
@@ -276,7 +297,8 @@ def render_question(sheet):
 
 
 def render_answers(sheet, get):
-    parts = [f"### {sheet['qid']} (Level {sheet['level']})"]
+    head = f"Level {sheet['level']}" if sheet["section"] == "structured" else sheet["label"]
+    parts = [f"### {sheet['qid']} ({head})"]
     for b in sheet["blocks"]:
         s = render_answer_block(b, get)
         if s:
@@ -298,23 +320,27 @@ def main():
     for fname, book in manifest.items():
         wb = load_values(fname)
         chap = book["chapter"]
-        qs, ans = [], []
+        qs, ans = {}, {}
         for sheet in book["sheets"]:
             ws = wb[sheet["sheet"]]
 
             def get(a, ws=ws):
                 return ws[a].value
 
-            if sheet["mode"] == "q" and sheet["qid"] != "quiz":
-                qs.append(render_question(sheet))
-            elif sheet["mode"] == "a" and sheet["qid"] != "quiz":
-                ans.append(render_answers(sheet, get))
+            section = sheet.get("section", "structured")
+            key = chap if section == "structured" else f"{chap} {section}"
+            if sheet["mode"] == "q" and section != "quiz":
+                qs.setdefault(key, []).append(render_question(sheet))
+            elif sheet["mode"] == "a" and section != "quiz":
+                ans.setdefault(key, []).append(render_answers(sheet, get))
             elif sheet["mode"] == "w":
                 for b in sheet["blocks"]:
                     if "tag" in b:
                         sections[b["tag"]] = render_answer_block(b, get) if b["k"] != "tb" else r_tb(b)
-        sections[f"questions {chap}"] = "\n\n".join(qs)
-        sections[f"answers {chap}"] = "\n\n".join(ans)
+        for key, items in qs.items():
+            sections[f"questions {key}"] = "\n\n".join(items)
+        for key, items in ans.items():
+            sections[f"answers {key}"] = "\n\n".join(items)
     used = set()
     files = sorted((ROOT / "notes").glob("*.md")) + sorted((ROOT / "model-questions").glob("*.md"))
     for path in files:

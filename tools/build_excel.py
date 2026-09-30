@@ -1085,47 +1085,459 @@ def qfs_10(p):
 
 
 # =====================================================================================
+# Year-end journal practice (Section D)
+# =====================================================================================
+def j8_1(p):
+    p.text("Mei Ling's year ends on 31 December 2025. Prepare journal entries for the following. Narratives are required.")
+    p.bullets(["30 April 2025: Ahmad, who owes RM480, is declared bankrupt. The debt is written off.",
+               "15 July 2025: a cheque for RM350 is received from Faridah. Her debt was written off in 2024.",
+               "31 December 2025: the allowance for irrecoverable debts is to be 5% of trade receivables of RM23,000. "
+               "The allowance brought forward is RM900."])
+    p.data([("ahmad", "Ahmad's debt (RM)", 480), ("far", "Received from Faridah (RM)", 350),
+            ("tr", "Trade receivables at 31 December 2025 (RM)", 23000), ("rate", "Allowance rate", 0.05, PCT),
+            ("al_open", "Allowance brought forward (RM)", 900)])
+    p.part("a) Calculate the change in the allowance for irrecoverable debts. (2)")
+    p.calc([("al", "Allowance required at 31 December 2025 (RM)", "ROUND({tr}*{rate},2)"),
+            ("inc", "Increase in the allowance (RM)", "{al}-{al_open}")])
+    p.part("b) Prepare the journal entries. (8)")
+    p.journal([("d", "2025 Apr 30", "Irrecoverable debts", "{ahmad}"), ("c", "", "Ahmad", "{ahmad}"),
+               ("n", "Being debt written off: customer declared bankrupt"),
+               ("d", "Jul 15", "Faridah", "{far}"), ("c", "", "Irrecoverable debts recovered", "{far}"),
+               ("n", "Being debt written off in 2024 reinstated"),
+               ("d", "Jul 15", "Bank", "{far}"), ("c", "", "Faridah", "{far}"),
+               ("n", "Being cheque received from Faridah"),
+               ("d", "Dec 31", "Income statement", "{inc}"), ("c", "", "Allowance for irrecoverable debts", "{inc}"),
+               ("n", "Being increase in the allowance for irrecoverable debts")])
+
+
+def j8_2(p):
+    p.text("Chong's year ends on 30 June 2026. All entries are made on 30 June 2026.")
+    p.bullets(["Trade receivables are RM32,000 before writing off a debt of RM1,500 owed by Chen, who has disappeared.",
+               "The allowance for irrecoverable debts brought forward is RM2,000. It is to be 5% of the remaining trade receivables.",
+               "Irrecoverable debts of RM600 were written off earlier in the year. Together with Chen's debt, they are "
+               "transferred to the income statement.",
+               "Irrecoverable debts recovered during the year total RM300. This is transferred to the income statement."])
+    p.data([("trb", "Trade receivables before writing off Chen (RM)", 32000), ("chen", "Chen's debt (RM)", 1500),
+            ("al_open", "Allowance brought forward (RM)", 2000), ("rate", "Allowance rate", 0.05, PCT),
+            ("id_early", "Irrecoverable debts written off earlier (RM)", 600), ("rec", "Debts recovered (RM)", 300)])
+    p.part("a) Calculate the new allowance and the change in the allowance. (3)")
+    p.calc([("al", "Allowance required (RM)", "ROUND(({trb}-{chen})*{rate},2)"),
+            ("dec", "Decrease in the allowance (RM)", "{al_open}-{al}")])
+    p.part("b) Prepare the journal entries. (8)")
+    p.journal([("d", "2026 Jun 30", "Irrecoverable debts", "{chen}"), ("c", "", "Chen", "{chen}"),
+               ("n", "Being debt written off: customer cannot be found"),
+               ("d", "Jun 30", "Allowance for irrecoverable debts", "{dec}"), ("c", "", "Income statement", "{dec}"),
+               ("n", "Being decrease in the allowance for irrecoverable debts"),
+               ("d", "Jun 30", "Income statement", "{id_early}+{chen}"), ("c", "", "Irrecoverable debts", "{id_early}+{chen}"),
+               ("n", "Being irrecoverable debts for the year transferred"),
+               ("d", "Jun 30", "Irrecoverable debts recovered", "{rec}"), ("c", "", "Income statement", "{rec}"),
+               ("n", "Being debts recovered transferred")])
+
+
+def j10_1(p):
+    p.text("Rahman's year ends on 31 December 2025.")
+    p.bullets(["1 January 2025: bought a machine for RM36,000 by cheque. It will last 5 years with a residual value "
+               "of RM6,000. Straight line method.",
+               "Motor vans cost RM50,000. Accumulated depreciation at 1 January 2025 was RM18,000. Vans are "
+               "depreciated at 20% per year, reducing balance."])
+    p.data([("mc", "Cost of machine (RM)", 36000), ("mr", "Residual value of machine (RM)", 6000),
+            ("ml", "Useful life of machine (years)", 5, INT), ("vc", "Cost of motor vans (RM)", 50000),
+            ("va", "Accumulated depreciation on vans at 1 January 2025 (RM)", 18000),
+            ("vr", "Reducing balance rate for vans", 0.2, PCT)])
+    p.part("a) Calculate the depreciation for 2025 on the machine and on the motor vans. (3)")
+    p.calc([("dm", "Depreciation of machine (RM)", "({mc}-{mr})/{ml}"),
+            ("dv", "Depreciation of motor vans (RM)", "ROUND(({vc}-{va})*{vr},2)")])
+    p.part("b) Prepare the journal entries for the purchase and for the depreciation. (6)")
+    p.journal([("d", "2025 Jan 1", "Machinery", "{mc}"), ("c", "", "Bank", "{mc}"),
+               ("n", "Being purchase of a machine by cheque"),
+               ("d", "Dec 31", "Income statement", "{dm}"), ("c", "", "Provision for depreciation of machinery", "{dm}"),
+               ("n", "Being depreciation of machinery for the year"),
+               ("d", "Dec 31", "Income statement", "{dv}"), ("c", "", "Provision for depreciation of motor vans", "{dv}"),
+               ("n", "Being depreciation of motor vans for the year")])
+
+
+def j10_2(p):
+    p.text("On 1 October 2025 Rahman sold equipment for RM7,500, paid into the bank. The equipment cost RM24,000. "
+           "Accumulated depreciation to the date of sale was RM15,000. The year ends on 31 December 2025.")
+    p.data([("cost", "Cost of equipment (RM)", 24000), ("acc", "Accumulated depreciation to date of sale (RM)", 15000),
+            ("sale", "Sale proceeds (RM)", 7500)])
+    p.part("a) Calculate the carrying amount and the loss on disposal. (2)")
+    p.calc([("ca", "Carrying amount at the date of sale (RM)", "{cost}-{acc}"),
+            ("loss", "Loss on disposal (RM)", "{cost}-{acc}-{sale}")])
+    p.part("b) Prepare the journal entries to record the disposal. (8)")
+    p.journal([("d", "2025 Oct 1", "Disposal", "{cost}"), ("c", "", "Equipment", "{cost}"),
+               ("n", "Being cost of equipment sold transferred"),
+               ("d", "Oct 1", "Provision for depreciation of equipment", "{acc}"), ("c", "", "Disposal", "{acc}"),
+               ("n", "Being accumulated depreciation on equipment sold transferred"),
+               ("d", "Oct 1", "Bank", "{sale}"), ("c", "", "Disposal", "{sale}"),
+               ("n", "Being proceeds from the sale of equipment"),
+               ("d", "Dec 31", "Income statement", "{cost}-{acc}-{sale}"), ("c", "", "Disposal", "{cost}-{acc}-{sale}"),
+               ("n", "Being loss on disposal transferred")])
+
+
+def j11_1(p):
+    p.text("Siva's year ends on 31 December 2025. Prepare the year-end adjustment journals.")
+    p.bullets(["Electricity of RM420 for December is owing.",
+               "On 1 October 2025 insurance of RM2,400 was paid for 12 months.",
+               "Wages of RM650 are owing."])
+    p.data([("eo", "Electricity owing (RM)", 420), ("ip", "Insurance paid on 1 October 2025 (RM)", 2400),
+            ("im", "Months of insurance used in 2025", 3, INT), ("wo", "Wages owing (RM)", 650)])
+    p.part("a) Calculate the insurance expense for 2025 and the amount prepaid. (2)")
+    p.calc([("ie", "Insurance expense for 2025 (RM)", "{ip}/12*{im}"),
+            ("ipre", "Insurance prepaid at 31 December 2025 (RM)", "{ip}-{ip}/12*{im}")])
+    p.part("b) Prepare the journal entries. (6)")
+    p.journal([("d", "2025 Dec 31", "Electricity", "{eo}"), ("c", "", "Accrued expenses (other payables)", "{eo}"),
+               ("n", "Being electricity owing at the year end"),
+               ("d", "Dec 31", "Prepaid expenses (other receivables)", "{ip}-{ip}/12*{im}"),
+               ("c", "", "Insurance", "{ip}-{ip}/12*{im}"),
+               ("n", "Being insurance paid in advance for 2026"),
+               ("d", "Dec 31", "Wages", "{wo}"), ("c", "", "Accrued expenses (other payables)", "{wo}"),
+               ("n", "Being wages owing at the year end")])
+
+
+def j11_2(p):
+    p.text("Siva's year ends on 31 December 2025. Prepare the year-end adjustment journals.")
+    p.bullets(["Siva lets a room for RM500 per month. Rent received in 2025 was RM6,500, which includes January 2026.",
+               "Commission receivable of RM380 for 2025 has not been received.",
+               "Unused stationery at 31 December 2025 cost RM150."])
+    p.data([("rm", "Rent per month (RM)", 500), ("rr", "Rent received in 2025 (RM)", 6500),
+            ("cd", "Commission receivable due (RM)", 380), ("st", "Unused stationery (RM)", 150)])
+    p.part("a) Calculate the rent income for 2025 and the rent received in advance. (2)")
+    p.calc([("ri", "Rent income for 2025 (RM)", "12*{rm}"), ("ra", "Rent received in advance (RM)", "{rr}-12*{rm}")])
+    p.part("b) Prepare the journal entries. (6)")
+    p.journal([("d", "2025 Dec 31", "Rent receivable", "{rr}-12*{rm}"),
+               ("c", "", "Income received in advance (other payables)", "{rr}-12*{rm}"),
+               ("n", "Being rent received in advance for January 2026"),
+               ("d", "Dec 31", "Accrued income (other receivables)", "{cd}"), ("c", "", "Commission receivable", "{cd}"),
+               ("n", "Being commission earned but not yet received"),
+               ("d", "Dec 31", "Inventory of stationery (other receivables)", "{st}"), ("c", "", "Stationery", "{st}"),
+               ("n", "Being unused stationery carried forward")])
+
+
+def jfs_1(p):
+    p.text("Amina Stores (see the worked example). Prepare the journal entries for the year-end adjustments at "
+           "31 December 2025.")
+    p.data([("close", "1. Closing inventory (RM)", 9500), ("rent_ow", "2. Rent owing (RM)", 500),
+            ("ins_pre", "3. Insurance prepaid (RM)", 300), ("tr", "4. Trade receivables (RM)", 12000),
+            ("afd", "4. Allowance brought forward (RM)", 400), ("al_rate", "4. New allowance: % of trade receivables", 0.05, PCT),
+            ("eq", "5. Equipment at cost (RM)", 20000), ("eq_rate", "5. Depreciation: % of cost per year", 0.1, PCT),
+            ("loan", "6. Loan (RM)", 10000), ("int_rate", "6. Loan interest per year, unpaid", 0.05, PCT)], md=True)
+    inc = "ROUND({tr}*{al_rate},2)-{afd}"
+    p.part("a) Prepare the six journal entries. (12)")
+    p.journal([("d", "2025 Dec 31", "Inventory", "{close}"), ("c", "", "Income statement", "{close}"),
+               ("n", "Being closing inventory recorded"),
+               ("d", "Dec 31", "Rent", "{rent_ow}"), ("c", "", "Accrued expenses (other payables)", "{rent_ow}"),
+               ("n", "Being rent owing"),
+               ("d", "Dec 31", "Prepaid expenses (other receivables)", "{ins_pre}"), ("c", "", "Insurance", "{ins_pre}"),
+               ("n", "Being insurance paid in advance"),
+               ("d", "Dec 31", "Income statement", inc), ("c", "", "Allowance for irrecoverable debts", inc),
+               ("n", "Being increase in the allowance to 5% of trade receivables"),
+               ("d", "Dec 31", "Income statement", "{eq}*{eq_rate}"), ("c", "", "Provision for depreciation of equipment", "{eq}*{eq_rate}"),
+               ("n", "Being depreciation of equipment for the year"),
+               ("d", "Dec 31", "Loan interest", "{loan}*{int_rate}"), ("c", "", "Accrued expenses (other payables)", "{loan}*{int_rate}"),
+               ("n", "Being loan interest owing")])
+
+
+def jfs_2(p):
+    p.text("Nadia's Crafts. After all year-end adjustments at 31 December 2025, the balances below remain. Prepare the "
+           "closing journal entries that transfer them to the income statement, then transfer the profit and "
+           "drawings to capital.")
+    p.data([("rev", "Revenue (RM)", 52000), ("oi", "Inventory at 1 January 2025 (RM)", 3000), ("pur", "Purchases (RM)", 30000),
+            ("close", "Inventory at 31 December 2025 (RM)", 3500), ("wag", "Wages (RM)", 8000), ("rent", "Rent (RM)", 4800),
+            ("ins", "Insurance (RM)", 1000), ("gen", "General expenses (RM)", 900),
+            ("dep", "Depreciation: fixtures (RM)", 1000), ("draw", "Drawings (RM)", 6000)], md=True)
+    exp = "{wag}+{rent}+{ins}+{gen}+{dep}"
+    profit = f"{{rev}}-({{oi}}+{{pur}})+{{close}}-({exp})"
+    p.part("a) Calculate the profit for the year. (2)")
+    p.calc([("np", "Profit for the year (RM)", profit)])
+    p.part("b) Prepare the closing journal entries. (10)")
+    p.journal([("d", "2025 Dec 31", "Revenue", "{rev}"), ("c", "", "Income statement", "{rev}"),
+               ("n", "Being revenue transferred"),
+               ("d", "Dec 31", "Income statement", "{oi}+{pur}"), ("c", "", "Inventory (opening)", "{oi}"),
+               ("c", "", "Purchases", "{pur}"), ("n", "Being opening inventory and purchases transferred"),
+               ("d", "Dec 31", "Inventory (closing)", "{close}"), ("c", "", "Income statement", "{close}"),
+               ("n", "Being closing inventory recorded"),
+               ("d", "Dec 31", "Income statement", exp), ("c", "", "Wages", "{wag}"), ("c", "", "Rent", "{rent}"),
+               ("c", "", "Insurance", "{ins}"), ("c", "", "General expenses", "{gen}"),
+               ("c", "", "Depreciation: fixtures", "{dep}"), ("n", "Being expenses transferred"),
+               ("d", "Dec 31", "Income statement", profit), ("c", "", "Capital", profit),
+               ("n", "Being profit for the year transferred to capital"),
+               ("d", "Dec 31", "Capital", "{draw}"), ("c", "", "Drawings", "{draw}"),
+               ("n", "Being drawings transferred to capital")])
+
+
+# =====================================================================================
+# Mock test
+# =====================================================================================
+MOCK_MCQ = [
+    ("Which double entry writes off an irrecoverable debt?",
+     ["Debit irrecoverable debts, credit trade receivable", "Debit trade receivable, credit irrecoverable debts",
+      "Debit bank, credit irrecoverable debts", "Debit allowance for irrecoverable debts, credit bank"], "A"),
+    ("Trade receivables are RM40,000. The allowance is to be 5%. The allowance brought forward is RM2,500. "
+     "What is the effect on the Statement of Profit or Loss?",
+     ["Expense of RM2,000", "Income of RM500", "Expense of RM500", "Income of RM2,000"], "B"),
+    ("A machine costs RM30,000, has a residual value of RM3,000 and a useful life of 6 years. What is the annual "
+     "straight line depreciation?", ["RM5,000", "RM3,000", "RM4,500", "RM5,500"], "C"),
+    ("Equipment costs RM25,000 and is depreciated at 20% per year, reducing balance. What is the depreciation "
+     "charge in Year 2?", ["RM5,000", "RM3,200", "RM20,000", "RM4,000"], "D"),
+    ("A vehicle cost RM20,000. Accumulated depreciation is RM12,000. It is sold for RM9,500. What is the result?",
+     ["Profit of RM1,500", "Loss of RM1,500", "Profit of RM9,500", "Loss of RM8,000"], "A"),
+    ("Rent paid during the year was RM7,200. At the year end RM600 was owing. What is the rent expense?",
+     ["RM6,600", "RM7,200", "RM7,800", "RM8,400"], "C"),
+    ("How is income received in advance shown in the Statement of Financial Position?",
+     ["Current asset", "Current liability", "Other income", "Non-current liability"], "B"),
+    ("A RM10 stapler is recorded as an expense, not a non-current asset. Which concept applies?",
+     ["Prudence", "Consistency", "Going concern", "Materiality"], "D"),
+    ("Where is carriage inwards shown?",
+     ["Expenses in the Statement of Profit or Loss", "Cost of sales", "Current liabilities", "Other income"], "B"),
+    ("Current assets are RM25,000, current liabilities RM9,000 and a long-term loan RM10,000. What is the working capital?",
+     ["RM6,000", "RM34,000", "RM16,000", "RM26,000"], "C"),
+]
+
+
+def mock_a(p):
+    p.text("Section A: multiple choice. 1 mark each. Choose A, B, C or D.")
+    p.mcq([(f"m{i}", stem, opts, ans) for i, (stem, opts, ans) in enumerate(MOCK_MCQ, 1)])
+
+
+def mock_b1(p):
+    p.text("Lim's year ends on 31 December 2025. Trade receivables are RM45,600 before writing off a debt of RM1,600 "
+           "owed by Tan, who is bankrupt. The allowance for irrecoverable debts brought forward is RM1,500. It is to "
+           "be 4% of the remaining trade receivables.")
+    p.data([("trb", "Trade receivables before writing off Tan (RM)", 45600), ("tan", "Tan's debt (RM)", 1600),
+            ("al_open", "Allowance brought forward (RM)", 1500), ("rate", "Allowance rate", 0.04, PCT)])
+    p.part("a) Calculate trade receivables after the write-off, the new allowance and the change in the allowance. (3)")
+    p.calc([("tr", "Trade receivables after the write-off (RM)", "{trb}-{tan}"),
+            ("al", "New allowance (RM)", "ROUND({tr}*{rate},2)"), ("inc", "Increase in the allowance (RM)", "{al}-{al_open}")])
+    p.part("b) Prepare the journal entries to write off Tan's debt and to record the change in the allowance. (4)")
+    p.journal([("d", "2025 Dec 31", "Irrecoverable debts", "{tan}"), ("c", "", "Tan", "{tan}"),
+               ("n", "Being debt written off: customer bankrupt"),
+               ("d", "Dec 31", "Income statement", "{inc}"), ("c", "", "Allowance for irrecoverable debts", "{inc}"),
+               ("n", "Being increase in the allowance")])
+    p.part("c) Show the Statement of Financial Position extract for trade receivables. (3)")
+    p.statement(["Statement of Financial Position (extract) at 31 December 2025"], [
+        ("", "Current assets", {}, "h"),
+        ("", "Trade receivables", {1: "{tr}"}),
+        ("Less:", "Allowance for irrecoverable debts", {1: V("-{al}", line="under"), 2: "{tr}-{al}"})], "sofp")
+
+
+def mock_b2(p):
+    p.text("On 1 January 2024 a business bought a van for RM48,000. It is depreciated at 25% per year, reducing "
+           "balance. The year ends on 31 December. On 1 January 2026 the van was sold for RM25,000 by cheque.")
+    p.data([("cost", "Cost of van (RM)", 48000), ("rate", "Reducing balance rate", 0.25, PCT),
+            ("sale", "Sale proceeds (RM)", 25000)])
+    p.part("a) Calculate the depreciation for 2024 and 2025 and the carrying amount at 31 December 2025. (3)")
+    p.calc([("d24", "Depreciation for 2024 (RM)", "ROUND({cost}*{rate},2)"),
+            ("d25", "Depreciation for 2025 (RM)", "ROUND(({cost}-{d24})*{rate},2)"),
+            ("ca", "Carrying amount at 31 December 2025 (RM)", "{cost}-{d24}-{d25}")])
+    p.part("b) Prepare the Disposal of van account. (5)")
+    p.ledger("Disposal of Van Account", [
+        (("2026 Jan 1", "Van", "GJ1", "{cost}"), ("2026 Jan 1", "Provision for depreciation", "GJ1", "{d24}+{d25}")),
+        (None, ("Jan 1", "Bank", "CB1", "{sale}")),
+        (None, ("Dec 31", "Income statement (loss on disposal)", "GJ2", "{ca}-{sale}")),
+        "TOTAL"])
+    p.part("c) State where the loss appears, and name the concept that requires depreciation. (2)")
+    p.choice([("w", "The loss on disposal is shown as", '"Expense in the SPL"',
+               ["Expense in the SPL", "Other income in the SPL", "Current liability", "Deducted from capital"]),
+              ("c", "Concept that requires depreciation", '"Accruals"', CONCEPTS, ["accruals", "prudence"])])
+
+
+def mock_b3(p):
+    p.text("Wong's year ends on 31 December 2025.")
+    p.bullets(["Rent is RM900 per month. RM9,900 was paid during the year.",
+               "Insurance of RM400 was prepaid at 1 January 2025. On 1 April 2025 RM3,000 was paid for 12 months."])
+    p.data([("rm", "Rent per month (RM)", 900), ("rp", "Rent paid in 2025 (RM)", 9900),
+            ("io", "Insurance prepaid at 1 January 2025 (RM)", 400), ("ip", "Insurance paid on 1 April 2025 (RM)", 3000),
+            ("im", "Months of that policy used in 2025", 9, INT)])
+    pre = "{ip}*(12-{im})/12"
+    p.part("a) Calculate the rent expense, the rent owing, the insurance expense and the insurance prepaid. (4)")
+    p.calc([("re", "Rent expense (RM)", "12*{rm}"), ("ro", "Rent owing (RM)", "12*{rm}-{rp}"),
+            ("ie", "Insurance expense (RM)", "{io}+{ip}*{im}/12"), ("ipr", "Insurance prepaid (RM)", pre)])
+    p.part("b) Prepare the Insurance account for the year. (4)")
+    p.ledger("Insurance Account", [
+        (("2025 Jan 1", "Balance b/d", "", "{io}"), ("2025 Dec 31", "Income statement", "GJ1", "{io}+{ip}*{im}/12")),
+        (("Apr 1", "Bank", "CB1", "{ip}"), ("Dec 31", "Balance c/d", "", pre)),
+        "TOTAL",
+        (("2026 Jan 1", "Balance b/d", "", pre), None)])
+    p.part("c) Show where the rent owing and the insurance prepaid appear. (2)")
+    p.statement(["Statement of Financial Position (extract) at 31 December 2025"], [
+        ("", "Current assets", {}, "h"),
+        ("", "Other receivables (insurance prepaid)", {2: pre}),
+        ("Less:", "Current liabilities", {}, "h"),
+        ("", "Other payables (rent owing)", {2: "12*{rm}-{rp}"})], "sofp")
+
+
+def mock_b4(p):
+    p.part("a) Name the concept that applies to each situation. (4)")
+    p.choice([("a", "Goods taken by the owner are recorded as drawings.", '"Business entity"', CONCEPTS),
+              ("b", "A credit sale on 30 December is revenue of that year.", '"Realisation"', CONCEPTS),
+              ("c", "The same inventory valuation method is used every year.", '"Consistency"', CONCEPTS),
+              ("d", "Staff loyalty is not recorded in the accounts.", '"Money measurement"', CONCEPTS)])
+    p.part("b) Goods cost RM3,000. They can be sold for RM2,600 after repairs of RM400. Calculate the net realisable "
+           "value and the value for inventory, and name the concept. (3)")
+    p.data([("cost", "Cost (RM)", 3000), ("sp", "Selling price (RM)", 2600), ("rep", "Repairs needed (RM)", 400)])
+    p.calc([("nrv", "Net realisable value (RM)", "{sp}-{rep}"), ("val", "Value for inventory (RM)", "MIN({cost},{nrv})")])
+    p.choice([("cn", "Concept", '"Prudence"', CONCEPTS)])
+    p.part("c) Explain the going concern concept and how asset values would change if a business were closing. (3)")
+    p.written("Going concern assumes the business will continue trading for the foreseeable future, so assets are shown "
+              "at cost less depreciation. If the business were closing, assets would be shown at what they would raise "
+              "if sold now, which is often much lower.")
+
+
+SITI = [("rev", "Revenue", None, 125000), ("pur", "Purchases", 68000, None), ("sr", "Sales returns", 2000, None),
+        ("pr", "Purchases returns", None, 1500), ("ci", "Carriage inwards", 1200, None),
+        ("co", "Carriage outwards", 800, None), ("oi", "Inventory at 1 January 2025", 9000, None),
+        ("wag", "Wages", 18000, None), ("rent", "Rent", 7700, None), ("ins", "Insurance", 2400, None),
+        ("elec", "Electricity", 1900, None), ("da", "Discount allowed", 500, None), ("dr", "Discount received", None, 700),
+        ("rr", "Rent received", None, 3000), ("id", "Irrecoverable debts", 600, None),
+        ("prem", "Premises at cost", 80000, None), ("fx", "Fixtures at cost", 15000, None),
+        ("fxd", "Provision for depreciation: fixtures", None, 3000), ("mv", "Motor vehicle at cost", 32000, None),
+        ("mvd", "Provision for depreciation: motor vehicle", None, 12000), ("tr", "Trade receivables", 16200, None),
+        ("afd", "Allowance for irrecoverable debts", None, 700), ("tp", "Trade payables", None, 9800),
+        ("od", "Bank overdraft", None, 2100), ("cash", "Cash", 300, None), ("loan", "Loan (repayable 2030)", None, 20000),
+        ("cap", "Capital", None, 89800), ("draw", "Drawings", 12000, None)]
+
+
+def mock_c(p):
+    p.text("Siti Enterprise. Trial balance at 31 December 2025 and additional information.")
+    p.tb(SITI, "Siti Enterprise: Trial Balance at 31 December 2025")
+    p.data([("close", "1. Closing inventory (RM)", 10500), ("rent_ow", "2. Rent owing (RM)", 700),
+            ("ins_pre", "3. Insurance prepaid (RM)", 600), ("rr_adv", "4. Rent received in advance (RM)", 250),
+            ("id_x", "5. Further irrecoverable debt to write off (RM)", 200),
+            ("al_rate", "6. Allowance: % of remaining trade receivables", 0.05, PCT),
+            ("fx_rate", "7. Fixtures: % of cost per year (straight line)", 0.1, PCT),
+            ("mv_rate", "7. Motor vehicle: reducing balance rate", 0.25, PCT),
+            ("int_rate", "8. Loan interest per year (unpaid)", 0.06, PCT)],
+           title="Additional information at 31 December 2025", md=True)
+    p.text("Premises are not depreciated.")
+    trn = "({tr}-{id_x})"
+    allow = f"ROUND({trn}*{{al_rate}},2)"
+    dmv = "ROUND(({mv}-{mvd})*{mv_rate},2)"
+    p.part("a) Prepare the Statement of Profit or Loss for the year ended 31 December 2025. (25)")
+    p.statement(["Siti Enterprise", "Statement of Profit or Loss for the year ended 31 December 2025"], spl_rows(
+        "{rev}", "{oi}", "{pur}", "{close}", sr="{sr}", pr="{pr}", ci="{ci}",
+        incomes=[("Discount received", "{dr}"), ("Rent received", "{rr}-{rr_adv}")],
+        expenses=[("Wages", "{wag}"), ("Rent", "{rent}+{rent_ow}"), ("Insurance", "{ins}-{ins_pre}"),
+                  ("Electricity", "{elec}"), ("Carriage outwards", "{co}"), ("Discount allowed", "{da}"),
+                  ("Irrecoverable debts", "{id}+{id_x}"),
+                  ("Increase in allowance for irrecoverable debts", f"{allow}-{{afd}}"),
+                  ("Depreciation: fixtures", "{fx}*{fx_rate}"), ("Depreciation: motor vehicle", dmv),
+                  ("Loan interest", "{loan}*{int_rate}")]))
+    p.part("b) Prepare the Statement of Financial Position at 31 December 2025. (25)")
+    p.statement(["Siti Enterprise", "Statement of Financial Position at 31 December 2025"], sofp_rows(
+        nca=[("Premises", "{prem}", "0"), ("Fixtures", "{fx}", "{fxd}+{fx}*{fx_rate}"),
+             ("Motor vehicle", "{mv}", "{mvd}+" + dmv)],
+        ca=[("Inventory", "{close}"), ("TR", trn, allow), ("Other receivables (insurance prepaid)", "{ins_pre}"),
+            ("Cash", "{cash}")],
+        cl=[("Trade payables", "{tp}"),
+            ("Other payables (rent + rent received in advance + interest)", "{rent_ow}+{rr_adv}+{loan}*{int_rate}"),
+            ("Bank overdraft", "{od}")],
+        ncl=[("Loan (repayable 2030)", "{loan}")],
+        opening="{cap}", profit="{s_profit}", drawings="{draw}"), "sofp")
+
+
+# =====================================================================================
+# Practice (new numbers): figures vary with the set number. Rules are (min, max, step) or a list to pick from.
+# =====================================================================================
+PRACTICE = {
+    "ch08": [("8.11", q8_11, {"b23": (30000, 60000, 1000), "b24": (30000, 60000, 1000), "b25": (30000, 60000, 1000),
+                              "w25": (500, 2500, 100), "rate": [0.02, 0.03, 0.04, 0.05]})],
+    "ch10": [("10.12", q10_12, {"cost": (24000, 64000, 8000), "rate": [0.2, 0.25], "sale": (6000, 24000, 500)})],
+    "ch11": [("11.11", q11_11, {"wo": (100, 600, 50), "wp": (15000, 25000, 500), "wc": (100, 800, 50),
+                                "ro": (100, 400, 50), "rp": (1200, 2400, 100), "rc": (100, 400, 50),
+                                "cr": (2000, 5000, 100), "cd": (100, 600, 50)})],
+    "ch12": [("12.17", q12_17, {"c0": (800, 2000, 100), "s0": (1500, 3000, 100), "k0": (50, 300, 50),
+                                "c1": (600, 1500, 100), "s1": (500, 1400, 50), "k1": (100, 300, 50),
+                                "c2": (1500, 3000, 100), "s2": (1800, 3600, 100), "k2": (100, 400, 50),
+                                "c3": (400, 1000, 50), "s3": (100, 500, 50)})],
+    "fs": [("FS.8", qfs_8, {"rev": (45000, 55000, 1000), "pur": (20000, 26000, 500), "oi": (2000, 4000, 100),
+                            "wag": (5000, 7000, 100), "rent": (3000, 4000, 100), "ins": (900, 1500, 100),
+                            "gen": (500, 1200, 50), "fx": (22000, 30000, 1000), "fxd": (1000, 3000, 500),
+                            "tr": (3000, 7000, 100), "tp": (2000, 4000, 100), "bank": (4000, 7000, 100),
+                            "draw": (4000, 8000, 500), "cap": "BALANCE", "close": (2500, 4500, 100),
+                            "rent_ow": (200, 600, 50), "ins_pre": (100, 300, 50), "fx_rate": [0.1]})],
+}
+
+
+# =====================================================================================
 # Workbook assembly
 # =====================================================================================
 LEVELS = {1: "Level 1: Easy", 2: "Level 2: Easy to medium", 3: "Level 3: Medium", 4: "Level 4: Hard",
           5: "Level 5: Challenge"}
 
+
+def Q(qid, lvl, fn, section="structured", label=None, sheet=None):
+    return {"qid": qid, "level": lvl, "fn": fn, "section": section, "label": label or LEVELS.get(lvl, ""),
+            "sheet": sheet or f"Q{qid}"}
+
+
+def J(qid, lvl, fn):
+    return Q(qid, lvl, fn, "journals", f"Journal practice, {LEVELS[lvl]}")
+
+
 BOOKS = [
     ("Ch08_Irrecoverable_Debts.xlsx", "ch08", "Chapter 8: Irrecoverable Debts and Allowance for Receivables",
      [("Worked 8.1-8.2", worked_8_1), ("Worked 8.3", worked_8_3)],
-     [("8.8", 1, q8_8), ("8.9", 2, q8_9), ("8.10", 3, q8_10), ("8.11", 4, q8_11), ("8.12", 5, q8_12)], None),
+     [Q("8.8", 1, q8_8), Q("8.9", 2, q8_9), Q("8.10", 3, q8_10), Q("8.11", 4, q8_11), Q("8.12", 5, q8_12),
+      J("J8.1", 2, j8_1), J("J8.2", 3, j8_2)]),
     ("Ch10_Depreciation.xlsx", "ch10", "Chapter 10: Tangible Non-current Assets and Depreciation",
      [("Straight Line", worked_10_sl), ("Reducing Balance", worked_10_rb), ("Other Methods", worked_10_other),
       ("Disposal", worked_10_disposal)],
-     [("10.9", 1, q10_9), ("10.10", 2, q10_10), ("10.11", 3, q10_11), ("10.12", 4, q10_12), ("10.13", 5, q10_13)],
-     None),
+     [Q("10.9", 1, q10_9), Q("10.10", 2, q10_10), Q("10.11", 3, q10_11), Q("10.12", 4, q10_12), Q("10.13", 5, q10_13),
+      J("J10.1", 2, j10_1), J("J10.2", 3, j10_2)]),
     ("Ch11_Accruals_Prepayments.xlsx", "ch11", "Chapter 11: Accruals and Prepayments",
      [("Expense Examples", worked_11_exp), ("Income Examples", worked_11_inc)],
-     [("11.8", 1, q11_8), ("11.9", 2, q11_9), ("11.10", 3, q11_10), ("11.11", 4, q11_11), ("11.12", 5, q11_12)],
-     None),
+     [Q("11.8", 1, q11_8), Q("11.9", 2, q11_9), Q("11.10", 3, q11_10), Q("11.11", 4, q11_11), Q("11.12", 5, q11_12),
+      J("J11.1", 2, j11_1), J("J11.2", 3, j11_2)]),
     ("Ch12_Accounting_Concepts.xlsx", "ch12", "Chapter 12: Fundamental Accounting Principles and Concepts",
      [("Concepts", worked_12)],
-     [("12.15", 1, q12_15), ("12.16", 2, q12_16), ("12.17", 3, q12_17), ("12.18", 4, q12_18), ("12.19", 5, q12_19)],
-     ("Quiz", quiz)),
+     [Q("quiz", 0, quiz, "quiz", "Quiz: which concept applies?", "Quiz"),
+      Q("12.15", 1, q12_15), Q("12.16", 2, q12_16), Q("12.17", 3, q12_17), Q("12.18", 4, q12_18), Q("12.19", 5, q12_19)]),
     ("Financial_Statements.xlsx", "fs", "Statement of Profit or Loss and Statement of Financial Position",
      [("Worked Example", worked_fs)],
-     [("FS.6", 1, qfs_6), ("FS.7", 2, qfs_7), ("FS.8", 3, qfs_8), ("FS.9", 4, qfs_9), ("FS.10", 5, qfs_10)], None),
+     [Q("FS.6", 1, qfs_6), Q("FS.7", 2, qfs_7), Q("FS.8", 3, qfs_8), Q("FS.9", 4, qfs_9), Q("FS.10", 5, qfs_10),
+      J("JFS.1", 2, jfs_1), J("JFS.2", 3, jfs_2)]),
+    ("Mock_Test.xlsx", "mock", "Mock Test: Senior 1 Accounting (2 hours, 100 marks)",
+     [],
+     [Q("A", 0, mock_a, "A", "Section A: multiple choice, 10 marks", "Mock A"),
+      Q("B1", 0, mock_b1, "B", "Section B, Chapter 8: 10 marks", "Mock B1"),
+      Q("B2", 0, mock_b2, "B", "Section B, Chapter 10: 10 marks", "Mock B2"),
+      Q("B3", 0, mock_b3, "B", "Section B, Chapter 11: 10 marks", "Mock B3"),
+      Q("B4", 0, mock_b4, "B", "Section B, Chapter 12: 10 marks", "Mock B4"),
+      Q("C", 0, mock_c, "C", "Section C, financial statements: 50 marks", "Mock C")]),
 ]
 
 
-def readme(wb, topic, worked, questions, extra):
+def heading_for(q):
+    if q["section"] == "structured":
+        return f"Question {q['qid']} ({q['label']})"
+    if q["section"] == "journals":
+        return f"Question {q['qid']} ({q['label']})"
+    return q["label"]
+
+
+def readme(wb, chap, topic, worked, questions, practice):
     p = Page(wb, "Read Me", "w", tab=TAB_README)
     p.title(topic, "Senior 1 Accounting. Free to use and share. Not for sale.")
     p.part("How to use this workbook")
-    for line in ["1. Read the notes first. Then open the orange Worked tabs: change any blue figure and watch the "
-                 "answers update.",
-                 "2. Try the blue question tabs in order, Level 1 to Level 5. Type your answers in the yellow cells.",
-                 "3. The small column next to each yellow cell shows ✓ (correct) or ✗ (try again). Your score "
-                 "is at the top of each question.",
-                 "4. Particulars and dates are given so the sheet can mark your figures. Try writing each account or "
-                 "statement on paper first.",
-                 "5. Written answers cannot be marked by Excel. Compare them with the model answers on the green tabs.",
-                 "6. The green Ans tabs show the full solutions in exam format."]:
+    lines = ["1. Read the notes first. Then open the orange Worked tabs: change any blue figure and watch the "
+             "answers update.",
+             "2. Try the blue question tabs in order. Type your answers in the yellow cells.",
+             "3. The small column next to each yellow cell shows \u2713 (correct) or \u2717 (try again). Your score "
+             "is at the top of each question.",
+             "4. Particulars and dates are given so the sheet can mark your figures. Try writing each account, journal "
+             "or statement on paper first.",
+             "5. Written answers cannot be marked by Excel. Compare them with the model answers on the green tabs.",
+             "6. The green Ans tabs show the full solutions in exam format."]
+    if practice:
+        lines.append("7. Purple P tabs are practice with new numbers: type any set number from 1 to 999 to get fresh "
+                     "figures. Their answers are on the matching P ... Ans tab, not in the printed answer key.")
+    if chap == "mock":
+        lines = ["1. Sit the paper in 2 hours without notes. Section A: 10 marks. Section B: 40 marks. Section C: 50 marks.",
+                 "2. Type answers in the yellow cells on the blue Mock tabs. The Scores tab adds up your correct cells.",
+                 "3. The green Ans tabs are the mark scheme. Written answers are marked by comparing with the model answer.",
+                 "4. The printed paper is model-questions/Mock_Test.md (or pdf/Mock_Test.pdf)."]
+    for line in lines:
         p.text(line, record=False)
     p.part("Colour key")
     r = p.r
@@ -1140,8 +1552,8 @@ def readme(wb, topic, worked, questions, extra):
     p.r += 4
     p.part("Formats used")
     for line in ["Journal: Date | Particulars | Debit | Credit. The first row shows the year, with RM under Debit and Credit.",
-                 "Ledger account: Dr side and Cr side, each with Date | Particulars | Folio | Amount. The first row under the "
-                 "headings shows the year, with RM in the Amount column; entries then show the month and day. "
+                 "Ledger account: Dr side and Cr side, each with Date | Particulars | Folio | Amount. The first row under "
+                 "the headings shows the year, with RM in the Amount column; entries then show the month and day. "
                  "Folio: GJ = general journal, CB = cash book.",
                  "Statement of Profit or Loss: marker (Add / Less) | Particulars | RM | RM | RM.",
                  "Statement of Financial Position: the same, with Cost | Accumulated Depreciation | Carrying Amount "
@@ -1149,21 +1561,45 @@ def readme(wb, topic, worked, questions, extra):
         p.text(line, record=False)
     p.part("Sheets in this workbook")
     rows = [(n, [T("Worked example (orange tab)")]) for n, _ in worked]
-    rows += [(f"Q{qid}", [T(f"Structured question, {LEVELS[lvl]} (blue tab). Answers: Q{qid} Ans (green tab).")])
-             for qid, lvl, _ in questions]
-    if extra:
-        rows.append((extra[0], [T("Self-marking quiz (blue tab). Answers: Quiz Ans (green tab).")]))
+    for q in questions:
+        rows.append((q["sheet"], [T(f"{heading_for(q)}. Answers: {q['sheet']} Ans (green tab).")]))
+    for qid, _fn, _v in practice:
+        rows.append((f"P{qid}", [T(f"Practice with new numbers for Question {qid} (purple tab). Answers: P{qid} Ans.")]))
+    if chap == "mock":
+        rows.insert(0, ("Scores", [T("Your marks for every section of the mock test.")]))
     p.table(["Sheet", "What it is"], rows, 7, 24, checks=False)
     p.finish()
+
+
+def scores_sheet(wb, pages):
+    p = Page(wb, "Scores", "w", tab=TAB_README)
+    p.title("Mock test: your scores", "Marks come from the \u2713 cells on each blue Mock tab.")
+    rows = []
+    for pq, q in pages:
+        rng = f"'{pq.name}'!B1:AH400"
+        rows.append((q["label"], [V(f'COUNTIF({rng},"\u2713")', key=f"s_{q['qid']}", fmt=INT), T(str(pq.inputs))]))
+    keys = "+".join("{s_" + q["qid"] + "}" for _pq, q in pages)
+    total = sum(pq.inputs for pq, _q in pages)
+    rows.append(("Total", [V(keys, line="total", fmt=INT), T(str(total))]))
+    p.table(["Section", "Answer cells correct", "Answer cells in total"], rows, 13, 9, checks=False,
+            total_rows=("Total",))
+    p.note("Each answer cell is worth roughly one mark in Sections A and B. Section C has more cells than marks, "
+           "so use the Ans tabs as the mark scheme for the final mark out of 100.")
+    p.finish()
+    return p
+
+
+TAB_P = "7030A0"
 
 
 def build():
     OUT.mkdir(exist_ok=True)
     manifest = {}
-    for fname, chap, topic, worked, questions, extra in BOOKS:
+    for fname, chap, topic, worked, questions in BOOKS:
+        practice = PRACTICE.get(chap, [])
         wb = Workbook()
         wb.remove(wb.active)
-        readme(wb, topic, worked, questions, extra)
+        readme(wb, chap, topic, worked, questions, practice)
         sheets = []
         for name, fn in worked:
             p = Page(wb, name, "w", tab=TAB_WORKED)
@@ -1172,27 +1608,32 @@ def build():
             fn(p)
             p.finish()
             sheets.append({"sheet": name, "mode": "w", "blocks": p.blocks})
-        items = [(f"Q{qid}", f"Question {qid} ({LEVELS[lvl]})", fn, qid, lvl) for qid, lvl, fn in questions]
-        if extra:
-            items.append((extra[0], "Quiz: which concept applies?", extra[1], "quiz", 0))
+        items = [(q["sheet"], heading_for(q), q, False, None) for q in questions]
+        items += [(f"P{qid}", f"Practice with new numbers: Question {qid}", {"qid": qid, "fn": fn, "section": "practice",
+                   "level": 0, "label": "practice", "sheet": f"P{qid}"}, True, vary) for qid, fn, vary in practice]
         pages = []
-        for name, heading, fn, qid, lvl in items:
+        for name, heading, q, prac, vary in items:
             ans = f"{name} Ans"
-            pq = Page(wb, name, "q", twin=ans, tab=TAB_Q)
+            pq = Page(wb, name, "q", twin=ans, tab=TAB_P if prac else TAB_Q, practice=prac, vary=vary)
             pq.title(heading)
             pq.status()
-            fn(pq)
-            pages.append((pq, name, ans, heading, fn, qid, lvl))
-        for pq, name, ans, heading, fn, qid, lvl in pages:
-            pa = Page(wb, ans, "a", twin=name, tab=TAB_A)
+            q["fn"](pq)
+            pages.append((pq, name, ans, heading, q, prac, vary))
+        for pq, name, ans, heading, q, prac, vary in pages:
+            pa = Page(wb, ans, "a", twin=name, tab=TAB_A, practice=prac, vary=vary)
             pa.title(heading + ": Answers")
             pa.status()
-            fn(pa)
+            q["fn"](pa)
             assert pa.r == pq.r, f"layout mismatch in {name}"
             pq.finish()
             pa.finish()
-            sheets.append({"sheet": name, "mode": "q", "qid": qid, "level": lvl, "blocks": pq.blocks})
-            sheets.append({"sheet": ans, "mode": "a", "qid": qid, "level": lvl, "blocks": pa.blocks})
+            mode = "p" if prac else "q"
+            meta = {"qid": q["qid"], "level": q["level"], "section": q["section"], "label": q["label"]}
+            sheets.append({"sheet": name, "mode": mode, **meta, "blocks": pq.blocks})
+            sheets.append({"sheet": ans, "mode": "pa" if prac else "a", **meta, "blocks": pa.blocks})
+        if chap == "mock":
+            scores_sheet(wb, [(pq, q) for pq, _n, _a, _h, q, _p, _v in pages])
+            wb.move_sheet("Scores", offset=-(len(wb.sheetnames) - 2))
         wb.active = 0
         wb.save(OUT / fname)
         manifest[fname] = {"chapter": chap, "sheets": sheets}

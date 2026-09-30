@@ -12,6 +12,7 @@ same content as Markdown for the notes, model questions and answer key.
 """
 import math
 import re
+import zlib
 
 from openpyxl.formatting.rule import CellIsRule
 from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
@@ -148,6 +149,34 @@ def T(text):
     return ("t", text)
 
 
+PRIMES = (7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67)
+
+
+def vary_params(key):
+    """Fixed multiplier and offset for a figure, so each figure moves differently with the set number."""
+    h = zlib.crc32(key.encode())
+    return PRIMES[h % len(PRIMES)], (h // 16) % 97
+
+
+def vary_value(key, rule, seed):
+    """Python twin of vary_formula, used to test every set number."""
+    p, o = vary_params(key)
+    if isinstance(rule, list):
+        return rule[(seed * p + o) % len(rule)]
+    mn, mx, step = rule
+    n = int(round((mx - mn) / step)) + 1
+    return mn + ((seed * p + o) % n) * step
+
+
+def vary_formula(key, rule):
+    p, o = vary_params(key)
+    if isinstance(rule, list):
+        return f"CHOOSE(MOD({{set}}*{p}+{o},{len(rule)})+1,{','.join(str(x) for x in rule)})"
+    mn, mx, step = rule
+    n = int(round((mx - mn) / step)) + 1
+    return f"{mn}+MOD({{set}}*{p}+{o},{n})*{step}"
+
+
 def lines_needed(text, span):
     per = max(8, int(span * UW * 1.18))
     return sum(max(1, math.ceil(len(p) / per)) for p in str(text).split("\n"))
@@ -158,7 +187,7 @@ def as_v(spec):
 
 
 class Page:
-    def __init__(self, wb, name, mode, twin=None, tab=None):
+    def __init__(self, wb, name, mode, twin=None, tab=None, practice=False, vary=None):
         ws = wb.create_sheet(name)
         ws.sheet_view.showGridLines = False
         ws.sheet_view.zoomScale = 110
@@ -182,6 +211,8 @@ class Page:
         self.score = None
         self.first_row = 1
         self._tag = None
+        self.practice = practice      # practice tabs hide prose and draw figures from a set number
+        self.vary = vary or {}
 
     # ------------------------------------------------------------------ basics
     def addr(self, r, u, absolute=False):
@@ -256,6 +287,11 @@ class Page:
         if self.mode == "a":
             self.box(r, u, span, f"='{self.twin}'!{a}", color=GREEN, fmt=fmt, align="right",
                      fill_=F_DATA, border=edge(None, True))
+        elif self.practice and key in self.vary:
+            cell = self.box(r, u, span, color=BLUE, fmt=fmt, align="right", fill_=F_DATA,
+                            border=edge(None, True))
+            if self.vary[key] != "BALANCE":
+                self.todo.append((cell, vary_formula(key, self.vary[key])))
         else:
             self.box(r, u, span, value, color=BLUE, fmt=fmt, align="right", fill_=F_DATA,
                      border=edge(None, True))
@@ -292,9 +328,13 @@ class Page:
         """Two instruction rows plus a spacer; identical row count in every mode."""
         r = self.r
         if self.mode == "q":
-            self.box(r, 0, U, "Type your answers in the yellow cells. Numbers only: no RM, no commas. "
+            lead = ("Practice with new numbers: the situation matches the printed question, but the figures "
+                    "change with the set number below. " if self.practice else "")
+            self.box(r, 0, U, lead + "Type your answers in the yellow cells. Numbers only: no RM, no commas. "
                      "Enter 0 where the answer is nil. ✓ = correct, ✗ = try again.",
-                     italic=True, color=GREY)
+                     italic=True, color=GREY, wrap=bool(self.practice))
+            if self.practice:
+                self.height(r, 30)
             self.box(r + 1, 0, 6, "Your score:", bold=True, color=NAVY)
             self.box(r + 1, 6, 25, bold=True, color=NAVY)
             self.score = (r + 1, 6)
@@ -309,9 +349,18 @@ class Page:
             self.box(r, 0, U, "Worked example. Change any blue figure and every answer below updates.",
                      italic=True, color=GREY)
             self.box(r + 1, 0, U, "Black figures are formulas. Do not type over them.", italic=True, color=GREY)
+        if self.practice:
+            self.box(r + 2, 0, 16, "Question set number (type any whole number from 1 to 999):", bold=True,
+                     color=NAVY)
+            self.datum(r + 2, 16, 4, 1, "set", INT)
+            self.box(r + 2, 21, 10, "Each number gives a new set of figures.", italic=True, color=GREY)
+            self.height(r + 2, 20)
+            self.r += 1
         self.r += 3
 
     def text(self, t, bold=False, italic=False, color="000000", indent=0, record=True, style="p"):
+        if self.practice:
+            return          # prose holds the printed figures, so practice tabs leave it out
         r = self.r
         span = U - indent
         self.box(r, indent, span, t, bold=bold, italic=italic, color=color, wrap=True)
@@ -321,6 +370,8 @@ class Page:
             self._rec({"k": "text", "text": t, "style": style})
 
     def bullets(self, items):
+        if self.practice:
+            return
         for it in items:
             self.text("•  " + it, indent=1, record=False)
             self._rec({"k": "text", "text": it, "style": "bullet"})
@@ -372,6 +423,7 @@ class Page:
         r += 1
         first = r
         rec = []
+        balance, credits = None, []
         for key, label, dr, cr in rows:
             self.box(r, 0, 19, label, border=edge(None, True))
             for u, v in ((19, dr), (25, cr)):
@@ -379,8 +431,16 @@ class Page:
                     self.box(r, u, 6, border=edge(None, True))
                 else:
                     self.datum(r, u, 6, v, key)
+                    if u == 25:
+                        if self.practice and self.mode == "q" and self.vary.get(key) == "BALANCE":
+                            balance = (r, u)
+                        else:
+                            credits.append(self.addr(r, u))
             rec.append((label, dr, cr))
             r += 1
+        if balance:   # capital is the balancing figure, so the trial balance always agrees
+            cell = self.ws.cell(row=balance[0], column=C0 + balance[1])
+            self.todo.append((cell, f"SUM({self.addr(first, 19)}:{self.addr(r - 1, 19)})-({'+'.join(credits)})"))
         self.box(r, 0, 19, "Total", bold=True, border=edge(None, True))
         for u in (19, 25):
             cell = self.box(r, u, 6, bold=True, fmt=NUM, align="right", border=edge("total", True))
@@ -404,35 +464,56 @@ class Page:
             self.r += 1
         self._rec({"k": "calc", "rows": rec})
 
+    def _choice_row(self, key, label, answer, options, accept=None):
+        r = self.r
+        self.box(r, 0, 18, label, wrap=True, valign="center", border=Border(bottom=LIGHT))
+        self.height(r, max(17, 13.5 * lines_needed(label, 18) + 4))
+        a = self.addr(r, 18)
+        self.ids[key] = self.addr(r, 18, True)
+        if self.mode == "q":
+            self.box(r, 18, 9, fill_=F_INPUT, border=edge(None, True), align="center")
+            dv = DataValidation(type="list", formula1='"' + ",".join(options) + '"', allow_blank=True)
+            self.ws.add_data_validation(dv)
+            dv.add(a)
+            self.inputs += 1
+            if accept:
+                cond = ",".join(f'LOWER(TRIM({a}))="{x.lower()}"' for x in accept)
+                test = f"OR({cond})"
+            else:
+                test = f"LOWER(TRIM({a}))=LOWER('{self.twin}'!{a})"
+            self.box(r, 27, 1, f'=IF({a}="","",IF({test},"{TICK}","{CROSS}"))', bold=True, align="center")
+        else:
+            cell = self.box(r, 18, 9, fill_=F_ANS if self.mode == "a" else None, bold=True,
+                            border=edge(None, True), align="center", wrap=True)
+            self.todo.append((cell, answer))
+        self.r += 1
+        return a
+
     def choice(self, rows):
         rec = []
         for row in rows:
             key, label, answer, options = row[:4]
             accept = row[4] if len(row) > 4 else None
-            r = self.r
-            self.box(r, 0, 18, label, wrap=True, valign="center", border=Border(bottom=LIGHT))
-            self.height(r, max(17, 13.5 * lines_needed(label, 18) + 4))
-            a = self.addr(r, 18)
-            self.ids[key] = self.addr(r, 18, True)
-            if self.mode == "q":
-                self.box(r, 18, 9, fill_=F_INPUT, border=edge(None, True), align="center")
-                dv = DataValidation(type="list", formula1='"' + ",".join(options) + '"', allow_blank=True)
-                self.ws.add_data_validation(dv)
-                dv.add(a)
-                self.inputs += 1
-                if accept:
-                    cond = ",".join(f'LOWER(TRIM({a}))="{x.lower()}"' for x in accept)
-                    test = f"OR({cond})"
-                else:
-                    test = f"LOWER(TRIM({a}))=LOWER('{self.twin}'!{a})"
-                self.box(r, 27, 1, f'=IF({a}="","",IF({test},"{TICK}","{CROSS}"))', bold=True, align="center")
-            else:
-                cell = self.box(r, 18, 9, fill_=F_ANS if self.mode == "a" else None, bold=True,
-                                border=edge(None, True), align="center", wrap=True)
-                self.todo.append((cell, answer))
-            rec.append((label, a, accept))
-            self.r += 1
+            rec.append((label, self._choice_row(key, label, answer, options, accept), accept))
         self._rec({"k": "choice", "rows": rec})
+
+    def mcq(self, rows):
+        """Multiple choice: stem, options A to D, then a drop-down answer cell."""
+        rec = []
+        for n, (key, stem, options, letter) in enumerate(rows, 1):
+            if n > 1:
+                self.gap()
+            r = self.r
+            self.box(r, 0, U, f"{n}. {stem}", bold=True, wrap=True)
+            self.height(r, 13.5 * lines_needed(stem, U) + 4)
+            self.r += 1
+            for opt_letter, opt in zip("ABCD", options):
+                self.box(self.r, 1, U - 1, f"{opt_letter}.  {opt}", wrap=True)
+                self.height(self.r, 13.5 * lines_needed(opt, U - 1) + 3)
+                self.r += 1
+            a = self._choice_row(key, "Your answer", f'"{letter}"', ["A", "B", "C", "D"])
+            rec.append((stem, list(options), a))
+        self._rec({"k": "mcq", "rows": rec})
 
     def written(self, model, lines=3):
         r = self.r

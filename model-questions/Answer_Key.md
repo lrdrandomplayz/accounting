@@ -285,6 +285,62 @@ Against: the allowance must be a reasonable estimate based on past experience. 2
 Conclusion: keep a realistic rate (about 5%) and change it only when experience of bad debts changes. Prudence means do not overstate; it does not mean understate on purpose.
 <!-- END GENERATED: answers ch08 -->
 
+<!-- BEGIN GENERATED: answers ch08 journals -->
+### J8.1 (Journal practice, Level 2: Easy to medium)
+
+**a) Calculate the change in the allowance for irrecoverable debts. (2)**
+
+| Item | Answer |
+|---|---:|
+| Allowance required at 31 December 2025 (RM) | **1,150** |
+| Increase in the allowance (RM) | **250** |
+
+**b) Prepare the journal entries. (8)**
+
+| Date | Particulars | Debit | Credit |
+|---|---|---:|---:|
+| **2025** | | **RM** | **RM** |
+| Apr 30 | Irrecoverable debts | 480 | |
+|  | &emsp;&emsp;Ahmad | | 480 |
+| | *(Being debt written off: customer declared bankrupt)* | | |
+| Jul 15 | Faridah | 350 | |
+|  | &emsp;&emsp;Irrecoverable debts recovered | | 350 |
+| | *(Being debt written off in 2024 reinstated)* | | |
+| Jul 15 | Bank | 350 | |
+|  | &emsp;&emsp;Faridah | | 350 |
+| | *(Being cheque received from Faridah)* | | |
+| Dec 31 | Income statement | 250 | |
+|  | &emsp;&emsp;Allowance for irrecoverable debts | | 250 |
+| | *(Being increase in the allowance for irrecoverable debts)* | | |
+
+### J8.2 (Journal practice, Level 3: Medium)
+
+**a) Calculate the new allowance and the change in the allowance. (3)**
+
+| Item | Answer |
+|---|---:|
+| Allowance required (RM) | **1,525** |
+| Decrease in the allowance (RM) | **475** |
+
+**b) Prepare the journal entries. (8)**
+
+| Date | Particulars | Debit | Credit |
+|---|---|---:|---:|
+| **2026** | | **RM** | **RM** |
+| Jun 30 | Irrecoverable debts | 1,500 | |
+|  | &emsp;&emsp;Chen | | 1,500 |
+| | *(Being debt written off: customer cannot be found)* | | |
+| Jun 30 | Allowance for irrecoverable debts | 475 | |
+|  | &emsp;&emsp;Income statement | | 475 |
+| | *(Being decrease in the allowance for irrecoverable debts)* | | |
+| Jun 30 | Income statement | 2,100 | |
+|  | &emsp;&emsp;Irrecoverable debts | | 2,100 |
+| | *(Being irrecoverable debts for the year transferred)* | | |
+| Jun 30 | Irrecoverable debts recovered | 300 | |
+|  | &emsp;&emsp;Income statement | | 300 |
+| | *(Being debts recovered transferred)* | | |
+<!-- END GENERATED: answers ch08 journals -->
+
 ### Check yourself (Chapter 8 notes)
 
 1. Debit Irrecoverable debts RM450, credit the customer's account RM450.
@@ -507,6 +563,59 @@ He may change only if the new method gives a fairer view of how the vans lose va
 
 Changing just to make profit look higher would mislead users and stop them comparing this year with earlier years. He should not change.
 <!-- END GENERATED: answers ch10 -->
+
+<!-- BEGIN GENERATED: answers ch10 journals -->
+### J10.1 (Journal practice, Level 2: Easy to medium)
+
+**a) Calculate the depreciation for 2025 on the machine and on the motor vans. (3)**
+
+| Item | Answer |
+|---|---:|
+| Depreciation of machine (RM) | **6,000** |
+| Depreciation of motor vans (RM) | **6,400** |
+
+**b) Prepare the journal entries for the purchase and for the depreciation. (6)**
+
+| Date | Particulars | Debit | Credit |
+|---|---|---:|---:|
+| **2025** | | **RM** | **RM** |
+| Jan 1 | Machinery | 36,000 | |
+|  | &emsp;&emsp;Bank | | 36,000 |
+| | *(Being purchase of a machine by cheque)* | | |
+| Dec 31 | Income statement | 6,000 | |
+|  | &emsp;&emsp;Provision for depreciation of machinery | | 6,000 |
+| | *(Being depreciation of machinery for the year)* | | |
+| Dec 31 | Income statement | 6,400 | |
+|  | &emsp;&emsp;Provision for depreciation of motor vans | | 6,400 |
+| | *(Being depreciation of motor vans for the year)* | | |
+
+### J10.2 (Journal practice, Level 3: Medium)
+
+**a) Calculate the carrying amount and the loss on disposal. (2)**
+
+| Item | Answer |
+|---|---:|
+| Carrying amount at the date of sale (RM) | **9,000** |
+| Loss on disposal (RM) | **1,500** |
+
+**b) Prepare the journal entries to record the disposal. (8)**
+
+| Date | Particulars | Debit | Credit |
+|---|---|---:|---:|
+| **2025** | | **RM** | **RM** |
+| Oct 1 | Disposal | 24,000 | |
+|  | &emsp;&emsp;Equipment | | 24,000 |
+| | *(Being cost of equipment sold transferred)* | | |
+| Oct 1 | Provision for depreciation of equipment | 15,000 | |
+|  | &emsp;&emsp;Disposal | | 15,000 |
+| | *(Being accumulated depreciation on equipment sold transferred)* | | |
+| Oct 1 | Bank | 7,500 | |
+|  | &emsp;&emsp;Disposal | | 7,500 |
+| | *(Being proceeds from the sale of equipment)* | | |
+| Dec 31 | Income statement | 1,500 | |
+|  | &emsp;&emsp;Disposal | | 1,500 |
+| | *(Being loss on disposal transferred)* | | |
+<!-- END GENERATED: answers ch10 journals -->
 
 ### Check yourself (Chapter 10 notes)
 
@@ -731,6 +840,56 @@ Monthly cost = 4,800 / 12 = 400. October to December = 3 months.
 | **2026** | | |  |  | | |  |
 | Jan 1 | Balance b/d |  | 900 |  | | |  |
 <!-- END GENERATED: answers ch11 -->
+
+<!-- BEGIN GENERATED: answers ch11 journals -->
+### J11.1 (Journal practice, Level 2: Easy to medium)
+
+**a) Calculate the insurance expense for 2025 and the amount prepaid. (2)**
+
+| Item | Answer |
+|---|---:|
+| Insurance expense for 2025 (RM) | **600** |
+| Insurance prepaid at 31 December 2025 (RM) | **1,800** |
+
+**b) Prepare the journal entries. (6)**
+
+| Date | Particulars | Debit | Credit |
+|---|---|---:|---:|
+| **2025** | | **RM** | **RM** |
+| Dec 31 | Electricity | 420 | |
+|  | &emsp;&emsp;Accrued expenses (other payables) | | 420 |
+| | *(Being electricity owing at the year end)* | | |
+| Dec 31 | Prepaid expenses (other receivables) | 1,800 | |
+|  | &emsp;&emsp;Insurance | | 1,800 |
+| | *(Being insurance paid in advance for 2026)* | | |
+| Dec 31 | Wages | 650 | |
+|  | &emsp;&emsp;Accrued expenses (other payables) | | 650 |
+| | *(Being wages owing at the year end)* | | |
+
+### J11.2 (Journal practice, Level 3: Medium)
+
+**a) Calculate the rent income for 2025 and the rent received in advance. (2)**
+
+| Item | Answer |
+|---|---:|
+| Rent income for 2025 (RM) | **6,000** |
+| Rent received in advance (RM) | **500** |
+
+**b) Prepare the journal entries. (6)**
+
+| Date | Particulars | Debit | Credit |
+|---|---|---:|---:|
+| **2025** | | **RM** | **RM** |
+| Dec 31 | Rent receivable | 500 | |
+|  | &emsp;&emsp;Income received in advance (other payables) | | 500 |
+| | *(Being rent received in advance for January 2026)* | | |
+| Dec 31 | Accrued income (other receivables) | 380 | |
+|  | &emsp;&emsp;Commission receivable | | 380 |
+| | *(Being commission earned but not yet received)* | | |
+| Dec 31 | Inventory of stationery (other receivables) | 150 | |
+|  | &emsp;&emsp;Stationery | | 150 |
+| | *(Being unused stationery carried forward)* | | |
+<!-- END GENERATED: answers ch11 journals -->
 
 ### Check yourself (Chapter 11 notes)
 
@@ -1246,6 +1405,71 @@ A current liability must be paid within 12 months, for example trade payables. A
 | Less: | Drawings |  |  | (10,000) |
 |  | **Capital at end of year** |  |  | **55,940** |
 <!-- END GENERATED: answers fs -->
+
+<!-- BEGIN GENERATED: answers fs journals -->
+### JFS.1 (Journal practice, Level 2: Easy to medium)
+
+**a) Prepare the six journal entries. (12)**
+
+| Date | Particulars | Debit | Credit |
+|---|---|---:|---:|
+| **2025** | | **RM** | **RM** |
+| Dec 31 | Inventory | 9,500 | |
+|  | &emsp;&emsp;Income statement | | 9,500 |
+| | *(Being closing inventory recorded)* | | |
+| Dec 31 | Rent | 500 | |
+|  | &emsp;&emsp;Accrued expenses (other payables) | | 500 |
+| | *(Being rent owing)* | | |
+| Dec 31 | Prepaid expenses (other receivables) | 300 | |
+|  | &emsp;&emsp;Insurance | | 300 |
+| | *(Being insurance paid in advance)* | | |
+| Dec 31 | Income statement | 200 | |
+|  | &emsp;&emsp;Allowance for irrecoverable debts | | 200 |
+| | *(Being increase in the allowance to 5% of trade receivables)* | | |
+| Dec 31 | Income statement | 2,000 | |
+|  | &emsp;&emsp;Provision for depreciation of equipment | | 2,000 |
+| | *(Being depreciation of equipment for the year)* | | |
+| Dec 31 | Loan interest | 500 | |
+|  | &emsp;&emsp;Accrued expenses (other payables) | | 500 |
+| | *(Being loan interest owing)* | | |
+
+### JFS.2 (Journal practice, Level 3: Medium)
+
+**a) Calculate the profit for the year. (2)**
+
+| Item | Answer |
+|---|---:|
+| Profit for the year (RM) | **6,800** |
+
+**b) Prepare the closing journal entries. (10)**
+
+| Date | Particulars | Debit | Credit |
+|---|---|---:|---:|
+| **2025** | | **RM** | **RM** |
+| Dec 31 | Revenue | 52,000 | |
+|  | &emsp;&emsp;Income statement | | 52,000 |
+| | *(Being revenue transferred)* | | |
+| Dec 31 | Income statement | 33,000 | |
+|  | &emsp;&emsp;Inventory (opening) | | 3,000 |
+|  | &emsp;&emsp;Purchases | | 30,000 |
+| | *(Being opening inventory and purchases transferred)* | | |
+| Dec 31 | Inventory (closing) | 3,500 | |
+|  | &emsp;&emsp;Income statement | | 3,500 |
+| | *(Being closing inventory recorded)* | | |
+| Dec 31 | Income statement | 15,700 | |
+|  | &emsp;&emsp;Wages | | 8,000 |
+|  | &emsp;&emsp;Rent | | 4,800 |
+|  | &emsp;&emsp;Insurance | | 1,000 |
+|  | &emsp;&emsp;General expenses | | 900 |
+|  | &emsp;&emsp;Depreciation: fixtures | | 1,000 |
+| | *(Being expenses transferred)* | | |
+| Dec 31 | Income statement | 6,800 | |
+|  | &emsp;&emsp;Capital | | 6,800 |
+| | *(Being profit for the year transferred to capital)* | | |
+| Dec 31 | Capital | 6,000 | |
+|  | &emsp;&emsp;Drawings | | 6,000 |
+| | *(Being drawings transferred to capital)* | | |
+<!-- END GENERATED: answers fs journals -->
 
 ### Check yourself (Financial Statements notes)
 
