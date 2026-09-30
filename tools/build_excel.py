@@ -271,7 +271,7 @@ def build_ch08():
         r = tr + 3
 
     def info(ws, r):
-        header(ws, r, ["Data (from Model Question 8.8)", "2023", "2024", "2025"])
+        header(ws, r, ["Data (from Model Question 8.11)", "2023", "2024", "2025"])
         r += 1
         refs = {}
         rows = [("before", "Trade receivables before write-offs", (40000, 50000, 36000), NUM),
@@ -301,7 +301,7 @@ def build_ch08():
     qs.append(("Trade receivables (after write-offs)", after["25"], "num", NUM))
     qs.append(("Net trade receivables after deducting the allowance", f"{after['25']}-{allow['25']}", "num", NUM))
     # text templates need refs substituted too, so pre-format them after refs exist
-    ws, an = practice(wb, "Practice: Model Question 8.8 (Grace)",
+    ws, an = practice(wb, "Practice: Model Question 8.11 (Grace)",
                       ["Grace keeps an allowance for irrecoverable debts. Year end 31 December."],
                       info, qs)
     wb.save(OUT / "Ch08_Irrecoverable_Debts.xlsx")
@@ -439,7 +439,7 @@ def build_ch10():
             ("c1", "Cost", 25000, NUM),
             ("res1", "Residual value", 5000, NUM),
             ("life1", "Useful life (years)", 5, "0"),
-            (None, "Q2 (Model Question 10.9): Musa's machine, reducing balance", None, None),
+            (None, "Q2 (Model Question 10.12): Musa's machine, reducing balance", None, None),
             ("c2", "Cost on 1 January 2023", 40000, NUM),
             ("rate2", "Reducing balance rate", 0.25, PCT),
             ("sale2", "Sale proceeds on 1 January 2026", 15000, NUM),
@@ -447,7 +447,7 @@ def build_ch10():
             ("open3", "Value at start of year", 2000, NUM),
             ("buy3", "Bought during year", 800, NUM),
             ("close3", "Value at end of year", 2100, NUM),
-            (None, "Q4 (Model Question 10.10): part year", None, None),
+            (None, "Q4 (Model Question 10.11): part year", None, None),
             ("c4", "Cost", 12000, NUM),
             ("rate4", "Rate on cost per year", 0.1, PCT),
             ("m4", "Months owned in 2025", 9, "0"),
@@ -572,7 +572,7 @@ def build_ch11():
 
     def info(ws, r):
         return info_rows(ws, r, [
-            (None, "Model Question 11.8 (Zara, year ended 31 March 2026)", None, None),
+            (None, "Model Question 11.11 (Zara, year ended 31 March 2026)", None, None),
             ("wo", "Wages owing at 1 April 2025", 300, NUM),
             ("wp", "Wages paid during the year", 18000, NUM),
             ("wc", "Wages owing at 31 March 2026", 450, NUM),
@@ -587,7 +587,7 @@ def build_ch11():
         ])
 
     qs = [
-        "Model Question 11.8",
+        "Model Question 11.11",
         ("Wages expense for the SPL", "{wp}-{wo}+{wc}", "num", NUM),
         ("Rates expense for the SPL", "{rp}+{ro}-{rc}", "num", NUM),
         ("Commission receivable for the SPL", "{cr}+{cd}", "num", NUM),
@@ -744,7 +744,7 @@ def write_tb(ws, r, rows):
 def build_fs():
     wb = Workbook()
     read_me(wb, "Statement of Profit or Loss and Statement of Financial Position",
-            ["Worked example: Amina Stores (notes section 6). Practice: Ben's Bikes (Model Question FS.6)."])
+            ["Worked example: Amina Stores (notes section 6). Practice: Ben's Bikes (Model Question FS.9)."])
 
     tb = wb.create_sheet("Trial Balance")
     widths(tb, A=42, B=14, C=14, D=24)
@@ -946,7 +946,7 @@ def build_fs():
         ("Net assets", f"{nca}+{tca}-{tcl}", "num", NUM),
         ("Closing capital", f"{{cap}}+{profit}-{{draw}}", "num", NUM),
     ]
-    ws, _ = practice(wb, "Practice: Ben's Bikes (Model Question FS.6)",
+    ws, _ = practice(wb, "Practice: Ben's Bikes (Model Question FS.9)",
                      ["Prepare both statements on paper, then enter the key figures below."], info, qs)
     ws.column_dimensions["C"].width = 18
     ws.column_dimensions["D"].width = 24

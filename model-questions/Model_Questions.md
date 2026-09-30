@@ -53,9 +53,51 @@ Marks are shown in brackets. Use $ for all amounts.
 
 **8.7** On 1 March 2025, Tomas, a credit customer who owes $750, is declared bankrupt. Prepare the journal entry, with a narrative, to write off the debt. (3)
 
-### Section C: Structured question
+### Section C: Structured questions (Level 1 easiest to Level 5 hardest)
 
-**8.8** Grace keeps an allowance for irrecoverable debts of 3% of trade receivables. Her year end is 31 December. Trade receivables at each year end were:
+**8.8 (Level 1: Easy)** Sara sells goods on credit. Her year ends 31 December 2025.
+
+* On 31 March 2025, Peter, who owes $350, is declared bankrupt.
+* On 30 September 2025, Jane, who owes $200, leaves the country. Sara decides the debt will not be paid.
+
+a) Prepare the journal entries to write off both debts. Narratives are not required. (4)
+
+b) Prepare the Irrecoverable debts account for the year, showing the transfer to the income statement. (3)
+
+c) State the effect of the write-offs on profit and on trade receivables. (2)
+
+**8.9 (Level 2: Easy to medium)** At 31 December 2025, trade receivables are $24,000. This includes $800 owed by Ali, who has disappeared. The business decides to write off Ali's debt and to **create** an allowance for irrecoverable debts of 5% of trade receivables for the first time.
+
+a) Calculate trade receivables after writing off Ali's debt. (1)
+
+b) Calculate the allowance for irrecoverable debts. (2)
+
+c) Show the Statement of Profit or Loss extract for the year. (2)
+
+d) Show the Statement of Financial Position extract at 31 December 2025. (2)
+
+e) Name the accounting concept which explains why the allowance is created. (1)
+
+**8.10 (Level 3: Medium)** Lee's year ends 30 June 2026. The allowance for irrecoverable debts at 1 July 2025 was $900.
+
+During the year:
+
+* A debt of $400 owed by Omar was written off.
+* Lucy paid $250 by cheque. Her debt was written off in 2024.
+
+Trade receivables at 30 June 2026 were $26,000 after writing off Omar's debt. The allowance is to be 4% of trade receivables.
+
+a) Prepare the journal entries to record the money received from Lucy. (4)
+
+b) Calculate the new allowance and the change in the allowance. (2)
+
+c) Prepare the Allowance for irrecoverable debts account for the year. (4)
+
+d) Show the Statement of Profit or Loss extract for the three items above. (3)
+
+e) Show the Statement of Financial Position extract at 30 June 2026. (2)
+
+**8.11 (Level 4: Hard)** Grace keeps an allowance for irrecoverable debts of 3% of trade receivables. Her year end is 31 December. Trade receivables at each year end were:
 
 | Year | Trade receivables before write-offs $ | Debts to be written off $ |
 |---|---|---|
@@ -74,6 +116,25 @@ c) Prepare the Allowance for irrecoverable debts account for the three years. (6
 d) Show the Statement of Financial Position extract for trade receivables at 31 December 2025. (2)
 
 > Self-marking version: `excel/Ch08_Irrecoverable_Debts.xlsx`, Practice sheet.
+
+**8.12 (Level 5: Challenge)** Hamid's draft profit for the year ended 31 December 2025 is $18,000. The following items have **not** yet been dealt with:
+
+1. Trade receivables at 31 December 2025 are $41,500 in the books.
+2. Kim owes $1,500 and has been declared bankrupt. The debt must be written off.
+3. During the year, $300 was received from a customer whose debt was written off in 2023. The bookkeeper debited bank and credited **trade receivables** by mistake.
+4. The allowance for irrecoverable debts at 1 January 2025 was $2,500. It is to be 5% of trade receivables at 31 December 2025.
+
+a) Calculate the correct trade receivables at 31 December 2025. (3)
+
+b) Calculate the allowance required and the change in the allowance. State whether the change is an expense or income. (3)
+
+c) Calculate the corrected profit for the year. (4)
+
+d) Prepare the Allowance for irrecoverable debts account for the year. (3)
+
+e) Show the Statement of Financial Position extract for trade receivables. (2)
+
+f) Hamid says: "I will make the allowance 20% next year, just to be safe." Evaluate this idea. (3)
 
 ---
 
@@ -124,9 +185,57 @@ d) Show the Statement of Financial Position extract for trade receivables at 31 
 
 **10.8** State which depreciation method suits a motor vehicle and explain why. (3)
 
-### Section C: Structured question
+### Section C: Structured questions (Level 1 easiest to Level 5 hardest)
 
-**10.9** On 1 January 2023 Musa bought a machine for $40,000. It is depreciated at 25% per year, reducing balance. The year end is 31 December.
+**10.9 (Level 1: Easy)** On 1 January 2024 a business bought a delivery van for $18,000. It expects to use the van for 5 years and then sell it for $3,000. The straight line method is used. The year end is 31 December.
+
+a) Calculate the annual depreciation. (2)
+
+b) Copy and complete this table. (4)
+
+| Year | Depreciation $ | Accumulated depreciation $ | NBV at end of year $ |
+|---|---|---|---|
+| 2024 | | | |
+| 2025 | | | |
+
+c) Show the Statement of Financial Position extract for the van at 31 December 2025. (2)
+
+d) State one cause of depreciation for a delivery van. (1)
+
+**10.10 (Level 2: Easy to medium)** A business bought a new machine. It paid the following amounts:
+
+| Item | $ |
+|---|---|
+| Purchase price of machine | 22,000 |
+| Delivery to the factory | 600 |
+| Installation | 900 |
+| Insurance for the first year | 400 |
+| Repair after six months of use | 250 |
+
+a) Calculate the cost of the machine to be shown as a non-current asset. (2)
+
+b) Classify each of the five items as capital expenditure or revenue expenditure. (5)
+
+c) The installation cost was recorded as an expense by mistake. State the effect on profit for the year and on non-current assets. Ignore depreciation. (2)
+
+**10.11 (Level 3: Medium)** The year end is 31 December.
+
+* A machine was bought on 1 April 2025 for $12,000. Depreciation is 10% per year on cost, straight line, calculated on a monthly basis.
+* Loose tools were valued at $2,000 on 1 January 2025. Tools costing $800 were bought during 2025. On 31 December 2025 the loose tools were valued at $2,100.
+
+a) Calculate depreciation on the machine for 2025 and for 2026. (3)
+
+b) Calculate the NBV of the machine at 31 December 2026. (1)
+
+c) Prepare the journal entry to record the machine depreciation for 2025. (2)
+
+d) Calculate the depreciation of loose tools for 2025. (2)
+
+e) Explain why the revaluation method is used for loose tools. (2)
+
+> Self-marking version (parts a and d): `excel/Ch10_Depreciation.xlsx`, Practice sheet.
+
+**10.12 (Level 4: Hard)** On 1 January 2023 Musa bought a machine for $40,000. It is depreciated at 25% per year, reducing balance. The year end is 31 December.
 
 a) Calculate the depreciation for 2023, 2024 and 2025. (3)
 
@@ -136,9 +245,23 @@ c) On 1 January 2026 the machine was sold for $15,000 by cheque. Prepare the Mac
 
 d) State where the result of the disposal appears in the financial statements. (1)
 
-**10.10** A machine is bought for $12,000 on 1 April 2025. Depreciation is 10% per year on cost, straight line, calculated monthly. The year end is 31 December 2025. Calculate the depreciation for 2025. (2)
-
 > Self-marking version: `excel/Ch10_Depreciation.xlsx`, Practice sheet.
+
+**10.13 (Level 5: Challenge)** Kwame's year ends 31 December. His policy is to depreciate vans at 20% per year on cost, straight line. A full year's depreciation is charged in the year of purchase and none in the year of sale.
+
+* 1 January 2023: bought Van A for $25,000.
+* 1 July 2024: bought Van B for $30,000.
+* 1 October 2025: sold Van A for $12,000, paid by cheque.
+
+a) Calculate the depreciation charge for 2023, 2024 and 2025. (3)
+
+b) Prepare the Provision for depreciation of vans account for 2023, 2024 and 2025. (6)
+
+c) Prepare the Disposal of van account. (4)
+
+d) Show the Statement of Financial Position extract for vans at 31 December 2025. (2)
+
+e) Kwame wants to change to the reducing balance method in 2026 so his profit looks higher. Advise him, naming the concept involved. (3)
 
 ---
 
@@ -187,9 +310,48 @@ d) State where the result of the disposal appears in the financial statements. (
 
 **11.7** A business pays $4,800 on 1 October 2025 for 12 months of insurance. The year end is 31 December 2025. Calculate the insurance expense and the prepayment. (3)
 
-### Section C: Structured question
+### Section C: Structured questions (Level 1 easiest to Level 5 hardest)
 
-**11.8** Zara's year ends 31 March 2026. The following information is available.
+**11.8 (Level 1: Easy)** A business's year ends 31 December 2025.
+
+* Rent is $800 per month. During the year the business paid $8,800 rent.
+* Insurance of $1,800 was paid during the year. Of this, $300 is for 2026.
+
+a) Calculate the rent expense for the year and the amount of rent owing. (2)
+
+b) Calculate the insurance expense for the year. (1)
+
+c) State where the rent owing and the insurance prepaid appear in the Statement of Financial Position. (2)
+
+d) Name the concept which requires these adjustments. (1)
+
+**11.9 (Level 2: Easy to medium)** A business's year ends 31 December 2025.
+
+* Electricity paid: March $600, June $550, September $500. The bill for October to December, $580, was paid in January 2026.
+* On 1 July 2025 the business paid $2,400 insurance for 12 months.
+
+a) Prepare the Electricity account for the year. Show the balance carried down and brought down. (4)
+
+b) Prepare the Insurance account for the year. Show the balance carried down and brought down. (4)
+
+c) Show the amounts in the Statement of Financial Position at 31 December 2025, with headings. (2)
+
+**11.10 (Level 3: Medium)** Sam lets part of his premises for $600 per month. His year ends 31 December 2025.
+
+* Rent received during 2025 was $7,800. This includes the rent for January 2026.
+* Commission received during 2025 was $2,100. A further $350 of commission for 2025 is still due.
+
+a) Calculate the rent income for 2025 and the amount received in advance. (2)
+
+b) Prepare the Rent receivable account for the year. (4)
+
+c) Calculate the commission income for 2025. (1)
+
+d) Show the other receivables and other payables in the Statement of Financial Position. (2)
+
+e) State the effect on profit if Sam forgot to adjust for the rent received in advance. (1)
+
+**11.11 (Level 4: Hard)** Zara's year ends 31 March 2026. The following information is available.
 
 | Item | Details |
 |---|---|
@@ -204,6 +366,22 @@ b) Prepare the Wages account for the year, showing the balance carried down. (5)
 c) Calculate the total of other receivables and other payables in the Statement of Financial Position at 31 March 2026. (2)
 
 > Self-marking version: `excel/Ch11_Accruals_Prepayments.xlsx`, Practice sheet.
+
+**11.12 (Level 5: Challenge)** Tariq calculated a draft profit of $32,000 for the year ended 31 December 2025. He used only the cash paid and received. No adjustments have been made.
+
+1. **Insurance:** $750 was prepaid at 1 January 2025 (covering January to March 2025). On 1 April 2025 he paid $3,600 for the year to 31 March 2026.
+2. **Rent:** $1,000 per month until 30 June 2025, then $1,200 per month from 1 July 2025. He paid $13,000 during the year. Nothing was owing or prepaid at 1 January 2025.
+3. **Wages:** $21,000 was paid during 2025. This includes $400 owing at 1 January 2025. $650 is owing at 31 December 2025.
+4. **Rent received:** $4,500 was received in 2025. This includes $300 owing from 2024 and $500 for January 2026.
+5. **Stationery:** unused stationery at 31 December 2025 cost $120.
+
+a) Calculate the correct amount for the Statement of Profit or Loss for insurance, rent, wages and rent received. (5)
+
+b) Calculate the corrected profit for the year. Show each adjustment. (5)
+
+c) Calculate other receivables and other payables for the Statement of Financial Position. (4)
+
+d) Prepare the Insurance account for the year. (4)
 
 ---
 
@@ -244,6 +422,82 @@ For each situation, name the concept which applies.
 **12.13** Name and explain two qualities which make accounting information useful. (4)
 
 **12.14** Goods cost $2,000. They are damaged. They can be sold for $1,800 after repairs costing $300. At what value should they be shown in inventory? Show your working and name the concept. (3)
+
+### Section C: Structured questions (Level 1 easiest to Level 5 hardest)
+
+**12.15 (Level 1: Easy)** Name the concept described by each statement.
+
+a) The business is treated as separate from its owner. (1)
+
+b) Assets are recorded at the price paid for them. (1)
+
+c) Every transaction affects two accounts. (1)
+
+d) Only items with a money value are recorded. (1)
+
+e) The same methods are used from one year to the next. (1)
+
+f) Name **one** quality that makes accounting information useful. (1)
+
+**12.16 (Level 2: Easy to medium)** For each situation, name the concept which applies and explain how it applies. (2 marks each)
+
+a) The owner paid for a family holiday with a business cheque. It was recorded as drawings.
+
+b) Goods were sold on credit on 29 December 2025 and paid for on 5 January 2026. The sale was recorded in 2025.
+
+c) A waste bin costing $8 was recorded as an expense, although it will last for years.
+
+d) Premises bought for $80,000 are now worth $120,000. They are still shown at $80,000.
+
+**12.17 (Level 3: Medium)** At the year end a trader has four items of inventory.
+
+| Item | Cost $ | Expected selling price $ | Costs to sell or repair $ |
+|---|---|---|---|
+| A | 1,200 | 1,800 | 100 |
+| B | 900 | 950 | 200 |
+| C | 2,000 | 2,500 | 300 |
+| D (damaged) | 600 | 250 | 0 |
+
+a) Calculate the value of each item and the total value of closing inventory. (4)
+
+b) The trader had valued all inventory at cost. State the effect of your correct valuation on gross profit. (2)
+
+c) Name the concept used and explain why it applies. (2)
+
+**12.18 (Level 4: Hard)** Mira made the decisions below. For each one, name the concept she has **not** followed, explain why, and state the correct treatment. (3 marks each)
+
+a) She changed her depreciation method from straight line to reducing balance this year. She plans to change back next year to make her profit look steady.
+
+b) She recorded the repayment of her personal car loan as a business expense.
+
+c) She included in 2025 revenue an order received on 28 December 2025 for goods to be delivered in February 2026.
+
+d) She did not record December electricity of $400 because the bill had not been paid.
+
+e) She increased the value of premises from cost of $100,000 to a market value of $150,000 and added the $50,000 to profit.
+
+**12.19 (Level 5: Challenge)** A business is thinking of closing down. The following information is available.
+
+| Item | Value in the books $ | Value if the business closes $ |
+|---|---|---|
+| Premises (NBV) | 80,000 | 95,000 |
+| Equipment (NBV) | 20,000 | 6,000 |
+| Inventory (at cost) | 15,000 | 9,000 |
+| Trade receivables | 12,000 | 10,500 (amount expected to be collected) |
+| Allowance for irrecoverable debts | 600 | |
+| Bank | 3,000 | 3,000 |
+| Trade payables | 8,000 | 8,000 |
+| Loan | 25,000 | 25,000 |
+
+a) Calculate net assets on the going concern basis (book values). (3)
+
+b) Calculate net assets if the business closes. (3)
+
+c) Explain why the two figures are different. Name the concept involved. (3)
+
+d) While the business continues trading, premises must stay at $80,000 even though they are worth $95,000. Name **two** concepts that support this. (2)
+
+e) Name **two** users of the financial statements who would be interested in these figures, and give a reason for each. (2)
 
 ---
 
@@ -286,9 +540,79 @@ For each situation, name the concept which applies.
 * C. $7,500
 * D. $2.40
 
-### Section B: Structured question (30 marks)
+### Section B: Structured questions (Level 1 easiest to Level 5 hardest)
 
-**FS.6** Ben's Bikes. Trial balance at 30 June 2026.
+**FS.6 (Level 1: Easy)** Lina's Shop. The following figures are for the year ended 31 December 2025.
+
+| Item | $ |
+|---|---|
+| Revenue | 60,000 |
+| Sales returns | 1,000 |
+| Purchases | 38,000 |
+| Purchases returns | 800 |
+| Carriage inwards | 500 |
+| Inventory at 1 January 2025 | 4,500 |
+| Inventory at 31 December 2025 | 5,200 |
+
+a) Prepare the Statement of Profit or Loss for the year, as far as gross profit. (6)
+
+b) Explain why carriage inwards is included in cost of sales. (1)
+
+**FS.7 (Level 2: Easy to medium)** Omar. Balances at 31 December 2025, after all adjustments.
+
+| Item | $ |
+|---|---|
+| Premises at cost | 50,000 |
+| Motor vehicle at cost | 15,000 |
+| Provision for depreciation: motor vehicle | 5,000 |
+| Inventory | 6,000 |
+| Trade receivables | 7,500 |
+| Bank | 2,300 |
+| Cash | 200 |
+| Trade payables | 4,800 |
+| Loan (repayable 2029) | 10,000 |
+| Capital at 1 January 2025 | 55,000 |
+| Profit for the year | 14,200 |
+| Drawings | 8,000 |
+
+a) Prepare the Statement of Financial Position at 31 December 2025. (8)
+
+b) State the working capital. (1)
+
+c) Explain the difference between a current liability and a non-current liability. (2)
+
+**FS.8 (Level 3: Medium)** Nadia's Crafts. Trial balance at 31 December 2025.
+
+| Account | Dr $ | Cr $ |
+|---|---|---|
+| Revenue | | 52,000 |
+| Purchases | 30,000 | |
+| Inventory at 1 January 2025 | 3,000 | |
+| Wages | 8,000 | |
+| Rent | 4,400 | |
+| Insurance | 1,200 | |
+| General expenses | 900 | |
+| Fixtures at cost | 10,000 | |
+| Provision for depreciation: fixtures | | 2,000 |
+| Trade receivables | 5,000 | |
+| Trade payables | | 3,100 |
+| Bank | 2,600 | |
+| Capital | | 14,000 |
+| Drawings | 6,000 | |
+| **Totals** | **71,100** | **71,100** |
+
+Additional information at 31 December 2025:
+
+1. Inventory was valued at $3,500.
+2. Rent of $400 was owing.
+3. Insurance of $200 was prepaid.
+4. Fixtures are depreciated at 10% per year on cost.
+
+a) Prepare the Statement of Profit or Loss for the year ended 31 December 2025. (10)
+
+b) Prepare the Statement of Financial Position at 31 December 2025. (10)
+
+**FS.9 (Level 4: Hard)** Ben's Bikes. Trial balance at 30 June 2026.
 
 | Account | Dr $ | Cr $ |
 |---|---|---|
@@ -331,3 +655,54 @@ a) Prepare the Statement of Profit or Loss for the year ended 30 June 2026. (16)
 b) Prepare the Statement of Financial Position at 30 June 2026. (14)
 
 > Self-marking version: `excel/Financial_Statements.xlsx`, Practice sheet.
+
+**FS.10 (Level 5: Challenge)** Kofi Traders. Trial balance at 31 March 2026.
+
+| Account | Dr $ | Cr $ |
+|---|---|---|
+| Revenue | | 98,000 |
+| Purchases | 54,000 | |
+| Sales returns | 1,200 | |
+| Purchases returns | | 1,000 |
+| Carriage inwards | 700 | |
+| Carriage outwards | 900 | |
+| Inventory at 1 April 2025 | 7,400 | |
+| Wages | 15,500 | |
+| Rent and rates | 6,300 | |
+| Electricity | 2,100 | |
+| Discount allowed | 350 | |
+| Discount received | | 650 |
+| Commission received | | 1,200 |
+| Irrecoverable debts | 450 | |
+| Premises at cost | 40,000 | |
+| Equipment at cost | 30,000 | |
+| Provision for depreciation: equipment | | 12,000 |
+| Disposal account | | 1,500 |
+| Trade receivables | 14,000 | |
+| Allowance for irrecoverable debts | | 600 |
+| Trade payables | | 8,200 |
+| Bank overdraft | | 1,800 |
+| Cash | 150 | |
+| Loan (repayable 2029) | | 8,000 |
+| Capital | | 50,100 |
+| Drawings | 10,000 | |
+| **Totals** | **183,050** | **183,050** |
+
+Additional information at 31 March 2026:
+
+1. Inventory was valued at $8,100.
+2. Electricity of $300 was owing.
+3. Rent and rates of $500 were prepaid.
+4. Commission receivable of $250 is due but not yet received.
+5. A further debt of $400 is to be written off as irrecoverable.
+6. The allowance for irrecoverable debts is to be 5% of the remaining trade receivables.
+7. On 31 March 2026 equipment which cost $5,000 was sold for $1,500. Its accumulated depreciation at 1 April 2025 was $3,000. The only entry made was debit bank, credit disposal account. No depreciation is charged in the year of sale.
+8. The remaining equipment is depreciated at 20% per year, reducing balance.
+9. Loan interest of 6% per year has not been paid.
+10. Premises are not depreciated.
+
+a) Prepare the Disposal account. (4)
+
+b) Prepare the Statement of Profit or Loss for the year ended 31 March 2026. (18)
+
+c) Prepare the Statement of Financial Position at 31 March 2026. (16)

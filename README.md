@@ -14,6 +14,8 @@ Free study notes, Excel workbooks and model questions for Senior 1 (high school)
 
 Model questions: [Model_Questions.md](model-questions/Model_Questions.md) ([pdf](pdf/Model_Questions.pdf))
 
+Every topic has multiple choice questions, short answers and **5 structured questions** graded from Level 1 (easy) to Level 5 (challenge). Start at Level 1 and work up.
+
 Answer key with full workings: [Answer_Key.md](model-questions/Answer_Key.md) ([pdf](pdf/Answer_Key.pdf))
 
 ## How to study each topic
