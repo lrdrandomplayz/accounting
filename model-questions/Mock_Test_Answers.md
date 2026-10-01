@@ -110,7 +110,7 @@ Award method marks for correct workings even where a later figure is wrong (own 
 | Date | Particulars | Folio | Amount | Date | Particulars | Folio | Amount |
 |---|---|---|---:|---|---|---|---:|
 | **2025** | | | **RM** | **2025** | | | **RM** |
-| Jan 1 | Balance b/d |  | 400 | Dec 31 | Income statement | GJ1 | 2,650 |
+| Jan 1 | Balance b/d |  | 400 | Dec 31 | Profit or loss | GJ1 | 2,650 |
 | Apr 1 | Bank | CB1 | 3,000 | Dec 31 | Balance c/d |  | 750 |
 | | | | **3,400** | | | | **3,400** |
 | **2026** | | |  |  | | |  |

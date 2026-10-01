@@ -43,6 +43,21 @@ So at the year end you adjust for anything paid **too little** or **too much**.
 
 Most questions have only one or two of these figures. Put 0 for the rest.
 
+### How to write the ledger account in 4 steps
+
+Follow the same 4 steps for every accrual and prepayment account.
+
+| Step | What to enter | Expense account (rent, insurance, wages) | Income account (rent received, commission) |
+|---|---|---|---|
+| **Step 1: Start of year (Balance b/d)** | Last year's closing balance, dated the first day of the year | Owing: **credit** side. Prepaid: **debit** side | Due: **debit** side. In advance: **credit** side |
+| **Step 2: Bank** | Cash paid or received during the year | **Debit** side | **Credit** side |
+| **Step 3: Profit or Loss** | This year's expense or income, worked out with the formula | **Credit** side | **Debit** side |
+| **Step 4: End of year (Balance c/d)** | This year's closing balance, dated the last day of the year | Owing: **debit** side. Prepaid: **credit** side | Due: **credit** side. In advance: **debit** side |
+
+After Step 4, total both sides. The totals must agree. Then bring the closing balance down on the **opposite** side, dated the first day of next year. That balance becomes Step 1 for next year.
+
+**Check:** the Profit or Loss figure in Step 3 is the balancing figure. If the account does not balance, recheck Steps 1 and 4.
+
 ## 5. Accrued expense
 
 ### Worked example 11.1
@@ -57,7 +72,7 @@ Expense for year = 12 x 1,000 = **RM12,000**. Accrual = 12,000 - 11,000 = **RM1,
 | Date | Particulars | Folio | Amount | Date | Particulars | Folio | Amount |
 |---|---|---|---:|---|---|---|---:|
 | **2025** | | | **RM** | **2025** | | | **RM** |
-|  | Bank (paid during the year) | CB1 | 11,000 | Dec 31 | Income statement | GJ1 | 12,000 |
+|  | Bank (paid during the year) | CB1 | 11,000 | Dec 31 | Profit or loss | GJ1 | 12,000 |
 | Dec 31 | Balance c/d (owing) |  | 1,000 |  | | |  |
 | | | | **12,000** | | | | **12,000** |
 |  | | |  | **2026** | | |  |
@@ -82,7 +97,7 @@ On 1 April 2025 the business paid RM3,600 insurance for 12 months. The year ends
 | Date | Particulars | Folio | Amount | Date | Particulars | Folio | Amount |
 |---|---|---|---:|---|---|---|---:|
 | **2025** | | | **RM** | **2025** | | | **RM** |
-|  | Bank (paid during the year) | CB1 | 3,600 | Dec 31 | Income statement | GJ1 | 2,700 |
+|  | Bank (paid during the year) | CB1 | 3,600 | Dec 31 | Profit or loss | GJ1 | 2,700 |
 |  | | |  | Dec 31 | Balance c/d (prepaid) |  | 900 |
 | | | | **3,600** | | | | **3,600** |
 | **2026** | | |  |  | | |  |
@@ -108,7 +123,7 @@ Expense = 2,500 - 200 + 300 = **RM2,600**
 |---|---|---|---:|---|---|---|---:|
 | **2025** | | | **RM** | **2025** | | | **RM** |
 |  | Bank (paid during the year) | CB1 | 2,500 | Jan 1 | Balance b/d (owing) |  | 200 |
-| Dec 31 | Balance c/d (owing) |  | 300 | Dec 31 | Income statement | GJ1 | 2,600 |
+| Dec 31 | Balance c/d (owing) |  | 300 | Dec 31 | Profit or loss | GJ1 | 2,600 |
 | | | | **2,800** | | | | **2,800** |
 |  | | |  | **2026** | | |  |
 |  | | |  | Jan 1 | Balance b/d (owing) |  | 300 |
@@ -130,7 +145,7 @@ Income for 2025 = 12 x 500 = **RM6,000**. Received in advance = **RM500** (curre
 | Date | Particulars | Folio | Amount | Date | Particulars | Folio | Amount |
 |---|---|---|---:|---|---|---|---:|
 | **2025** | | | **RM** | **2025** | | | **RM** |
-| Dec 31 | Income statement | GJ1 | 6,000 |  | Bank (received during the year) | CB1 | 6,500 |
+| Dec 31 | Profit or loss | GJ1 | 6,000 |  | Bank (received during the year) | CB1 | 6,500 |
 | Dec 31 | Balance c/d (in advance) |  | 500 |  | | |  |
 | | | | **6,500** | | | | **6,500** |
 |  | | |  | **2026** | | |  |

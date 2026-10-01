@@ -522,7 +522,7 @@ def q11_9(p):
     ins_pre = "{ins}-{ins}/12*{mu}"
     p.part("a) Prepare the Electricity account for the year. Show the balance carried down and brought down. (4)")
     p.ledger("Electricity Account", [
-        (("2025 Mar", "Bank", "CB1", "{e1}"), ("2025 Dec 31", "Income statement", "GJ1", "{e1}+{e2}+{e3}+{eo}")),
+        (("2025 Mar", "Bank", "CB1", "{e1}"), ("2025 Dec 31", "Profit or loss", "GJ1", "{e1}+{e2}+{e3}+{eo}")),
         (("Jun", "Bank", "CB1", "{e2}"), None),
         (("Sep", "Bank", "CB1", "{e3}"), None),
         (("Dec 31", "Balance c/d", "", "{eo}"), None),
@@ -530,7 +530,7 @@ def q11_9(p):
         (None, ("2026 Jan 1", "Balance b/d", "", "{eo}"))])
     p.part("b) Prepare the Insurance account for the year. Show the balance carried down and brought down. (4)")
     p.ledger("Insurance Account", [
-        (("2025 Jul 1", "Bank", "CB1", "{ins}"), ("2025 Dec 31", "Income statement", "GJ1", "{ins}/12*{mu}")),
+        (("2025 Jul 1", "Bank", "CB1", "{ins}"), ("2025 Dec 31", "Profit or loss", "GJ1", "{ins}/12*{mu}")),
         (None, ("Dec 31", "Balance c/d", "", ins_pre)),
         "TOTAL",
         (("2026 Jan 1", "Balance b/d", "", ins_pre), None)])
@@ -553,7 +553,7 @@ def q11_10(p):
     p.calc([("ri", "Rent income for 2025 (RM)", "12*{rm}"), ("ra", "Rent received in advance (RM)", adv)])
     p.part("b) Prepare the Rent receivable account for the year. (4)")
     p.ledger("Rent Receivable Account", [
-        (("2025 Dec 31", "Income statement", "GJ1", "12*{rm}"), ("2025", "Bank (received during the year)", "CB1", "{rr}")),
+        (("2025 Dec 31", "Profit or loss", "GJ1", "12*{rm}"), ("2025", "Bank (received during the year)", "CB1", "{rr}")),
         (("Dec 31", "Balance c/d", "", adv), None),
         "TOTAL",
         (None, ("2026 Jan 1", "Balance b/d", "", adv))])
@@ -583,7 +583,7 @@ def q11_11(p):
     p.part("b) Prepare the Wages account for the year, showing the balance carried down. (5)")
     p.ledger("Wages Account", [
         (("2025", "Bank (paid during the year)", "CB1", "{wp}"), ("2025 Apr 1", "Balance b/d", "", "{wo}")),
-        (("2026 Mar 31", "Balance c/d", "", "{wc}"), ("2026 Mar 31", "Income statement", "GJ1", "{wp}-{wo}+{wc}")),
+        (("2026 Mar 31", "Balance c/d", "", "{wc}"), ("2026 Mar 31", "Profit or loss", "GJ1", "{wp}-{wo}+{wc}")),
         "TOTAL",
         (None, ("2026 Apr 1", "Balance b/d", "", "{wc}"))])
     p.part("c) Calculate the total of other receivables and other payables in the Statement of Financial Position "
@@ -632,7 +632,7 @@ def q11_12(p):
             ("opy", "Other payables: rent owing + wages owing + rent received in advance (RM)", "({rent}-{rp})+{wc}+{rra}")])
     p.part("d) Prepare the Insurance account for the year. (4)")
     p.ledger("Insurance Account", [
-        (("2025 Jan 1", "Balance b/d", "", "{io}"), ("2025 Dec 31", "Income statement", "GJ1", "{ins}")),
+        (("2025 Jan 1", "Balance b/d", "", "{io}"), ("2025 Dec 31", "Profit or loss", "GJ1", "{ins}")),
         (("Apr 1", "Bank", "CB1", "{ip}"), ("Dec 31", "Balance c/d", "", pre)),
         "TOTAL",
         (("2026 Jan 1", "Balance b/d", "", pre), None)])
@@ -641,7 +641,7 @@ def q11_12(p):
 def expense_ledger(p, tag, name, k):
     p.tag(tag).ledger(name, [
         (("2025 Jan 1", "Balance b/d (prepaid)", "", f"{{{k}_op}}"), ("2025 Jan 1", "Balance b/d (owing)", "", f"{{{k}_oa}}")),
-        (("2025", "Bank (paid during the year)", "CB1", f"{{{k}_paid}}"), ("Dec 31", "Income statement", "GJ1", f"{{{k}_exp}}")),
+        (("2025", "Bank (paid during the year)", "CB1", f"{{{k}_paid}}"), ("Dec 31", "Profit or loss", "GJ1", f"{{{k}_exp}}")),
         (("Dec 31", "Balance c/d (owing)", "", f"{{{k}_ca}}"), ("Dec 31", "Balance c/d (prepaid)", "", f"{{{k}_cp}}")),
         "TOTAL",
         (("2026 Jan 1", "Balance b/d (prepaid)", "", f"{{{k}_cp}}"), ("2026 Jan 1", "Balance b/d (owing)", "", f"{{{k}_ca}}"))])
@@ -662,6 +662,15 @@ def worked_11_exp(p):
              "Closing prepayment", "Expense for the SPL", "SOFP: other payables", "SOFP: other receivables"],
             rows, 7, 3, checks=False)
     p.note("All amounts in RM. Accrued expense: ADD, current liability. Prepaid expense: SUBTRACT, current asset.")
+    p.part("How to write an expense account in 4 steps")
+    p.text("Step 1: Start of year (Balance b/d). Bring down last year's closing balance on the first day of the year: "
+           "an amount owing goes on the credit side, an amount prepaid goes on the debit side.")
+    p.text("Step 2: Bank. Enter the cash paid during the year on the debit side.")
+    p.text("Step 3: Profit or Loss. Enter this year's expense on the credit side "
+           "(paid - opening accrual + opening prepayment + closing accrual - closing prepayment).")
+    p.text("Step 4: End of year (Balance c/d). Carry down the closing balance: an amount owing on the debit side, "
+           "an amount prepaid on the credit side. Total both sides (they must agree), then bring the balance down "
+           "on the opposite side on the first day of next year.")
     p.part("Example 11.1: Rent account (RM1,000 per month; RM11,000 paid)")
     expense_ledger(p, "ch11.ex1.ledger", "Rent Account", "rent")
     p.part("Example 11.2: Insurance account (RM3,600 paid on 1 April for 12 months)")
@@ -685,11 +694,20 @@ def worked_11_inc(p):
              "Closing accrued income (due)", "Closing income in advance", "Income for the SPL",
              "SOFP: other receivables", "SOFP: other payables"], rows, 7, 3, checks=False)
     p.note("All amounts in RM. Accrued income: ADD, current asset. Income in advance: SUBTRACT, current liability.")
+    p.part("How to write an income account in 4 steps")
+    p.text("Step 1: Start of year (Balance b/d). Bring down last year's closing balance: income still due goes on "
+           "the debit side, income received in advance goes on the credit side.")
+    p.text("Step 2: Bank. Enter the cash received during the year on the credit side.")
+    p.text("Step 3: Profit or Loss. Enter this year's income on the debit side "
+           "(received - opening due + opening in advance + closing due - closing in advance).")
+    p.text("Step 4: End of year (Balance c/d). Carry down the closing balance: income received in advance on the "
+           "debit side, income still due on the credit side. Total both sides, then bring the balance down on the "
+           "opposite side on the first day of next year.")
     p.part("Example 11.4: Rent received account")
     k = "rr"
     p.tag("ch11.ex4.ledger").ledger("Rent Received Account", [
         (("2025 Jan 1", "Balance b/d (due)", "", f"{{{k}_oa}}"), ("2025 Jan 1", "Balance b/d (in advance)", "", f"{{{k}_oi}}")),
-        (("Dec 31", "Income statement", "GJ1", f"{{{k}_inc}}"), ("2025", "Bank (received during the year)", "CB1", f"{{{k}_rec}}")),
+        (("Dec 31", "Profit or loss", "GJ1", f"{{{k}_inc}}"), ("2025", "Bank (received during the year)", "CB1", f"{{{k}_rec}}")),
         (("Dec 31", "Balance c/d (in advance)", "", f"{{{k}_ci}}"), ("Dec 31", "Balance c/d (due)", "", f"{{{k}_ca}}")),
         "TOTAL",
         (("2026 Jan 1", "Balance b/d (due)", "", f"{{{k}_ca}}"), ("2026 Jan 1", "Balance b/d (in advance)", "", f"{{{k}_ci}}"))])
@@ -1355,7 +1373,7 @@ def mock_b3(p):
             ("ie", "Insurance expense (RM)", "{io}+{ip}*{im}/12"), ("ipr", "Insurance prepaid (RM)", pre)])
     p.part("b) Prepare the Insurance account for the year. (4)")
     p.ledger("Insurance Account", [
-        (("2025 Jan 1", "Balance b/d", "", "{io}"), ("2025 Dec 31", "Income statement", "GJ1", "{io}+{ip}*{im}/12")),
+        (("2025 Jan 1", "Balance b/d", "", "{io}"), ("2025 Dec 31", "Profit or loss", "GJ1", "{io}+{ip}*{im}/12")),
         (("Apr 1", "Bank", "CB1", "{ip}"), ("Dec 31", "Balance c/d", "", pre)),
         "TOTAL",
         (("2026 Jan 1", "Balance b/d", "", pre), None)])
