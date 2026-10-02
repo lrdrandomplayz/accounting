@@ -20,6 +20,8 @@ SOURCES = sorted((ROOT / "notes").glob("*.md")) + [
     ROOT / "model-questions" / "Mock_Test.md",
     ROOT / "model-questions" / "Mock_Test_Answers.md",
 ]
+PA = ROOT / "prinsip-akaun"
+PA_SOURCES = sorted((PA / "nota").glob("*.md")) + sorted((PA / "soalan").glob("*.md"))
 
 CSS = """
 @page { size: A4; margin: 16mm 14mm; }
@@ -52,18 +54,21 @@ def find_chrome():
 
 def main():
     OUT.mkdir(exist_ok=True)
+    (PA / "pdf").mkdir(exist_ok=True)
     chrome = find_chrome()
+    jobs = [(s, OUT, "Senior 1 Accounting notes. Free to use and share.") for s in SOURCES]
+    jobs += [(s, PA / "pdf", "Nota Prinsip Akaun. Percuma untuk digunakan dan dikongsi.") for s in PA_SOURCES]
     with tempfile.TemporaryDirectory() as tmp:
-        for src in SOURCES:
+        for src, out, foot in jobs:
             body = markdown.markdown(src.read_text(encoding="utf-8"), extensions=["tables"])
             html = (
                 f"<!doctype html><html><head><meta charset='utf-8'><title>{src.stem}</title>"
                 f"<style>{CSS}</style></head><body>{body}"
-                "<p class='foot'>Senior 1 Accounting notes. Free to use and share.</p></body></html>"
+                f"<p class='foot'>{foot}</p></body></html>"
             )
             page = Path(tmp) / f"{src.stem}.html"
             page.write_text(html, encoding="utf-8")
-            target = OUT / f"{src.stem}.pdf"
+            target = out / f"{src.stem}.pdf"
             subprocess.run(
                 [chrome, "--headless", "--no-sandbox", "--disable-gpu", "--no-pdf-header-footer",
                  f"--print-to-pdf={target}", page.as_uri()],

@@ -27,8 +27,22 @@ PCT, INT, NUM2 = "0.0%", "0", '#,##0.00;(#,##0.00);"-"'
 YEAR = "@Y"
 
 
-def load_values(fname):
-    path = ROOT / "excel" / fname
+MD = {
+    "en": {"item": "Item", "figure": "Figure", "answer": "Answer", "part": "Particulars", "dr_rm": "Debit (RM)",
+           "cr_rm": "Credit (RM)", "total": "Total", "date": "Date", "debit": "Debit", "credit": "Credit",
+           "dr": "Dr", "cr": "Cr", "folio": "Folio", "amount": "Amount", "cost": "Cost",
+           "accdep": "Accumulated Depreciation", "carrying": "Carrying Amount", "question": "Question",
+           "level": "Level"},
+    "ms": {"item": "Item", "figure": "Angka", "answer": "Jawapan", "part": "Butir", "dr_rm": "Debit (RM)",
+           "cr_rm": "Kredit (RM)", "total": "Jumlah", "date": "Tarikh", "debit": "Debit", "credit": "Kredit",
+           "dr": "Dt", "cr": "Kt", "folio": "Folio", "amount": "Amaun", "cost": "Kos",
+           "accdep": "Susut Nilai Terkumpul", "carrying": "Nilai Buku", "question": "Soalan", "level": "Tahap"},
+}
+L = MD["en"]
+
+
+def load_values(fname, folder="excel"):
+    path = ROOT / folder / fname
     wb = load_workbook(path, data_only=True)
     formulas = load_workbook(path)
     cells = [(ws.title, c.coordinate) for ws in formulas.worksheets for row in ws.iter_rows() for c in row
@@ -76,7 +90,7 @@ def esc(t):
 
 # ------------------------------------------------------------------ block renderers
 def r_data(b):
-    out = ["| Item | Figure |", "|---|---|"]
+    out = [f"| {L['item']} | {L['figure']} |", "|---|---|"]
     for label, value, fmt in b["rows"]:
         if label == "#":
             out.append(f"| **{esc(value)}** | |")
@@ -86,23 +100,23 @@ def r_data(b):
 
 
 def r_tb(b):
-    out = [f"**{b['title']}**", "", "| Particulars | Debit (RM) | Credit (RM) |", "|---|---:|---:|"]
+    out = [f"**{b['title']}**", "", f"| {L['part']} | {L['dr_rm']} | {L['cr_rm']} |", "|---|---:|---:|"]
     for label, dr, cr in b["rows"]:
         out.append(f"| {esc(label)} | {money(dr) if dr is not None else ''} | {money(cr) if cr is not None else ''} |")
     d, c = b["totals"]
-    out.append(f"| **Total** | **{money(d)}** | **{money(c)}** |")
+    out.append(f"| **{L['total']}** | **{money(d)}** | **{money(c)}** |")
     return "\n".join(out)
 
 
 def r_calc(b, get):
-    out = ["| Item | Answer |", "|---|---:|"]
+    out = [f"| {L['item']} | {L['answer']} |", "|---|---:|"]
     for label, a, fmt in b["rows"]:
         out.append(f"| {esc(label)} | **{cell(get, a, fmt)}** |")
     return "\n".join(out)
 
 
 def r_choice(b, get):
-    out = ["| Item | Answer |", "|---|---|"]
+    out = [f"| {L['item']} | {L['answer']} |", "|---|---|"]
     for label, a, _acc in b["rows"]:
         out.append(f"| {esc(label)} | **{esc(get(a))}** |")
     return "\n".join(out)
@@ -136,7 +150,7 @@ def r_table(b, get):
 
 
 def r_journal(b, get):
-    out = ["| Date | Particulars | Debit | Credit |", "|---|---|---:|---:|"]
+    out = [f"| {L['date']} | {L['part']} | {L['debit']} | {L['credit']} |", "|---|---|---:|---:|"]
     for row in b["rows"]:
         if row[0] == "y":
             rm = "**RM**" if row[2] else ""
@@ -155,8 +169,9 @@ def r_ledger(b, get):
 
     Lines whose amount is nil in a worked example are left out, and year rows left empty are dropped.
     """
-    out = [f"**Dr** &emsp;&emsp; **{b['name']}** &emsp;&emsp; **Cr**", "",
-           "| Date | Particulars | Folio | Amount | Date | Particulars | Folio | Amount |",
+    side = f"{L['date']} | {L['part']} | {L['folio']} | {L['amount']}"
+    out = [f"**{L['dr']}** &emsp;&emsp; **{b['name']}** &emsp;&emsp; **{L['cr']}**", "",
+           f"| {side} | {side} |",
            "|---|---|---|---:|---|---|---|---:|"]
     sides = {"dr": [], "cr": []}
     rm_done = {"dr": False, "cr": False}
@@ -204,9 +219,9 @@ def r_ledger(b, get):
 
 def r_statement(b, get):
     out = ["  \n".join(f"**{h}**" for h in b["heading"]), "",
-           "| | Particulars | RM | RM | RM |", "|---|---|---:|---:|---:|"]
+           f"| | {L['part']} | RM | RM | RM |", "|---|---|---:|---:|---:|"]
     if b["kind"] == "sofp":
-        out.append("| | | **Cost** | **Accumulated Depreciation** | **Carrying Amount** |")
+        out.append(f"| | | **{L['cost']}** | **{L['accdep']}** | **{L['carrying']}** |")
     for m, p, vals, flags in b["rows"]:
         name = f"**{esc(p)}**" if p and ("h" in flags or "b" in flags) else esc(p)
         cols = []
@@ -230,7 +245,7 @@ def r_mcq_question(b):
 
 
 def r_mcq(b, get):
-    out = ["| Question | Answer |", "|---|---|"]
+    out = [f"| {L['question']} | {L['answer']} |", "|---|---|"]
     for n, (_stem, options, a) in enumerate(b["rows"], 1):
         letter = get(a)
         text = options["ABCD".index(letter)] if letter in ("A", "B", "C", "D") else ""
@@ -262,7 +277,7 @@ def render_answer_block(b, get):
 
 
 def render_question(sheet):
-    parts = [f"**{sheet['qid']} ({sheet['label']})**"]
+    parts = [f"**{sheet['label']}**" if sheet["section"] == "pa" else f"**{sheet['qid']} ({sheet['label']})**"]
     bullets = []
 
     def flush_bullets():
@@ -284,6 +299,8 @@ def render_question(sheet):
             parts.append(r_tb(b))
         elif k == "table" and not any(c and c[0] == "v" for _, cells in b["rows"] for c in cells):
             parts.append(r_table(b, lambda a: None))
+        elif k == "table" and sheet["section"] == "pa" and all(re.match(r"^\d+\. ", lab) for lab, _c in b["rows"]):
+            parts.append("\n".join(esc(label) for label, _cells in b["rows"]))
         elif k == "part":
             parts.append(b["text"])
         elif k == "mcq":
@@ -298,7 +315,7 @@ def render_question(sheet):
 
 def render_answers(sheet, get):
     head = f"Level {sheet['level']}" if sheet["section"] == "structured" else sheet["label"]
-    parts = [f"### {sheet['qid']} ({head})"]
+    parts = [f"### {sheet['label']}" if sheet["section"] == "pa" else f"### {sheet['qid']} ({head})"]
     for b in sheet["blocks"]:
         s = render_answer_block(b, get)
         if s:
@@ -315,10 +332,15 @@ def replace_section(text, name, body, path):
 
 
 def main():
+    global L
     manifest = json.loads((ROOT / "tools" / "manifest.json").read_text())
+    pa = ROOT / "tools" / "manifest_pa.json"
+    if pa.exists():
+        manifest.update(json.loads(pa.read_text()))
     sections = {}
     for fname, book in manifest.items():
-        wb = load_values(fname)
+        L = MD[book.get("lang", "en")]
+        wb = load_values(fname, book.get("path", "excel"))
         chap = book["chapter"]
         qs, ans = {}, {}
         for sheet in book["sheets"]:
@@ -342,7 +364,8 @@ def main():
         for key, items in ans.items():
             sections[f"answers {key}"] = "\n\n".join(items)
     used = set()
-    files = sorted((ROOT / "notes").glob("*.md")) + sorted((ROOT / "model-questions").glob("*.md"))
+    files = (sorted((ROOT / "notes").glob("*.md")) + sorted((ROOT / "model-questions").glob("*.md"))
+             + sorted((ROOT / "prinsip-akaun").rglob("*.md")))
     for path in files:
         text = path.read_text(encoding="utf-8")
         for name, body in sections.items():

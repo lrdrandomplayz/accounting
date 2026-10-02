@@ -113,6 +113,17 @@ One page per topic for quick revision before a test. All amounts are in Malaysia
 
 **Memory trick:** if the business owes money, it is a liability. If the business is owed something, money or a service, it is an asset.
 
+**Ledger account in 4 steps**
+
+| Step | What to enter | Expense account (rent, insurance, wages) | Income account (rent received, commission) |
+|---|---|---|---|
+| **Step 1: Start of year (Balance b/d)** | Last year's closing balance, dated the first day of the year | Owing: **credit** side. Prepaid: **debit** side | Due: **debit** side. In advance: **credit** side |
+| **Step 2: Bank** | Cash paid or received during the year | **Debit** side | **Credit** side |
+| **Step 3: Profit or Loss** | This year's expense or income, worked out with the formula | **Credit** side | **Debit** side |
+| **Step 4: End of year (Balance c/d)** | This year's closing balance, dated the last day of the year | Owing: **debit** side. Prepaid: **credit** side | Due: **credit** side. In advance: **debit** side |
+
+Total both sides after Step 4, then bring the balance down on the opposite side for next year.
+
 **Top 5 mistakes**
 
 1. Putting an accrued expense under current assets.

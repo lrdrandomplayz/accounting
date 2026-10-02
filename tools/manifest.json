@@ -8550,6 +8550,30 @@
      },
      {
       "k": "part",
+      "text": "How to write an expense account in 4 steps"
+     },
+     {
+      "k": "text",
+      "text": "Step 1: Start of year (Balance b/d). Bring down last year's closing balance on the first day of the year: an amount owing goes on the credit side, an amount prepaid goes on the debit side.",
+      "style": "p"
+     },
+     {
+      "k": "text",
+      "text": "Step 2: Bank. Enter the cash paid during the year on the debit side.",
+      "style": "p"
+     },
+     {
+      "k": "text",
+      "text": "Step 3: Profit or Loss. Enter this year's expense on the credit side (paid - opening accrual + opening prepayment + closing accrual - closing prepayment).",
+      "style": "p"
+     },
+     {
+      "k": "text",
+      "text": "Step 4: End of year (Balance c/d). Carry down the closing balance: an amount owing on the debit side, an amount prepaid on the credit side. Total both sides (they must agree), then bring the balance down on the opposite side on the first day of next year.",
+      "style": "p"
+     },
+     {
+      "k": "part",
       "text": "Example 11.1: Rent account (RM1,000 per month; RM11,000 paid)"
      },
      {
@@ -8573,13 +8597,13 @@
          "Jan 1",
          "Balance b/d (prepaid)",
          "",
-         "M16"
+         "M22"
         ],
         "cr": [
          "Jan 1",
          "Balance b/d (owing)",
          "",
-         "AC16"
+         "AC22"
         ]
        },
        {
@@ -8587,13 +8611,13 @@
          "",
          "Bank (paid during the year)",
          "CB1",
-         "M17"
+         "M23"
         ],
         "cr": [
          "Dec 31",
-         "Income statement",
+         "Profit or loss",
          "GJ1",
-         "AC17"
+         "AC23"
         ]
        },
        {
@@ -8601,19 +8625,19 @@
          "Dec 31",
          "Balance c/d (owing)",
          "",
-         "M18"
+         "M24"
         ],
         "cr": [
          "Dec 31",
          "Balance c/d (prepaid)",
          "",
-         "AC18"
+         "AC24"
         ]
        },
        {
         "total": true,
-        "dr": "M19",
-        "cr": "AC19"
+        "dr": "M25",
+        "cr": "AC25"
        },
        {
         "dr": [
@@ -8632,13 +8656,13 @@
          "Jan 1",
          "Balance b/d (prepaid)",
          "",
-         "M21"
+         "M27"
         ],
         "cr": [
          "Jan 1",
          "Balance b/d (owing)",
          "",
-         "AC21"
+         "AC27"
         ]
        }
       ],
@@ -8669,13 +8693,13 @@
          "Jan 1",
          "Balance b/d (prepaid)",
          "",
-         "M27"
+         "M33"
         ],
         "cr": [
          "Jan 1",
          "Balance b/d (owing)",
          "",
-         "AC27"
+         "AC33"
         ]
        },
        {
@@ -8683,13 +8707,13 @@
          "",
          "Bank (paid during the year)",
          "CB1",
-         "M28"
+         "M34"
         ],
         "cr": [
          "Dec 31",
-         "Income statement",
+         "Profit or loss",
          "GJ1",
-         "AC28"
+         "AC34"
         ]
        },
        {
@@ -8697,19 +8721,19 @@
          "Dec 31",
          "Balance c/d (owing)",
          "",
-         "M29"
+         "M35"
         ],
         "cr": [
          "Dec 31",
          "Balance c/d (prepaid)",
          "",
-         "AC29"
+         "AC35"
         ]
        },
        {
         "total": true,
-        "dr": "M30",
-        "cr": "AC30"
+        "dr": "M36",
+        "cr": "AC36"
        },
        {
         "dr": [
@@ -8728,13 +8752,13 @@
          "Jan 1",
          "Balance b/d (prepaid)",
          "",
-         "M32"
+         "M38"
         ],
         "cr": [
          "Jan 1",
          "Balance b/d (owing)",
          "",
-         "AC32"
+         "AC38"
         ]
        }
       ],
@@ -8765,13 +8789,13 @@
          "Jan 1",
          "Balance b/d (prepaid)",
          "",
-         "M38"
+         "M44"
         ],
         "cr": [
          "Jan 1",
          "Balance b/d (owing)",
          "",
-         "AC38"
+         "AC44"
         ]
        },
        {
@@ -8779,13 +8803,13 @@
          "",
          "Bank (paid during the year)",
          "CB1",
-         "M39"
+         "M45"
         ],
         "cr": [
          "Dec 31",
-         "Income statement",
+         "Profit or loss",
          "GJ1",
-         "AC39"
+         "AC45"
         ]
        },
        {
@@ -8793,19 +8817,19 @@
          "Dec 31",
          "Balance c/d (owing)",
          "",
-         "M40"
+         "M46"
         ],
         "cr": [
          "Dec 31",
          "Balance c/d (prepaid)",
          "",
-         "AC40"
+         "AC46"
         ]
        },
        {
         "total": true,
-        "dr": "M41",
-        "cr": "AC41"
+        "dr": "M47",
+        "cr": "AC47"
        },
        {
         "dr": [
@@ -8824,13 +8848,13 @@
          "Jan 1",
          "Balance b/d (prepaid)",
          "",
-         "M43"
+         "M49"
         ],
         "cr": [
          "Jan 1",
          "Balance b/d (owing)",
          "",
-         "AC43"
+         "AC49"
         ]
        }
       ],
@@ -8959,6 +8983,30 @@
      },
      {
       "k": "part",
+      "text": "How to write an income account in 4 steps"
+     },
+     {
+      "k": "text",
+      "text": "Step 1: Start of year (Balance b/d). Bring down last year's closing balance: income still due goes on the debit side, income received in advance goes on the credit side.",
+      "style": "p"
+     },
+     {
+      "k": "text",
+      "text": "Step 2: Bank. Enter the cash received during the year on the credit side.",
+      "style": "p"
+     },
+     {
+      "k": "text",
+      "text": "Step 3: Profit or Loss. Enter this year's income on the debit side (received - opening due + opening in advance + closing due - closing in advance).",
+      "style": "p"
+     },
+     {
+      "k": "text",
+      "text": "Step 4: End of year (Balance c/d). Carry down the closing balance: income received in advance on the debit side, income still due on the credit side. Total both sides, then bring the balance down on the opposite side on the first day of next year.",
+      "style": "p"
+     },
+     {
+      "k": "part",
       "text": "Example 11.4: Rent received account"
      },
      {
@@ -8982,27 +9030,27 @@
          "Jan 1",
          "Balance b/d (due)",
          "",
-         "M15"
+         "M21"
         ],
         "cr": [
          "Jan 1",
          "Balance b/d (in advance)",
          "",
-         "AC15"
+         "AC21"
         ]
        },
        {
         "dr": [
          "Dec 31",
-         "Income statement",
+         "Profit or loss",
          "GJ1",
-         "M16"
+         "M22"
         ],
         "cr": [
          "",
          "Bank (received during the year)",
          "CB1",
-         "AC16"
+         "AC22"
         ]
        },
        {
@@ -9010,19 +9058,19 @@
          "Dec 31",
          "Balance c/d (in advance)",
          "",
-         "M17"
+         "M23"
         ],
         "cr": [
          "Dec 31",
          "Balance c/d (due)",
          "",
-         "AC17"
+         "AC23"
         ]
        },
        {
         "total": true,
-        "dr": "M18",
-        "cr": "AC18"
+        "dr": "M24",
+        "cr": "AC24"
        },
        {
         "dr": [
@@ -9041,13 +9089,13 @@
          "Jan 1",
          "Balance b/d (due)",
          "",
-         "M20"
+         "M26"
         ],
         "cr": [
          "Jan 1",
          "Balance b/d (in advance)",
          "",
-         "AC20"
+         "AC26"
         ]
        }
       ],
@@ -9084,17 +9132,17 @@
       "rows": [
        [
         "Cost per month (RM)",
-        "X28",
+        "X34",
         "#,##0.00;(#,##0.00);\"-\""
        ],
        [
         "Expense for this year (RM)",
-        "X29",
+        "X35",
         "#,##0.00;(#,##0.00);\"-\""
        ],
        [
         "Prepayment carried to next year (RM)",
-        "X30",
+        "X36",
         "#,##0.00;(#,##0.00);\"-\""
        ]
       ]
@@ -9438,7 +9486,7 @@
         ],
         "cr": [
          "Dec 31",
-         "Income statement",
+         "Profit or loss",
          "GJ1",
          "AC21"
         ]
@@ -9523,7 +9571,7 @@
         ],
         "cr": [
          "Dec 31",
-         "Income statement",
+         "Profit or loss",
          "GJ1",
          "AC33"
         ]
@@ -9703,7 +9751,7 @@
         ],
         "cr": [
          "Dec 31",
-         "Income statement",
+         "Profit or loss",
          "GJ1",
          "AC21"
         ]
@@ -9788,7 +9836,7 @@
         ],
         "cr": [
          "Dec 31",
-         "Income statement",
+         "Profit or loss",
          "GJ1",
          "AC33"
         ]
@@ -9971,7 +10019,7 @@
        {
         "dr": [
          "Dec 31",
-         "Income statement",
+         "Profit or loss",
          "GJ1",
          "M23"
         ],
@@ -10188,7 +10236,7 @@
        {
         "dr": [
          "Dec 31",
-         "Income statement",
+         "Profit or loss",
          "GJ1",
          "M23"
         ],
@@ -10467,7 +10515,7 @@
         ],
         "cr": [
          "Mar 31",
-         "Income statement",
+         "Profit or loss",
          "GJ1",
          "AC31"
         ]
@@ -10667,7 +10715,7 @@
         ],
         "cr": [
          "Mar 31",
-         "Income statement",
+         "Profit or loss",
          "GJ1",
          "AC31"
         ]
@@ -10995,7 +11043,7 @@
         ],
         "cr": [
          "Dec 31",
-         "Income statement",
+         "Profit or loss",
          "GJ1",
          "AC53"
         ]
@@ -11326,7 +11374,7 @@
         ],
         "cr": [
          "Dec 31",
-         "Income statement",
+         "Profit or loss",
          "GJ1",
          "AC53"
         ]
@@ -12092,7 +12140,7 @@
         ],
         "cr": [
          "Mar 31",
-         "Income statement",
+         "Profit or loss",
          "GJ1",
          "AC31"
         ]
@@ -12287,7 +12335,7 @@
         ],
         "cr": [
          "Mar 31",
-         "Income statement",
+         "Profit or loss",
          "GJ1",
          "AC31"
         ]
@@ -23816,7 +23864,7 @@
         ],
         "cr": [
          "Dec 31",
-         "Income statement",
+         "Profit or loss",
          "GJ1",
          "AC26"
         ]
@@ -24025,7 +24073,7 @@
         ],
         "cr": [
          "Dec 31",
-         "Income statement",
+         "Profit or loss",
          "GJ1",
          "AC26"
         ]

@@ -135,8 +135,8 @@ def expand_ledger(rows):
 class V:
     """An answer value: a formula template with optional underline style and key."""
 
-    def __init__(self, t, line=None, key=None, fmt=None):
-        self.t, self.line, self.key, self.fmt = str(t), line, key, fmt
+    def __init__(self, t, line=None, key=None, fmt=None, signed=False):
+        self.t, self.line, self.key, self.fmt, self.signed = str(t), line, key, fmt, signed
 
 
 def D(value, key, fmt=None):
@@ -147,6 +147,50 @@ def D(value, key, fmt=None):
 def T(text):
     """A plain text cell inside a table."""
     return ("t", text)
+
+
+LABELS = {
+    "en": {
+        "lead_p": "Practice with new numbers: the situation matches the printed question, but the figures change "
+                  "with the set number below. ",
+        "type": "Type your answers in the yellow cells. Numbers only: no RM, no commas. Enter 0 where the answer is "
+                "nil. \u2713 = correct, \u2717 = try again.",
+        "score": "Your score:",
+        "score_tail": "correct out of {n} answer cells",
+        "ans1": "Answer sheet. Green cells hold the correct answers. Each figure is a formula linked to the question "
+                "sheet, so the answers follow any change to the blue figures.",
+        "ans2": "Written answers are model answers: other wording that makes the same points also earns the marks.",
+        "w1": "Worked example. Change any blue figure and every answer below updates.",
+        "w2": "Black figures are formulas. Do not type over them.",
+        "set": "Question set number (type any whole number from 1 to 999):",
+        "set2": "Each number gives a new set of figures.",
+        "figs": "Figures from the question", "figure": "Figure", "part": "Particulars",
+        "dr_rm": "Debit (RM)", "cr_rm": "Credit (RM)", "total": "Total", "your_answer": "Your answer",
+        "date": "Date", "debit": "Debit", "credit": "Credit", "dr": "Dr", "cr": "Cr", "folio": "Folio",
+        "amount": "Amount", "cost": "Cost", "accdep": "Accumulated Depreciation", "carrying": "Carrying Amount",
+        "answers": "Answers",
+    },
+    "ms": {
+        "lead_p": "Latihan dengan nombor baharu: situasi sama dengan soalan bercetak, tetapi angka berubah mengikut "
+                  "nombor set di bawah. ",
+        "type": "Taip jawapan anda dalam sel kuning. Nombor sahaja: tanpa RM, tanpa koma. Masukkan 0 jika tiada "
+                "jawapan. Gunakan tanda tolak (-) untuk pengurangan. \u2713 = betul, \u2717 = cuba lagi.",
+        "score": "Markah anda:",
+        "score_tail": "betul daripada {n} sel jawapan",
+        "ans1": "Helaian jawapan. Sel hijau mengandungi jawapan yang betul. Setiap angka ialah formula yang "
+                "dipautkan kepada helaian soalan.",
+        "ans2": "Jawapan bertulis ialah jawapan contoh: perkataan lain yang membawa maksud yang sama juga diterima.",
+        "w1": "Contoh. Tukar mana-mana angka biru dan semua jawapan di bawah akan dikemas kini.",
+        "w2": "Angka hitam ialah formula. Jangan taip di atasnya.",
+        "set": "Nombor set soalan (taip sebarang nombor bulat dari 1 hingga 999):",
+        "set2": "Setiap nombor memberi set angka baharu.",
+        "figs": "Maklumat soalan", "figure": "Angka", "part": "Butir",
+        "dr_rm": "Debit (RM)", "cr_rm": "Kredit (RM)", "total": "Jumlah", "your_answer": "Jawapan anda",
+        "date": "Tarikh", "debit": "Debit", "credit": "Kredit", "dr": "Dt", "cr": "Kt", "folio": "Folio",
+        "amount": "Amaun", "cost": "Kos", "accdep": "Susut Nilai Terkumpul", "carrying": "Nilai Buku",
+        "answers": "Jawapan",
+    },
+}
 
 
 PRIMES = (7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67)
@@ -187,7 +231,7 @@ def as_v(spec):
 
 
 class Page:
-    def __init__(self, wb, name, mode, twin=None, tab=None, practice=False, vary=None):
+    def __init__(self, wb, name, mode, twin=None, tab=None, practice=False, vary=None, lang="en", signed=False):
         ws = wb.create_sheet(name)
         ws.sheet_view.showGridLines = False
         ws.sheet_view.zoomScale = 110
@@ -213,6 +257,9 @@ class Page:
         self._tag = None
         self.practice = practice      # practice tabs hide prose and draw figures from a set number
         self.vary = vary or {}
+        self.L = LABELS[lang]
+        self.lang = lang
+        self.signed = signed          # compare signs too (for +/- answers such as accounting equation effects)
 
     # ------------------------------------------------------------------ basics
     def addr(self, r, u, absolute=False):
@@ -268,8 +315,10 @@ class Page:
             self.box(r, u, span, fill_=F_INPUT, fmt=fmt, border=edge(spec.line, True), align=align)
             self.inputs += 1
             if check:
+                diff = (f"ABS({a}-'{self.twin}'!{a})" if (spec.signed or self.signed)
+                        else f"ABS(ABS({a})-ABS('{self.twin}'!{a}))")
                 self.box(r, u + span, 1,
-                         f'=IF({a}="","",IFERROR(IF(ABS(ABS({a})-ABS(\'{self.twin}\'!{a}))<0.5,'
+                         f'=IF({a}="","",IFERROR(IF({diff}<0.5,'
                          f'"{TICK}","{CROSS}"),"{CROSS}"))',
                          bold=True, align="center", border=edge(None, grid))
         else:
@@ -307,7 +356,7 @@ class Page:
         if self.score:
             r, u = self.score
             self.ws.cell(row=r, column=C0 + u).value = (
-                f'=COUNTIF({body},"{TICK}")&" correct out of {self.inputs} answer cells"')
+                f'=COUNTIF({body},"{TICK}")&" ' + self.L["score_tail"].format(n=self.inputs) + '"')
         self.ws.conditional_formatting.add(body, CellIsRule(
             operator="equal", formula=[f'"{TICK}"'], font=Font(name=ARIAL, color="00B050", bold=True)))
         self.ws.conditional_formatting.add(body, CellIsRule(
@@ -328,32 +377,28 @@ class Page:
         """Two instruction rows plus a spacer; identical row count in every mode."""
         r = self.r
         if self.mode == "q":
-            lead = ("Practice with new numbers: the situation matches the printed question, but the figures "
-                    "change with the set number below. " if self.practice else "")
-            self.box(r, 0, U, lead + "Type your answers in the yellow cells. Numbers only: no RM, no commas. "
-                     "Enter 0 where the answer is nil. ✓ = correct, ✗ = try again.",
+            lead = self.L["lead_p"] if self.practice else ""
+            self.box(r, 0, U, lead + self.L["type"],
                      italic=True, color=GREY, wrap=bool(self.practice))
             if self.practice:
                 self.height(r, 30)
-            self.box(r + 1, 0, 6, "Your score:", bold=True, color=NAVY)
+            self.box(r + 1, 0, 6, self.L["score"], bold=True, color=NAVY)
             self.box(r + 1, 6, 25, bold=True, color=NAVY)
             self.score = (r + 1, 6)
             self.first_row = r + 2
         elif self.mode == "a":
-            self.box(r, 0, U, "Answer sheet. Green cells hold the correct answers. Each figure is a formula "
-                     "linked to the question sheet, so the answers follow any change to the blue figures.",
+            self.box(r, 0, U, self.L["ans1"],
                      italic=True, color=GREY)
-            self.box(r + 1, 0, U, "Written answers are model answers: other wording that makes the same "
-                     "points also earns the marks.", italic=True, color=GREY)
+            self.box(r + 1, 0, U, self.L["ans2"], italic=True, color=GREY)
         else:
-            self.box(r, 0, U, "Worked example. Change any blue figure and every answer below updates.",
+            self.box(r, 0, U, self.L["w1"],
                      italic=True, color=GREY)
-            self.box(r + 1, 0, U, "Black figures are formulas. Do not type over them.", italic=True, color=GREY)
+            self.box(r + 1, 0, U, self.L["w2"], italic=True, color=GREY)
         if self.practice:
-            self.box(r + 2, 0, 16, "Question set number (type any whole number from 1 to 999):", bold=True,
+            self.box(r + 2, 0, 16, self.L["set"], bold=True,
                      color=NAVY)
             self.datum(r + 2, 16, 4, 1, "set", INT)
-            self.box(r + 2, 21, 10, "Each number gives a new set of figures.", italic=True, color=GREY)
+            self.box(r + 2, 21, 10, self.L["set2"], italic=True, color=GREY)
             self.height(r + 2, 20)
             self.r += 1
         self.r += 3
@@ -391,10 +436,11 @@ class Page:
         self._rec({"k": "part", "text": t})
 
     # ------------------------------------------------------------------ data blocks
-    def data(self, rows, title="Figures from the question", md=False):
+    def data(self, rows, title=None, md=False):
+        title = title or self.L["figs"]
         r = self.r
         self.box(r, 0, 22, title, bold=True, fill_=F_HEAD, border=edge(None, True))
-        self.box(r, 22, 6, "Figure", bold=True, fill_=F_HEAD, align="center", border=edge(None, True))
+        self.box(r, 22, 6, self.L["figure"], bold=True, fill_=F_HEAD, align="center", border=edge(None, True))
         self.r += 1
         rec = []
         for row in rows:
@@ -417,7 +463,7 @@ class Page:
         r = self.r
         self.box(r, 0, U, title, bold=True, color=NAVY, align="center")
         r += 1
-        for u, span, h in ((0, 19, "Particulars"), (19, 6, "Debit (RM)"), (25, 6, "Credit (RM)")):
+        for u, span, h in ((0, 19, self.L["part"]), (19, 6, self.L["dr_rm"]), (25, 6, self.L["cr_rm"])):
             self.box(r, u, span, h, bold=True, fill_=F_HEAD, align="left" if u == 0 else "center",
                      border=edge(None, True))
         r += 1
@@ -441,7 +487,7 @@ class Page:
         if balance:   # capital is the balancing figure, so the trial balance always agrees
             cell = self.ws.cell(row=balance[0], column=C0 + balance[1])
             self.todo.append((cell, f"SUM({self.addr(first, 19)}:{self.addr(r - 1, 19)})-({'+'.join(credits)})"))
-        self.box(r, 0, 19, "Total", bold=True, border=edge(None, True))
+        self.box(r, 0, 19, self.L["total"], bold=True, border=edge(None, True))
         for u in (19, 25):
             cell = self.box(r, u, 6, bold=True, fmt=NUM, align="right", border=edge("total", True))
             self.todo.append((cell, f"SUM({self.addr(first, u)}:{self.addr(r - 1, u)})"))
@@ -511,7 +557,7 @@ class Page:
                 self.box(self.r, 1, U - 1, f"{opt_letter}.  {opt}", wrap=True)
                 self.height(self.r, 13.5 * lines_needed(opt, U - 1) + 3)
                 self.r += 1
-            a = self._choice_row(key, "Your answer", f'"{letter}"', ["A", "B", "C", "D"])
+            a = self._choice_row(key, self.L["your_answer"], f'"{letter}"', ["A", "B", "C", "D"])
             rec.append((stem, list(options), a))
         self._rec({"k": "mcq", "rows": rec})
 
@@ -568,7 +614,8 @@ class Page:
 
     def journal(self, rows):
         r = self.r
-        for u, span, h in ((0, 3, "Date"), (3, 16, "Particulars"), (19, 6, "Debit"), (25, 6, "Credit")):
+        for u, span, h in ((0, 3, self.L["date"]), (3, 16, self.L["part"]), (19, 6, self.L["debit"]),
+                           (25, 6, self.L["credit"])):
             self.box(r, u, span, h, bold=True, fill_=F_HEAD, align="left" if u < 19 else "center",
                      border=edge(None, True))
         self.r += 1
@@ -606,12 +653,12 @@ class Page:
 
     def ledger(self, name, rows):
         r = self.r
-        self.box(r, 0, 3, "Dr", bold=True, color=NAVY)
+        self.box(r, 0, 3, self.L["dr"], bold=True, color=NAVY)
         self.box(r, 3, 25, name, bold=True, align="center", color=NAVY)
-        self.box(r, 28, 3, "Cr", bold=True, align="right", color=NAVY)
+        self.box(r, 28, 3, self.L["cr"], bold=True, align="right", color=NAVY)
         self.r += 1
         r = self.r
-        heads = ((0, 3, "Date"), (3, 7, "Particulars"), (10, 1, "Folio"), (11, 4, "Amount"))
+        heads = ((0, 3, self.L["date"]), (3, 7, self.L["part"]), (10, 1, self.L["folio"]), (11, 4, self.L["amount"]))
         for o in (0, 16):
             for u, span, h in heads:
                 self.box(r, o + u, span, h, bold=True, fill_=F_HEAD, align="center" if u >= 10 else "left",
@@ -660,7 +707,7 @@ class Page:
             self.r += 1
         r = self.r
         self.box(r, 0, 3, fill_=F_HEAD, border=edge(None, True))
-        self.box(r, 3, 13, "Particulars", bold=True, fill_=F_HEAD, border=edge(None, True))
+        self.box(r, 3, 13, self.L["part"], bold=True, fill_=F_HEAD, border=edge(None, True))
         for c, u in STAT_COLS.items():
             self.box(r, u, 5, "RM", bold=True, fill_=F_HEAD, align="center", border=edge(None, True))
         self.r += 1
@@ -668,7 +715,7 @@ class Page:
             r = self.r
             self.box(r, 0, 3, fill_=F_HEAD, border=edge(None, True))
             self.box(r, 3, 13, fill_=F_HEAD, border=edge(None, True))
-            for (c, u), h in zip(STAT_COLS.items(), ("Cost", "Accumulated Depreciation", "Carrying Amount")):
+            for (c, u), h in zip(STAT_COLS.items(), (self.L["cost"], self.L["accdep"], self.L["carrying"])):
                 self.box(r, u, 5, h, bold=True, fill_=F_HEAD, align="center", wrap=True, border=edge(None, True))
             self.height(r, 30)
             self.r += 1

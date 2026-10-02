@@ -686,7 +686,7 @@ Monthly cost = 4,800 / 12 = 400. October to December = 3 months.
 | Date | Particulars | Folio | Amount | Date | Particulars | Folio | Amount |
 |---|---|---|---:|---|---|---|---:|
 | **2025** | | | **RM** | **2025** | | | **RM** |
-| Mar | Bank | CB1 | 600 | Dec 31 | Income statement | GJ1 | 2,230 |
+| Mar | Bank | CB1 | 600 | Dec 31 | Profit or loss | GJ1 | 2,230 |
 | Jun | Bank | CB1 | 550 |  | | |  |
 | Sep | Bank | CB1 | 500 |  | | |  |
 | Dec 31 | Balance c/d |  | 580 |  | | |  |
@@ -701,7 +701,7 @@ Monthly cost = 4,800 / 12 = 400. October to December = 3 months.
 | Date | Particulars | Folio | Amount | Date | Particulars | Folio | Amount |
 |---|---|---|---:|---|---|---|---:|
 | **2025** | | | **RM** | **2025** | | | **RM** |
-| Jul 1 | Bank | CB1 | 2,400 | Dec 31 | Income statement | GJ1 | 1,200 |
+| Jul 1 | Bank | CB1 | 2,400 | Dec 31 | Profit or loss | GJ1 | 1,200 |
 |  | | |  | Dec 31 | Balance c/d |  | 1,200 |
 | | | | **2,400** | | | | **2,400** |
 | **2026** | | |  |  | | |  |
@@ -735,7 +735,7 @@ Monthly cost = 4,800 / 12 = 400. October to December = 3 months.
 | Date | Particulars | Folio | Amount | Date | Particulars | Folio | Amount |
 |---|---|---|---:|---|---|---|---:|
 | **2025** | | | **RM** | **2025** | | | **RM** |
-| Dec 31 | Income statement | GJ1 | 7,200 |  | Bank (received during the year) | CB1 | 7,800 |
+| Dec 31 | Profit or loss | GJ1 | 7,200 |  | Bank (received during the year) | CB1 | 7,800 |
 | Dec 31 | Balance c/d |  | 600 |  | | |  |
 | | | | **7,800** | | | | **7,800** |
 |  | | |  | **2026** | | |  |
@@ -784,7 +784,7 @@ Monthly cost = 4,800 / 12 = 400. October to December = 3 months.
 | **2025** | | | **RM** | **2025** | | | **RM** |
 |  | Bank (paid during the year) | CB1 | 18,000 | Apr 1 | Balance b/d |  | 300 |
 | **2026** | | |  | **2026** | | |  |
-| Mar 31 | Balance c/d |  | 450 | Mar 31 | Income statement | GJ1 | 18,150 |
+| Mar 31 | Balance c/d |  | 450 | Mar 31 | Profit or loss | GJ1 | 18,150 |
 | | | | **18,450** | | | | **18,450** |
 |  | | |  | Apr 1 | Balance b/d |  | 450 |
 
@@ -834,7 +834,7 @@ Monthly cost = 4,800 / 12 = 400. October to December = 3 months.
 | Date | Particulars | Folio | Amount | Date | Particulars | Folio | Amount |
 |---|---|---|---:|---|---|---|---:|
 | **2025** | | | **RM** | **2025** | | | **RM** |
-| Jan 1 | Balance b/d |  | 750 | Dec 31 | Income statement | GJ1 | 3,450 |
+| Jan 1 | Balance b/d |  | 750 | Dec 31 | Profit or loss | GJ1 | 3,450 |
 | Apr 1 | Bank | CB1 | 3,600 | Dec 31 | Balance c/d |  | 900 |
 | | | | **4,350** | | | | **4,350** |
 | **2026** | | |  |  | | |  |
