@@ -1,6 +1,6 @@
 # Prinsip Akaun
 
-Nota, fail Excel dan soalan gaya SPM bagi Prinsip Perakaunan dalam Bahasa Melayu. Percuma untuk digunakan, dicetak dan dikongsi. Bukan untuk dijual. Semua amaun dalam Ringgit Malaysia (RM).
+Nota, fail Excel dan soalan gaya SPM bagi Prinsip Perakaunan dalam Bahasa Melayu. Nota mempunyai terjemahan bahasa Inggeris. *The notes include English translations.* Percuma untuk digunakan, dicetak dan dikongsi. Bukan untuk dijual. Semua amaun dalam Ringgit Malaysia (RM).
 
 ## Kandungan
 
@@ -8,6 +8,7 @@ Nota, fail Excel dan soalan gaya SPM bagi Prinsip Perakaunan dalam Bahasa Melayu
 |---|---|---|---|
 | Persamaan Perakaunan | [nota](nota/Persamaan_Perakaunan.md) | [xlsx](excel/Persamaan_Perakaunan.xlsx) | [pdf](pdf/Persamaan_Perakaunan.pdf) |
 | Lejar dan Akaun Kawalan | [nota](nota/Lejar_dan_Akaun_Kawalan.md) | [xlsx](excel/Akaun_Kawalan.xlsx) | [pdf](pdf/Lejar_dan_Akaun_Kawalan.pdf) |
+| Glosari: Bahasa Melayu, English, 中文 | [glosari](nota/Glosari_PA.md) | | [pdf](pdf/Glosari_PA.pdf) |
 | Kertas 1: 15 soalan objektif | [soalan](soalan/Soalan_SPM.md) | [xlsx](excel/Kertas_1_Objektif.xlsx) | [pdf](pdf/Soalan_SPM.pdf) |
 
 * Soalan gaya SPM (Kertas 1 dan Kertas 2): [Soalan_SPM.md](soalan/Soalan_SPM.md) ([pdf](pdf/Soalan_SPM.pdf))
