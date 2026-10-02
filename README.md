@@ -13,7 +13,7 @@ Free study notes, Excel workbooks and model questions for Senior 1 (high school)
 | FS | Statement of Profit or Loss and Statement of Financial Position | [notes](notes/Financial_Statements.md) | [xlsx](excel/Financial_Statements.xlsx) | [pdf](pdf/Financial_Statements.pdf) |
 | Revision | One-page revision sheets for every topic | [notes](notes/Revision_Sheets.md) | | [pdf](pdf/Revision_Sheets.pdf) |
 | Glossary | Key terms in English and Chinese | [notes](notes/Glossary.md) | | [pdf](pdf/Glossary.pdf) |
-| PA | Prinsip Akaun (Bahasa Melayu): Persamaan Perakaunan, Lejar dan Akaun Kawalan, soalan gaya SPM | [nota](prinsip-akaun/README.md) | [xlsx](prinsip-akaun/excel) | [pdf](prinsip-akaun/pdf) |
+| PA | Prinsip Akaun (Malay with English): Persamaan Perakaunan, Lejar dan Akaun Kawalan, SPM-style questions, Malay/English/Chinese glossary | [nota](prinsip-akaun/README.md) | [xlsx](prinsip-akaun/excel) | [pdf](prinsip-akaun/pdf) |
 
 Model questions: [Model_Questions.md](model-questions/Model_Questions.md) ([pdf](pdf/Model_Questions.pdf))
 
